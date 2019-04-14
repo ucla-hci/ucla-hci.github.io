@@ -1,1 +1,44 @@
-Hello!
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+  <table width="100%" border="0">
+    <tbody>
+      <tr>
+        <td valign="top">
+          <br>
+            <img src="assets/logo_v2.png" class="logo"></img>
+        </td>
+        <td class="topnav" valign="bottom">
+            <div class="topnav" id="topnav">
+      
+            <!-- <a href="#about">Join Us!</a> -->
+            <a href="javascript:void(0);" class="hamburger" onclick="showHamMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a>&nbsp;</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#projects">Projects</a>
+            <a href="#team" class="active">Team</a>
+            </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/yaml.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
