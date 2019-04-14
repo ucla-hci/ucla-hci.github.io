@@ -1,6 +1,6 @@
 body {
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 10%;
+  margin-right: 10%;
   font-family: "Assistant", sans-serif;
 }
 
@@ -19,14 +19,15 @@ body {
 .topnav a {
   float: right;
   display: block;
-  color: #000000;
+  color: #aaaaaa;
   text-align: center;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 32px;
+  padding-right: 0px;
   padding-top: 8px;
   padding-bottom: 8px;
   text-decoration: none;
   font-size: 17px;
+  cursor: pointer;
 }
 
 .topnav p {
@@ -41,8 +42,8 @@ body {
 }
 
 /* Add an active class to highlight the current page */
-.active {
-  color: #2d68c4;
+a.active {
+  color: #000000;
   /* color: white; */
 }
 
@@ -53,6 +54,23 @@ body {
 
 img.logo {
   height: 88px;
+}
+
+img.team {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+div.team {
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+div.info {
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
