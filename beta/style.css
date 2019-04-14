@@ -1,13 +1,22 @@
 body {
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 100px;
   font-family: "Assistant", sans-serif;
+}
+
+.topbar {
+  margin-left: 25px;
+  margin-right: 25px;
+  /* position: fixed; Set the navbar to fixed position */
+  /* top: 0; Position the navbar at the top of the page */
+  /* width: 80%; Full width */
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  /* background-color: rgba(225, 225, 225, 0.95); */
   overflow: hidden;
+  /* position: absolute; */
 }
 
 .topnav img {
@@ -21,8 +30,8 @@ body {
   display: block;
   color: #aaaaaa;
   text-align: center;
-  padding-left: 32px;
-  padding-right: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
   text-decoration: none;
@@ -54,23 +63,46 @@ a.active {
 
 img.logo {
   height: 88px;
+  /* filter: grayscale(33%); */
 }
 
 img.team {
-  width: 200px;
+  width: 160px;
   border-radius: 50%;
   margin-bottom: 5px;
+  filter: grayscale(66%);
+}
+
+.team img:hover{
+  filter: none;
+}
+
+img.project {
+  width: 220px;
+  filter: grayscale(66%);
+}
+
+.project img:hover{
+  filter: none;
 }
 
 div.team {
   display: inline-block;
-  margin-left: 30px;
-  margin-right: 50px;
+  margin-left: 45px;
+  margin-right: 75px;
   margin-top: 50px;
+}
+
+div.project {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-top: 30px;
 }
 
 div.info {
   text-align: center;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 600px) {

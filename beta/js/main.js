@@ -61,14 +61,13 @@ function showHamMenu() {
 
 UCLAHCI.updatePage = function (page) {
     $('#' + page).addClass('active');
-    // $('.content').html(page)
+    $('.content').empty();
     if (page == 'team') {
         for (member of UCLAHCI.data.team) {
             var div = $('<div/>');
             div.addClass('team');
             var tb = $('<table/>');
-            // span.addClass('team');
-            
+
             var trImg = $('<tr/>');
             var img = $('<img/>');
             img.attr('src', 'assets/' + member.img);
@@ -89,13 +88,44 @@ UCLAHCI.updatePage = function (page) {
             divRole.html(member.role + '<br>' + member.expertise);
             trRole.append(divRole);
             tb.append(trRole);
-            
+
             div.append(tb);
 
             $('.content').append(div);
         }
     } else if (page == 'projects') {
+        if (page == 'projects') {
+            for (project of UCLAHCI.data.projects) {
+                var div = $('<div/>');
+                div.addClass('project');
+                var tb = $('<table/>');
 
+                var trImg = $('<tr/>');
+                var img = $('<img/>');
+                img.attr('src', 'assets/' + project.img);
+                img.addClass('project');
+                trImg.append(img);
+                tb.append(trImg);
+
+                var trName = $('<tr/>');
+                var divName = $('<div/>');
+                divName.addClass('info');
+                divName.html('<b>' + project.name + '</b>');
+                trName.append(divName);
+                tb.append(trName);
+
+                var trPubs = $('<tr/>');
+                var divPubs = $('<div/>');
+                divPubs.addClass('info');
+                divPubs.html(project.pubs);
+                trPubs.append(divPubs);
+                tb.append(trPubs);
+
+                div.append(tb);
+
+                $('.content').append(div);
+            }
+        }
     } else if (page == 'aboutus') {
 
     }
