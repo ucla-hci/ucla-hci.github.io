@@ -15,8 +15,8 @@ team:
     role: PhD Student
     expertise: Deep Learner
     img: minion.jpg
-  - name: Dave
-    role: Minion
+  - name: Ruolin Wang
+    role: PhD Student
     expertise: sabotage
     img: minion.jpg
   - name: Dave
@@ -109,3 +109,23 @@ projects:
   - name: Fart Gun
     pubs: MinionCon 2019
     img: fart_gun.jpeg
+aboutus:
+  - mission: Minions /ˈmɪnjənz/ are fictional yellow creatures that appear in the Despicable Me franchise, which started with Despicable Me (2010), and are characterized by their childlike behavior and unique language, which is almost intelligible at times. They are also the official mascots of Illumination, a division of Universal Pictures, which produces the films. Following Comcast's purchase of NBCUniversal, they have been described as being a corporate icon for Universal and Comcast, on par with Disney's Mickey Mouse and WarnerMedia's Bugs Bunny.[1]
+    photos: 
+      - minions1.jpg
+      - minions8.jpg
+      - minions3.jpg
+      - minions4.jpg
+      - minions5.jpg
+      - minions6.jpg
+      - minions7.jpg
+      - minions2.png
+    sponsors:
+      - img: nsf.png
+        url: https://nsf.gov/
+      - img: adobe.png
+        url: https://www.adobe.com/
+      - img: meta.png
+        url: https://www.metachnology.com/
+    map: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1991.4035161501527!2d-118.44520705236775!3d34.06920012829791!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc8632b4bcf3%3A0x8087319fe00f1e04!2sUCLA+HCI+Research!5e0!3m2!1sen!2sus!4v1555280319576!5m2!1sen!2sus" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+  

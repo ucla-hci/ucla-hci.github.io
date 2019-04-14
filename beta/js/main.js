@@ -15,10 +15,19 @@ window.mobilecheck = function () {
 //	check whether need to be responsive
 //
 UCLAHCI.checkResponsiveness = function () {
-    if ($(window).width() < 640 || window.mobilecheck() == true) {
-        $('td.topnav').attr('valign', 'top')
+    if ($(window).width() < 1080 || window.mobilecheck() == true) {
+        UCLAHCI.isMobile = true;
+        $('body').css('margin-left', '5%');
+        $('body').css('margin-right', '5%');
+        $('.topnav a').css('float', 'none');
+        $('.topnav a').css('display', 'block');
+        $('.topnav a').css('text-align', 'right');
+        $('.topnav a').css('padding-bottom', '0px');
+        
     } else if ($(window).width() < 1150) {
+        $('.topnav a:hover').css('color', '#2d68c4');
     } else {
+        $('.topnav a:hover').css('color', '#2d68c4');
     }
 }
 
@@ -33,7 +42,7 @@ $(document).ready(function () {
             // console.log(UCLAHCI.data);
 
             UCLAHCI.updateUI();
-            UCLAHCI.updateUrl('team');
+            UCLAHCI.updateUrl(UCLAHCI.config.LANDINGPAGE);
 
             var page;
             var idxSharp = location.href.indexOf('#');
@@ -41,7 +50,8 @@ $(document).ready(function () {
             var idxDot = page.indexOf('.');
 
             if (page != undefined) {
-                UCLAHCI.updatePage(page);
+                UCLAHCI.page = page;
+                UCLAHCI.updatePage();
                 if (idxDot >= 0) {
 
                 }
@@ -51,15 +61,18 @@ $(document).ready(function () {
 });
 
 function showHamMenu() {
-    var x = document.getElementById("topnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+    // var topnav = $('#topnav');
+    // if(topnav.hasClass('topnav')) {
+    //     topnav.removeClass('topnav');
+    //     topnav.addClass('topnav responsive');
+    // } else {
+    //     topnav.removeClass('topnav responsive');
+    //     topnav.addClass('topnav');
+    // }
 }
 
-UCLAHCI.updatePage = function (page) {
+UCLAHCI.updatePage = function () {
+    var page = UCLAHCI.page;
     $('#' + page).addClass('active');
     $('.content').empty();
     if (page == 'team') {
@@ -94,40 +107,112 @@ UCLAHCI.updatePage = function (page) {
             $('.content').append(div);
         }
     } else if (page == 'projects') {
-        if (page == 'projects') {
-            for (project of UCLAHCI.data.projects) {
-                var div = $('<div/>');
-                div.addClass('project');
-                var tb = $('<table/>');
+        for (project of UCLAHCI.data.projects) {
+            var div = $('<div/>');
+            div.addClass('project');
+            var tb = $('<table/>');
 
-                var trImg = $('<tr/>');
-                var img = $('<img/>');
-                img.attr('src', 'assets/' + project.img);
-                img.addClass('project');
-                trImg.append(img);
-                tb.append(trImg);
+            var trImg = $('<tr/>');
+            var img = $('<img/>');
+            img.attr('src', 'assets/' + project.img);
+            img.addClass('project');
+            trImg.append(img);
+            tb.append(trImg);
 
-                var trName = $('<tr/>');
-                var divName = $('<div/>');
-                divName.addClass('info');
-                divName.html('<b>' + project.name + '</b>');
-                trName.append(divName);
-                tb.append(trName);
+            var trName = $('<tr/>');
+            var divName = $('<div/>');
+            divName.addClass('info');
+            divName.html('<b>' + project.name + '</b>');
+            trName.append(divName);
+            tb.append(trName);
 
-                var trPubs = $('<tr/>');
-                var divPubs = $('<div/>');
-                divPubs.addClass('info');
-                divPubs.html(project.pubs);
-                trPubs.append(divPubs);
-                tb.append(trPubs);
+            var trPubs = $('<tr/>');
+            var divPubs = $('<div/>');
+            divPubs.addClass('info');
+            divPubs.html(project.pubs);
+            trPubs.append(divPubs);
+            tb.append(trPubs);
 
-                div.append(tb);
+            div.append(tb);
 
-                $('.content').append(div);
-            }
+            $('.content').append(div);
         }
     } else if (page == 'aboutus') {
+        var tb = $('<table/>');
+        // tb.attr('border', 1);
+        var tr1 = $('<tr/>');
+        // tr1.addClass('aboutus');
 
+        var divMission = $('<div/>');
+        divMission.addClass('mission');
+        divMission.css('width', UCLAHCI.isMobile ? '80%' : '40%');
+        divMission.append('<h2>Minion Statement</h2>');
+        divMission.append('<p>' + UCLAHCI.data.aboutus[0].mission + '</p>');
+
+        var divPhotos = $('<div/>');
+        divPhotos.css('width', UCLAHCI.isMobile ? '80%' : '40%');
+        divPhotos.css('float', UCLAHCI.isMobile ? 'none' : 'right');
+        divPhotos.css('margin-right', UCLAHCI.isMobile ? 'auto' : '80px');
+        divPhotos.addClass('photos');
+        var divRow = $('<div/>');
+        divRow.addClass('row');
+        var numCols = 3;
+        var numPhotosCol = 3;
+        var photos = UCLAHCI.data.aboutus[0].photos;
+        var cntrPhotos = 0;
+        for (var i = 0; i < numCols; i++) {
+            var divCol = $('<div/>');
+            divCol.addClass('column');
+            for (var j = 0; j < numPhotosCol && cntrPhotos < photos.length; j++) {
+                var img = $('<img/>');
+                img.addClass('photo');
+                img.attr('src', 'assets/' + photos[cntrPhotos++]);
+                divCol.append(img);
+            }
+            divRow.append(divCol);
+        }
+        divPhotos.append(divRow);
+
+        tr1.append(divMission);
+        tr1.append(divPhotos);
+
+        var tr2 = $('<tr/>');
+
+        var divSponsors = $('<div/>');
+        divSponsors.addClass('sponsors');
+        divSponsors.css('width', UCLAHCI.isMobile ? '80%' : '40%');
+        var pSponsors = $('<p>We are generously supported by: </p>');
+        pSponsors.css('margin', '30px');
+        divSponsors.append(pSponsors);
+        var sponsors = UCLAHCI.data.aboutus[0].sponsors;
+        for (sponsor of sponsors) {
+            var a = $('<a/>');
+            a.attr('href', sponsor.url);
+            a.attr('target', '_blank');
+            var img = $('<img/>');
+            img.addClass('sponsor');
+            img.attr('src', 'assets/' + sponsor.img);
+            a.append(img);
+            divSponsors.append(a);
+        }
+
+        var divMap = $('<div/>');
+        divMap.addClass('map');
+        divMap.css('width', UCLAHCI.isMobile ? '80%' : '40%');
+        divMap.css('float', UCLAHCI.isMobile ? 'none' : 'right');
+        divMap.css('margin-right', UCLAHCI.isMobile ? 'auto' : '100px');
+        var mapCode = UCLAHCI.data.aboutus[0].map;
+        mapCode = mapCode.replace('width="500"', UCLAHCI.isMobile ? 'width="100%"' : 'width="500"')
+        divMap.append(mapCode);
+
+        tr2.append(divMap);
+        tr2.append(divSponsors);
+
+
+        tb.append(tr1);
+        tb.append('<tr><td><br/><br/></td></tr>')
+        tb.append(tr2);
+        $('.content').append(tb);
     }
 }
 
@@ -135,7 +220,8 @@ UCLAHCI.updateUI = function () {
     $('.topnav a').click(function (e) {
         $('.topnav a').removeClass('active');
         // $(e.target).addClass('active');
-        UCLAHCI.updatePage($(e.target).attr('id'));
+        UCLAHCI.page = $(e.target).attr('id');
+        UCLAHCI.updatePage();
     });
 }
 
