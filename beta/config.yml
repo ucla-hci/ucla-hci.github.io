@@ -1,3 +1,4 @@
 LOGOURL: "./assets/logo_v2.png"
 LOGOHEIGHT: 88px
-LANDINGPAGE: team
+LANDINGPAGE: projects
+YOUTUBE: <iframe width="_WIDTH_" height="_HEIGHT_" src="https://www.youtube.com/embed/_VIDEOID_" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

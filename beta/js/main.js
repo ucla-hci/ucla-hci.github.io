@@ -91,7 +91,6 @@ UCLAHCI.updatePage = function () {
                 divPage.popup({
                     transition: 'all 0.3s',
                     onclose: function () {
-                        $(document.body).css('overflow', 'scroll');
                         UCLAHCI.updateUrl('');
                         $(document.body).css('overflow', 'scroll')
                     }
@@ -132,6 +131,21 @@ UCLAHCI.updatePage = function () {
             var img = $('<img/>');
             img.attr('src', 'assets/' + project.img);
             img.addClass('project');
+            img.attr('id', project.name);
+            img.click(function (e) {
+                var divPage = $('<div class="page"></div>');
+                divPage.popup({
+                    transition: 'all 0.3s',
+                    onclose: function () {
+                        UCLAHCI.updateUrl('');
+                        $(document.body).css('overflow', 'scroll')
+                    }
+                });
+                divPage.popup('show');
+                var name = $(e.target).attr('id');
+                divPage.append(UCLAHCI.makeProjectPage(name));
+                $(document.body).css('overflow', 'hidden')
+            });
             trImg.append(img);
             tb.append(trImg);
 
@@ -286,6 +300,7 @@ UCLAHCI.makeMemberPage = function (name) {
             break;
         }
     }
+
     var divPage = $('<div/>');
     divPage.append('<h2>' + member.name + '</h2>')
     // divPage.html(member.name);
@@ -309,16 +324,16 @@ UCLAHCI.makeMemberPage = function (name) {
     divInfo.css('float', UCLAHCI.isMobile ? 'auto' : 'right');
     divInfo.append('<p>' + member.bio + '</p>');
 
-    if(member.projects != undefined && member.projects.length > 0) {
+    if (member.projects != undefined && member.projects.length > 0) {
         divInfo.append('<br/>Projects:');
 
         var divProjImgs = $('<div/>');
-        for(name of member.projects) {
+        for (name of member.projects) {
             var img = $('<img/>');
             img.addClass('project-small');
             var project;
-            for(p of UCLAHCI.data.projects) {
-                if(p.name == name) {
+            for (p of UCLAHCI.data.projects) {
+                if (p.name == name) {
                     project = p;
                     break;
                 }
@@ -330,9 +345,69 @@ UCLAHCI.makeMemberPage = function (name) {
 
     }
 
-
-
     divPage.append(divInfo);
+
+    return divPage;
+}
+
+UCLAHCI.makeProjectPage = function (name) {
+    var project;
+    for (p of UCLAHCI.data.projects) {
+        if (p.name == name) {
+            project = p;
+            break;
+        }
+    }
+
+    var divPage = $('<div/>');
+    divPage.append('<h2>' + project.name + '</h2>');
+
+    var pAbstract = $('<p>' + project.abstract + '</p><br/>');
+    divPage.append(pAbstract);
+
+    var widthMedia = window.innerWidth * 0.6;
+    var heightMedia = widthMedia * 315 / 560;
+    var codeVideo = UCLAHCI.config.YOUTUBE.replace('_VIDEOID_', project.video);
+    codeVideo = codeVideo.replace('_WIDTH_', widthMedia);
+    codeVideo = codeVideo.replace('_HEIGHT_', heightMedia);
+    var divVideo = $('<div/>');
+    divVideo.html(codeVideo);
+    divPage.append(divVideo);
+
+    divPage.append('<br/>');
+
+    if (project.album != undefined) {
+        var codeOnLoad = ''
+        var divPhotos = $('<iframe id="ifPhotos" onload="' + codeOnLoad +
+            '" style="position: relative; top: 0; left: 0; text-align: left; width: 100%; height: ' +
+            heightMedia * 1.2 + 'px;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=' + project.album + '&sort=0&by=album&theme=default_notextpanel&scale=fit&limit=100&skin0&skin=alexis&autoplay=false" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>')
+
+        divPage.append(divPhotos)
+    }
+
+    //
+    // pub & bib tex
+    //
+    var divPubBib = $('<div class="divpubbib"></div>')
+
+    var divPub = $('<div></div>');
+    if(UCLAHCI.isMobile) {
+        divPub.append($('<table style="table-layout:fixed;" class="tbpubinfo" width="100%" align="center" border="0" cellspacing="0" cellpadding="10px">' +
+        '<tr><td><a href="' + project.paperUrl + '" target="_blank">' + '<img src="' + 'assets/' + project.thumbnail + '"/></a></td></tr>'
+        + '<tr><td class="tdpubinfo">' + project.citation + '</td></tr>'
+        + '<tr><td><div class="div-bib">' + project.bibtex + '</div></td></tr></table>'));
+    } else {
+        divPub.append($('<table class="tbpubinfo" width="100%" align="center" border="0" cellspacing="0" cellpadding="10px">' +
+        '<tr><td><a href="' + project.paperUrl + '" target="_blank">' + '<img class="imgpaper" src="' + 'assets/' + project.thumbnail + '"/></a></td>'
+        + '<td class="tdpubinfo">' + project.citation + '</td></tr>'
+        + '<tr><td colspan=2><div class="div-bib">' + project.bibtex + '</div></td></tr></table>'));
+    }
+   
+
+    divPubBib.append(divPub)
+
+    divPage.append(divPubBib)
+    divPage.append($('<br>'));
 
     return divPage;
 }

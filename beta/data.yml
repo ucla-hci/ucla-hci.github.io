@@ -75,6 +75,13 @@ projects:
   - name: Fart Gun 1
     pubs: MinionCon 2019
     img: fart_gun.jpeg
+    abstract: The Fart Gun is a weapon created by Dr. Nefario. Fartgun2 Dr. Nefario, about to shoot El Macho with the fart gun. It looked like a metallic rifle with a canister on top holding blue liquid and an object like a shower head attached to the end. This distributes brown gas which can travel for about a meter and a half before dissipating. True to it's name, when fired, it sounds like someone farting, and it's gas is noxious and disgusting. Regardless, this weapon is used as a respectful salute tool, such as the 21-fart gun salute.
+    video: ZF2yPLkElfE
+    album: '72157690909634213'
+    citation: Ambrosin, M., Hosseini, H., Mandal, K., Conti, M. and Poovendran, R., 2016, October. Despicable me (ter): Anonymous and fine-grained metering data reporting with dishonest meters. In 2016 IEEE conference on communications and network security (CNS) (pp. 163-171). IEEE.
+    bibtex: @inproceedings{ambrosin2016despicable,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Despicable me (ter): Anonymous and fine-grained metering data reporting with dishonest meters},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Ambrosin, Moreno and Hosseini, Hossein and Mandal, Kalikinkar and Conti, Mauro and Poovendran, Radha},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={2016 IEEE conference on communications and network security (CNS)},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={163--171},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2016},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={IEEE}<br>}<br>
+    thumbnail: chi2014_duet_thumbnail.jpg
+    paperUrl: '.'
   - name: Fart Gun 2
     pubs: MinionCon 2019
     img: fart_gun.jpeg

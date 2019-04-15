@@ -150,6 +150,23 @@ img.sponsor {
   filter: grayscale(66%);
 }
 
+.tbpubinfo {
+  font-family: monospace;
+  font-size: small;
+  line-height: 20px;
+  background-color: #efefef;
+}
+
+.imgpaper {
+  width: 50px;
+  border: 1px solid grey;
+}
+
+.tdpubinfo {
+  text-align: justify;
+  vertical-align: top;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -185,8 +202,8 @@ div.map {
 div.page {
   background-color: #ffffff;
   line-height: 150%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
   padding-top: 2%;
   padding-bottom: 3%;
   max-width: 80%;
