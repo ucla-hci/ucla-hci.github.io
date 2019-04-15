@@ -82,21 +82,28 @@ img.project {
   filter: grayscale(66%);
 }
 
+img.project-small {
+  width: 110px;
+  filter: grayscale(66%);
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
 .project img:hover {
   filter: none;
 }
 
 div.team {
   display: inline-block;
-  margin-left: 45px;
-  margin-right: 75px;
+  margin-left: 60px;
+  margin-right: 60px;
   margin-top: 50px;
 }
 
 div.project {
   display: inline-block;
-  margin-left: 20px;
-  margin-right: 40px;
+  margin-left: 25px;
+  margin-right: 25px;
   margin-top: 50px;
 }
 
@@ -129,6 +136,10 @@ img.photo {
 }
 
 div.sponsors {
+  display: inline-block;
+}
+
+div.contact {
   display: inline-block;
 }
 
@@ -169,6 +180,16 @@ div.map {
   margin-left: 30px;
   margin-top: 50px;
   filter: grayscale(100%);
+}
+
+div.page {
+  background-color: #ffffff;
+  line-height: 150%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  max-width: 80%;
 }
 
 /* @media screen and (max-width: 600px) {

@@ -3,6 +3,14 @@ team:
     role: Assistant Professor
     expertise: Pirate Investigator
     img: xac18.jpg
+    affliation: Electrical & Computer Engineering
+    email: xac @ ucla.edu
+    bio: Xiang ‘Anthony' Chen is an Assistant Professor in UCLA's Department of Electrical & Computer Engineering. Anthony's area of expertise is Human-Computer Interaction (HCI). He received his Ph.D. in the School of Computer Science at Carnegie Mellon University in 2017 and was a recipient of the NSF CISE CRII Award and the Adobe Ph.D. Fellowship. His research is at the intersection of sensing & interaction techniques, intelligent user interfaces, and computational design & fabrication. Anthony’s work has won two best paper awards and one honorable mentioned in top-tier HCI conferences.
+    projects: 
+      - Fart Gun 1
+      - Fart Gun 2
+      - Fart Gun 3
+      - Fart Gun 4
   - name: Jiahao Li
     role: PhD Student
     expertise: Mechanical Engineer
@@ -64,49 +72,49 @@ team:
     expertise: sabotage
     img: minion.jpg
 projects:
-  - name: Fart Gun
+  - name: Fart Gun 1
     pubs: MinionCon 2019
     img: fart_gun.jpeg
-  - name: Fart Gun
+  - name: Fart Gun 2
     pubs: MinionCon 2019
     img: fart_gun.jpeg
-  - name: Fart Gun
+  - name: Fart Gun 3
     pubs: MinionCon 2019
     img: fart_gun.jpeg
-  - name: Fart Gun
+  - name: Fart Gun 4
     pubs: MinionCon 2019
     img: fart_gun.jpeg
-  - name: Fart Gun
+  - name: Fart Gun 5
     pubs: MinionCon 2019
     img: fart_gun.jpeg
-  - name: Fart Gun
+  - name: Fart Gun 6
     pubs: MinionCon 2019
     img: fart_gun.jpeg
-  - name: Fart Gun
+  - name: Fart Gun 7
     pubs: MinionCon 2019
     img: fart_gun.jpeg
-  - name: Fart Gun
+  - name: Fart Gun 8
     pubs: MinionCon 2019
     img: fart_gun.jpeg
-  - name: Fart Gun
+  - name: Fart Gun 9
     pubs: MinionCon 2019
     img: fart_gun.jpeg
-  - name: Fart Gun
+  - name: Fart Gun 10
     pubs: MinionCon 2019
     img: fart_gun.jpeg
-  - name: Fart Gun
+  - name: Fart Gun 11
     pubs: MinionCon 2019
     img: fart_gun.jpeg
-  - name: Fart Gun
+  - name: Fart Gun 12
     pubs: MinionCon 2019
     img: fart_gun.jpeg
-  - name: Fart Gun
+  - name: Fart Gun 13
     pubs: MinionCon 2019
     img: fart_gun.jpeg
-  - name: Fart Gun
+  - name: Fart Gun 14
     pubs: MinionCon 2019
     img: fart_gun.jpeg
-  - name: Fart Gun
+  - name: Fart Gun 15
     pubs: MinionCon 2019
     img: fart_gun.jpeg
 aboutus:
@@ -120,6 +128,10 @@ aboutus:
       - minions6.jpg
       - minions7.jpg
       - minions2.png
+    contact:
+      description: UCLA HCI Research is part of the Electrical & Computer Engineering Department in the Henry Samueli School of Engineering at UCLA.
+      address: <b>UCLA HCI Research</b><br/>1538 Boelter Hall, UCLA<br/>Los Angeles, CA 90095
+      email: Email: xac @ ucla.edu (Prof. Xiang 'Anthony' Chen)
     sponsors:
       - img: nsf.png
         url: https://nsf.gov/

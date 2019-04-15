@@ -23,11 +23,11 @@ UCLAHCI.checkResponsiveness = function () {
         $('.topnav a').css('display', 'block');
         $('.topnav a').css('text-align', 'right');
         $('.topnav a').css('padding-bottom', '0px');
-        
+
     } else if ($(window).width() < 1150) {
-        $('.topnav a:hover').css('color', '#2d68c4');
+        // $('.topnav a:hover').css('color', '#2d68c4');
     } else {
-        $('.topnav a:hover').css('color', '#2d68c4');
+        // $('.topnav a:hover').css('color', '#2d68c4');
     }
 }
 
@@ -85,6 +85,22 @@ UCLAHCI.updatePage = function () {
             var img = $('<img/>');
             img.attr('src', 'assets/' + member.img);
             img.addClass('team');
+            img.attr('id', member.name);
+            img.click(function (e) {
+                var divPage = $('<div class="page"></div>');
+                divPage.popup({
+                    transition: 'all 0.3s',
+                    onclose: function () {
+                        $(document.body).css('overflow', 'scroll');
+                        UCLAHCI.updateUrl('');
+                        $(document.body).css('overflow', 'scroll')
+                    }
+                });
+                divPage.popup('show');
+                var name = $(e.target).attr('id');
+                divPage.append(UCLAHCI.makeMemberPage(name));
+                $(document.body).css('overflow', 'hidden')
+            });
             trImg.append(img);
             tb.append(trImg);
 
@@ -178,12 +194,29 @@ UCLAHCI.updatePage = function () {
 
         var tr2 = $('<tr/>');
 
-        var divSponsors = $('<div/>');
-        divSponsors.addClass('sponsors');
-        divSponsors.css('width', UCLAHCI.isMobile ? '80%' : '40%');
+        var divInfo = $('<div/>');
+        divInfo.addClass('sponsors');
+        divInfo.css('width', UCLAHCI.isMobile ? '80%' : '40%');
+
+        var contact = UCLAHCI.data.aboutus[0].contact;
+
+        var pInfo = $('<p>' + contact.description + '</p>');
+        pInfo.css('margin', '30px');
+        divInfo.append(pInfo);
+
+        var pAddr = $('<p>' + contact.address + '</p>');
+        pAddr.css('margin', '30px');
+        divInfo.append(pAddr);
+
+        var pEmail = $('<p>' + contact.email + '</p>');
+        pEmail.css('margin', '30px');
+        divInfo.append(pEmail);
+
+        divInfo.append('<br/>');
+
         var pSponsors = $('<p>We are generously supported by: </p>');
         pSponsors.css('margin', '30px');
-        divSponsors.append(pSponsors);
+        divInfo.append(pSponsors);
         var sponsors = UCLAHCI.data.aboutus[0].sponsors;
         for (sponsor of sponsors) {
             var a = $('<a/>');
@@ -193,7 +226,7 @@ UCLAHCI.updatePage = function () {
             img.addClass('sponsor');
             img.attr('src', 'assets/' + sponsor.img);
             a.append(img);
-            divSponsors.append(a);
+            divInfo.append(a);
         }
 
         var divMap = $('<div/>');
@@ -206,11 +239,11 @@ UCLAHCI.updatePage = function () {
         divMap.append(mapCode);
 
         tr2.append(divMap);
-        tr2.append(divSponsors);
+        tr2.append(divInfo);
 
 
         tb.append(tr1);
-        tb.append('<tr><td><br/><br/></td></tr>')
+        tb.append('<tr><td><br/></td></tr>')
         tb.append(tr2);
         $('.content').append(tb);
     }
@@ -224,6 +257,7 @@ UCLAHCI.updateUI = function () {
         UCLAHCI.updatePage();
     });
 }
+
 
 //
 //  create a unique part of the url from the title
@@ -241,7 +275,64 @@ UCLAHCI.updateUrl = function (name) {
     var idxSharp = location.href.indexOf('#')
     var urlNew = location.href
     if (idxSharp >= 0) urlNew = urlNew.substring(0, idxSharp)
-    // if(name != undefined) 
     location.href = urlNew + '#' + UCLAHCI.createUrl(name)
-    // else location.href = urlNew
+}
+
+UCLAHCI.makeMemberPage = function (name) {
+    var member;
+    for (m of UCLAHCI.data.team) {
+        if (m.name == name) {
+            member = m;
+            break;
+        }
+    }
+    var divPage = $('<div/>');
+    divPage.append('<h2>' + member.name + '</h2>')
+    // divPage.html(member.name);
+
+    var divProfile = $('<div/>');
+    divProfile.css('width', UCLAHCI.isMobile ? '80%' : '30%');
+    divProfile.css('display', UCLAHCI.isMobile ? 'block' : 'inline-block');
+    var img = $('<img/>');
+    img.attr('src', 'assets/' + member.img);
+    img.addClass('team');
+    divProfile.append(img);
+
+    divProfile.append('<div>' + member.role + '</div>');
+    divProfile.append('<div>' + member.affliation + '</div>');
+    divProfile.append('<div>' + member.email + '</div>');
+
+    divPage.append(divProfile);
+
+    var divInfo = $('<div/>');
+    divInfo.css('width', UCLAHCI.isMobile ? '80%' : '70%');
+    divInfo.css('float', UCLAHCI.isMobile ? 'auto' : 'right');
+    divInfo.append('<p>' + member.bio + '</p>');
+
+    if(member.projects != undefined && member.projects.length > 0) {
+        divInfo.append('<br/>Projects:');
+
+        var divProjImgs = $('<div/>');
+        for(name of member.projects) {
+            var img = $('<img/>');
+            img.addClass('project-small');
+            var project;
+            for(p of UCLAHCI.data.projects) {
+                if(p.name == name) {
+                    project = p;
+                    break;
+                }
+            }
+            img.attr('src', 'assets/' + project.img);
+            divProjImgs.append(img);
+        }
+        divInfo.append(divProjImgs);
+
+    }
+
+
+
+    divPage.append(divInfo);
+
+    return divPage;
 }
