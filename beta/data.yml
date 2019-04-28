@@ -70,22 +70,14 @@ team:
 alumni:
   - name: Ben Wagstaff
     role: ECE Undergrad
-    expertise: sabotage
+    # expertise: sabotage
     img: Ben-s.JPG
     imgalt: Ben-f.JPG
   - name: Joseph Lu
     role: CS Undergrad
-    expertise: sabotage
+    # expertise: sabotage
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
-  - name: Dave
-    role: Minion
-    expertise: sabotage
-    img: minion.JPG
-  - name: Dave
-    role: Minion
-    expertise: sabotage
-    img: minion.JPG
 projects:
   - name: Fart Gun 1
     pubs: MinionCon 2019

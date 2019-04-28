@@ -39,6 +39,10 @@ body {
   cursor: pointer;
 }
 
+h2 {
+  padding-left: 64px;
+}
+
 .topnav p {
   display: inline-block;
   vertical-align: bottom;
