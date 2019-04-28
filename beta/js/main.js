@@ -84,6 +84,18 @@ UCLAHCI.updatePage = function () {
             var trImg = $('<tr/>');
             var img = $('<img/>');
             img.attr('src', 'assets/' + member.img);
+            img.attr('img', member.img);
+            img.attr('alt', member.imgalt);
+
+            img.mouseenter(function (e) {
+                $(e.target).attr('src', 'assets/' + $(e.target).attr('alt') || $img.attr('img'));
+                // $(e.target).addClass('team');
+            });
+
+            img.mouseleave(function (e) {
+                $(e.target).attr('src', 'assets/' + $(e.target).attr('img'));
+            });
+
             img.addClass('team');
             img.attr('id', member.name);
             img.click(function (e) {
@@ -310,6 +322,7 @@ UCLAHCI.makeMemberPage = function (name) {
     divProfile.css('display', UCLAHCI.isMobile ? 'block' : 'inline-block');
     var img = $('<img/>');
     img.attr('src', 'assets/' + member.img);
+
     img.addClass('team');
     divProfile.append(img);
 
@@ -391,18 +404,18 @@ UCLAHCI.makeProjectPage = function (name) {
     var divPubBib = $('<div class="divpubbib"></div>')
 
     var divPub = $('<div></div>');
-    if(UCLAHCI.isMobile) {
+    if (UCLAHCI.isMobile) {
         divPub.append($('<table style="table-layout:fixed;" class="tbpubinfo" width="100%" align="center" border="0" cellspacing="0" cellpadding="10px">' +
-        '<tr><td><a href="' + project.paperUrl + '" target="_blank">' + '<img src="' + 'assets/' + project.thumbnail + '"/></a></td></tr>'
-        + '<tr><td class="tdpubinfo">' + project.citation + '</td></tr>'
-        + '<tr><td><div class="div-bib">' + project.bibtex + '</div></td></tr></table>'));
+            '<tr><td><a href="' + project.paperUrl + '" target="_blank">' + '<img src="' + 'assets/' + project.thumbnail + '"/></a></td></tr>'
+            + '<tr><td class="tdpubinfo">' + project.citation + '</td></tr>'
+            + '<tr><td><div class="div-bib">' + project.bibtex + '</div></td></tr></table>'));
     } else {
         divPub.append($('<table class="tbpubinfo" width="100%" align="center" border="0" cellspacing="0" cellpadding="10px">' +
-        '<tr><td><a href="' + project.paperUrl + '" target="_blank">' + '<img class="imgpaper" src="' + 'assets/' + project.thumbnail + '"/></a></td>'
-        + '<td class="tdpubinfo">' + project.citation + '</td></tr>'
-        + '<tr><td colspan=2><div class="div-bib">' + project.bibtex + '</div></td></tr></table>'));
+            '<tr><td><a href="' + project.paperUrl + '" target="_blank">' + '<img class="imgpaper" src="' + 'assets/' + project.thumbnail + '"/></a></td>'
+            + '<td class="tdpubinfo">' + project.citation + '</td></tr>'
+            + '<tr><td colspan=2><div class="div-bib">' + project.bibtex + '</div></td></tr></table>'));
     }
-   
+
 
     divPubBib.append(divPub)
 

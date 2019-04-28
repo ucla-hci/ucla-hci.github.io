@@ -2,7 +2,8 @@ team:
   - name: Xiang 'Anthony' Chen
     role: Assistant Professor
     expertise: Pirate Investigator
-    img: xac18.jpg
+    img: Anthony-s.jpg
+    imgalt: Anthony-f.jpg
     affliation: Electrical & Computer Engineering
     email: xac @ ucla.edu
     bio: Xiang ‘Anthony' Chen is an Assistant Professor in UCLA's Department of Electrical & Computer Engineering. Anthony's area of expertise is Human-Computer Interaction (HCI). He received his Ph.D. in the School of Computer Science at Carnegie Mellon University in 2017 and was a recipient of the NSF CISE CRII Award and the Adobe Ph.D. Fellowship. His research is at the intersection of sensing & interaction techniques, intelligent user interfaces, and computational design & fabrication. Anthony’s work has won two best paper awards and one honorable mentioned in top-tier HCI conferences.
@@ -12,57 +13,71 @@ team:
       - Fart Gun 3
       - Fart Gun 4
   - name: Jiahao Li
-    role: PhD Student
+    role: MAE PhD
     expertise: Mechanical Engineer
-    img: minion.jpg
+    img: Nick-s.jpg
+    imgalt: Nick-f.jpg
   - name: Yao Xie
-    role: PhD Student
+    role: ECE PhD
     expertise: AI Explainer
-    img: minion.jpg
+    img: Yao-s.jpg
+    imgalt: Yao-f.jpg
   - name: Hongyan Gu
-    role: PhD Student
+    role: ECE PhD
     expertise: Deep Learner
-    img: minion.jpg
+    img: Hongyan-s.jpg
+    imgalt: Hongyan-f.jpg
   - name: Ruolin Wang
-    role: PhD Student
+    role: ECE PhD
     expertise: sabotage
     img: minion.jpg
-  - name: Dave
-    role: Minion
+    imgalt: purple.jpeg
+  - name: Noyan
+    role: ECE PhD
     expertise: sabotage
-    img: minion.jpg
-  - name: Dave
-    role: Minion
+    img: Noyan-s.jpg
+    imgalt: Noyan-f.jpg
+  - name: Zhi Li
+    role: MAE PhD
     expertise: sabotage
-    img: minion.jpg
-  - name: Dave
-    role: Minion
+    img: Zhi-s.JPG
+    imgalt: Zhi-f.JPG
+  - name: Carlo Rebanal
+    role: ECE MS
     expertise: sabotage
-    img: minion.jpg
-  - name: Dave
-    role: Minion
+    img: Carlo-s.jpg
+    imgalt: Carlo-f.jpg
+  - name: Ximeng Liu
+    role: ECE MS
     expertise: sabotage
-    img: minion.jpg
-  - name: Dave
-    role: Minion
+    img: Simon-s.jpg
+    imgalt: Simon-f.jpg
+  - name: Amirali Omidfar
+    role: ECE MS
     expertise: sabotage
-    img: minion.jpg
-  - name: Dave
-    role: Minion
+    img: Amir-s.jpg
+    imgalt: Amir-f.jpg
+  - name: Jingbin Huang
+    role: ECE Undergrad
     expertise: sabotage
-    img: minion.jpg
-  - name: Dave
-    role: Minion
+    img: Jingbin-s.jpg
+    imgalt: Jingbin-f.jpg
+  - name: Parth Agrawal
+    role: ECE Undergrad
     expertise: sabotage
-    img: minion.jpg
-  - name: Dave
-    role: Minion
+    img: Parth-s.jpg
+    imgalt: Parth-f.jpg
+alumni:
+  - name: Ben Wagstaff
+    role: ECE Undergrad
     expertise: sabotage
-    img: minion.jpg
-  - name: Dave
-    role: Minion
+    img: Ben-s.jpg
+    imgalt: Ben-f.jpg
+  - name: Joseph Lu
+    role: CS Undergrad
     expertise: sabotage
-    img: minion.jpg
+    img: Joseph-s.jpg
+    imgalt: Joseph-f.jpg
   - name: Dave
     role: Minion
     expertise: sabotage

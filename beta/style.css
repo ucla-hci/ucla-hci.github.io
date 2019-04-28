@@ -70,12 +70,12 @@ img.team {
   width: 160px;
   border-radius: 50%;
   margin-bottom: 5px;
-  filter: grayscale(66%);
+  filter: grayscale(33%);
 }
 
-.team img:hover {
+/* .team img:hover {
   filter: none;
-}
+} */
 
 img.project {
   width: 220px;
