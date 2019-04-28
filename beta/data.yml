@@ -2,8 +2,8 @@ team:
   - name: Xiang 'Anthony' Chen
     role: Assistant Professor
     expertise: Pirate Investigator
-    img: Anthony-s.jpg
-    imgalt: Anthony-f.jpg
+    img: Anthony-s.JPG
+    imgalt: Anthony-f.JPG
     affliation: Electrical & Computer Engineering
     email: xac @ ucla.edu
     bio: Xiang ‘Anthony' Chen is an Assistant Professor in UCLA's Department of Electrical & Computer Engineering. Anthony's area of expertise is Human-Computer Interaction (HCI). He received his Ph.D. in the School of Computer Science at Carnegie Mellon University in 2017 and was a recipient of the NSF CISE CRII Award and the Adobe Ph.D. Fellowship. His research is at the intersection of sensing & interaction techniques, intelligent user interfaces, and computational design & fabrication. Anthony’s work has won two best paper awards and one honorable mentioned in top-tier HCI conferences.
@@ -15,28 +15,28 @@ team:
   - name: Jiahao Li
     role: MAE PhD
     expertise: Mechanical Engineer
-    img: Nick-s.jpg
-    imgalt: Nick-f.jpg
+    img: Nick-s.JPG
+    imgalt: Nick-f.JPG
   - name: Yao Xie
     role: ECE PhD
     expertise: AI Explainer
-    img: Yao-s.jpg
-    imgalt: Yao-f.jpg
+    img: Yao-s.JPG
+    imgalt: Yao-f.JPG
   - name: Hongyan Gu
     role: ECE PhD
     expertise: Deep Learner
-    img: Hongyan-s.jpg
-    imgalt: Hongyan-f.jpg
+    img: Hongyan-s.JPG
+    imgalt: Hongyan-f.JPG
   - name: Ruolin Wang
     role: ECE PhD
     expertise: sabotage
-    img: minion.jpg
+    img: minion.JPG
     imgalt: purple.jpeg
   - name: Noyan
     role: ECE PhD
     expertise: sabotage
-    img: Noyan-s.jpg
-    imgalt: Noyan-f.jpg
+    img: Noyan-s.JPG
+    imgalt: Noyan-f.JPG
   - name: Zhi Li
     role: MAE PhD
     expertise: sabotage
@@ -45,47 +45,47 @@ team:
   - name: Carlo Rebanal
     role: ECE MS
     expertise: sabotage
-    img: Carlo-s.jpg
-    imgalt: Carlo-f.jpg
+    img: Carlo-s.JPG
+    imgalt: Carlo-f.JPG
   - name: Ximeng Liu
     role: ECE MS
     expertise: sabotage
-    img: Simon-s.jpg
-    imgalt: Simon-f.jpg
+    img: Simon-s.JPG
+    imgalt: Simon-f.JPG
   - name: Amirali Omidfar
     role: ECE MS
     expertise: sabotage
-    img: Amir-s.jpg
-    imgalt: Amir-f.jpg
+    img: Amir-s.JPG
+    imgalt: Amir-f.JPG
   - name: Jingbin Huang
     role: ECE Undergrad
     expertise: sabotage
-    img: Jingbin-s.jpg
-    imgalt: Jingbin-f.jpg
+    img: Jingbin-s.JPG
+    imgalt: Jingbin-f.JPG
   - name: Parth Agrawal
     role: ECE Undergrad
     expertise: sabotage
-    img: Parth-s.jpg
-    imgalt: Parth-f.jpg
+    img: Parth-s.JPG
+    imgalt: Parth-f.JPG
 alumni:
   - name: Ben Wagstaff
     role: ECE Undergrad
     expertise: sabotage
-    img: Ben-s.jpg
-    imgalt: Ben-f.jpg
+    img: Ben-s.JPG
+    imgalt: Ben-f.JPG
   - name: Joseph Lu
     role: CS Undergrad
     expertise: sabotage
-    img: Joseph-s.jpg
-    imgalt: Joseph-f.jpg
+    img: Joseph-s.JPG
+    imgalt: Joseph-f.JPG
   - name: Dave
     role: Minion
     expertise: sabotage
-    img: minion.jpg
+    img: minion.JPG
   - name: Dave
     role: Minion
     expertise: sabotage
-    img: minion.jpg
+    img: minion.JPG
 projects:
   - name: Fart Gun 1
     pubs: MinionCon 2019
@@ -95,7 +95,7 @@ projects:
     album: '72157690909634213'
     citation: Ambrosin, M., Hosseini, H., Mandal, K., Conti, M. and Poovendran, R., 2016, October. Despicable me (ter): Anonymous and fine-grained metering data reporting with dishonest meters. In 2016 IEEE conference on communications and network security (CNS) (pp. 163-171). IEEE.
     bibtex: @inproceedings{ambrosin2016despicable,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Despicable me (ter): Anonymous and fine-grained metering data reporting with dishonest meters},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Ambrosin, Moreno and Hosseini, Hossein and Mandal, Kalikinkar and Conti, Mauro and Poovendran, Radha},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={2016 IEEE conference on communications and network security (CNS)},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={163--171},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2016},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={IEEE}<br>}<br>
-    thumbnail: chi2014_duet_thumbnail.jpg
+    thumbnail: chi2014_duet_thumbnail.JPG
     paperUrl: '.'
   - name: Fart Gun 2
     pubs: MinionCon 2019
@@ -142,13 +142,13 @@ projects:
 aboutus:
   - mission: Minions /ˈmɪnjənz/ are fictional yellow creatures that appear in the Despicable Me franchise, which started with Despicable Me (2010), and are characterized by their childlike behavior and unique language, which is almost intelligible at times. They are also the official mascots of Illumination, a division of Universal Pictures, which produces the films. Following Comcast's purchase of NBCUniversal, they have been described as being a corporate icon for Universal and Comcast, on par with Disney's Mickey Mouse and WarnerMedia's Bugs Bunny.[1]
     photos: 
-      - minions1.jpg
-      - minions8.jpg
-      - minions3.jpg
-      - minions4.jpg
-      - minions5.jpg
-      - minions6.jpg
-      - minions7.jpg
+      - minions1.JPG
+      - minions8.JPG
+      - minions3.JPG
+      - minions4.JPG
+      - minions5.JPG
+      - minions6.JPG
+      - minions7.JPG
       - minions2.png
     contact:
       description: UCLA HCI Research is part of the Electrical & Computer Engineering Department in the Henry Samueli School of Engineering at UCLA.
