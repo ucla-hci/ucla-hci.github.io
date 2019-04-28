@@ -246,7 +246,7 @@ UCLAHCI.showTeam = function (team) {
 
         img.addClass('team');
         img.attr('id', member.name);
-        if (member.projects.length > 0) {
+        if (member.projects != undefined && member.projects.length > 0) {
             img.click(function (e) {
                 var divPage = $('<div class="page"></div>');
                 divPage.popup({
