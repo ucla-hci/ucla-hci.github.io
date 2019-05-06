@@ -37,11 +37,6 @@ team:
     expertise: sabotage
     img: Noyan-s.JPG
     imgalt: Noyan-f.JPG
-  - name: Zhi Li
-    role: MAE PhD
-    expertise: sabotage
-    img: Zhi-s.JPG
-    imgalt: Zhi-f.JPG
   - name: Carlo Rebanal
     role: ECE MS
     expertise: sabotage
@@ -57,6 +52,11 @@ team:
     expertise: sabotage
     img: Amir-s.JPG
     imgalt: Amir-f.JPG
+  - name: Nicolas Zhang
+    role: ECE MS
+    expertise: sabotage
+    img: Nicky-s.JPG
+    imgalt: Nicky-f.JPG
   - name: Jingbin Huang
     role: ECE Undergrad
     expertise: sabotage
@@ -67,6 +67,17 @@ team:
     expertise: sabotage
     img: Parth-s.JPG
     imgalt: Parth-f.JPG
+collaborators:
+  - name: Zhi Li
+    role: MAE PhD
+    expertise: sabotage
+    img: Zhi-s.JPG
+    imgalt: Zhi-f.JPG
+  - name: Yunchu Zhang
+    role: MAE PhD
+    expertise: sabotage
+    img: Yunchu-s.JPG
+    imgalt: Yunchu-f.JPG
 alumni:
   - name: Ben Wagstaff
     role: ECE Undergrad
@@ -134,13 +145,13 @@ projects:
 aboutus:
   - mission: Minions /ˈmɪnjənz/ are fictional yellow creatures that appear in the Despicable Me franchise, which started with Despicable Me (2010), and are characterized by their childlike behavior and unique language, which is almost intelligible at times. They are also the official mascots of Illumination, a division of Universal Pictures, which produces the films. Following Comcast's purchase of NBCUniversal, they have been described as being a corporate icon for Universal and Comcast, on par with Disney's Mickey Mouse and WarnerMedia's Bugs Bunny.[1]
     photos: 
-      - minions1.JPG
-      - minions8.JPG
-      - minions3.JPG
-      - minions4.JPG
-      - minions5.JPG
-      - minions6.JPG
-      - minions7.JPG
+      - minions1.jpg
+      - minions8.jpg
+      - minions3.jpg
+      - minions4.jpg
+      - minions5.jpg
+      - minions6.jpg
+      - minions7.jpg
       - minions2.png
     contact:
       description: UCLA HCI Research is part of the Electrical & Computer Engineering Department in the Henry Samueli School of Engineering at UCLA.
