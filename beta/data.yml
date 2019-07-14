@@ -67,17 +67,17 @@ team:
     expertise: sabotage
     img: Parth-s.JPG
     imgalt: Parth-f.JPG
-collaborators:
-  - name: Zhi Li
-    role: MAE PhD
-    expertise: sabotage
-    img: Zhi-s.JPG
-    imgalt: Zhi-f.JPG
-  - name: Yunchu Zhang
-    role: MAE PhD
-    expertise: sabotage
-    img: Yunchu-s.JPG
-    imgalt: Yunchu-f.JPG
+# collaborators:
+#   - name: Zhi Li
+#     role: MAE PhD
+#     expertise: sabotage
+#     img: Zhi-s.JPG
+#     imgalt: Zhi-f.JPG
+#   - name: Yunchu Zhang
+#     role: MAE PhD
+#     expertise: sabotage
+#     img: Yunchu-s.JPG
+#     imgalt: Yunchu-f.JPG
 alumni:
   - name: Ben Wagstaff
     role: ECE Undergrad
