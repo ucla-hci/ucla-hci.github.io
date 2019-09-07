@@ -90,7 +90,7 @@ alumni:
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
-  - name: 'Robiot'
+  - name: 'robiot'
     title: 'Robiot: A Design Tool for Actuating Everyday Object with Automatically Generated 3D Printable Mechanism'
     authors:
       - 'Jiahao Li, UCLA HCI Research'

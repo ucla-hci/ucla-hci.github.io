@@ -32,6 +32,8 @@ UCLAHCI.checkResponsiveness = function () {
 }
 
 $(document).ready(function () {
+    UCLAHCI.htPages = {}
+
     YAML.load('config.yml', function (result) {
         UCLAHCI.config = result;
 
@@ -41,20 +43,24 @@ $(document).ready(function () {
             UCLAHCI.data = data;
             // console.log(UCLAHCI.data);
 
-            UCLAHCI.updateUI();
-            UCLAHCI.updateUrl(UCLAHCI.config.LANDINGPAGE);
+            // UCLAHCI.updateUI();
+            // UCLAHCI.updateUrl(UCLAHCI.config.LANDINGPAGE);
 
-            var page;
-            var idxSharp = location.href.indexOf('#');
-            if (idxSharp >= 0) page = location.href.substring(idxSharp + 1);
-            var idxDot = page.indexOf('.');
-
-            if (page != undefined) {
+            var page = UCLAHCI.config.LANDINGPAGE;
+            var url
+            var idxSharp = location.href.indexOf('#')
+            if (idxSharp >= 0) url = location.href.substring(idxSharp + 1)
+            idxDash = url.indexOf('-')
+            if (idxDash >= 0) {
+                page = url.substring(0, idxDash)
                 UCLAHCI.page = page;
                 UCLAHCI.updatePage();
-                if (idxDot >= 0) {
-
-                }
+                subPage = url.substring(idxDash + 1);
+            }
+            var subPageToLoad
+            if (subPage != undefined) {
+                var idImgToClick = UCLAHCI.htPages[subPage]
+                $('#' + idImgToClick).trigger('click')
             }
         });
     });
@@ -89,10 +95,13 @@ UCLAHCI.updatePage = function () {
             var tb = $('<table/>');
 
             var trImg = $('<tr/>');
+            var url = UCLAHCI.createUrl(project.name).replace(/-/g, '_')
+            var idImg = url
+            UCLAHCI.htPages[url] = idImg
             var img = $('<img/>');
+            img.attr('id', idImg);
             img.attr('src', 'assets/' + project.img);
             img.addClass('project');
-            img.attr('id', project.name);
             img.click(function (e) {
                 var divPage = $('<div class="page"></div>');
                 divPage.popup({
@@ -105,8 +114,11 @@ UCLAHCI.updatePage = function () {
                 divPage.popup('show');
                 var name = $(e.target).attr('id');
                 divPage.append(UCLAHCI.makeProjectPage(name));
+                var url = UCLAHCI.createUrl(name).replace(/-/g, '_')
+                UCLAHCI.updateUrl('projects-' + url)
                 $(document.body).css('overflow', 'hidden')
             });
+
             trImg.append(img);
             tb.append(trImg);
 
@@ -442,7 +454,7 @@ UCLAHCI.makeProjectPage = function (name) {
         divPubBib.append(divPub)
         divPage.append(divPubBib)
     }
-    
+
     divPage.append($('<br>'));
 
     return divPage;
