@@ -40,7 +40,8 @@ body {
 }
 
 h2 {
-  padding-left: 64px;
+  /* padding-left: 64px; */
+  line-height: 125%;
 }
 
 .topnav p {
@@ -237,3 +238,7 @@ div.page {
     text-align: right;
   }
 } */
+
+.authors{
+  font-style: italic
+}

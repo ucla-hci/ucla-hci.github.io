@@ -386,16 +386,24 @@ UCLAHCI.makeProjectPage = function (name) {
     }
 
     var divPage = $('<div/>');
-    divPage.append('<h2>' + project.name + '</h2>');
+    divPage.append('<h2>' + project.title + '</h2>');
+
+    if (project.authors != undefined) {
+        var divAuthors = $('<div/>');
+        divAuthors.addClass('authors');
+        for (author of project.authors) {
+            divAuthors.append(author + '<br/>');
+        }
+        divPage.append(divAuthors);
+    }
 
     var pAbstract = $('<p>' + project.abstract + '</p><br/>');
     divPage.append(pAbstract);
 
     var widthMedia = window.innerWidth * 0.6;
     var heightMedia = widthMedia * 315 / 560;
-    var codeVideo = UCLAHCI.config.YOUTUBE.replace('_VIDEOID_', project.video);
-    codeVideo = codeVideo.replace('_WIDTH_', widthMedia);
-    codeVideo = codeVideo.replace('_HEIGHT_', heightMedia);
+    project.videoSite = project.videoSite | 'youtube';
+    var codeVideo = UCLAHCI.getVideoEmbedCode(project.videoSite, project.video, widthMedia, heightMedia);
     var divVideo = $('<div/>');
     divVideo.html(codeVideo);
     divPage.append(divVideo);
@@ -414,26 +422,35 @@ UCLAHCI.makeProjectPage = function (name) {
     //
     // pub & bib tex
     //
-    var divPubBib = $('<div class="divpubbib"></div>')
 
-    var divPub = $('<div></div>');
-    if (UCLAHCI.isMobile) {
-        divPub.append($('<table style="table-layout:fixed;" class="tbpubinfo" width="100%" align="center" border="0" cellspacing="0" cellpadding="10px">' +
-            '<tr><td><a href="' + project.paperUrl + '" target="_blank">' + '<img src="' + 'assets/' + project.thumbnail + '"/></a></td></tr>'
-            + '<tr><td class="tdpubinfo">' + project.citation + '</td></tr>'
-            + '<tr><td><div class="div-bib">' + project.bibtex + '</div></td></tr></table>'));
-    } else {
-        divPub.append($('<table class="tbpubinfo" width="100%" align="center" border="0" cellspacing="0" cellpadding="10px">' +
-            '<tr><td><a href="' + project.paperUrl + '" target="_blank">' + '<img class="imgpaper" src="' + 'assets/' + project.thumbnail + '"/></a></td>'
-            + '<td class="tdpubinfo">' + project.citation + '</td></tr>'
-            + '<tr><td colspan=2><div class="div-bib">' + project.bibtex + '</div></td></tr></table>'));
+    if (project.citation != undefined && project.bibtex != undefined) {
+        var divPubBib = $('<div class="divpubbib"></div>')
+
+        var divPub = $('<div></div>');
+        if (UCLAHCI.isMobile) {
+            divPub.append($('<table style="table-layout:fixed;" class="tbpubinfo" width="100%" align="center" border="0" cellspacing="0" cellpadding="10px">' +
+                '<tr><td><a href="' + project.paperUrl + '" target="_blank">' + '<img src="' + 'assets/' + project.thumbnail + '"/></a></td></tr>' +
+                '<tr><td class="tdpubinfo">' + project.citation + '</td></tr>' +
+                '<tr><td><div class="div-bib">' + project.bibtex + '</div></td></tr></table>'));
+        } else {
+            divPub.append($('<table class="tbpubinfo" width="100%" align="center" border="0" cellspacing="0" cellpadding="10px">' +
+                '<tr><td><a href="' + project.paperUrl + '" target="_blank">' + '<img class="imgpaper" src="' + 'assets/' + project.thumbnail + '"/></a></td>' +
+                '<td class="tdpubinfo">' + project.citation + '</td></tr>' +
+                '<tr><td colspan=2><div class="div-bib">' + project.bibtex + '</div></td></tr></table>'));
+        }
+
+        divPubBib.append(divPub)
+        divPage.append(divPubBib)
     }
-
-
-    divPubBib.append(divPub)
-
-    divPage.append(divPubBib)
+    
     divPage.append($('<br>'));
 
     return divPage;
+}
+
+UCLAHCI.getVideoEmbedCode = function (type, vid, w, h, iframeId) {
+    var srcCode = type == 'youtube' ? 'https://www.youtube.com/embed/' + vid + '?rel=0' :
+        'https://player.vimeo.com/video/' + vid
+    // console.info(iframeId)
+    return '<iframe id="' + iframeId + '" src="' + srcCode + '" width="' + w + '" height="' + h + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
 }
