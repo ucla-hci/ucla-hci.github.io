@@ -43,39 +43,33 @@ $(document).ready(function () {
             UCLAHCI.data = data;
             // console.log(UCLAHCI.data);
 
-            // UCLAHCI.updateUI();
+            UCLAHCI.updateUI();
             // UCLAHCI.updateUrl(UCLAHCI.config.LANDINGPAGE);
 
-            var page = UCLAHCI.config.LANDINGPAGE;
+            UCLAHCI.page = UCLAHCI.config.LANDINGPAGE;
             var url
             var idxSharp = location.href.indexOf('#')
-            if (idxSharp >= 0) url = location.href.substring(idxSharp + 1)
-            idxDash = url.indexOf('-')
-            if (idxDash >= 0) {
-                page = url.substring(0, idxDash)
-                UCLAHCI.page = page;
+            if (idxSharp >= 0) {
+                url = location.href.substring(idxSharp + 1)
+                idxDash = url.indexOf('-')
+                if (idxDash >= 0) {
+                    UCLAHCI.page = url.substring(0, idxDash)
+                    UCLAHCI.updatePage();
+                    subPage = url.substring(idxDash + 1);
+
+                    if (subPage != undefined) {
+                        var idImgToClick = UCLAHCI.htPages[subPage]
+                        $('#' + idImgToClick).trigger('click')
+                    }
+                } else UCLAHCI.updatePage();
+
+            } else {
                 UCLAHCI.updatePage();
-                subPage = url.substring(idxDash + 1);
-            }
-            var subPageToLoad
-            if (subPage != undefined) {
-                var idImgToClick = UCLAHCI.htPages[subPage]
-                $('#' + idImgToClick).trigger('click')
             }
         });
     });
 });
 
-function showHamMenu() {
-    // var topnav = $('#topnav');
-    // if(topnav.hasClass('topnav')) {
-    //     topnav.removeClass('topnav');
-    //     topnav.addClass('topnav responsive');
-    // } else {
-    //     topnav.removeClass('topnav responsive');
-    //     topnav.addClass('topnav');
-    // }
-}
 
 UCLAHCI.updatePage = function () {
     var page = UCLAHCI.page;
@@ -83,8 +77,8 @@ UCLAHCI.updatePage = function () {
     $('.content').empty();
     if (page == 'team') {
         $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.team));
-        $('.content').append($('<br/><br/><h2>Collaborators</h2>'))
-        $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.collaborators));
+        // $('.content').append($('<br/><br/><h2>Collaborators</h2>'))
+        // $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.collaborators));
         $('.content').append($('<br/><br/><h2>Alumni</h2>'))
         $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.alumni));
 
@@ -140,7 +134,7 @@ UCLAHCI.updatePage = function () {
 
             $('.content').append(div);
         }
-    } else if (page == 'aboutus') {
+    } else {
         var tb = $('<table/>');
         // tb.attr('border', 1);
         var tr1 = $('<tr/>');
@@ -391,7 +385,7 @@ UCLAHCI.makeMemberPage = function (name) {
 UCLAHCI.makeProjectPage = function (name) {
     var project;
     for (p of UCLAHCI.data.projects) {
-        if (p.name == name) {
+        if (p.name.toLowerCase() == name) {
             project = p;
             break;
         }

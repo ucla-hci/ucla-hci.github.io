@@ -85,6 +85,7 @@ img.team {
 img.project {
   width: 220px;
   filter: grayscale(66%);
+  cursor: pointer;
 }
 
 img.project-small {
