@@ -120,9 +120,19 @@ projects:
     # citation: Ambrosin, M., Hosseini, H., Mandal, K., Conti, M. and Poovendran, R., 2016, October. Despicable me (ter): Anonymous and fine-grained metering data reporting with dishonest meters. In 2016 IEEE conference on communications and network security (CNS) (pp. 163-171). IEEE.
     # bibtex: @inproceedings{ambrosin2016despicable,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Despicable me (ter): Anonymous and fine-grained metering data reporting with dishonest meters},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Ambrosin, Moreno and Hosseini, Hossein and Mandal, Kalikinkar and Conti, Mauro and Poovendran, Radha},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={2016 IEEE conference on communications and network security (CNS)},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={163--171},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2016},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={IEEE}<br>}<br>
     paperUrl: '.'
-  - name: Fart Gun 2
-    pubs: MinionCon 2019
-    img: fart_gun.jpeg
+  - name: Minuet
+    pubs: SUI 2019
+    authors:
+      - 'Runchang Kang & Anhong Guo, Carnegie Mellon University'
+      - 'Gierard Laput, Apple'
+      - 'Yang Li, Google'
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+    img: t_minuet.jpg
+    title: 'Minuet: Multimodal Interaction with an Internet of Things'
+    abstract: A large number of Internet-of-Things (IoT) devices will soon populate our physical environments. Yet, IoT devices' reliance on mobile applications and voice-only assistants as the primary interface limits their scalability and expressiveness. Building off of the classic 'Put-That-There' system, we contribute an exploration of the design space of voice + gesture interaction with spatially-distributed IoT devices. Our design space decomposes users' IoT commands into two components---selection and interaction. We articulate how the permutations of voice and freehand gesture for these two components can complementarily afford interaction possibilities that go beyond current approaches. We instantiate this design space as a proof-of-concept sensing platform and demonstrate a series of novel IoT interaction scenarios, such as making 'dumb' objects smart, commanding robotic appliances, and resolving ambiguous pointing at cluttered devices.
+    videoSite: vimeo
+    video: 358550776
+    album: '72157710744632177'
   - name: Fart Gun 3
     pubs: MinionCon 2019
     img: fart_gun.jpeg
@@ -163,20 +173,24 @@ projects:
     pubs: MinionCon 2019
     img: fart_gun.jpeg
 aboutus:
-  - mission: Minions /ˈmɪnjənz/ are fictional yellow creatures that appear in the Despicable Me franchise, which started with Despicable Me (2010), and are characterized by their childlike behavior and unique language, which is almost intelligible at times. They are also the official mascots of Illumination, a division of Universal Pictures, which produces the films. Following Comcast's purchase of NBCUniversal, they have been described as being a corporate icon for Universal and Comcast, on par with Disney's Mickey Mouse and WarnerMedia's Bugs Bunny.[1]
+  - mission: "We believe the ultimate goal of inventing the computer is to augment our human selves. To achieve this, my group's research focuses on the following three topics:<br><ul><li><b>Intelligent User Interfaces</b>: how can we design interfaces of intelligent systems that augment a user to accomplish domain-specific tasks?</li><li><b>Sensing & Interaction Techniques</b>: how can we invent new sensors and devices that afford novel experiences for users to interact with a computer?</li><li><b>Computational Design & Fabrication</b>how can we build computational platforms that empower users to realize their ideas into digital or physical artifacts?</li></ul>"
     photos: 
-      - minions1.jpg
-      - minions8.jpg
-      - minions3.jpg
-      - minions4.jpg
-      - minions5.jpg
-      - minions6.jpg
-      - minions7.jpg
-      - minions2.png
+      - g_bbq.jpg
+      - g_collaboration.JPG
+      - g_dogders.JPG
+      - g_dinner.jpg
+      # - minions1.jpg
+      # - minions8.jpg
+      # - minions3.jpg
+      # - minions4.jpg
+      # - minions5.jpg
+      # - minions6.jpg
+      # - minions7.jpg
+      # - minions2.png
     contact:
       description: UCLA HCI Research is part of the Electrical & Computer Engineering Department in the Henry Samueli School of Engineering at UCLA.
       address: <b>UCLA HCI Research</b><br/>1538 Boelter Hall, UCLA<br/>Los Angeles, CA 90095
-      email: Email: xac @ ucla.edu (Prof. Xiang 'Anthony' Chen)
+      email: Email: sigchi @ ucla.edu
     sponsors:
       - img: nsf.png
         url: https://nsf.gov/

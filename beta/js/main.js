@@ -61,10 +61,15 @@ $(document).ready(function () {
                         var idImgToClick = UCLAHCI.htPages[subPage]
                         $('#' + idImgToClick).trigger('click')
                     }
-                } else UCLAHCI.updatePage();
+                } else {
+                    UCLAHCI.page = url
+                    UCLAHCI.updatePage();
+                    // UCLAHCI.updateUrl(UCLAHCI.config.LANDINGPAGE);
+                }
 
             } else {
                 UCLAHCI.updatePage();
+                UCLAHCI.updateUrl(UCLAHCI.config.LANDINGPAGE);
             }
         });
     });
@@ -142,19 +147,19 @@ UCLAHCI.updatePage = function () {
 
         var divMission = $('<div/>');
         divMission.addClass('mission');
-        divMission.css('width', UCLAHCI.isMobile ? '80%' : '40%');
+        divMission.css('width', UCLAHCI.isMobile ? '80%' : '45%');
         divMission.append('<h2>Minion Statement</h2>');
         divMission.append('<p>' + UCLAHCI.data.aboutus[0].mission + '</p>');
 
         var divPhotos = $('<div/>');
         divPhotos.css('width', UCLAHCI.isMobile ? '80%' : '40%');
         divPhotos.css('float', UCLAHCI.isMobile ? 'none' : 'right');
-        divPhotos.css('margin-right', UCLAHCI.isMobile ? 'auto' : '80px');
+        divPhotos.css('margin-right', UCLAHCI.isMobile ? 'auto' : '40px');
         divPhotos.addClass('photos');
         var divRow = $('<div/>');
         divRow.addClass('row');
-        var numCols = 3;
-        var numPhotosCol = 3;
+        var numCols = 2;
+        var numPhotosCol = 2;
         var photos = UCLAHCI.data.aboutus[0].photos;
         var cntrPhotos = 0;
         for (var i = 0; i < numCols; i++) {
@@ -177,7 +182,7 @@ UCLAHCI.updatePage = function () {
 
         var divInfo = $('<div/>');
         divInfo.addClass('sponsors');
-        divInfo.css('width', UCLAHCI.isMobile ? '80%' : '40%');
+        divInfo.css('width', UCLAHCI.isMobile ? '80%' : '45%');
 
         var contact = UCLAHCI.data.aboutus[0].contact;
 
@@ -214,7 +219,7 @@ UCLAHCI.updatePage = function () {
         divMap.addClass('map');
         divMap.css('width', UCLAHCI.isMobile ? '80%' : '40%');
         divMap.css('float', UCLAHCI.isMobile ? 'none' : 'right');
-        divMap.css('margin-right', UCLAHCI.isMobile ? 'auto' : '100px');
+        divMap.css('margin-right', UCLAHCI.isMobile ? 'auto' : '40px');
         var mapCode = UCLAHCI.data.aboutus[0].map;
         mapCode = mapCode.replace('width="500"', UCLAHCI.isMobile ? 'width="100%"' : 'width="500"')
         divMap.append(mapCode);
@@ -300,6 +305,7 @@ UCLAHCI.updateUI = function () {
         // $(e.target).addClass('active');
         UCLAHCI.page = $(e.target).attr('id');
         UCLAHCI.updatePage();
+        UCLAHCI.updateUrl(UCLAHCI.page)
     });
 }
 
