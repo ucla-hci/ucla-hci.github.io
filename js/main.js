@@ -107,7 +107,8 @@ UCLAHCI.updatePage = function () {
                     transition: 'all 0.3s',
                     onclose: function () {
                         UCLAHCI.updateUrl('projects');
-                        $(document.body).css('overflow', 'scroll')
+                        $(document.body).css('overflow', 'scroll');
+                        $("html, body").animate({ scrollTop: 0 }, "slow");
                     }
                 });
                 divPage.popup('show');
@@ -233,6 +234,8 @@ UCLAHCI.updatePage = function () {
         tb.append(tr2);
         $('.content').append(tb);
     }
+
+    $("html, body").animate({ scrollTop: 0 }, "slow");
 }
 
 UCLAHCI.showTeam = function (team) {
@@ -266,7 +269,8 @@ UCLAHCI.showTeam = function (team) {
                     transition: 'all 0.3s',
                     onclose: function () {
                         UCLAHCI.updateUrl('projects');
-                        $(document.body).css('overflow', 'scroll')
+                        $(document.body).css('overflow', 'scroll');
+                        $("html, body").animate({ scrollTop: 0 }, "slow");
                     }
                 });
                 divPage.popup('show');

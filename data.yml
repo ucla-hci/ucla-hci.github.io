@@ -389,7 +389,7 @@ projects:
       - "Chris Harrison, Carnegie Mellon University"
       - "Jennifer Mankoff, University of Washington"
       - "Scott Hudson, Carnegie Mellon University"
-    name: AirTouch
+    name: Air+Touch
     descp: Combining In-Air Gesture and Touch Input Above Mobile Devices.
     title: 'Air + touch: interweaving touch and in-air gestures'
     pubs: UIST 2014
