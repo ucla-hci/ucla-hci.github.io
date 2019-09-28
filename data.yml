@@ -173,13 +173,13 @@ projects:
     pubs: MinionCon 2019
     img: fart_gun.jpeg
 aboutus:
-  - mission: "We believe the ultimate goal of inventing the computer is to augment our human selves. To achieve this, my group's research focuses on the following three topics:<br><ul><li><b>Intelligent User Interfaces</b>: how can we design interfaces of intelligent systems that augment a user to accomplish domain-specific tasks?</li><li><b>Sensing & Interaction Techniques</b>: how can we invent new sensors and devices that afford novel experiences for users to interact with a computer?</li><li><b>Computational Design & Fabrication</b>how can we build computational platforms that empower users to realize their ideas into digital or physical artifacts?</li></ul>"
+  - mission: "We believe the ultimate goal of inventing the computer is to augment our human selves. To achieve this, our research focuses on the following three topics:<br><ul><li><b>Intelligent User Interfaces</b>: how can we design interfaces of intelligent systems that augment a user to accomplish domain-specific tasks?</li><li><b>Sensing & Interaction Techniques</b>: how can we invent new sensors and devices that afford novel experiences for users to interact with a computer?</li><li><b>Computational Design & Fabrication</b>: how can we build computational platforms that empower users to realize their ideas into digital or physical artifacts?</li></ul>"
     photos: 
       - g_bbq.jpg
+      - g_postchi.jpg
       - g_collaboration.JPG
-      - g_dogders.JPG
+      # - g_dogders.JPG
       - g_dinner.jpg
-      # - minions1.jpg
       # - minions8.jpg
       # - minions3.jpg
       # - minions4.jpg

@@ -148,7 +148,7 @@ UCLAHCI.updatePage = function () {
         var divMission = $('<div/>');
         divMission.addClass('mission');
         divMission.css('width', UCLAHCI.isMobile ? '80%' : '45%');
-        divMission.append('<h2>Minion Statement</h2>');
+        divMission.append('<h2>Mission Statement</h2>');
         divMission.append('<p>' + UCLAHCI.data.aboutus[0].mission + '</p>');
 
         var divPhotos = $('<div/>');
