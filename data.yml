@@ -133,45 +133,440 @@ projects:
     videoSite: vimeo
     video: 358550776
     album: '72157710744632177'
-  - name: Fart Gun 3
-    pubs: MinionCon 2019
-    img: fart_gun.jpeg
-  - name: Fart Gun 4
-    pubs: MinionCon 2019
-    img: fart_gun.jpeg
-  - name: Fart Gun 5
-    pubs: MinionCon 2019
-    img: fart_gun.jpeg
-  - name: Fart Gun 6
-    pubs: MinionCon 2019
-    img: fart_gun.jpeg
-  - name: Fart Gun 7
-    pubs: MinionCon 2019
-    img: fart_gun.jpeg
-  - name: Fart Gun 8
-    pubs: MinionCon 2019
-    img: fart_gun.jpeg
-  - name: Fart Gun 9
-    pubs: MinionCon 2019
-    img: fart_gun.jpeg
-  - name: Fart Gun 10
-    pubs: MinionCon 2019
-    img: fart_gun.jpeg
-  - name: Fart Gun 11
-    pubs: MinionCon 2019
-    img: fart_gun.jpeg
-  - name: Fart Gun 12
-    pubs: MinionCon 2019
-    img: fart_gun.jpeg
-  - name: Fart Gun 13
-    pubs: MinionCon 2019
-    img: fart_gun.jpeg
-  - name: Fart Gun 14
-    pubs: MinionCon 2019
-    img: fart_gun.jpeg
-  - name: Fart Gun 15
-    pubs: MinionCon 2019
-    img: fart_gun.jpeg
+  - name: Forte
+    pubs: CHI 2018
+    img: t_forte.jpg
+    authors:
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Ye Tao, Zhejiang University"
+      - "Guanyun Wang, Carnegie Mellon University"
+      - "Runchang Kang, Carnegie Mellon University"
+      - "Tovi Grossman, University of Toronto"
+      - "Stelian Coros, ETH Zurich"
+      - "Scott Hudson, Carnegie Mellon University"
+    title: 'Forte: User-Driven Generative Design'
+    abstract: Low-cost fabrication machines (e.g., 3D printers) offer the promise of creating custom-designed objects by a range of users. To maximize performance, generative design methods such as topology optimization can automatically optimize properties of a design based on high-level specifications. Though promising, such methods require people to map their design ideas--often unintuitively--to a small number of mathematical input parameters, and the relationship between those parameters and a generated design is often unclear, making it difficult to iterate a design. We present Forte, a sketch-based, real-time interactive tool for people to directly express and iterate on their designs via 2D topology optimization. Users can ask the system to add structures, provide a variation with better performance, or optimize internal material layouts. Users can globally control how much to `deviate' from the initial sketch, or perform local suggestive editing, which interactively prompts the system to update based on the new information. Design sessions with 10 participants demonstrate that Forte empowers designers to create and explore a range of optimized designs with custom forms and styles.
+    video: '244079629'
+    videoSite: vimeo
+    album: '72157668597613889'
+    citation: "Chen, X., Tao, Y., Wang, G., Kang, R., Grossman, T., Coros, S., & Hudson, S. E. (2018). Forte: User-Driven Generative Design. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (p. 496)."
+    bibtex: "@inproceedings{chen2018forte,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Forte: User-Driven Generative Design},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, XiangAnthony and Tao, Ye and Wang, Guanyun and Kang, Runchang and Grossman, Tovi and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={496},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2018},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
+    paperUrl: 'https://www.dropbox.com/s/bld0v2nc420x1ld/chi2018_forte.pdf?raw=1'
+    thumbnail: chi2018_forte_thumbnail.jpg
+  - name: Medley
+    pubs: CHI 2018
+    img: t_medley.jpg
+    authors:
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Stelian Coros, ETH Zurich"
+      - "Scott Hudson, Carnegie Mellon University"
+    title: 'Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects'
+    abstract: In our everyday life, we interact with and benefit from objects with a wide range of material properties. In contrast, personal fabrication machines (e.g., desktop 3D printers) currently only support a much smaller set of materials. Our goal is to close the gap between current limitations and the future of multi-material printing by enabling people to explore the reuse of material from everyday objects into their custom designs. To achieve this, we develop a library of embeddables--everyday objects that can be cut, worked and embedded into 3D printable designs. We describe a design space that characterizes the geometric and material properties of embeddables. We then develop Medley---a design tool whereby users can import a 3D model, search for embeddables with desired material properties, and interactively edit and integrate their geometry to fit into the original design. Medley also supports the final fabrication and embedding process, including instructions for carving or cutting the objects, and generating optimal paths for inserting embeddables. To validate the expressiveness of our library, we showcase numerous examples augmented by embeddables that go beyond the objects' original printed materials.
+    video: '252273058'
+    videoSite: vimeo
+    album: '72157689656591312'
+    citation: "Chen, X., Coros, S., & Hudson, S. E. (2018). Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (p. 162)."
+    bibtex: "@inproceedings{chen2018medley,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, XiangAnthony and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={162},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2018},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
+    paperUrl: 'https://www.dropbox.com/s/97nvsjjqawn14e9/medley_chi2018.pdf?raw=1'
+    thumbnail: chi2018_medley_thumbnail.jpg
+  - img: t_improv.jpg
+    authors:
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Yang Li, Google"
+    name: Improv
+    descp: An input framework for users to create cross-device gestures.
+    title: >-
+      Improv: An Input Framework for Improvising Cross-Device Interaction by
+      Demonstration
+    abstract: >-
+      As computing devices become increasingly ubiquitous, it is now possible to
+      combine the unique capabilities of different devices or Internet of Things
+      to accomplish a task. However, there is currently a high technical barrier
+      for creating cross-device interaction. This is especially challenging for
+      end users who have limited technical expertise—end users would greatly
+      benefit from custom cross-device interaction that best suits their needs.
+      In this article, we present Improv, a cross-device input framework that
+      allows a user to easily leverage the capability of additional devices to
+      create new input methods for an existing, unmodified application, e.g.,
+      creating custom gestures on a smartphone to control a desktop presentation
+      application. Instead of requiring developers to anticipate and program
+      these cross-device behaviors in advance, Improv enables end users to
+      improvise them on the fly by simple demonstration, for their particular
+      needs and devices at hand. We showcase a range of scenarios where Improv
+      is used to create a diverse set of useful cross-device input. Our study
+      with 14 participants indicated that on average it took a participant 10
+      seconds to create a cross-device input technique. In addition, Improv
+      achieved 93.7% accuracy in interpreting user demonstration of a target UI
+      behavior by looking at the raw input events from a single example.
+    bibtex: >-
+      @article{chen2017improv,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Improv: An
+      Input Framework for Improvising Cross-Device Interaction by
+      Demonstration},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang‘Anthony’
+      and Li, Yang},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={ACM Transactions on
+      Computer-Human Interaction (TOCHI)},<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;volume={24},<br>&nbsp; &nbsp; &nbsp; &nbsp;number={2},<br>&nbsp;
+      &nbsp; &nbsp; &nbsp;pages={15},<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;year={2017},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher={ACM}<br>}
+    video: '216769849'
+    videoSite: vimeo
+    album: '72157664092225828'
+    thumbnail: tochi17_improv_thumbnail.jpg
+    paperUrl: 'https://www.dropbox.com/s/bwct58u1z70jvt0/tochi2017_improv.pdf?raw=1'
+    citation: >-
+      Chen, X., & Li, Y. (2017). Improv: An Input Framework for Improvising Cross-Device Interaction by Demonstration. ACM Transactions on Computer-Human Interaction (TOCHI), 24(2), 15.
+    pubs: TOCHI '17
+  - img: t_reprise.jpg
+    name: Reprise
+    pubs: UIST 2016
+    authors:
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Jeeeun Kim, Texas A&M University"
+      - "Tovi Grossman, University of Toronto"
+      - "Stelian Coros, ETH Zurich"
+      - "Scott Hudson, Carnegie Mellon University"
+    title: >-
+      Reprise: A Design Tool for Specifying, Generating, and Customizing 3D
+      Printable Adaptations on Everyday Objects
+    pubs: UIST '16
+    video: '182221122'
+    videoSite: vimeo
+    abstract: >-
+      In this paper, we describe Reprise--a design tool for specifying,
+      generating, customizing and fitting adaptations onto existing household
+      objects. Reprise allows users to express at a high level what type of
+      action is applied to an object.  Based on this high level specification,
+      Reprise automatically generates adaptations. Users can use simple sliders
+      to customize the adaptations to better suit their particular needs and
+      preferences, such as increasing the tightness for gripping, enhancing
+      torque for rotation, or making a larger base for stability. Finally,
+      Reprise provides a toolkit of fastening methods and support structures for
+      fitting the adaptations onto existing objects.
+    bibtex: >-
+      @inproceedings{chen2016reprise,<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;title={Reprise: A Design Tool for Specifying, Generating, and
+      Customizing 3D Printable Adaptations on Everyday Objects},<br>&nbsp;
+      &nbsp; &nbsp; &nbsp;author={Chen, XiangAnthony and Kim, Jeeeun and
+      Mankoff, Jennifer and Grossman, Tovi and Coros, Stelian and Hudson, Scott
+      E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={the 29th Annual ACM Symposium
+      on User Interface Software and Technology},<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;year={2016},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}
+    album: '72157674285753686'
+    thumbnail: uist2016_reprise_thumbnail.jpg
+    paperUrl: 'https://www.dropbox.com/s/j8kywu7dex12ery/uist2016_reprise.pdf?raw=1'
+    citation: >-
+      Chen, X., Kim, J., Mankoff, J., Grossman, T., Coros, S., & Hudson, S. E. (2016). Reprise: A Design Tool for Specifying, Generating, and Customizing 3D Printable Adaptations on Everyday Objects. In the 29th Annual ACM Symposium on User Interface Software and Technology.
+  - img: t_locus.jpg
+    authors:
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Yang Li, Google"
+    name: Locus
+    pubs: UIST 2016
+    descp: >-
+      Bootstrapping user-defined body tapping recognition with offline-learned
+      probabilistic representation.
+    title: >-
+      Bootstrapping User-Defined Body Tapping Recognition with Offline-Learned
+      Probabilistic Representation
+    abstract: >-
+      To address the increasing functionality (or information) overload of
+      smartphones, prior research has explored a variety of methods to extend
+      the input vocabulary of mobile devices. In particular, body tapping has
+      been previously proposed as a technique that allows the user to quickly
+      access a target functionality by simply tapping at a specific location of
+      the body with a smartphone. Though compelling, prior work often fell short
+      in enabling users’ unconstrained tapping locations or behaviors. To
+      address this problem, we developed a novel recognition method that
+      combines both offline—before the system sees any user-defined gestures—and
+      online learning to reliably recognize arbitrary, user-defined body tapping
+      gestures, only using a smartphone’s built-in sensors. Our experiment
+      indicates that our method significantly outperforms baseline approaches in
+      several usage conditions. In particular, provided only with a single
+      sample per location, our accuracy is 30.8% over an SVM baseline and 24.8%
+      over a template matching method. Based on these findings, we discuss how
+      our approach can be generalized to other user-defined gesture problems. 
+    bibtex: >-
+      @inproceedings{chen2016bootstrapping,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Bootstrapping User-Defined Body Tapping Recognition with Offline-Learned Probabilistic Representation},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, XiangAnthony and Li, Yang},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 29th Annual Symposium on User Interface Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={359--364},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2016},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}
+    pubs: UIST '16
+    video: '184405883'
+    videoSite: vimeo
+    album: '72157671061225703'
+    thumbnail: uist2016_locus_thumbnail.jpg
+    paperUrl: 'https://www.dropbox.com/s/iw4eqv7b9rhzykx/uist2016_locus.pdf?raw=1'
+    citation: >-
+      Chen, X., & Li, Y. (2016). Bootstrapping User-Defined Body Tapping Recognition with Offline-Learned Probabilistic Representation. In Proceedings of the 29th Annual Symposium on User Interface Software and Technology (pp. 359–364).
+  - img: t_encore.jpg
+    name: Encore
+    pubs: UIST 2015
+    authors:
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Stelian Coros, ETH Zurich"
+      - "Jennifer Mankoff, University of Washington"
+      - "Scott Hudson, Carnegie Mellon University"
+    descp: >-
+      3D printed augmentation of everyday objects with printed-over, affixed and
+      interlocked attachment
+    title: >-
+      Encore: 3D Printed Augmentation of Everyday Objects with Printed-Over,
+      Affixed and Interlocked Attachment
+    pubs: UIST '15
+    video: '135636261'
+    videoSite: vimeo
+    abstract: >-
+      One powerful aspect of 3D printing is its ability to extend, repair, or
+      more generally modify everyday objects. However, nearly all existing work
+      implicitly assumes that whole objects are to be printed from scratch. This
+      paper presents a framework for 3D printing to augment existing objects
+      that covers a wide range of attachment options. We illustrate the
+      framework through three exemplar attachment techniques – print-over,
+      print-toaffix and print-through, implemented in Encore, a design tool that
+      supports a set of analysis metrics relating to viability, durability and
+      usability that are visualized for the user to explore design options and
+      tradeoffs. Encore also generates 3D models for production, addressing
+      issues such as support jigs and contact geometry between the attached part
+      and the original object. Our validation helps to illustrate the strengths
+      and weaknesses of each technique. For example, we characterize how surface
+      curvature and roughness affect print-over’s strength compared to the
+      conventional print-in-one-piece. 
+    bibtex: >-
+      @inproceedings{chen2015encore,<br>&nbsp; &nbsp;title={Encore: 3D printed
+      augmentation of everyday objects with printed-over, affixed and
+      interlocked attachments},<br>&nbsp; &nbsp;author={Chen, XiangAnthony and
+      Coros, Stelian and Mankoff, Jennifer and Hudson, Scott E},<br>&nbsp;
+      &nbsp;booktitle={Proceedings of the 28th Annual ACM Symposium on User
+      Interface Software and Technology},<br>&nbsp;
+      &nbsp;pages={73--82},<br>&nbsp; &nbsp;year={2015},<br>&nbsp;
+      &nbsp;organization={ACM}<br>}
+    album: '72157670690945024'
+    thumbnail: uist2015_encore_thumbnail.jpg
+    paperUrl: 'https://www.dropbox.com/s/2fvypkcxhv2wclk/uist2015_encore.pdf?raw=1'
+    citation: >-
+      Chen, X., Coros, S., Mankoff, J., & Hudson, S. E. (2015). Encore: 3D printed augmentation of everyday objects with printed-over, affixed and interlocked attachments. In Proceedings of the 28th Annual ACM Symposium on User Interface Software and Technology (pp. 73–82).
+  
+  - img: t_duet.jpg
+    authors:
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Tovi Grossman, University of Toronto"
+      - "Daniel Wigdor, University of Toronto"
+      - "George Fitzmaurice, Autodesk Research"
+    name: Duet
+    pubs: CHI 2014 🏆
+    descp: Joint interaction between a smart phone and a smart watch.
+    title: 'Duet: Joint Interaction Between a Smart Phone and a Smart Watch'
+    abstract: >-
+      The emergence of smart devices (e.g., smart watches and smart eyewear) is
+      redefining mobile interaction from the solo performance of a smart phone,
+      to a symphony of multiple devices. In this paper, we present Duet – an
+      interactive system that explores a design space of interactions between a
+      smart phone and a smart watch. Based on the devices’ spatial
+      configurations, Duet coordinates their motion and touch input, and extends
+      their visual and tactile output to one another. This transforms the watch
+      into an active element that enhances a wide range of phone-based
+      interactive tasks, and enables a new class of multi-device gestures and
+      sensing techniques. A technical evaluation shows the accuracy of these
+      gestures and sensing techniques, and a subjective study on Duet provides
+      insights, observations, and guidance for future work. 
+    bibtex: >-
+      @inproceedings{chen2014duet,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Duet:
+      exploring joint interactions on a smart phone and a smart
+      watch},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, XiangAnthony and
+      Grossman, Tovi and Wigdor, Daniel J and Fitzmaurice, George},<br>&nbsp;
+      &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the SIGCHI Conference on
+      Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;pages={159--168},<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;year={2014},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}
+    video: '81358039'
+    videoSite: vimeo
+    album: '72157672834628310'
+    thumbnail: chi2014_duet_thumbnail.jpg
+    paperUrl: 'https://www.dropbox.com/s/r7llh1crqtwg16u/chi2014_duet.pdf?raw=1'
+    citation: >-
+      Chen, X., Grossman, T., Wigdor, D. J., & Fitzmaurice, G. (2014). Duet: exploring joint interactions on a smart phone and a smart watch. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 159–168).
+  
+  - img: t_airtouch.jpg
+    authors:
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Julia Schwarz, Microsoft Research"
+      - "Chris Harrison, Carnegie Mellon University"
+      - "Jennifer Mankoff, University of Washington"
+      - "Scott Hudson, Carnegie Mellon University"
+    name: AirTouch
+    descp: Combining In-Air Gesture and Touch Input Above Mobile Devices.
+    title: 'Air + touch: interweaving touch and in-air gestures'
+    pubs: UIST 2014
+    video: '92972949'
+    videoSite: vimeo
+    abstract: "We present Air+Touch, a new class of interactions that interweave touch events with in-air gestures, offering a unified input modality with expressiveness greater than each input modality alone. We demonstrate how air and touch are highly complementary: touch is used to designate targets and segment in-air gestures, while in-air gestures add expressivity to touch events. For example, a user can draw a circle in the air and tap to trigger a context menu, do a finger 'high jump' between two touches to select a region of text, or drag and in-air ‘pigtail’ to copy text to the clipboard. Through an observational study, we devised a basic taxonomy of Air+Touch interactions, based on whether the in-air component occurs before, between or after touches. To illustrate the potential of our approach, we built four applications that showcase seven exemplar Air+Touch interactions we created."
+    bibtex: "@inproceedings{chen2014air+,<br>&nbsp; &nbsp;title={Air+ touch: interweaving touch and in-air gestures},<br>&nbsp; &nbsp;author={Chen, XiangAnthony and Schwarz, Julia and Harrison, Chris and Mankoff, Jennifer and Hudson, Scott E},<br>&nbsp; &nbsp;booktitle={Proceedings of the 27th annual ACM symposium on User interface software and technology},<br>&nbsp; &nbsp;pages={519--525},<br>&nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp;organization={ACM}<br>}"
+    album: '72157670702717043'
+    thumbnail: uist2014_airtouch_thumbnail.jpg
+    paperUrl: 'https://www.dropbox.com/s/yaspxpqsx4vtz99/uist2014_airtouch.pdf?raw=1'
+    citation: >-
+      Chen, X., Schwarz, J., Harrison, C., Mankoff, J., & Hudson, S. E. (2014). Air + touch: interweaving touch & in-air gestures. In Proceedings of the 27th annual ACM symposium on User interface software and technology (pp. 519–525).
+
+  - img: t_swipeboard.jpg
+    authors:
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Tovi Grossman, University of Toronto"
+      - "George Fitzmaurice, Autodesk Research"
+    name: Swipeboard
+    descp: An eyes-free text entry technique for ultra-small interfaces
+    title: 'Swipeboard: A Text Entry Technique for Ultra-Small Interfaces That Supports Novice to Expert Transitions'
+    abstract: >-
+      Ultra-small smart devices, such as smart watches, have become increasingly
+      popular in recent years. Most of these devices rely on touch as the
+      primary input modality, which makes tasks such as text entry increasingly
+      difficult as the devices continue to shrink. In the sole pursuit of entry
+      speed, the ultimate solution is a shorthand technique (e.g., Morse code)
+      that sequences tokens of input (e.g., key, tap, swipe) into unique
+      representations of each character. However, learning such techniques is
+      hard, as it often resorts to rote memory. Our technique, Swipeboard,
+      leverages our spatial memory of a QWERTY keyboard to learn, and eventually
+      master a shorthand, eyes-free text entry method designed for ultra-small
+      interfaces. Characters are entered with two swipes; the first swipe
+      specifies the region where the character is located, and the second swipe
+      specifies the character within that region. Our study showed that with
+      less than two hours’ training, Tested on a reduced word set, Swipeboard
+      users achieved 19.58 words per minute (WPM), 15% faster than an existing
+      baseline technique.
+    bibtex: >-
+      @inproceedings{chen2014swipeboard,<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;title={Swipeboard: a text entry technique for ultra-small interfaces
+      that supports novice to expert transitions},<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;author={Chen, XiangAnthony and Grossman, Tovi and Fitzmaurice,
+      George},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 27th
+      annual ACM symposium on User interface software and technology},<br>&nbsp;
+      &nbsp; &nbsp; &nbsp;pages={615--620},<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;year={2014},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}
+    pubs: UIST 2014
+    video: '143152207'
+    videoSite: vimeo
+    album: '72157674290832196'
+    thumbnail: uist2014_swipeboard_thumbnail.jpg
+    paperUrl: 'https://www.dropbox.com/s/sqd5dxsl22zgpnb/uist2014_swipeboard.pdf?raw=1'
+    citation: >-
+      Chen, X., Grossman, T., & Fitzmaurice, G. (2014). Swipeboard: a text entry technique for ultra-small interfaces that supports novice to expert transitions. In Proceedings of the 27th annual ACM symposium on User interface software and technology (pp. 615–620).
+
+  - img: t_aroundbody.jpg
+    authors:
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Julia Schwarz, Microsoft Research"
+      - "Chris Harrison, Carnegie Mellon University"
+      - "Jennifer Mankoff, University of Washington"
+      - "Scott Hudson, Carnegie Mellon University"
+    name: Around-Body Interaction
+    descp: Tracking a commodity smart phone's position around a user's body.
+    pubs: MobileHCI 2014
+    title: 'Around-Body Interaction: Sensing & Interaction Techniques for Proprioception-Enhanced Input with Mobile Devices'
+    abstract: "The space around the body provides a large interaction vol-ume that can allow for big interactions on small mobile de-vices. However, interaction techniques making use of this opportunity are underexplored, primarily focusing on dis-tributing information in the space around the body. We demonstrate three types of around-body interaction includ-ing canvas, modal and context-aware interactions in six demonstration applications. We also present a sensing solu-tion using standard smartphone hardware: a phone’s front camera, accelerometer and inertia measurement units. Our solution allows a person to interact with a mobile device by holding and positioning it between a normal field of view and its vicinity around the body. By leveraging a user’s proprioceptive sense, around-body Interaction opens a new input channel that enhances conventional interaction on a mobile device without requiring additional hardware."
+    bibtex: "@inproceedings{chen2014around,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Around-body interaction: sensing and interaction techniques for proprioception-enhanced input with mobile devices},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, XiangAnthony and Schwarz, Julia and Harrison, Chris and Mankoff, Jennifer and Hudson, Scott},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 16th international conference on Human-computer interaction with mobile devices and services},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={287--290},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
+    video: '142935370'
+    videoSite: vimeo
+    album: '72157674813685485'
+    thumbnail: mhci2014_aroundbody_thumbnail.jpg
+    paperUrl: 'https://www.dropbox.com/s/lyqbpiq854b2qos/mhci2014_aroundbody.pdf?raw=1'
+    citation: >-
+      Chen, X., Schwarz, J., Harrison, C., Mankoff, J., & Hudson, S. (2014). Around-body interaction: sensing & interaction techniques for proprioception-enhanced input with mobile devices. In Proceedings of the 16th international conference on Human-computer interaction with mobile devices & services (pp. 287–290).
+  
+  - img: t_bci.jpg
+    authors:
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Nicolai Marquardt, University College London"
+      - "Anthony Tang, University of Toronto"
+      - "Sebastian Boring, Aalborg University"
+      - "Saul Greenberg, University of Calgary"
+    name: Body-Centric Interaction
+    descp: >-
+      A series of exploration of interacting in the space on and around our
+      body.
+    pubs: MobileHCI 2012
+    title: >-
+      Extending a Mobile Device’s Interaction Space through Body-Centric
+      Interaction
+    abstract: >-
+      Modern mobile devices rely on the screen as a primary input modality. Yet
+      the small screen real-estate limits interaction possibilities, motivating
+      researchers to explore alternate input techniques. Within this arena, our
+      goal is to develop Body-Centric Interaction with Mobile Devices: a class
+      of input techniques that allow a person to position and orient her mobile
+      device to navigate and manipulate digital content anchored in the space on
+      and around the body. To achieve this goal, we explore such interaction in
+      a bottomup path of prototypes and implementations. From our experiences,
+      as well as by examining related work, we discuss and present three
+      recurring themes that characterize how these interactions can be realized.
+      We illustrate how these themes can inform the design of Body-Centric
+      Interactions by applying them to the design of a novel mobile browser
+      application. Overall, we contribute a class of mobile input techniques
+      where interactions are extended beyond the small screen, and are instead
+      driven by a person’s movement of the device on and around the body.
+    bibtex: >-
+      @inproceedings{chen2012extending,<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;title={Extending a mobile device's interaction space through
+      body-centric interaction},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen,
+      Xiang 'Anthony' and Marquardt, Nicolai and Tang, Anthony and Boring,
+      Sebastian and Greenberg, Saul},<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;booktitle={Proceedings of the 14th international conference on
+      Human-computer interaction with mobile devices and services},<br>&nbsp;
+      &nbsp; &nbsp; &nbsp;pages={151--160},<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;year={2012},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}
+    video: '31172179'
+    videoSite: vimeo
+    flickr: '72157674424983716'
+    thumbnail: mhci2012_bci_thumbnail.jpg
+    paperUrl: 'https://www.dropbox.com/s/z74oxofbcqlc3lr/mhci2012_bci.pdf?raw=1'
+    citation: >-
+      Chen, X., Marquardt, N., Tang, A., Boring, S., & Greenberg, S. (2012). Extending a mobile device’s interaction space through body-centric interaction. In Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services (pp. 151–160).
+  
+  - img: t_spalendar.jpg
+    authors:
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Sebastian Boring, Aalborg University"
+      - "Sheelagh Carpendale, Simon Fraser University"
+      - "Anthony Tang, University of Toronto"
+      - "Saul Greenberg, University of Calgary"
+    name: Spalendar
+    descp: Visualizing calendar data by showing people moving between places.
+    pubs: AVI 2012
+    title: >-
+      Spalendar: Visualizing a Group’s Calendar Events over a Geographic Space
+      on a Public Display 
+    abstract: >-
+      Portable paper calendars (i.e., day planners and organizers) have greatly
+      influenced the design of group electronic calendars. Both use time units
+      (hours/days/weeks/etc.) to organize visuals, with useful information
+      (e.g., event types, locations, attendees) usually presented as - perhaps
+      abbreviated or even hidden - text fields within those time units. The
+      problem is that, for a group, this visual sorting of individual events
+      into time buckets conveys only limited information about the social
+      network of people. For example, people’s whereabouts cannot be read ‘at a
+      glance’ but require examining the text. Our goal is to explore an
+      alternate visualization that can reflect and illustrate group members’
+      calendar events. Our main idea is to display the group’s calendar events
+      as spatiotemporal activities occurring over a geographic space animated
+      over time, all presented on a highly interactive public display. In
+      particular, our SPALENDAR (SPAtial CALENDAR) design animates peoples’
+      past, present and forthcoming movements between event locations as well as
+      their static locations. Details of people’s events, their movements and
+      their locations are progressively revealed and controlled by the viewer’s
+      proximity to the display, their identity, and their gestural interactions
+      with it, all of which are tracked by the public display.
+    bibtex: >-
+      @inproceedings{chen2012spalendar,<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;title={Spalendar: visualizing a group's calendar events over a
+      geographic space on a public display},<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;author={Chen, Xiang 'Anthony' and Boring, Sebastian and Carpendale,
+      Sheelagh and Tang, Anthony and Greenberg, Saul},<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;booktitle={Proceedings of the International Working Conference on
+      Advanced Visual Interfaces},<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;pages={689--696},<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;year={2012},<br>&nbsp; &nbsp; &nbsp;
+      &nbsp;organization={ACM}<br>}<br>
+    video: '31823922'
+    videoSite: vimeo
+    thumbnail: avi2012_spalendar_thumbnail.jpg
+    paperUrl: 'https://www.dropbox.com/s/0uvmpuhpq3vpzfy/avi2012_spalendar.pdf?raw=1'
+    citation: >-
+      Chen, X., Boring, S., Carpendale, S., Tang, A., & Greenberg, S. (2012). Spalendar: visualizing a group’s calendar events over a geographic space on a public display. In AVI ’12 Proceedings of the International Working Conference on Advanced Visual Interfaces (pp. 689–696).
+
 aboutus:
   - mission: "We believe the ultimate goal of inventing the computer is to augment our human selves. To achieve this, our research focuses on the following three topics:<br><ul><li><b>Intelligent User Interfaces</b>: how can we design interfaces of intelligent systems that augment a user to accomplish domain-specific tasks?</li><li><b>Sensing & Interaction Techniques</b>: how can we invent new sensors and devices that afford novel experiences for users to interact with a computer?</li><li><b>Computational Design & Fabrication</b>: how can we build computational platforms that empower users to realize their ideas into digital or physical artifacts?</li></ul>"
     photos: 
