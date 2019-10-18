@@ -133,6 +133,9 @@ projects:
     videoSite: vimeo
     video: 358550776
     album: '72157710744632177'
+    citation: "Kang, R., Guo, A., Laput, G., Li, Y., & Chen, X. “Anthony.” (2019). Minuet: Multimodal Interaction with an Internet of Things. In Symposium on Spatial User Interaction (pp. 2:1--2:10). New York, NY, USA: ACM. https://doi.org/10.1145/3357251.3357581"
+    bibtex: "@inproceedings{guo2016vizlens,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Vizlens: A robust and interactive screen reader for interfaces in the real world},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Guo, Anhong and Chen, XiangAnthony and Qi, Haoran and White, Samuel and Ghosh, Suman and Asakawa, Chieko and Bigham, Jeffrey P},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 29th Annual Symposium on User Interface Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={651--664},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2016},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
+    paperUrl: 'https://www.dropbox.com/s/80y5jz2lw4fjmge/sui2019_minuet.pdf?raw=1'
   - name: Forte
     pubs: CHI 2018
     img: t_forte.jpg
