@@ -135,7 +135,7 @@ projects:
     video: 358550776
     album: '72157710744632177'
     citation: "Kang, R., Guo, A., Laput, G., Li, Y., & Chen, X. “Anthony.” (2019). Minuet: Multimodal Interaction with an Internet of Things. In Symposium on Spatial User Interaction (pp. 2:1--2:10). New York, NY, USA: ACM. https://doi.org/10.1145/3357251.3357581"
-    bibtex: "@inproceedings{guo2016vizlens,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Vizlens: A robust and interactive screen reader for interfaces in the real world},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Guo, Anhong and Chen, XiangAnthony and Qi, Haoran and White, Samuel and Ghosh, Suman and Asakawa, Chieko and Bigham, Jeffrey P},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 29th Annual Symposium on User Interface Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={651--664},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2016},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
+    bibtex: "@inproceedings{Kang:2019:MMI:3357251.3357581,<br>address = {New York, NY, USA},<br>author = {Kang, Runchang and Guo, Anhong and Laput, Gierad and Li, Yang and Chen, Xiang 'Anthony'},<br>booktitle = {Symposium on Spatial User Interaction},<br>doi = {10.1145/3357251.3357581},<br>isbn = {978-1-4503-6975-6},<br>keywords = { gesture, multimodal interaction, voice,Internet-of-Things},<br>pages = {2:1----2:10},<br>publisher = {ACM},<br>series = {SUI '19},<br>title = {{Minuet: Multimodal Interaction with an Internet of Things}},<br>url = {http://doi.acm.org/10.1145/3357251.3357581},<br>year = {2019}<br>}<br>"
     paperUrl: 'https://www.dropbox.com/s/80y5jz2lw4fjmge/sui2019_minuet.pdf?raw=1'
     thumbnail: sui2019_minuet_thumbnail.jpg
   - name: Forte
