@@ -117,9 +117,9 @@ projects:
     videoSite: vimeo
     video: 358553023
     album: '72157710743420892'
-    # citation: Ambrosin, M., Hosseini, H., Mandal, K., Conti, M. and Poovendran, R., 2016, October. Despicable me (ter): Anonymous and fine-grained metering data reporting with dishonest meters. In 2016 IEEE conference on communications and network security (CNS) (pp. 163-171). IEEE.
-    # bibtex: @inproceedings{ambrosin2016despicable,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Despicable me (ter): Anonymous and fine-grained metering data reporting with dishonest meters},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Ambrosin, Moreno and Hosseini, Hossein and Mandal, Kalikinkar and Conti, Mauro and Poovendran, Radha},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={2016 IEEE conference on communications and network security (CNS)},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={163--171},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2016},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={IEEE}<br>}<br>
-    paperUrl: '.'
+    citation: "Li, J., Kim, J., & Chen, X. “Anthony.” (2019). Robiot&#58; A Design Tool for Actuating Everyday Objects with Automatically Generated 3D Printable Mechanisms. In Proceedings of the 32Nd Annual ACM Symposium on User Interface Software and Technology (pp. 673–685). New York, NY, USA: ACM. https://doi.org/10.1145/3332165.3347894"
+    bibtex: '@inproceedings{Li:2019:RDT:3332165.3347894,<br> author = {Li, Jiahao and Kim, Jeeeun and Chen, Xiang 'Anthony'},<br> title = {Robiot&amp;\#58; A Design Tool for Actuating Everyday Objects with Automatically Generated 3D Printable Mechanisms},<br> booktitle = {Proceedings of the 32Nd Annual ACM Symposium on User Interface Software and Technology},<br> series = {UIST '19},<br> year = {2019},<br> isbn = {978-1-4503-6816-2},<br> location = {New Orleans, LA, USA},<br> pages = {673--685},<br> numpages = {13},<br> url = {http://doi.acm.org/10.1145/3332165.3347894},<br> doi = {10.1145/3332165.3347894},<br> acmid = {3347894},<br> publisher = {ACM},<br> address = {New York, NY, USA},<br> keywords = {actuation, design tool, everyday objects, generative design},<br>} <br>'
+    paperUrl: 'https://www.dropbox.com/s/eur3zu2kmtcdtq5/uist2019_robiot.pdf?raw=1'
     thumbnail: uist2019_robiot_thumbnail.jpg
   - name: Minuet
     pubs: SUI 2019
