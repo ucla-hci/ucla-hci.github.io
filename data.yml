@@ -77,22 +77,6 @@ team:
     expertise: User Research
     img: Yuki-s.JPG
     imgalt: Yuki-f.JPG 
-  # - name: Parth Agrawal
-  #   role: ECE Undergrad
-  #   expertise: sabotage
-  #   img: Parth-s.JPG
-  #   imgalt: Parth-f.JPG
-# collaborators: []
-#   - name: Zhi Li
-#     role: MAE PhD
-#     expertise: sabotage
-#     img: Zhi-s.JPG
-#     imgalt: Zhi-f.JPG
-#   - name: Yunchu Zhang
-#     role: MAE PhD
-#     expertise: sabotage
-#     img: Yunchu-s.JPG
-#     imgalt: Yunchu-f.JPG
 alumni:
   - name: Ben Wagstaff
     role: ECE Undergrad
@@ -118,7 +102,7 @@ projects:
     video: 358553023
     album: '72157710743420892'
     citation: "Li, J., Kim, J., & Chen, X. “Anthony.” (2019). Robiot&#58; A Design Tool for Actuating Everyday Objects with Automatically Generated 3D Printable Mechanisms. In Proceedings of the 32Nd Annual ACM Symposium on User Interface Software and Technology (pp. 673–685). New York, NY, USA: ACM. https://doi.org/10.1145/3332165.3347894"
-    bibtex: '@inproceedings{Li:2019:RDT:3332165.3347894,<br> author = {Li, Jiahao and Kim, Jeeeun and Chen, Xiang 'Anthony'},<br> title = {Robiot&amp;\#58; A Design Tool for Actuating Everyday Objects with Automatically Generated 3D Printable Mechanisms},<br> booktitle = {Proceedings of the 32Nd Annual ACM Symposium on User Interface Software and Technology},<br> series = {UIST '19},<br> year = {2019},<br> isbn = {978-1-4503-6816-2},<br> location = {New Orleans, LA, USA},<br> pages = {673--685},<br> numpages = {13},<br> url = {http://doi.acm.org/10.1145/3332165.3347894},<br> doi = {10.1145/3332165.3347894},<br> acmid = {3347894},<br> publisher = {ACM},<br> address = {New York, NY, USA},<br> keywords = {actuation, design tool, everyday objects, generative design},<br>} <br>'
+    bibtex: "@inproceedings{Li:2019:RDT:3332165.3347894,<br> author = {Li, Jiahao and Kim, Jeeeun and Chen, Xiang 'Anthony'},<br> title = {Robiot&amp;\#58; A Design Tool for Actuating Everyday Objects with Automatically Generated 3D Printable Mechanisms},<br> booktitle = {Proceedings of the 32Nd Annual ACM Symposium on User Interface Software and Technology},<br> series = {UIST '19},<br> year = {2019},<br> isbn = {978-1-4503-6816-2},<br> location = {New Orleans, LA, USA},<br> pages = {673--685},<br> numpages = {13},<br> url = {http://doi.acm.org/10.1145/3332165.3347894},<br> doi = {10.1145/3332165.3347894},<br> acmid = {3347894},<br> publisher = {ACM},<br> address = {New York, NY, USA},<br> keywords = {actuation, design tool, everyday objects, generative design},<br>} <br>"
     paperUrl: 'https://www.dropbox.com/s/eur3zu2kmtcdtq5/uist2019_robiot.pdf?raw=1'
     thumbnail: uist2019_robiot_thumbnail.jpg
   - name: Minuet
