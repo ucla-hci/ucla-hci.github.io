@@ -57,21 +57,11 @@ team:
     expertise: sabotage
     img: Nicky-s.JPG
     imgalt: Nicky-f.JPG
-  - name: Jingbin Huang
-    role: ECE Undergrad
-    expertise: sabotage
-    img: Jingbin-s.JPG
-    imgalt: Jingbin-f.JPG
   - name: Lauren Hung
     role: Specialists
     expertise: UI/UX Designer
     img: Lauren-s.JPG
     imgalt: Lauren-f.JPG
-  - name: Melody Chen
-    role: ECE Undergrad
-    expertise: sabotage
-    img: Melody-s.JPG
-    imgalt: Melody-f.JPG 
   - name: Yuki Tang
     role: Visiting student
     expertise: User Research
@@ -88,6 +78,15 @@ alumni:
     # expertise: sabotage
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
+  - name: Jingbin Huang
+    role: ECE Undergrad
+    # expertise: Machine Learning
+    img: Jingbin-s.JPG
+    imgalt: Jingbin-f.JPG
+  - name: Melody Chen
+    role: ECE Undergrad
+    img: Melody-s.JPG
+    imgalt: Melody-f.JPG 
 projects:
   - name: 'Robiot'
     title: 'Robiot: A Design Tool for Actuating Everyday Object with Automatically Generated 3D Printable Mechanism'
@@ -562,15 +561,7 @@ aboutus:
       - g_bbq.jpg
       - g_postchi.jpg
       - g_collaboration.JPG
-      # - g_dogders.JPG
       - g_dinner.jpg
-      # - minions8.jpg
-      # - minions3.jpg
-      # - minions4.jpg
-      # - minions5.jpg
-      # - minions6.jpg
-      # - minions7.jpg
-      # - minions2.png
     contact:
       description: UCLA HCI Research is part of the Electrical & Computer Engineering Department in the Henry Samueli School of Engineering at UCLA.
       address: <b>UCLA HCI Research</b><br/>1538 Boelter Hall, UCLA<br/>Los Angeles, CA 90095
