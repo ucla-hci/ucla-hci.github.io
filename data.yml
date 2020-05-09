@@ -87,6 +87,11 @@ team:
     expertise: Web Engineer
     img: minion.jpg
     imgalt: purple.jpeg
+  - name: Brandon Ngo
+    role: <a href='lbr' target='_blank'>LbR student</a>
+    expertise: UX Design
+    img: minion.jpg
+    imgalt: purple.jpeg
   - name: Rita Dang
     role: <a href='lbr' target='_blank'>LbR student</a>
     expertise: User Researcher
