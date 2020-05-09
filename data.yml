@@ -68,18 +68,33 @@ team:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Alex Chen
-    role: ECE Undergrad
+    role: <a href='lbr' target='_blank'>LbR student</a>
     expertise: <br>
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Eric Perez
-    role: ECE Undergrad
+    role: <a href='lbr' target='_blank'>LbR student</a>   
     expertise: <br>
     img: minion.jpg
     imgalt: purple.jpeg
   - name: James King
-    role: ECE Undergrad
+    role: <a href='lbr' target='_blank'>LbR student</a>
     expertise: <br>
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Zixuan Chen
+    role: <a href='lbr' target='_blank'>LbR student</a>
+    expertise: Web Engineer
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Rita Dang
+    role: <a href='lbr' target='_blank'>LbR student</a>
+    expertise: User Researcher
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Charisa Shin
+    role: <a href='lbr' target='_blank'>LbR student</a>
+    expertise: UX Designer
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Yudai Tanaka
@@ -126,12 +141,12 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Jingbin Huang
-    role: ECE Undergrad
+    role: NSF REU student
     # expertise: Machine Learning
     img: Jingbin-s.JPG
     imgalt: Jingbin-f.JPG
   - name: Melody Chen
-    role: ECE Undergrad
+    role: NSF REU student
     img: Melody-s.JPG
     imgalt: Melody-f.JPG 
   - name: Cathy Wang

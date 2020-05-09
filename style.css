@@ -229,3 +229,28 @@ div.page {
   bottom: 3%;
   color: #aaaaaa;
 }
+
+
+a:link {
+  color: #444444;
+  /* border-bottom: 1px dotted #000; */
+  /* text-decoration: none; */
+}
+
+a:visited {
+  color: #444444;
+  /* border-bottom: 1px dotted #000; */
+  /* text-decoration: none; */
+}
+
+a:hover {
+  color: #bbbbbb;
+  /* border-bottom: 1px dotted #000; */
+  /* text-decoration: none; */
+}
+
+a:active {
+  color: #000000;
+  /* border-bottom: 1px dotted #000; */
+  /* text-decoration: none; */
+}
