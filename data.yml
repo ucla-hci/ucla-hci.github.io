@@ -1,7 +1,7 @@
 team:
   - name: Xiang 'Anthony' Chen
     role: Assistant Professor
-    expertise: Pirate Investigator
+    expertise: Principal Investigator
     img: Anthony-s.JPG
     imgalt: Anthony-f.JPG
     url: https://xiangchen.me
@@ -103,13 +103,13 @@ team:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Yudai Tanaka
-    role: Specialists
+    role: Specialist
     expertise: VR/Haptics
     img: Yudai-s.JPG
     imgalt: Yudai-f.JPG
     url: https://yudaitanaka.myportfolio.com/
   - name: Lauren Hung
-    role: Specialists
+    role: Specialist
     expertise: UI/UX Designer
     img: Lauren-s.JPG
     imgalt: Lauren-f.JPG
