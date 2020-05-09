@@ -201,6 +201,7 @@ projects:
     videoSite: vimeo
     video: 416571045
     album: '72157714227638632'
+    paperUrl: 'https://www.dropbox.com/s/py2l0kemkcf18t6/chi2020_oralcam.pdf?raw=1'
     thumbnail: chi2020_oralcam_thumbnail.jpg
   - name: 'Robiot'
     title: 'Robiot: A Design Tool for Actuating Everyday Object with Automatically Generated 3D Printable Mechanism'
