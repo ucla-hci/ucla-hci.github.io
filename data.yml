@@ -4,70 +4,141 @@ team:
     expertise: Pirate Investigator
     img: Anthony-s.JPG
     imgalt: Anthony-f.JPG
-    affliation: Electrical & Computer Engineering
-    email: xac @ ucla.edu
-    bio: Xiang ‘Anthony' Chen is an Assistant Professor in UCLA's Department of Electrical & Computer Engineering. Anthony's area of expertise is Human-Computer Interaction (HCI). He received his Ph.D. in the School of Computer Science at Carnegie Mellon University in 2017 and was a recipient of the NSF CISE CRII Award and the Adobe Ph.D. Fellowship. His research is at the intersection of sensing & interaction techniques, intelligent user interfaces, and computational design & fabrication. Anthony’s work has won two best paper awards and one honorable mentioned in top-tier HCI conferences.
-    projects: 
-      - Fart Gun 1
-      - Fart Gun 2
-      - Fart Gun 3
-      - Fart Gun 4
+    url: https://xiangchen.me
   - name: Jiahao Li
     role: MAE PhD
-    expertise: Mechanical Engineer
+    expertise: AI for Robotics
     img: Nick-s.JPG
     imgalt: Nick-f.JPG
-  - name: Yao Xie
-    role: ECE PhD
-    expertise: AI Explainer
-    img: Yao-s.JPG
-    imgalt: Yao-f.JPG
+    url: https://ljhnick.github.io/
   - name: Hongyan Gu
     role: ECE PhD
-    expertise: Deep Learner
+    expertise: AI for Medicine
     img: Hongyan-s.JPG
     imgalt: Hongyan-f.JPG
   - name: Ruolin Wang
     role: ECE PhD
-    expertise: sabotage
+    expertise: AI for Accessibility
     img: Ruolin-s.JPG
     imgalt: Ruolin-f.JPG
+    url: https://www.violynnewang.com/
   - name: Noyan Evirgen
     role: ECE PhD
-    expertise: sabotage
+    expertise: Deep Learning
     img: Noyan-s.JPG
     imgalt: Noyan-f.JPG
-  - name: Carlo Rebanal
+  - name: Bruce Liu
+    role: ECE PhD
+    expertise: ML + NLP
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Yuan Liang
+    role: ECE PhD
+    expertise: Medical Imaging & CV
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Sam Arlin
+    role: CS PhD
+    expertise: Interaction Techniques
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Yifan Xu
     role: ECE MS
-    expertise: sabotage
-    img: Carlo-s.JPG
-    imgalt: Carlo-f.JPG
-  - name: Ximeng Liu
-    role: ECE MS
-    expertise: sabotage
-    img: Simon-s.JPG
-    imgalt: Simon-f.JPG
+    expertise: UX Engineer
+    img: minion.jpg
+    imgalt: purple.jpeg
   - name: Amirali Omidfar
     role: ECE MS
-    expertise: sabotage
+    expertise: <br>
     img: Amir-s.JPG
     imgalt: Amir-f.JPG
-  - name: Nicolas Cheng
+  - name: Ritam Sarmah
+    role: CS MS
+    expertise: UX Architect
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Yunpeng Ding
     role: ECE MS
-    expertise: sabotage
-    img: Nicky-s.JPG
-    imgalt: Nicky-f.JPG
+    expertise: NLP Engineer
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Grace Zhao
+    role: CS Undergrad
+    expertise: <br>
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Alex Chen
+    role: ECE Undergrad
+    expertise: <br>
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Eric Perez
+    role: ECE Undergrad
+    expertise: <br>
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: James King
+    role: ECE Undergrad
+    expertise: <br>
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Yudai Tanaka
+    role: Specialists
+    expertise: VR/Haptics
+    img: Yudai-s.JPG
+    imgalt: Yudai-f.JPG
+    url: https://yudaitanaka.myportfolio.com/
   - name: Lauren Hung
     role: Specialists
     expertise: UI/UX Designer
     img: Lauren-s.JPG
     imgalt: Lauren-f.JPG
+    url: http://laurenhung.com/
+alumni:
+  - name: Carlo Rebanal
+    role: ECE MS
+    # expertise: sabotage
+    img: Carlo-s.JPG
+    imgalt: Carlo-f.JPG
+  - name: Yao Xie
+    role: ECE MS
+    # expertise: AI Explainer
+    img: Yao-s.JPG
+    imgalt: Yao-f.JPG
+  - name: Ximeng Liu
+    role: ECE MS
+    # expertise: sabotage
+    img: Simon-s.JPG
+    imgalt: Simon-f.JPG
+  - name: Nicolas Cheng
+    role: ECE MS
+    # expertise: sabotage
+    img: Nicky-s.JPG
+    imgalt: Nicky-f.JPG
   - name: Yuki Tang
     role: Visiting student
-    expertise: User Research
+    # expertise: User Research
     img: Yuki-s.JPG
     imgalt: Yuki-f.JPG 
-alumni:
+  - name: Hsuan-Wei Fan
+    role: Visiting student
+    # expertise:
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Jingbin Huang
+    role: ECE Undergrad
+    # expertise: Machine Learning
+    img: Jingbin-s.JPG
+    imgalt: Jingbin-f.JPG
+  - name: Melody Chen
+    role: ECE Undergrad
+    img: Melody-s.JPG
+    imgalt: Melody-f.JPG 
+  - name: Cathy Wang
+    role: Visiting student
+    expertise:
+    img: minion.jpg
+    imgalt: purple.jpeg
   - name: Ben Wagstaff
     role: ECE Undergrad
     # expertise: sabotage
@@ -78,16 +149,44 @@ alumni:
     # expertise: sabotage
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
-  - name: Jingbin Huang
-    role: ECE Undergrad
-    # expertise: Machine Learning
-    img: Jingbin-s.JPG
-    imgalt: Jingbin-f.JPG
-  - name: Melody Chen
-    role: ECE Undergrad
-    img: Melody-s.JPG
-    imgalt: Melody-f.JPG 
 projects:
+  - name: 'CheXplain'
+    title: 'CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis'
+    authors:
+      - 'Yao Xie, UCLA HCI Research'
+      - 'Melody Chen, UCLA HCI Research'
+      - 'David Kao, UCLA HCI Research'
+      - 'Ge Gao, U of Maryland'
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+    pubs: CHI 2020
+    img: t_chexplain.jpg
+    abstract: "The recent development of data-driven AI promises to automate medical diagnosis; however, most AI functions as ‘black boxes’ to physicians with limited computational knowledge. Using medical imaging as a point of departure, we conducted three research activities to formulate the design of CheXplain---a system that enables physicians to explore and understand AI-enabled chest X-ray analysis: (i) a paired survey between referring physicians and radiologists reveals whether, when, and what kinds of explanations are needed; (ii) a low-fidelity prototype co-designed with three physicians formulates eight key features; and (iii) a high-fidelity prototype evaluated by another six medical professionals provides detailed summative insights on how each feature enables the exploration and understanding of AI. We summarize by discussing recommendations for future work to design and implement explainable medical AI systems that encompass four recurring themes: motivation, constraint, explanation, and justification."
+    videoSite: vimeo
+    video: 416564621
+    album: '72157714227638632'
+    citation: "Yao Xie, Melody Chen, David Kao, Ge Gao, and Xiang “Anthony” Chen. 2020. CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI ’20). Association for Computing Machinery, New York, NY, USA, 1–13. DOI:https://doi.org/10.1145/3313831.3376807"
+    paperUrl: 'https://www.dropbox.com/s/py2l0kemkcf18t6/chi2020_oralcam.pdf?raw=1'
+    bibtex: "@inproceedings{10.1145/3313831.3376807,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author = {Xie, Yao and Chen, Melody and Kao, David and Gao, Ge and Chen, Xiang “Anthony”},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title = {CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year = {2020},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;isbn = {9781450367080},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3313831.3376807},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3313831.3376807},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pages = {1–13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;numpages = {13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;keywords = {explainable artificial intelligence, physician-centered design, system design},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;location = {Honolulu, HI, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;series = {CHI ’20}<br>}"
+    thumbnail: chi2020_chexplain_thumbnail.jpg
+  - name: 'OralCam'
+    title: 'OralCam: Enabling Self-Examination and Awareness of Oral Health Using a Smartphone Camera'
+    authors:
+      - 'Yuan Liang, UCLA Design Automation Lab'
+      - 'Hsuan Wei Fan,	Tsinghua University'
+      - 'Zhujun Fang, UC Davis'
+      - 'Leiying Miao  Wen Li  Xuan Zhang  Weibin Sun, Nanjing Stomatological Hospital, Meidcal School'
+      - 'Kun Wang, UCLA Design Automation Lab'
+      - 'Lei He, UCLA Design Automation Lab'
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+    pubs: CHI 2020 🏅
+    img: t_oralcam.jpg
+    abstract: Due to a lack of resources or awareness, oral diseases are often left unexamined and untreated, affecting a large population worldwide. With the advent of low-cost, sensor-equipped smartphones, mobile apps offer a promising possibility. However, to the best of our knowledge, no mobile health (mHealth) solutions can directly support users to self-examine their oral health condition. We present OralCam, the first interactive app that enables end-users' self-examination of five common oral conditions (diseases or early disease signals) by taking smartphone photos of one's oral cavity. OralCam allows a user to annotate additional information to augment the input image, and presents the output hierarchically, probabilistically and with visual explanations to help laymen users understand examination results. We describe a deep learning backend trained on a data set that consists of 3,182 oral photos. We report a technical evaluation, a week-long in-the-wild user study and an expert interview to validate OralCam.
+    citation: "Yuan Liang, Hsuan Wei Fan, Zhujun Fang, Leiying Miao, Wen Li, Xuan Zhang, Weibin Sun, Kun Wang, Lei He, and Xiang “Anthony” Chen. 2020. OralCam: Enabling Self-Examination and Awareness of Oral Health Using a Smartphone Camera. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI ’20). Association for Computing Machinery, New York, NY, USA, 1–13. DOI:https://doi.org/10.1145/3313831.3376238"
+    bibtex: "@inproceedings{10.1145/3313831.3376238,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author = {Liang, Yuan and Fan, Hsuan Wei and Fang, Zhujun and Miao, Leiying and Li, Wen and Zhang, Xuan and Sun, Weibin and Wang, Kun and He, Lei and Chen, Xiang “Anthony”},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title = {OralCam: Enabling Self-Examination and Awareness of Oral Health Using a Smartphone Camera},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year = {2020},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;isbn = {9781450367080},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3313831.3376238},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3313831.3376238},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pages = {1–13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;numpages = {13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;keywords = {mobile health, oral health, artificial intelligence, deep learning},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;location = {Honolulu, HI, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;series = {CHI ’20}<br>}"
+    videoSite: vimeo
+    video: 416571045
+    album: '72157714227638632'
+    thumbnail: chi2020_oralcam_thumbnail.jpg
   - name: 'Robiot'
     title: 'Robiot: A Design Tool for Actuating Everyday Object with Automatically Generated 3D Printable Mechanism'
     authors:

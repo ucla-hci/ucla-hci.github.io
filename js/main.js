@@ -84,7 +84,7 @@ UCLAHCI.updatePage = function () {
         $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.team));
         // $('.content').append($('<br/><br/><h2>Collaborators</h2>'))
         // $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.collaborators));
-        $('.content').append($('<br/><br/><h2>Alumni</h2>'))
+        $('.content').append($('<br/><br/><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alumni</h2>'))
         $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.alumni));
 
     } else if (page == 'projects') {
@@ -262,22 +262,29 @@ UCLAHCI.showTeam = function (team) {
 
         img.addClass('team');
         img.attr('id', member.name);
-        if (member.projects != undefined && member.projects.length > 0) {
-            img.click(function (e) {
-                var divPage = $('<div class="page"></div>');
-                divPage.popup({
-                    transition: 'all 0.3s',
-                    onclose: function () {
-                        UCLAHCI.updateUrl('projects');
-                        $(document.body).css('overflow', 'scroll');
-                        $("html, body").animate({ scrollTop: 0 }, "slow");
-                    }
-                });
-                divPage.popup('show');
-                var name = $(e.target).attr('id');
-                divPage.append(UCLAHCI.makeMemberPage(name));
-                $(document.body).css('overflow', 'hidden')
-            });
+        // if (member.projects != undefined && member.projects.length > 0) {
+        //     img.click(function (e) {
+        //         var divPage = $('<div class="page"></div>');
+        //         divPage.popup({
+        //             transition: 'all 0.3s',
+        //             onclose: function () {
+        //                 UCLAHCI.updateUrl('projects');
+        //                 $(document.body).css('overflow', 'scroll');
+        //                 $("html, body").animate({ scrollTop: 0 }, "slow");
+        //             }
+        //         });
+        //         divPage.popup('show');
+        //         var name = $(e.target).attr('id');
+        //         divPage.append(UCLAHCI.makeMemberPage(name));
+        //         $(document.body).css('overflow', 'hidden')
+        //     });
+        // }
+        if(member.url != undefined) {
+            var a = $('<a>')
+            a.attr('href', member.url);
+            a.attr('target', '_blank');
+            a.append(img)
+            img = a
         }
         trImg.append(img);
         tb.append(trImg);

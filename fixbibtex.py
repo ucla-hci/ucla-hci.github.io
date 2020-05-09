@@ -9,5 +9,5 @@ if __name__ == "__main__":
 	text = text.replace('  ', '&nbsp; &nbsp; &nbsp; &nbsp;')
 	text = text.replace('\t', '&nbsp; &nbsp; &nbsp; &nbsp;')
 	text = text.replace('\&', '&amp;')
-	print text
+	print(text)
 	os.system("echo '%s' | pbcopy" % text)
