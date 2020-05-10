@@ -68,37 +68,37 @@ team:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Alex Chen
-    role: <a href='lbr' target='_blank'>LbR student</a>
+    role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: <br>
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Eric Perez
-    role: <a href='lbr' target='_blank'>LbR student</a>   
+    role: <a href='lbr' target='_blank'>LbR Student</a>   
     expertise: <br>
     img: minion.jpg
     imgalt: purple.jpeg
   - name: James King
-    role: <a href='lbr' target='_blank'>LbR student</a>
+    role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: <br>
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Zixuan Chen
-    role: <a href='lbr' target='_blank'>LbR student</a>
+    role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: Web Engineer
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Brandon Ngo
-    role: <a href='lbr' target='_blank'>LbR student</a>
+    role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: UX Design
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Rita Dang
-    role: <a href='lbr' target='_blank'>LbR student</a>
+    role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: User Researcher
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Charisa Shin
-    role: <a href='lbr' target='_blank'>LbR student</a>
+    role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: UX Designer
     img: minion.jpg
     imgalt: purple.jpeg
@@ -136,26 +136,26 @@ alumni:
     img: Nicky-s.JPG
     imgalt: Nicky-f.JPG
   - name: Yuki Tang
-    role: Visiting student
+    role: Visiting Student
     # expertise: User Research
     img: Yuki-s.JPG
     imgalt: Yuki-f.JPG 
   - name: Hsuan-Wei Fan
-    role: Visiting student
+    role: Visiting Student
     # expertise:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Jingbin Huang
-    role: NSF REU student
+    role: NSF REU Student
     # expertise: Machine Learning
     img: Jingbin-s.JPG
     imgalt: Jingbin-f.JPG
   - name: Melody Chen
-    role: NSF REU student
+    role: NSF REU Student
     img: Melody-s.JPG
     imgalt: Melody-f.JPG 
   - name: Cathy Wang
-    role: Visiting student
+    role: Visiting Student
     expertise:
     img: minion.jpg
     imgalt: purple.jpeg
