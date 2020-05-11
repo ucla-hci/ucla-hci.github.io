@@ -150,7 +150,14 @@ UCLAHCI.updatePage = function () {
         divMission.addClass('mission');
         divMission.css('width', UCLAHCI.isMobile ? '80%' : '45%');
         divMission.append('<h2>Mission Statement</h2>');
-        divMission.append('<p>' + UCLAHCI.data.aboutus[0].mission + '</p>');
+        divMission.append('<p>' + UCLAHCI.data.aboutus[0].mission + '</p><br/>');
+
+        var divJoin = $('<div/>');
+        divJoin.addClass('announcement');
+        // divJoin.css('width', UCLAHCI.isMobile ? '80%' : '45%');
+        divJoin.append(UCLAHCI.data.aboutus[0].recruitment);
+
+        divMission.append(divJoin)
 
         var divPhotos = $('<div/>');
         divPhotos.css('width', UCLAHCI.isMobile ? '80%' : '40%');

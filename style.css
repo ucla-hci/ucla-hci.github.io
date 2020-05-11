@@ -254,3 +254,7 @@ a:active {
   /* border-bottom: 1px dotted #000; */
   /* text-decoration: none; */
 }
+
+.announcement{
+  background-color:rgba(62, 223, 244, 0.25);
+}
