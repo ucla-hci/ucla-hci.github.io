@@ -89,7 +89,7 @@ team:
     imgalt: Zixuan-f.jpg
   - name: Brandon Ngo
     role: <a href='lbr' target='_blank'>LbR Student</a>
-    expertise: UX Design
+    expertise: UX Designer
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Rita Dang
@@ -146,12 +146,12 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Jingbin Huang
-    role: NSF REU Student
+    role: <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1850183'> target='_blank'>NSF REU</a> Student
     # expertise: Machine Learning
     img: Jingbin-s.JPG
     imgalt: Jingbin-f.JPG
   - name: Melody Chen
-    role: NSF REU Student
+    role: <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1850183'> target='_blank'>NSF REU</a> Student
     img: Melody-s.JPG
     imgalt: Melody-f.JPG 
   - name: Cathy Wang
