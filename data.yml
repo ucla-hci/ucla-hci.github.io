@@ -117,56 +117,57 @@ team:
 alumni:
   - name: Carlo Rebanal
     role: Now ML Engineer at Oracle
-    # expertise: sabotage
+    expertise: <br/>
     img: Carlo-s.JPG
     imgalt: Carlo-f.JPG
   - name: Yao Xie
     role: ECE MS
-    # expertise: AI Explainer
+    expertise: <br/>
     img: Yao-s.JPG
     imgalt: Yao-f.JPG
   - name: Ximeng Liu
     role: ECE MS
-    # expertise: sabotage
+    expertise: <br/>
     img: Simon-s.JPG
     imgalt: Simon-f.JPG
   - name: Nicolas Cheng
     role: ECE MS
-    # expertise: sabotage
+    expertise: <br/>
     img: Nicky-s.JPG
     imgalt: Nicky-f.JPG
   - name: Yuki Tang
     role: Now MSc at UCSD
-    # expertise: User Research
+    expertise: <br/>
     img: Yuki-s.JPG
     imgalt: Yuki-f.JPG 
   - name: Hsuan-Wei Fan
     role: Now MSc at UW
-    # expertise:
+    expertise: <br/>
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Jingbin Huang
     role: <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1850183' target='_blank'>NSF REU</a> Student<br>Now MSc at UCSD
-    # expertise: Machine Learning
+    # expertise: <br/>
     img: Jingbin-s.JPG
     imgalt: Jingbin-f.JPG
   - name: Melody Chen
     role: <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1850183' target='_blank'>NSF REU</a> Student
+    expertise: <br/>
     img: Melody-s.JPG
     imgalt: Melody-f.JPG 
   - name: Cathy Wang
     role: Now MSc at UCSD
-    expertise:
+    expertise: <br/>
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Ben Wagstaff
     role: ECE Undergrad
-    # expertise: sabotage
+    expertise: <br/>
     img: Ben-s.JPG
     imgalt: Ben-f.JPG
   - name: Joseph Lu
     role: CS Undergrad
-    # expertise: sabotage
+    expertise: <br/>
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
