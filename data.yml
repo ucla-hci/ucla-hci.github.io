@@ -146,7 +146,7 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Jingbin Huang
-    role: <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1850183' target='_blank'>NSF REU</a> Student
+    role: <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1850183' target='_blank'>NSF REU</a> Student<br>Now MSc at UCSD
     # expertise: Machine Learning
     img: Jingbin-s.JPG
     imgalt: Jingbin-f.JPG
