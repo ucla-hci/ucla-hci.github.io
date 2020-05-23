@@ -100,8 +100,9 @@ team:
   - name: Charisa Shin
     role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: UX Designer
-    img: minion.jpg
-    imgalt: purple.jpeg
+    img: Charisa-s.jpg
+    imgalt: Charisa-f.jpg
+    url: http://charisa.design/
   - name: Yudai Tanaka
     role: Specialist
     expertise: VR/Haptics
@@ -160,6 +161,10 @@ alumni:
     expertise: <br/>
     img: minion.jpg
     imgalt: purple.jpeg
+  - name: Rohit Banerjee
+    role: Now SoC Engineer at Intel
+    img: Rohit-s.jpg
+    imgalt: Rohit-f.jpg
   - name: Ben Wagstaff
     role: ECE Undergrad
     expertise: <br/>
