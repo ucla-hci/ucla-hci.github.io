@@ -163,6 +163,7 @@ alumni:
     imgalt: purple.jpeg
   - name: Rohit Banerjee
     role: Now SoC Engineer at Intel
+    expertise: <br/>
     img: Rohit-s.jpg
     imgalt: Rohit-f.jpg
   - name: Ben Wagstaff
