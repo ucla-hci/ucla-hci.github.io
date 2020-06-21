@@ -37,11 +37,6 @@ team:
     expertise: Medical Imaging & CV
     img: minion.jpg
     imgalt: purple.jpeg
-  - name: Sam Arlin
-    role: CS PhD
-    expertise: Interaction Techniques
-    img: minion.jpg
-    imgalt: purple.jpeg
   - name: Yifan Xu
     role: ECE MS
     expertise: UX Engineer
@@ -60,26 +55,6 @@ team:
   - name: Yunpeng Ding
     role: ECE MS
     expertise: NLP Engineer
-    img: minion.jpg
-    imgalt: purple.jpeg
-  - name: Grace Zhao
-    role: CS Undergrad
-    expertise: <br>
-    img: minion.jpg
-    imgalt: purple.jpeg
-  - name: Alexander Chen
-    role: <a href='lbr' target='_blank'>LbR Student</a>
-    expertise: <br>
-    img: Alex-s.jpg
-    imgalt: Alex-f.jpg
-  - name: Eric Perez
-    role: <a href='lbr' target='_blank'>LbR Student</a>   
-    expertise: <br>
-    img: minion.jpg
-    imgalt: purple.jpeg
-  - name: James King
-    role: <a href='lbr' target='_blank'>LbR Student</a>
-    expertise: <br>
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Zixuan Chen
@@ -116,6 +91,31 @@ team:
     imgalt: Lauren-f.JPG
     url: http://laurenhung.com/
 alumni:
+  - name: Alexander Chen
+    role: <a href='lbr' target='_blank'>LbR Student</a>
+    expertise: <br>
+    img: Alex-s.jpg
+    imgalt: Alex-f.jpg
+  - name: Eric Perez
+    role: <a href='lbr' target='_blank'>LbR Student</a>   
+    expertise: <br>
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: James King
+    role: <a href='lbr' target='_blank'>LbR Student</a>
+    expertise: <br>
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Grace Zhao
+    role: CS Undergrad
+    expertise: <br>
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Sam Arlin
+    role: CS PhD
+    expertise: Interaction Techniques
+    img: minion.jpg
+    imgalt: purple.jpeg
   - name: Carlo Rebanal
     role: Now ML Engineer at Oracle
     expertise: <br/>
