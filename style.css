@@ -150,7 +150,8 @@ div.contact {
 }
 
 img.sponsor {
-  height: 88px;
+  max-height: 88px;
+  max-width: 256px;
   margin-left: 20px;
   margin-right: 40px;
   filter: grayscale(66%);

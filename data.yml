@@ -697,6 +697,8 @@ aboutus:
     sponsors:
       - img: nsf.png
         url: https://nsf.gov/
+      - img: hellman.png
+        url: http://www.hellmanfellows.org/
       - img: adobe.png
         url: https://www.adobe.com/
       - img: meta.png
