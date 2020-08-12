@@ -709,3 +709,11 @@ redirects:
     url: http://67.158.54.10/
   - name: reflection
     url: http://67.158.54.10/exp
+  - name: lbr
+    url: https://www.notion.so/uclahci/Learning-by-Research-Pragmatic-Educational-Research-Participation-for-Undergrads-148956558a3c4836b003065ea692e9dd
+  - name: 209as
+    url: https://www.notion.so/uclahci/2020-Fall-ECE-M209AS-Human-Computer-Interaction-4a46bd7275b34bce8e48ba7ad1325d7f
+  - name: bib
+    url: https://chrome.google.com/webstore/detail/bib-%E2%80%94-copy-bibtex-in-1-cl/onnmdchfagapkggbhnnjkmllimegclnh
+  - name: counterweight
+    url: https://chrome.google.com/webstore/detail/counterweight/oemlabbngpnemncoplnmcpdlnpgcgiih
