@@ -140,7 +140,7 @@ UCLAHCI.updatePage = function () {
 
             $('.content').append(div);
         }
-    } else {
+    } else if (page=='aboutus'){
         var tb = $('<table/>');
         // tb.attr('border', 1);
         var tr1 = $('<tr/>');
@@ -240,6 +240,12 @@ UCLAHCI.updatePage = function () {
         tb.append('<tr><td><br/></td></tr>')
         tb.append(tr2);
         $('.content').append(tb);
+    } else {
+        for(entry of UCLAHCI.data.redirects) {
+            if(page == entry.name) {
+                window.location = entry.url;
+            }
+        }
     }
 
     $("html, body").animate({ scrollTop: 0 }, "slow");
