@@ -192,7 +192,7 @@ projects:
     video: 416564621
     album: '72157714227177278'
     citation: "Yao Xie, Melody Chen, David Kao, Ge Gao, and Xiang “Anthony” Chen. 2020. CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI ’20). Association for Computing Machinery, New York, NY, USA, 1–13. DOI:https://doi.org/10.1145/3313831.3376807"
-    paperUrl: 'https://www.dropbox.com/s/b71xmvn3zauvlbb/chi2020_chexplain.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/b71xmvn3zauvlbb/chi2020_chexplain.pdf'
     bibtex: "@inproceedings{10.1145/3313831.3376807,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author = {Xie, Yao and Chen, Melody and Kao, David and Gao, Ge and Chen, Xiang “Anthony”},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title = {CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year = {2020},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;isbn = {9781450367080},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3313831.3376807},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3313831.3376807},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pages = {1–13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;numpages = {13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;keywords = {explainable artificial intelligence, physician-centered design, system design},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;location = {Honolulu, HI, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;series = {CHI ’20}<br>}"
     thumbnail: chi2020_chexplain_thumbnail.jpg
   - name: 'OralCam'
@@ -213,7 +213,7 @@ projects:
     videoSite: vimeo
     video: 416571045
     album: '72157714227638632'
-    paperUrl: 'https://www.dropbox.com/s/py2l0kemkcf18t6/chi2020_oralcam.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/py2l0kemkcf18t6/chi2020_oralcam.pdf'
     thumbnail: chi2020_oralcam_thumbnail.jpg
   - name: 'Robiot'
     title: 'Robiot: A Design Tool for Actuating Everyday Object with Automatically Generated 3D Printable Mechanism'
@@ -229,7 +229,7 @@ projects:
     album: '72157710743420892'
     citation: "Li, J., Kim, J., & Chen, X. “Anthony.” (2019). Robiot&#58; A Design Tool for Actuating Everyday Objects with Automatically Generated 3D Printable Mechanisms. In Proceedings of the 32Nd Annual ACM Symposium on User Interface Software and Technology (pp. 673–685). New York, NY, USA: ACM. https://doi.org/10.1145/3332165.3347894"
     bibtex: "@inproceedings{Li:2019:RDT:3332165.3347894,<br> author = {Li, Jiahao and Kim, Jeeeun and Chen, Xiang 'Anthony'},<br> title = {Robiot&amp;\#58; A Design Tool for Actuating Everyday Objects with Automatically Generated 3D Printable Mechanisms},<br> booktitle = {Proceedings of the 32Nd Annual ACM Symposium on User Interface Software and Technology},<br> series = {UIST '19},<br> year = {2019},<br> isbn = {978-1-4503-6816-2},<br> location = {New Orleans, LA, USA},<br> pages = {673--685},<br> numpages = {13},<br> url = {http://doi.acm.org/10.1145/3332165.3347894},<br> doi = {10.1145/3332165.3347894},<br> acmid = {3347894},<br> publisher = {ACM},<br> address = {New York, NY, USA},<br> keywords = {actuation, design tool, everyday objects, generative design},<br>} <br>"
-    paperUrl: 'https://www.dropbox.com/s/eur3zu2kmtcdtq5/uist2019_robiot.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/eur3zu2kmtcdtq5/uist2019_robiot.pdf'
     thumbnail: uist2019_robiot_thumbnail.jpg
   - name: Minuet
     pubs: SUI 2019
@@ -246,7 +246,7 @@ projects:
     album: '72157710744632177'
     citation: "Kang, R., Guo, A., Laput, G., Li, Y., & Chen, X. “Anthony.” (2019). Minuet: Multimodal Interaction with an Internet of Things. In Symposium on Spatial User Interaction (pp. 2:1--2:10). New York, NY, USA: ACM. https://doi.org/10.1145/3357251.3357581"
     bibtex: "@inproceedings{Kang:2019:MMI:3357251.3357581,<br>address = {New York, NY, USA},<br>author = {Kang, Runchang and Guo, Anhong and Laput, Gierad and Li, Yang and Chen, Xiang 'Anthony'},<br>booktitle = {Symposium on Spatial User Interaction},<br>doi = {10.1145/3357251.3357581},<br>isbn = {978-1-4503-6975-6},<br>keywords = { gesture, multimodal interaction, voice,Internet-of-Things},<br>pages = {2:1----2:10},<br>publisher = {ACM},<br>series = {SUI '19},<br>title = {{Minuet: Multimodal Interaction with an Internet of Things}},<br>url = {http://doi.acm.org/10.1145/3357251.3357581},<br>year = {2019}<br>}<br>"
-    paperUrl: 'https://www.dropbox.com/s/80y5jz2lw4fjmge/sui2019_minuet.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/80y5jz2lw4fjmge/sui2019_minuet.pdf'
     thumbnail: sui2019_minuet_thumbnail.jpg
   - name: Forte
     pubs: CHI 2018
@@ -266,7 +266,7 @@ projects:
     album: '72157668597613889'
     citation: "Chen, X., Tao, Y., Wang, G., Kang, R., Grossman, T., Coros, S., & Hudson, S. E. (2018). Forte: User-Driven Generative Design. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (p. 496)."
     bibtex: "@inproceedings{chen2018forte,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Forte: User-Driven Generative Design},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, XiangAnthony and Tao, Ye and Wang, Guanyun and Kang, Runchang and Grossman, Tovi and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={496},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2018},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
-    paperUrl: 'https://www.dropbox.com/s/bld0v2nc420x1ld/chi2018_forte.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/bld0v2nc420x1ld/chi2018_forte.pdf'
     thumbnail: chi2018_forte_thumbnail.jpg
   - name: Medley
     pubs: CHI 2018
@@ -282,7 +282,7 @@ projects:
     album: '72157689656591312'
     citation: "Chen, X., Coros, S., & Hudson, S. E. (2018). Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (p. 162)."
     bibtex: "@inproceedings{chen2018medley,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, XiangAnthony and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={162},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2018},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
-    paperUrl: 'https://www.dropbox.com/s/97nvsjjqawn14e9/medley_chi2018.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/97nvsjjqawn14e9/medley_chi2018.pdf'
     thumbnail: chi2018_medley_thumbnail.jpg
   - img: t_improv.jpg
     authors:
@@ -326,7 +326,7 @@ projects:
     videoSite: vimeo
     album: '72157664092225828'
     thumbnail: tochi17_improv_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/bwct58u1z70jvt0/tochi2017_improv.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/bwct58u1z70jvt0/tochi2017_improv.pdf'
     citation: >-
       Chen, X., & Li, Y. (2017). Improv: An Input Framework for Improvising Cross-Device Interaction by Demonstration. ACM Transactions on Computer-Human Interaction (TOCHI), 24(2), 15.
     pubs: TOCHI '17
@@ -367,7 +367,7 @@ projects:
       &nbsp;year={2016},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}
     album: '72157674285753686'
     thumbnail: uist2016_reprise_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/j8kywu7dex12ery/uist2016_reprise.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/j8kywu7dex12ery/uist2016_reprise.pdf'
     citation: >-
       Chen, X., Kim, J., Mankoff, J., Grossman, T., Coros, S., & Hudson, S. E. (2016). Reprise: A Design Tool for Specifying, Generating, and Customizing 3D Printable Adaptations on Everyday Objects. In the 29th Annual ACM Symposium on User Interface Software and Technology.
   - img: t_locus.jpg
@@ -406,7 +406,7 @@ projects:
     videoSite: vimeo
     album: '72157671061225703'
     thumbnail: uist2016_locus_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/iw4eqv7b9rhzykx/uist2016_locus.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/iw4eqv7b9rhzykx/uist2016_locus.pdf'
     citation: >-
       Chen, X., & Li, Y. (2016). Bootstrapping User-Defined Body Tapping Recognition with Offline-Learned Probabilistic Representation. In Proceedings of the 29th Annual Symposium on User Interface Software and Technology (pp. 359–364).
   - img: t_encore.jpg
@@ -453,7 +453,7 @@ projects:
       &nbsp;organization={ACM}<br>}
     album: '72157670690945024'
     thumbnail: uist2015_encore_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/2fvypkcxhv2wclk/uist2015_encore.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/2fvypkcxhv2wclk/uist2015_encore.pdf'
     citation: >-
       Chen, X., Coros, S., Mankoff, J., & Hudson, S. E. (2015). Encore: 3D printed augmentation of everyday objects with printed-over, affixed and interlocked attachments. In Proceedings of the 28th Annual ACM Symposium on User Interface Software and Technology (pp. 73–82).
   
@@ -493,7 +493,7 @@ projects:
     videoSite: vimeo
     album: '72157672834628310'
     thumbnail: chi2014_duet_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/r7llh1crqtwg16u/chi2014_duet.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/r7llh1crqtwg16u/chi2014_duet.pdf'
     citation: >-
       Chen, X., Grossman, T., Wigdor, D. J., & Fitzmaurice, G. (2014). Duet: exploring joint interactions on a smart phone and a smart watch. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 159–168).
   
@@ -514,7 +514,7 @@ projects:
     bibtex: "@inproceedings{chen2014air+,<br>&nbsp; &nbsp;title={Air+ touch: interweaving touch and in-air gestures},<br>&nbsp; &nbsp;author={Chen, XiangAnthony and Schwarz, Julia and Harrison, Chris and Mankoff, Jennifer and Hudson, Scott E},<br>&nbsp; &nbsp;booktitle={Proceedings of the 27th annual ACM symposium on User interface software and technology},<br>&nbsp; &nbsp;pages={519--525},<br>&nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp;organization={ACM}<br>}"
     album: '72157670702717043'
     thumbnail: uist2014_airtouch_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/yaspxpqsx4vtz99/uist2014_airtouch.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/yaspxpqsx4vtz99/uist2014_airtouch.pdf'
     citation: >-
       Chen, X., Schwarz, J., Harrison, C., Mankoff, J., & Hudson, S. E. (2014). Air + touch: interweaving touch & in-air gestures. In Proceedings of the 27th annual ACM symposium on User interface software and technology (pp. 519–525).
 
@@ -557,7 +557,7 @@ projects:
     videoSite: vimeo
     album: '72157674290832196'
     thumbnail: uist2014_swipeboard_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/sqd5dxsl22zgpnb/uist2014_swipeboard.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/sqd5dxsl22zgpnb/uist2014_swipeboard.pdf'
     citation: >-
       Chen, X., Grossman, T., & Fitzmaurice, G. (2014). Swipeboard: a text entry technique for ultra-small interfaces that supports novice to expert transitions. In Proceedings of the 27th annual ACM symposium on User interface software and technology (pp. 615–620).
 
@@ -578,7 +578,7 @@ projects:
     videoSite: vimeo
     album: '72157674813685485'
     thumbnail: mhci2014_aroundbody_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/lyqbpiq854b2qos/mhci2014_aroundbody.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/lyqbpiq854b2qos/mhci2014_aroundbody.pdf'
     citation: >-
       Chen, X., Schwarz, J., Harrison, C., Mankoff, J., & Hudson, S. (2014). Around-body interaction: sensing & interaction techniques for proprioception-enhanced input with mobile devices. In Proceedings of the 16th international conference on Human-computer interaction with mobile devices & services (pp. 287–290).
   
@@ -627,7 +627,7 @@ projects:
     videoSite: vimeo
     flickr: '72157674424983716'
     thumbnail: mhci2012_bci_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/z74oxofbcqlc3lr/mhci2012_bci.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/z74oxofbcqlc3lr/mhci2012_bci.pdf'
     citation: >-
       Chen, X., Marquardt, N., Tang, A., Boring, S., & Greenberg, S. (2012). Extending a mobile device’s interaction space through body-centric interaction. In Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services (pp. 151–160).
   
@@ -678,7 +678,7 @@ projects:
     video: '31823922'
     videoSite: vimeo
     thumbnail: avi2012_spalendar_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/0uvmpuhpq3vpzfy/avi2012_spalendar.pdf?raw=1'
+    paperUrl: 'https://www.dropbox.com/s/0uvmpuhpq3vpzfy/avi2012_spalendar.pdf'
     citation: >-
       Chen, X., Boring, S., Carpendale, S., Tang, A., & Greenberg, S. (2012). Spalendar: visualizing a group’s calendar events over a geographic space on a public display. In AVI ’12 Proceedings of the International Working Conference on Advanced Visual Interfaces (pp. 689–696).
 
