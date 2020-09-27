@@ -29,7 +29,7 @@ team:
     imgalt: Noyan-f.JPG
   - name: Bruce Liu
     role: ECE PhD
-    expertise: ML + NLP
+    expertise: AI for Accessibility
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Yuan Liang
@@ -193,6 +193,25 @@ projects:
     bibtex: "@inproceedings{10.1145/3385956.3418964,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author = {Tanaka, Yudai and Horie, Arata and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title = {DualVib: Simulating Haptic Sensation of Dynamic Mass by Combining Pseudo-Force and Texture Feedback},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year = {2020},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;isbn = {9781450376198},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3385956.3418964},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3385956.3418964},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {26th ACM Symposium on Virtual Reality Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pages = {1–10},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;numpages = {10},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;keywords = {haptics, virtual reality, mass perception, vibration},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;location = {Virtual Event, Canada},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;series = {VRST ’20}<br>}"
     paperUrl: 'https://drive.google.com/file/d/1aEnQ-LSWe7upFDG1-UQ95tJ8juRcbvnf/view?usp=sharing'
     thumbnail: vrst2020_dualvib_thumbnail.jpg
+  - name: 'Geno'
+    title: 'Geno: A Developer Tool for Authoring Multimodal Interaction on Existing Web Applications'
+    pubs: UIST 2020
+    img: t_geno.jpg
+    authors:
+      - 'Ritam Jyoti Sarmah, UCLA HCI Research'
+      - 'Yunpeng Ding, UCLA HCI Research'
+      - 'Di Wang, UCSD Computer Science'
+      - 'Cheuk Yin Phipson Lee, UCLA HCI Research'
+      - 'Toby Jia-Jun Li, CMU HCII'
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+    abstract: "Reconfiguring shapes of objects enables transforming existing passive objects with robotic functionalities, e.g., a transformable coffee cup holder can be attached to a chair's armrest, a piggy bank can reach out an arm to 'steal' coins. Despite the advance in end-user 3D design and fabrication, it remains challenging for non-experts to create such 'transformables' using existing tools due to the requirement of specific engineering knowledge such as mechanisms and robotic design. We present Romeo -- a design tool for creating transformables to robotically augment objects' default functionalities. Romeo allows users to transform an object into a robotic arm by expressing at a high level what type of task is expected. Users can select which part of the object to be transformed, specify motion points in space for the transformed part to follow and the corresponding action to be taken. Romeo then automatically generates a robotic arm embedded in the transformable part ready for fabrication. A design session validated this tool where participants used Romeo to accomplish controlled design tasks and to open-endedly create coin-stealing piggy banks by transforming 3D objects of their own choice."
+    videoSite: vimeo
+    video: 440213846
+    album: '72157716157681577'
+    paperUrl: 'https://drive.google.com/file/d/186-xfebZcmJ1saRN6h66lbLXx4JMd_N2/view?usp=sharing'
+    citation: "Ritam Jyoti Sarmah, Yunpeng Ding, Di Wang, Cheuk Yin Phipson Lee, Toby Jia-Jun Li, and Xiang'Anthony Chen. Geno: A Developer Tool for Authoring Multimodal Interaction on Existing Web Applications. arXiv preprint arXiv:2007.09809 (2020)."
+    bibtex: "@article{sarmah2020geno,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Geno: A Developer Tool for Authoring Multimodal Interaction on Existing Web Applications},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Sarmah, Ritam Jyoti and Ding, Yunpeng and Wang, Di and Lee, Cheuk Yin Phipson and Li, Toby Jia-Jun and Chen, XiangAnthony},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={arXiv preprint arXiv:2007.09809},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2020}<br>}<br>"
+    thumbnail: uist2020_geno_thumbnail.jpg
   - name: 'Romeo'
     title: 'Romeo: A Design Tool for Embedding Transformable Parts in 3D Models to Robotically Augment Default Functionalities'
     authors:
@@ -210,7 +229,7 @@ projects:
     paperUrl: 'https://drive.google.com/file/d/1cOdjdHvsdquguuCuPzf0sriFZ2buVpLD/view?usp=sharing'
     citation: "Jiahao Li, Meilin Cui, Jeeeun Kim, and Xiang 'Anthony' Chen. Romeo: A Design Tool for Embedding Transformable Parts in 3D Models to Robotically Augment Default Functionalities. arXiv preprint arXiv:2007.11199 (2020)."
     bibtex: "@article{li2020romeo,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Romeo: A Design Tool for Embedding Transformable Parts in 3D Models to Robotically Augment Default Functionalities},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Li, Jiahao and Cui, Meilin and Kim, Jeeeun and Chen, XiangAnthony},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={arXiv preprint arXiv:2007.11199},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2020}<br>}<br>"
-    thumbnail: vrst2020_dualvib_thumbnail.jpg
+    thumbnail: uist2020_romeo_thumbnail.jpg
   - name: 'CheXplain'
     title: 'CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis'
     authors:
