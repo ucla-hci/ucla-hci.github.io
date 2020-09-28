@@ -52,21 +52,11 @@ team:
     expertise: UX Architect
     img: minion.jpg
     imgalt: purple.jpeg
-  - name: Yunpeng Ding
-    role: ECE MS
-    expertise: NLP Engineer
-    img: minion.jpg
-    imgalt: purple.jpeg
   - name: Zixuan Chen
     role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: Web Engineer
     img: Zixuan-s.jpg
     imgalt: Zixuan-f.jpg
-  - name: Brandon Ngo
-    role: <a href='lbr' target='_blank'>LbR Student</a>
-    expertise: UX Designer
-    img: minion.jpg
-    imgalt: purple.jpeg
   - name: Rita Dang
     role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: User Researcher
@@ -91,6 +81,16 @@ team:
     imgalt: Lauren-f.JPG
     url: http://laurenhung.com/
 alumni:
+  - name: Yunpeng Ding
+    role: ECE MS
+    expertise: NLP Engineer
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Brandon Ngo
+    role: <a href='lbr' target='_blank'>LbR Student</a>
+    expertise: UX Designer
+    img: minion.jpg
+    imgalt: purple.jpeg
   - name: Alexander Chen
     role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: <br>
