@@ -32,6 +32,7 @@ team:
     expertise: AI for Accessibility
     img: minion.jpg
     imgalt: purple.jpeg
+    url: https://www.xingyuliu.com/
   - name: Yuan Liang
     role: ECE PhD
     expertise: Medical Imaging & CV
