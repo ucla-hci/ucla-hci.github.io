@@ -8,8 +8,8 @@ team:
   - name: Yang Zhang
     role: Assistant Professor
     expertise: PI (<a target="_blank" href="https://hilab.dev/">HiLab</a>)
-    img: Yang-s.JPG
-    imgalt: Yang-f.JPG
+    img: Yang-s.jpg
+    imgalt: Yang-f.jpg
     url: https://yangzhang.dev/
   - name: Jiahao Li
     role: MAE PhD
