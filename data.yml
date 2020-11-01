@@ -1,10 +1,16 @@
 team:
   - name: Xiang 'Anthony' Chen
     role: Assistant Professor
-    expertise: Principal Investigator
+    expertise: PI
     img: Anthony-s.JPG
     imgalt: Anthony-f.JPG
-    url: https://xiangchen.me
+    url: https://xac.is
+  - name: Yang Zhang
+    role: Assistant Professor
+    expertise: PI (<a target="_blank" href="https://hilab.dev/">HiLab</a>)
+    img: Yang-s.JPG
+    imgalt: Yang-f.JPG
+    url: https://yangzhang.dev/
   - name: Jiahao Li
     role: MAE PhD
     expertise: AI for Robotics
@@ -38,37 +44,6 @@ team:
     expertise: Medical Imaging & CV
     img: minion.jpg
     imgalt: purple.jpeg
-  - name: Yifan Xu
-    role: ECE MS
-    expertise: UX Engineer
-    img: minion.jpg
-    imgalt: purple.jpeg
-  - name: Amirali Omidfar
-    role: ECE MS
-    expertise: <br>
-    img: Amir-s.JPG
-    imgalt: Amir-f.JPG
-  - name: Ritam Sarmah
-    role: CS MS
-    expertise: UX Architect
-    img: minion.jpg
-    imgalt: purple.jpeg
-  - name: Zixuan Chen
-    role: <a href='lbr' target='_blank'>LbR Student</a>
-    expertise: Web Engineer
-    img: Zixuan-s.jpg
-    imgalt: Zixuan-f.jpg
-  - name: Rita Dang
-    role: <a href='lbr' target='_blank'>LbR Student</a>
-    expertise: User Researcher
-    img: Rita-s.jpg
-    imgalt: Rita-f.jpg
-  - name: Charisa Shin
-    role: <a href='lbr' target='_blank'>LbR Student</a>
-    expertise: UX Designer
-    img: Charisa-s.jpg
-    imgalt: Charisa-f.jpg
-    url: http://charisa.design/
   - name: Yudai Tanaka
     role: Specialist
     expertise: VR/Haptics
@@ -81,7 +56,48 @@ team:
     img: Lauren-s.JPG
     imgalt: Lauren-f.JPG
     url: http://laurenhung.com/
+  - name: Yifan Xu
+    role: ECE MS
+    expertise: UX Engineer
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Ritam Sarmah
+    role: CS MS
+    expertise: UX Architect
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Zixuan Chen
+    role: <a href='lbr' target='_blank'>LbR Student</a>
+    expertise: Web Engineer
+    img: Zixuan-s.jpg
+    imgalt: Zixuan-f.jpg
+  - name: Charisa Shin
+    role: <a href='lbr' target='_blank'>LbR Student</a>
+    expertise: UX Designer
+    img: Charisa-s.jpg
+    imgalt: Charisa-f.jpg
+    url: http://charisa.design/
+  - name: Alexander Chen
+    role: <a href='lbr' target='_blank'>LbR Student</a>
+    expertise: <br>
+    img: Alex-s.jpg
+    imgalt: Alex-f.jpg
+  - name: Claire Guo
+    role: <a href='lbr' target='_blank'>LbR Student</a>
+    expertise: User Researcher
+    img: minion.jpg
+    imgalt: purple.jpeg
 alumni:
+  - name: Amirali Omidfar
+    role: ECE MS
+    expertise: <br>
+    img: Amir-s.JPG
+    imgalt: Amir-f.JPG
+  - name: Rita Dang
+    role: <a href='lbr' target='_blank'>LbR Student</a>
+    expertise: User Researcher
+    img: Rita-s.jpg
+    imgalt: Rita-f.jpg
   - name: Yunpeng Ding
     role: ECE MS
     expertise: NLP Engineer
@@ -92,11 +108,6 @@ alumni:
     expertise: UX Designer
     img: minion.jpg
     imgalt: purple.jpeg
-  - name: Alexander Chen
-    role: <a href='lbr' target='_blank'>LbR Student</a>
-    expertise: <br>
-    img: Alex-s.jpg
-    imgalt: Alex-f.jpg
   - name: Eric Perez
     role: <a href='lbr' target='_blank'>LbR Student</a>   
     expertise: <br>
@@ -746,6 +757,9 @@ aboutus:
       - g_dinner.jpg
     contact:
       description: UCLA HCI Research is part of the Electrical & Computer Engineering Department in the Henry Samueli School of Engineering at UCLA.
+      coinvestigators: 
+      - <a target="_blank" href="https://hilab.dev/">HiLab</a>
+      - <a target="_blank" href="https://uclalemur.com/">LEMUR</a>
       address: <b>UCLA HCI Research</b><br/>1538 Boelter Hall, UCLA<br/>Los Angeles, CA 90095
       email: Email: sigchi @ ucla.edu
     sponsors:
