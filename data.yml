@@ -221,7 +221,7 @@ projects:
     video: 440213846
     album: '72157716157681577'
     paperUrl: 'https://drive.google.com/file/d/186-xfebZcmJ1saRN6h66lbLXx4JMd_N2/view?usp=sharing'
-    citation: "Ritam Jyoti Sarmah, Yunpeng Ding, Di Wang, Cheuk Yin Phipson Lee, Toby Jia-Jun Li, and Xiang'Anthony Chen. Geno: A Developer Tool for Authoring Multimodal Interaction on Existing Web Applications. arXiv preprint arXiv:2007.09809 (2020)."
+    citation: "Sarmah, R.J., Ding, Y., Wang, D., Lee, C.Y.P., Li, T.J.J. and Chen, X.A., 2020, October. Geno: A Developer Tool for Authoring Multimodal Interaction on Existing Web Applications. In Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology (pp. 1169-1181)."
     bibtex: "@inproceedings{sarmah2020geno,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Geno: A Developer Tool for Authoring Multimodal Interaction on Existing Web Applications},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Sarmah, Ritam Jyoti and Ding, Yunpeng and Wang, Di and Lee, Cheuk Yin Phipson and Li, Toby Jia-Jun and Chen, XiangAnthony},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={1169--1181},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2020}<br>}"
     thumbnail: uist2020_geno_thumbnail.jpg
   - name: 'Romeo'
@@ -239,7 +239,7 @@ projects:
     video: 459497267
     album: '72157716023426003'
     paperUrl: 'https://drive.google.com/file/d/1cOdjdHvsdquguuCuPzf0sriFZ2buVpLD/view?usp=sharing'
-    citation: "Jiahao Li, Meilin Cui, Jeeeun Kim, and Xiang 'Anthony' Chen. Romeo: A Design Tool for Embedding Transformable Parts in 3D Models to Robotically Augment Default Functionalities. arXiv preprint arXiv:2007.11199 (2020)."
+    citation: "Li, J., Cui, M., Kim, J. and Chen, X.A., 2020, October. Romeo: A Design Tool for Embedding Transformable Parts in 3D Models to Robotically Augment Default Functionalities. In Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology (pp. 897-911)."
     bibtex: "@inproceedings{li2020romeo,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Romeo: A Design Tool for Embedding Transformable Parts in 3D Models to Robotically Augment Default Functionalities},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Li, Jiahao and Cui, Meilin and Kim, Jeeeun and Chen, XiangAnthony},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={897--911},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2020}<br>}<br>"
     thumbnail: uist2020_romeo_thumbnail.jpg
   - name: 'CheXplain'
