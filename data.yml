@@ -56,21 +56,11 @@ team:
     img: Lauren-s.JPG
     imgalt: Lauren-f.JPG
     url: http://laurenhung.com/
-  - name: Yifan Xu
-    role: ECE MS
-    expertise: UX Engineer
-    img: minion.jpg
-    imgalt: purple.jpeg
   - name: Ritam Sarmah
     role: CS MS
     expertise: UX Architect
     img: minion.jpg
     imgalt: purple.jpeg
-  - name: Zixuan Chen
-    role: <a href='lbr' target='_blank'>LbR Student</a>
-    expertise: Web Engineer
-    img: Zixuan-s.jpg
-    imgalt: Zixuan-f.jpg
   - name: Charisa Shin
     role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: UX Designer
@@ -82,12 +72,32 @@ team:
     expertise: <br>
     img: Alex-s.jpg
     imgalt: Alex-f.jpg
+  - name: Alexiy Samoylov
+    role: <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1850183' target='_blank'>NSF REU</a> Student
+    expertise: Robotic Researcher
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Ashley Ngo
+    role: <a href='lbr' target='_blank'>LbR Student</a>
+    expertise: UX Designer
+    img: Ashley-s.jpg
+    imgalt: Ashley-f.jpg
+alumni:
+  - name: Zixuan Chen
+    role: <a href='lbr' target='_blank'>LbR Student</a>
+    expertise: Web Engineer
+    img: Zixuan-s.jpg
+    imgalt: Zixuan-f.jpg
   - name: Claire Guo
     role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: User Researcher
     img: minion.jpg
     imgalt: purple.jpeg
-alumni:
+  - name: Yifan Xu
+    role: ECE MS
+    expertise: UX Engineer
+    img: minion.jpg
+    imgalt: purple.jpeg
   - name: Amirali Omidfar
     role: ECE MS
     expertise: <br>
