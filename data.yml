@@ -56,11 +56,6 @@ team:
     img: Lauren-s.JPG
     imgalt: Lauren-f.JPG
     url: http://laurenhung.com/
-  - name: Ritam Sarmah
-    role: CS MS
-    expertise: UX Architect
-    img: minion.jpg
-    imgalt: purple.jpeg
   - name: Charisa Shin
     role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: UX Designer
@@ -79,10 +74,15 @@ team:
     imgalt: purple.jpeg
   - name: Ashley Ngo
     role: <a href='lbr' target='_blank'>LbR Student</a>
-    expertise: UX Designer
+    expertise: User Researcher
     img: Ashley-s.jpg
     imgalt: Ashley-f.jpg
 alumni:
+  - name: Ritam Sarmah
+    role: CS MS
+    expertise: UX Architect
+    img: minion.jpg
+    imgalt: purple.jpeg
   - name: Zixuan Chen
     role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: Web Engineer
