@@ -13,35 +13,35 @@ team:
     url: https://yangzhang.dev/
   - name: Jiahao Li
     role: MAE PhD
-    expertise: AI for Robotics
+    expertise: Robotics
     img: Nick-s.JPG
     imgalt: Nick-f.JPG
     url: https://ljhnick.github.io/
   - name: Hongyan Gu
     role: ECE PhD
-    expertise: AI for Medicine
+    expertise: Medical Imaging
     img: Hongyan-s.JPG
     imgalt: Hongyan-f.JPG
   - name: Ruolin Wang
     role: ECE PhD
-    expertise: AI for Accessibility
+    expertise: Accessibility
     img: Ruolin-s.JPG
     imgalt: Ruolin-f.JPG
     url: https://www.violynnewang.com/
   - name: Noyan Evirgen
     role: ECE PhD
-    expertise: Deep Learning
+    expertise: Generative AI
     img: Noyan-s.JPG
     imgalt: Noyan-f.JPG
   - name: Bruce Liu
     role: ECE PhD
-    expertise: AI for Accessibility
+    expertise: Accessibility
     img: minion.jpg
     imgalt: purple.jpeg
     url: https://www.xingyuliu.com/
   - name: Yuan Liang
     role: ECE PhD
-    expertise: Medical Imaging & CV
+    expertise: Medical Imaging
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Yudai Tanaka
@@ -56,12 +56,6 @@ team:
     img: Lauren-s.JPG
     imgalt: Lauren-f.JPG
     url: http://laurenhung.com/
-  - name: Charisa Shin
-    role: <a href='lbr' target='_blank'>LbR Student</a>
-    expertise: UX Designer
-    img: Charisa-s.jpg
-    imgalt: Charisa-f.jpg
-    url: http://charisa.design/
   - name: Alexander Chen
     role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: <br>
@@ -98,6 +92,12 @@ alumni:
     expertise: UX Engineer
     img: minion.jpg
     imgalt: purple.jpeg
+  - name: Charisa Shin
+    role: <a href='lbr' target='_blank'>LbR Student</a>
+    expertise: UX Designer
+    img: Charisa-s.jpg
+    imgalt: Charisa-f.jpg
+    url: http://charisa.design/
   - name: Amirali Omidfar
     role: ECE MS
     expertise: <br>
