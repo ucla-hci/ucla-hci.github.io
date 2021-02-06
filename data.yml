@@ -199,6 +199,23 @@ alumni:
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
+  - name: 'Impetus'
+    title: 'Lessons Learned from Designing an AI-Enabled Diagnosis Tool for Pathologists'
+    authors: 
+      - "Hongyan Gu, UCLA HCI Research"
+      - "Jingbin Huang, UCLA HCI Research"
+      - "Lauren Hung, CMU HCII"
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+    pubs: CSCW 2021
+    img: t_impetus.jpeg
+    abstract: "Despite the promises of data-driven artificial intelligence (AI), little is known about how we can bridge the gulf between traditional physician-driven diagnosis and a plausible future of medicine automated by AI. Specifically, how can we involve AI usefully in physicians’ diagnosis workflow given that most AI is still nascent and error-prone (e.g., in digital pathology)? To explore this question, we first propose a series of collaborative techniques to engage human pathologists with AI given AI’s capabilities and limitations, based on which we prototype Impetus — a tool where an AI takes various degrees of initiatives to provide various forms of assistance to a pathologist in detecting tumors from histological slides. We summarize observations and lessons learned from a study with eight pathologists and discuss recommendations for future work on human-centered medical AI systems."
+    videoSite: vimeo
+    video: 361729363
+    album: '72157718192437332'
+    citation: "Hongyan Gu, Jingbin Huang, Lauren Hung, and Xiang ‘Anthony’ Chen. 2021. Lessons Learned from Designing an AI-Enabled Diagnosis Tool for Pathologists. Proc. ACM Hum.-Comput. Interact. 5, CSCW1, Article 10 (April 2021), 25 pages. https://doi.org/10.1145/3449084"
+    bibtex: "@article{10.1145/3449084,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Lessons Learned from Designing an AI-Enabled Diagnosis Tool for Pathologists},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Gu, Hongyan and Huang, Jingbin and Hung, Lauren and Chen, Xiang Anthony},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={Proceedings of the ACM on Human-computer Interaction},<br>&nbsp; &nbsp; &nbsp; &nbsp;volume={5},<br>&nbsp; &nbsp; &nbsp; &nbsp;number={CSCW},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={1--25},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;issue_date = {April 2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3449084},<br>&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3449084},<br>&nbsp; &nbsp; &nbsp; &nbsp;articleno = {10},<br>&nbsp; &nbsp; &nbsp; &nbsp;numpages = {25}<br>}"
+    paperUrl: 'https://drive.google.com/file/d/1-Vni8pVYMZZdG_vX0flu3vrXdL1ufrds/view?usp=sharing'
+    thumbnail: cscw2021_impetus_thumbnail.jpg
   - name: 'DualVib'
     title: 'DualVib: Simulating Haptic Sensation of Dynamic Mass by Combining Pseudo-Force and Texture Feedback'
     authors:
