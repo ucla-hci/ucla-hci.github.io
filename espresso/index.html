@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
+    <title>Espresso</title>
+  </head>
+  <body>
+    <table class="main" border="0">
+      <tbody>
+        <!-- menu bar -->
+        <tr>
+          <!-- list of entries -->
+          <td class="sidebar">
+            <span class="title">☕ espresso</span>
+          </td>
+          <td class="toolbar">
+            <!-- hamburger menu -->
+            <a id="aMenu" href="javascript:void(0)">&#9776;</a>
+
+            <!-- saved status -->
+            <!-- saved -->
+
+            
+
+            <!-- add button -->
+            <a id="aNew" href="javascript:void(0)"
+              ><span id="btnNew">New</span></a
+            >
+            <hr />
+          </td>
+        </tr>
+        <!-- writing area -->
+        <tr>
+          <td class="sidebar">
+            <ul id="ulEntries"></ul>
+          </td>
+          <td class="writing">
+            <p id="pWriting" class="writing"></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+    ></script>
+
+    <script type="text/javascript" src="src/config.js"></script>
+    <script type="text/javascript" src="src/util.js"></script>
+    <script type="text/javascript" src="src/analysis.js"></script>
+    <script type="text/javascript" src="src/ui.js"></script>
+    <script type="text/javascript" src="src/db.js"></script>
+    <script type="text/javascript" src="src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+}
+
+table.main {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+
+td.writing{
+  vertical-align: top;
+}
+
+span.title{
+  color: #6f4e37;
+  font-weight: bold;
+  display:block; 
+  text-align:center; 
+  margin:0 auto;
+}
+
+td.sidebar {
+  width: 20%;
+  vertical-align: top;
+}
+
+td.toolbar {
+}
+
+p.writing {
+  margin-left: 20px;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+
+span.focused {
+  /* font-style: italic; */
+}
+
+span.hlword {
+  text-decoration: underline;
+}
+
+span.word {
+  z-index: 89;
+}
+
+span.positive {
+  border-bottom: 3px solid #54b9b5;
+}
+
+span.negative {
+  border-bottom: 3px solid #fe9d97;
+}
+
+p.focused {
+  caret-color: transparent;
+}
+
+.notification {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  bottom: 8px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+a#aNew {
+  float: right;
+}
+
+a{
+  color: #6f4e37;
+  text-decoration: none;
+}
+
+a.delete{
+  float: right;
+}
+
+li.entry {
+  list-style-type: none;
+  margin-left: -0.25in;
+  margin-right: 0.25in;
+}
+
+span.entry{
+  opacity: 0.5;
+}
+
+span.selected{
+  color: #6f4e37;
+  opacity: 1;
+}
