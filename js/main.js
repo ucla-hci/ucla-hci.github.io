@@ -448,12 +448,14 @@ UCLAHCI.makeProjectPage = function (name) {
     var pAbstract = $('<p>' + project.abstract + '</p><br/>');
     divPage.append(pAbstract);
 
+    var divVideo = $('<div/>');
     var widthMedia = window.innerWidth * 0.6;
     var heightMedia = widthMedia * 315 / 560;
-    project.videoSite = project.videoSite | 'youtube';
-    var codeVideo = UCLAHCI.getVideoEmbedCode(project.videoSite, project.video, widthMedia, heightMedia);
-    var divVideo = $('<div/>');
-    divVideo.html(codeVideo);
+    if(project.video != undefined) {
+        project.videoSite = project.videoSite | 'youtube';
+        var codeVideo = UCLAHCI.getVideoEmbedCode(project.videoSite, project.video, widthMedia, heightMedia);
+        divVideo.html(codeVideo);
+    }
     divPage.append(divVideo);
 
     divPage.append('<br/>');

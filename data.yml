@@ -216,6 +216,21 @@ projects:
     bibtex: "@article{10.1145/3449084,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Lessons Learned from Designing an AI-Enabled Diagnosis Tool for Pathologists},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Gu, Hongyan and Huang, Jingbin and Hung, Lauren and Chen, Xiang Anthony},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={Proceedings of the ACM on Human-computer Interaction},<br>&nbsp; &nbsp; &nbsp; &nbsp;volume={5},<br>&nbsp; &nbsp; &nbsp; &nbsp;number={CSCW},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={1--25},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;issue_date = {April 2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3449084},<br>&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3449084},<br>&nbsp; &nbsp; &nbsp; &nbsp;articleno = {10},<br>&nbsp; &nbsp; &nbsp; &nbsp;numpages = {25}<br>}"
     paperUrl: 'https://drive.google.com/file/d/1-Vni8pVYMZZdG_vX0flu3vrXdL1ufrds/view?usp=sharing'
     thumbnail: cscw2021_impetus_thumbnail.jpg
+  - name: 'XAlgo'
+    title: "XAlgo: a Design Probe of Explaining Algorithms' Internal States via Question-Answering"
+    authors:
+      - "Juan Rebanal, HCI Research"
+      - "Jordan Combitsis, HCI Research"
+      - "Yuqi Tang, HCI Research"
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+    pubs: IUI 2021
+    img: t_xalgo.jpg
+    abstract: "Algorithms often appear as 'black boxes' to non-expert users. While prior work focuses on explainable representations and expert-oriented exploration, we propose and study an interactive approach using question answering to explain deterministic algorithms to non-expert users who need to understand the algorithms' internal states (e.g., students learning algorithms, operators monitoring robots, admins troubleshooting network routing). We construct XAlgo---a formal model that first classifies the type of question based on a taxonomy and generates an answer based on a set of rules that extract information from representations of an algorithm's internal states, e.g., the pseudocode. A design probe in an algorithm learning scenario with 18 participants (9 for a Wizard-of-Oz XAlgo and 9 as a control group) reports findings and design implications based on what kinds of questions people ask, how well XAlgo responds, and what remain as challenges to bridge users' gulf of understanding algorithms."
+    album: '72157718472175126'
+    citation: "Juan Rebanal, Jordan Combitsis, Yuqi Tang, Xiang ‘Anthony’ Chen. XAlgo: a Design Probe of Explaining Algorithms’ Internal States via Question-Answering. In Proceedings of the 26th International Conference on Intelligent User Interfaces (IUI '21), April 14--17, 2021, College Station, TX, USA. https://doi.org/10.1145/3397481.3450676."
+    bibtex: "@inproceedings{10.1145/2856767.2856812,<br>&nbsp; &nbsp; &nbsp; &nbsp;author = {Rebanal, Juan and Tang, Yuqi and Combitsis, Jordan and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;title = {XAlgo: a Design Probe of Explaining Algorithms’ Internal States via Question-Answering},<br>&nbsp; &nbsp; &nbsp; &nbsp;year = {2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;isbn = {978-1-4503-8017-1/21/04},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3397481.3450676},<br>&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3397481.3450676},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 26st International Conference on Intelligent User Interfaces},<br>&nbsp; &nbsp; &nbsp; &nbsp;series = {IUI '21}<br>}"
+    paperUrl: 'https://drive.google.com/file/d/1RFlYYoi9ycO2g4WalkjM3NBtF_PjDb0x/view?usp=sharing'
+    thumbnail: iui2021_xalgo_thumbnail.jpg
   - name: 'Revamp'
     title: 'Revamp: Enhancing Accessible Information Seeking Experience of Online Shopping for Blind or Low Vision Users'
     authors:
@@ -378,7 +393,7 @@ projects:
     videoSite: vimeo
     album: '72157668597613889'
     citation: "Chen, X., Tao, Y., Wang, G., Kang, R., Grossman, T., Coros, S., & Hudson, S. E. (2018). Forte: User-Driven Generative Design. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (p. 496)."
-    bibtex: "@inproceedings{chen2018forte,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Forte: User-Driven Generative Design},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, XiangAnthony and Tao, Ye and Wang, Guanyun and Kang, Runchang and Grossman, Tovi and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={496},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2018},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
+    bibtex: "@inproceedings{chen2018forte,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Forte: User-Driven Generative Design},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Tao, Ye and Wang, Guanyun and Kang, Runchang and Grossman, Tovi and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={496},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2018},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
     paperUrl: 'https://www.dropbox.com/s/bld0v2nc420x1ld/chi2018_forte.pdf'
     thumbnail: chi2018_forte_thumbnail.jpg
   - name: Medley
@@ -394,7 +409,7 @@ projects:
     videoSite: vimeo
     album: '72157689656591312'
     citation: "Chen, X., Coros, S., & Hudson, S. E. (2018). Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (p. 162)."
-    bibtex: "@inproceedings{chen2018medley,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, XiangAnthony and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={162},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2018},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
+    bibtex: "@inproceedings{chen2018medley,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={162},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2018},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
     paperUrl: 'https://www.dropbox.com/s/97nvsjjqawn14e9/medley_chi2018.pdf'
     thumbnail: chi2018_medley_thumbnail.jpg
   - img: t_improv.jpg
@@ -473,7 +488,7 @@ projects:
       @inproceedings{chen2016reprise,<br>&nbsp; &nbsp; &nbsp;
       &nbsp;title={Reprise: A Design Tool for Specifying, Generating, and
       Customizing 3D Printable Adaptations on Everyday Objects},<br>&nbsp;
-      &nbsp; &nbsp; &nbsp;author={Chen, XiangAnthony and Kim, Jeeeun and
+      &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Kim, Jeeeun and
       Mankoff, Jennifer and Grossman, Tovi and Coros, Stelian and Hudson, Scott
       E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={the 29th Annual ACM Symposium
       on User Interface Software and Technology},<br>&nbsp; &nbsp; &nbsp;
@@ -513,7 +528,7 @@ projects:
       over a template matching method. Based on these findings, we discuss how
       our approach can be generalized to other user-defined gesture problems. 
     bibtex: >-
-      @inproceedings{chen2016bootstrapping,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Bootstrapping User-Defined Body Tapping Recognition with Offline-Learned Probabilistic Representation},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, XiangAnthony and Li, Yang},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 29th Annual Symposium on User Interface Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={359--364},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2016},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}
+      @inproceedings{chen2016bootstrapping,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Bootstrapping User-Defined Body Tapping Recognition with Offline-Learned Probabilistic Representation},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Li, Yang},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 29th Annual Symposium on User Interface Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={359--364},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2016},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}
     pubs: UIST '16
     video: '184405883'
     videoSite: vimeo
@@ -558,7 +573,7 @@ projects:
     bibtex: >-
       @inproceedings{chen2015encore,<br>&nbsp; &nbsp;title={Encore: 3D printed
       augmentation of everyday objects with printed-over, affixed and
-      interlocked attachments},<br>&nbsp; &nbsp;author={Chen, XiangAnthony and
+      interlocked attachments},<br>&nbsp; &nbsp;author={Chen, Xiang 'Anthony' and
       Coros, Stelian and Mankoff, Jennifer and Hudson, Scott E},<br>&nbsp;
       &nbsp;booktitle={Proceedings of the 28th Annual ACM Symposium on User
       Interface Software and Technology},<br>&nbsp;
@@ -596,7 +611,7 @@ projects:
     bibtex: >-
       @inproceedings{chen2014duet,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Duet:
       exploring joint interactions on a smart phone and a smart
-      watch},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, XiangAnthony and
+      watch},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and
       Grossman, Tovi and Wigdor, Daniel J and Fitzmaurice, George},<br>&nbsp;
       &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the SIGCHI Conference on
       Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp;
@@ -624,7 +639,7 @@ projects:
     video: '92972949'
     videoSite: vimeo
     abstract: "We present Air+Touch, a new class of interactions that interweave touch events with in-air gestures, offering a unified input modality with expressiveness greater than each input modality alone. We demonstrate how air and touch are highly complementary: touch is used to designate targets and segment in-air gestures, while in-air gestures add expressivity to touch events. For example, a user can draw a circle in the air and tap to trigger a context menu, do a finger 'high jump' between two touches to select a region of text, or drag and in-air ‘pigtail’ to copy text to the clipboard. Through an observational study, we devised a basic taxonomy of Air+Touch interactions, based on whether the in-air component occurs before, between or after touches. To illustrate the potential of our approach, we built four applications that showcase seven exemplar Air+Touch interactions we created."
-    bibtex: "@inproceedings{chen2014air+,<br>&nbsp; &nbsp;title={Air+ touch: interweaving touch and in-air gestures},<br>&nbsp; &nbsp;author={Chen, XiangAnthony and Schwarz, Julia and Harrison, Chris and Mankoff, Jennifer and Hudson, Scott E},<br>&nbsp; &nbsp;booktitle={Proceedings of the 27th annual ACM symposium on User interface software and technology},<br>&nbsp; &nbsp;pages={519--525},<br>&nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp;organization={ACM}<br>}"
+    bibtex: "@inproceedings{chen2014air+,<br>&nbsp; &nbsp;title={Air+ touch: interweaving touch and in-air gestures},<br>&nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Schwarz, Julia and Harrison, Chris and Mankoff, Jennifer and Hudson, Scott E},<br>&nbsp; &nbsp;booktitle={Proceedings of the 27th annual ACM symposium on User interface software and technology},<br>&nbsp; &nbsp;pages={519--525},<br>&nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp;organization={ACM}<br>}"
     album: '72157670702717043'
     thumbnail: uist2014_airtouch_thumbnail.jpg
     paperUrl: 'https://www.dropbox.com/s/yaspxpqsx4vtz99/uist2014_airtouch.pdf'
@@ -660,7 +675,7 @@ projects:
       @inproceedings{chen2014swipeboard,<br>&nbsp; &nbsp; &nbsp;
       &nbsp;title={Swipeboard: a text entry technique for ultra-small interfaces
       that supports novice to expert transitions},<br>&nbsp; &nbsp; &nbsp;
-      &nbsp;author={Chen, XiangAnthony and Grossman, Tovi and Fitzmaurice,
+      &nbsp;author={Chen, Xiang 'Anthony' and Grossman, Tovi and Fitzmaurice,
       George},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 27th
       annual ACM symposium on User interface software and technology},<br>&nbsp;
       &nbsp; &nbsp; &nbsp;pages={615--620},<br>&nbsp; &nbsp; &nbsp;
@@ -686,7 +701,7 @@ projects:
     pubs: MobileHCI 2014
     title: 'Around-Body Interaction: Sensing & Interaction Techniques for Proprioception-Enhanced Input with Mobile Devices'
     abstract: "The space around the body provides a large interaction vol-ume that can allow for big interactions on small mobile de-vices. However, interaction techniques making use of this opportunity are underexplored, primarily focusing on dis-tributing information in the space around the body. We demonstrate three types of around-body interaction includ-ing canvas, modal and context-aware interactions in six demonstration applications. We also present a sensing solu-tion using standard smartphone hardware: a phone’s front camera, accelerometer and inertia measurement units. Our solution allows a person to interact with a mobile device by holding and positioning it between a normal field of view and its vicinity around the body. By leveraging a user’s proprioceptive sense, around-body Interaction opens a new input channel that enhances conventional interaction on a mobile device without requiring additional hardware."
-    bibtex: "@inproceedings{chen2014around,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Around-body interaction: sensing and interaction techniques for proprioception-enhanced input with mobile devices},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, XiangAnthony and Schwarz, Julia and Harrison, Chris and Mankoff, Jennifer and Hudson, Scott},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 16th international conference on Human-computer interaction with mobile devices and services},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={287--290},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
+    bibtex: "@inproceedings{chen2014around,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Around-body interaction: sensing and interaction techniques for proprioception-enhanced input with mobile devices},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Schwarz, Julia and Harrison, Chris and Mankoff, Jennifer and Hudson, Scott},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 16th international conference on Human-computer interaction with mobile devices and services},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={287--290},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
     video: '142935370'
     videoSite: vimeo
     album: '72157674813685485'
