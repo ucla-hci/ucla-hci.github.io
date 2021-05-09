@@ -5,10 +5,6 @@ body {
   font-family: "Assistant", sans-serif;
 }
 
-/* div.content {
-  background-color: #2d68c4;
-} */
-
 .topbar {
   margin-left: 25px;
   margin-right: 25px;
@@ -72,7 +68,8 @@ img.logo {
 }
 
 img.team {
-  width: 160px;
+  /* width: 160px; */
+  max-width: 500px;
   border-radius: 50%;
   margin-bottom: 5px;
   filter: grayscale(33%);
@@ -83,7 +80,8 @@ img.team {
 } */
 
 img.project {
-  width: 220px;
+  /* width: 220px; */
+  max-width: 320px;
   filter: grayscale(66%);
   cursor: pointer;
 }
@@ -101,15 +99,15 @@ img.project-small {
 
 div.team {
   display: inline-block;
-  margin-left: 60px;
-  margin-right: 60px;
+  /* margin-left: 60px; */
+  /* margin-right: 60px; */
   margin-top: 50px;
 }
 
 div.project {
   display: inline-block;
-  margin-left: 25px;
-  margin-right: 25px;
+  /* margin-left: 25px; */
+  /* margin-right: 25px; */
   margin-top: 50px;
 }
 
@@ -210,11 +208,11 @@ div.map {
 div.page {
   background-color: #ffffff;
   line-height: 150%;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 10%;
+  /* padding-right: 10%; */
   padding-top: 2%;
   padding-bottom: 3%;
-  max-width: 80%;
+  /* max-width: 80%; */
 }
 
 .authors{

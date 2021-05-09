@@ -56,6 +56,22 @@ team:
     img: Lauren-s.JPG
     imgalt: Lauren-f.JPG
     url: http://laurenhung.com/
+  - name: Zihan Yan
+    role: Research Intern
+    expertise: Sensing Prototyper
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Shuen Chan
+    role: <a href='lbr' target='_blank'>LbR Student</a>
+    expertise: UX Designer
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Julia Yin
+    role: <a href='lbr' target='_blank'>LbR Student</a>
+    expertise: UX Designer
+    img: minion.jpg
+    imgalt: purple.jpeg
+alumni:
   - name: Alexander Chen
     role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: <br>
@@ -71,7 +87,6 @@ team:
     expertise: User Researcher
     img: Ashley-s.jpg
     imgalt: Ashley-f.jpg
-alumni:
   - name: Ritam Sarmah
     role: CS MS
     expertise: UX Architect
@@ -120,7 +135,7 @@ alumni:
     imgalt: purple.jpeg
   - name: Eric Perez
     role: <a href='lbr' target='_blank'>LbR Student</a>   
-    expertise: <br>
+    expertise: Now MS at Cornell
     img: minion.jpg
     imgalt: purple.jpeg
   - name: James King

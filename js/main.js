@@ -78,12 +78,11 @@ $(document).ready(function () {
 
 UCLAHCI.updatePage = function () {
     var page = UCLAHCI.page;
+    const marginProject = 25
     $('#' + page).addClass('active');
     $('.content').empty();
     if (page == 'team') {
         $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.team));
-        // $('.content').append($('<br/><br/><h2>Collaborators</h2>'))
-        // $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.collaborators));
         $('.content').append($('<br/><br/><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alumni</h2>'))
         $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.alumni));
 
@@ -91,8 +90,10 @@ UCLAHCI.updatePage = function () {
         for (project of UCLAHCI.data.projects) {
             var div = $('<div/>');
             div.addClass('project');
-            var tb = $('<table/>');
+            div.css('margin-left', marginProject + 'px')
+            div.css('margin-right', marginProject + 'px')
 
+            var tb = $('<table/>');
             var trImg = $('<tr/>');
             var url = UCLAHCI.createUrl(project.name); //.replace(/-/g, '-')
             var idImg = url
@@ -100,6 +101,9 @@ UCLAHCI.updatePage = function () {
             var img = $('<img/>');
             img.attr('id', idImg);
             img.attr('src', 'assets/' + project.img);
+            let imgWidth = $('.content').width() / 4 - marginProject * 2
+            // console.log(imgWidth)
+            img.css('width', imgWidth * 0.95)
             img.addClass('project');
             img.click(function (e) {
                 var divPage = $('<div class="page"></div>');
@@ -108,7 +112,9 @@ UCLAHCI.updatePage = function () {
                     onclose: function () {
                         UCLAHCI.updateUrl('projects');
                         $(document.body).css('overflow', 'scroll');
-                        $("html, body").animate({ scrollTop: 0 }, "slow");
+                        $("html, body").animate({
+                            scrollTop: 0
+                        }, "slow");
                     }
                 });
                 divPage.popup('show');
@@ -140,7 +146,7 @@ UCLAHCI.updatePage = function () {
 
             $('.content').append(div);
         }
-    } else if (page=='aboutus'){
+    } else if (page == 'aboutus') {
         var tb = $('<table/>');
         // tb.attr('border', 1);
         var tr1 = $('<tr/>');
@@ -200,7 +206,7 @@ UCLAHCI.updatePage = function () {
 
         var pCoInv = $('<p>');
         pCoInv.append('Co-Investigators: ')
-        for(ci of contact.coinvestigators) {
+        for (ci of contact.coinvestigators) {
             pCoInv.append(ci)
             pCoInv.append('&nbsp;&nbsp;&nbsp;&nbsp;')
         }
@@ -250,26 +256,34 @@ UCLAHCI.updatePage = function () {
         tb.append(tr2);
         $('.content').append(tb);
     } else {
-        for(entry of UCLAHCI.data.redirects) {
-            if(page == entry.name) {
+        for (entry of UCLAHCI.data.redirects) {
+            if (page == entry.name) {
                 window.location = entry.url;
             }
         }
     }
 
-    $("html, body").animate({ scrollTop: 0 }, "slow");
+    $("html, body").animate({
+        scrollTop: 0
+    }, "slow");
 }
 
 UCLAHCI.showTeam = function (team) {
     var divTeam = $('<div/>');
+    const marginTeam = 60
     for (member of team) {
         var div = $('<div/>');
         div.addClass('team');
+        div.css('margin-left', marginTeam)
+        div.css('margin-right', marginTeam)
         var tb = $('<table/>');
 
         var trImg = $('<tr/>');
         var img = $('<img/>');
         img.attr('src', 'assets/' + member.img);
+        let imgWidth = $('.content').width() / 4 - marginTeam * 2
+        // console.log(imgWidth)
+        img.css('width', imgWidth * 0.95)
         img.attr('img', member.img);
         img.attr('alt', member.imgalt);
 
@@ -284,24 +298,7 @@ UCLAHCI.showTeam = function (team) {
 
         img.addClass('team');
         img.attr('id', member.name);
-        // if (member.projects != undefined && member.projects.length > 0) {
-        //     img.click(function (e) {
-        //         var divPage = $('<div class="page"></div>');
-        //         divPage.popup({
-        //             transition: 'all 0.3s',
-        //             onclose: function () {
-        //                 UCLAHCI.updateUrl('projects');
-        //                 $(document.body).css('overflow', 'scroll');
-        //                 $("html, body").animate({ scrollTop: 0 }, "slow");
-        //             }
-        //         });
-        //         divPage.popup('show');
-        //         var name = $(e.target).attr('id');
-        //         divPage.append(UCLAHCI.makeMemberPage(name));
-        //         $(document.body).css('overflow', 'hidden')
-        //     });
-        // }
-        if(member.url != undefined) {
+        if (member.url != undefined) {
             var a = $('<a>')
             a.attr('href', member.url);
             a.attr('target', '_blank');
@@ -350,7 +347,7 @@ UCLAHCI.createUrl = function (title) {
     if (title == undefined) return ''
     return UCLAHCI.strip(title);
     // return title.replace(/[&\/\\#,+()$~%.'":*;?<>{}]/g, '')
-        // .replace(/ /g, '-').toLowerCase()
+    // .replace(/ /g, '-').toLowerCase()
 }
 
 //
@@ -425,8 +422,8 @@ UCLAHCI.makeMemberPage = function (name) {
 UCLAHCI.makeProjectPage = function (name) {
     var project;
     for (p of UCLAHCI.data.projects) {
-        console.log(UCLAHCI.strip(p.name))
-        console.log(UCLAHCI.strip(name))
+        // console.log(UCLAHCI.strip(p.name))
+        // console.log(UCLAHCI.strip(name))
         if (UCLAHCI.strip(p.name) == UCLAHCI.strip(name)) {
             project = p;
             break;
@@ -451,7 +448,7 @@ UCLAHCI.makeProjectPage = function (name) {
     var divVideo = $('<div/>');
     var widthMedia = window.innerWidth * 0.6;
     var heightMedia = widthMedia * 315 / 560;
-    if(project.video != undefined) {
+    if (project.video != undefined) {
         project.videoSite = project.videoSite | 'youtube';
         var codeVideo = UCLAHCI.getVideoEmbedCode(project.videoSite, project.video, widthMedia, heightMedia);
         divVideo.html(codeVideo);
@@ -505,7 +502,7 @@ UCLAHCI.getVideoEmbedCode = function (type, vid, w, h, iframeId) {
     return '<iframe id="' + iframeId + '" src="' + srcCode + '" width="' + w + '" height="' + h + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
 }
 
-UCLAHCI.strip = function(s) {
+UCLAHCI.strip = function (s) {
     return s.replace(/[&\/\\#,+()$~%.'":*;?<>{}]/g, '')
-    .replace(/ /g, '-').toLowerCase();
+        .replace(/ /g, '-').toLowerCase();
 }
