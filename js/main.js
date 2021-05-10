@@ -1,5 +1,7 @@
 var UCLAHCI = UCLAHCI || {};
 
+UCLAHCI.numCols = 4
+
 //
 //	check mobile platform
 //
@@ -24,10 +26,14 @@ UCLAHCI.checkResponsiveness = function () {
         $('.topnav a').css('text-align', 'right');
         $('.topnav a').css('padding-bottom', '0px');
 
+        UCLAHCI.numCols = 1
+
     } else if ($(window).width() < 1150) {
         // $('.topnav a:hover').css('color', '#2d68c4');
+        UCLAHCI.numCols = 3
     } else {
         // $('.topnav a:hover').css('color', '#2d68c4');
+        UCLAHCI.numCols = 4
     }
 }
 
@@ -101,7 +107,7 @@ UCLAHCI.updatePage = function () {
             var img = $('<img/>');
             img.attr('id', idImg);
             img.attr('src', 'assets/' + project.img);
-            let imgWidth = $('.content').width() / 4 - marginProject * 2
+            let imgWidth = $('.content').width() / UCLAHCI.numCols - marginProject * 2
             // console.log(imgWidth)
             img.css('width', imgWidth * 0.95)
             img.addClass('project');
@@ -281,7 +287,7 @@ UCLAHCI.showTeam = function (team) {
         var trImg = $('<tr/>');
         var img = $('<img/>');
         img.attr('src', 'assets/' + member.img);
-        let imgWidth = $('.content').width() / 4 - marginTeam * 2
+        let imgWidth = $('.content').width() / UCLAHCI.numCols - marginTeam * 2
         // console.log(imgWidth)
         img.css('width', imgWidth * 0.95)
         img.attr('img', member.img);
