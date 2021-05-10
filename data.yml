@@ -841,6 +841,8 @@ aboutus:
       address: <b>UCLA HCI Research</b><br/>1538 Boelter Hall, UCLA<br/>Los Angeles, CA 90095
       email: Email: sigchi @ ucla.edu
     sponsors:
+      - img: onr.png
+        url: https://www.onr.navy.mil/Education-Outreach/Sponsored-Research/YIP/2021-young-investigators
       - img: nsf.png
         url: https://nsf.gov/
       - img: hellman.png
