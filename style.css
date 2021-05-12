@@ -209,10 +209,10 @@ div.page {
   background-color: #ffffff;
   line-height: 150%;
   padding-left: 10%;
-  /* padding-right: 10%; */
+  padding-right: 10%;
   padding-top: 2%;
   padding-bottom: 3%;
-  /* max-width: 80%; */
+  max-width: 80%;
 }
 
 .authors{
