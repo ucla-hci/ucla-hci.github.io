@@ -84,7 +84,7 @@ $(document).ready(function () {
 
 UCLAHCI.updatePage = function () {
     var page = UCLAHCI.page;
-    const marginProject = 25
+    const marginProject = $('.content').width() * 0.025
     $('#' + page).addClass('active');
     $('.content').empty();
     if (page == 'team') {
@@ -108,7 +108,6 @@ UCLAHCI.updatePage = function () {
             img.attr('id', idImg);
             img.attr('src', 'assets/' + project.img);
             let imgWidth = $('.content').width() / UCLAHCI.numCols - marginProject * 2
-            // console.log(imgWidth)
             img.css('width', imgWidth * 0.95)
             img.addClass('project');
             img.click(function (e) {
@@ -276,7 +275,7 @@ UCLAHCI.updatePage = function () {
 
 UCLAHCI.showTeam = function (team) {
     var divTeam = $('<div/>');
-    const marginTeam = 60
+    const marginTeam = $('.content').width() * 0.05
     for (member of team) {
         var div = $('<div/>');
         div.addClass('team');
