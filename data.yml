@@ -284,6 +284,29 @@ projects:
     bibtex: "@inproceedings{10.1145/2856767.2856812,<br>&nbsp; &nbsp; &nbsp; &nbsp;author = {Rebanal, Juan and Tang, Yuqi and Combitsis, Jordan and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;title = {XAlgo: a Design Probe of Explaining Algorithms’ Internal States via Question-Answering},<br>&nbsp; &nbsp; &nbsp; &nbsp;year = {2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;isbn = {978-1-4503-8017-1/21/04},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3397481.3450676},<br>&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3397481.3450676},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 26st International Conference on Intelligent User Interfaces},<br>&nbsp; &nbsp; &nbsp; &nbsp;series = {IUI '21}<br>}"
     paperUrl: 'https://drive.google.com/file/d/1RFlYYoi9ycO2g4WalkjM3NBtF_PjDb0x/view?usp=sharing'
     thumbnail: iui2021_xalgo_thumbnail.jpg
+  - name: 'OralViewer'
+    title: "OralViewer: 3D Demonstration of Dental Surgeries for Patient Education with Oral Cavity Reconstruction from a 2D Panoramic X-ray"
+    authors:
+      - "Yuan Liang, UCLA"
+      - "Liang Qiu, UCLA"
+      - "Tiancheng Lu, University of Pittsburgh"
+      - "Zhujun Fang, UCLA"
+      - "Dezhan Tu, UCLA"
+      - "Jiawei Yang, UCLA"
+      - "Yiting Shao, UCLA"
+      - "Kun Wang, UCLA"
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Lei He, UCLA"
+    pubs: IUI 2021
+    img: t_oralviewer.jpg
+    abstract: "Patient’s understanding on forthcoming dental surgeries is required by patient-centered care and helps reduce anxiety. Due to the complexity of dental surgeries and the patient-dentist expertise gap, conventional techniques of patient education are usually not effective for explaining surgical steps. In this paper, we present OralViewer—the first interactive application that enables dentist’s demonstration of dental surgeries in 3D to promote patients’ understanding. OralViewer takes a single 2D panoramic dental X-ray to reconstruct patient-specific 3D teeth structures, which are then assembled with registered gum and jaw bone models for complete oral cavity modeling. During the demonstration, OralViewer enables dentists to show surgery steps with virtual dental instruments that can animate effects on a 3D model in real-time. A technical evaluation shows that our deep learning model achieves a mean Intersection over Union (IoU) of 0.771 for 3D teeth reconstruction. A patient study with 12 participants shows OralViewer can improve patients’ understanding of surgeries. A preliminary expert study with 3 board-certified dentists further verifies the clinical validity of our system."
+    videoSite: vimeo
+    video: 553825921
+    album: '72157719248545536'
+    citation: "Yuan Liang, Liang Qiu, Tiancheng Lu, Zhujun Fang, Dezhan Tu, Jiawei Yang, Yiting Shao, Kun Wang, Xiang 'Anthony' Chen, and Lei He. 2021. OralViewer: 3D Demonstration of Dental Surgeries for Patient Education with Oral Cavity Reconstruction from a 2D Panoramic X-ray. In 26th International Conference on Intelligent User Interfaces (IUI '21). Association for Computing Machinery, New York, NY, USA, 553–563. DOI:https://doi.org/10.1145/3397481.3450695"
+    bibtex: "@inproceedings{10.1145/3397481.3450695,<br>author = {Liang, Yuan and Qiu, Liang and Lu, Tiancheng and Fang, Zhujun and Tu, Dezhan and Yang, Jiawei and Shao, Yiting and Wang, Kun and Chen, Xiang 'Anthony' and He, Lei},<br>title = {OralViewer: 3D Demonstration of Dental Surgeries for Patient Education with Oral Cavity Reconstruction from a 2D Panoramic X-Ray},<br>year = {2021},<br>isbn = {9781450380171},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3397481.3450695},<br>doi = {10.1145/3397481.3450695},<br>abstract = { Patient’s understanding on forthcoming dental surgeries is required by patient-centered care and helps reduce anxiety. Due to the complexity of dental surgeries and the patient-dentist expertise gap, conventional techniques of patient education are usually not effective for explaining surgical steps. In this paper, we present OralViewer—the first interactive application that enables dentist’s demonstration of dental surgeries in 3D to promote patients’ understanding. OralViewer takes a single 2D panoramic dental X-ray to reconstruct patient-specific 3D teeth structures, which are then assembled with registered gum and jaw bone models for complete oral cavity modeling. During the demonstration, OralViewer enables dentists to show surgery steps with virtual dental instruments that can animate effects on a 3D model in real-time. A technical evaluation shows that our deep learning model achieves a mean Intersection over Union (IoU) of 0.771 for 3D teeth reconstruction. A patient study with 12 participants shows OralViewer can improve patients’ understanding of surgeries. A preliminary expert study with 3 board-certified dentists further verifies the clinical validity of our system.},<br>booktitle = {26th International Conference on Intelligent User Interfaces},<br>pages = {553–563},<br>numpages = {11},<br>keywords = {deep learning, 3D visualization, patient education},<br>location = {College Station, TX, USA},<br>series = {IUI '21}<br>}<br><br>"
+    paperUrl: 'https://drive.google.com/file/d/1-yO3swmeSoz0uxDNkdStD2iIbbHhSGSP/view?usp=sharing'
+    thumbnail: iui2021_oralviewer.thumbnail.jpg
   - name: 'DualVib'
     title: 'DualVib: Simulating Haptic Sensation of Dynamic Mass by Combining Pseudo-Force and Texture Feedback'
     authors:
