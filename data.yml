@@ -44,23 +44,65 @@ team:
     expertise: Medical Imaging
     img: minion.jpg
     imgalt: purple.jpeg
-  - name: Yudai Tanaka
-    role: Specialist
-    expertise: VR/Haptics
-    img: Yudai-s.JPG
-    imgalt: Yudai-f.JPG
-    url: https://yudai-tanaka.com
-  - name: Lauren Hung
-    role: Specialist
-    expertise: UI/UX Designer
-    img: Lauren-s.JPG
-    imgalt: Lauren-f.JPG
-    url: http://laurenhung.com/
   - name: Zihan Yan
     role: Research Intern
     expertise: Sensing Prototyper
     img: minion.jpg
     imgalt: purple.jpeg
+  - name: Mina Huh
+    role: Research Intern
+    expertise: Accessibility
+    img: Mina-s.jpeg
+    imgalt: Mina-f.jpeg
+collaborators:
+  - name: Mohammad Haeri
+    role: Pathologist
+    expertise: U of Kansas Medical Center
+    img: Mohammad-s.jpeg
+    imgalt: Mohammad-s.jpeg
+  - name: Kazu Williams
+    role: Staff Research Associate
+    expertise: UCLA Pathology
+    img: Kazu-s.jpeg
+    imgalt: Kazu-s.jpeg
+  - name: Amy Pavel
+    role: PostDoc/Research Scientist
+    expertise: CMU/Apple
+    img: Amy-s.png
+    imgalt: Amy-s.png
+  - name: Jeeeun Kim
+    role: Assistant Professor
+    expertise: Texas A&M University
+    img: Jeeeun-s.jpeg
+    imgalt: Jeeeun-s.jpeg
+  - name: Dingzeyu Li
+    role: Research Scientist
+    expertise: Adobe
+    img: Ding-s.jpeg
+    imgalt: Ding-s.jpeg
+  - name: Lin Yang
+    role: Assistant Professor
+    expertise: UCLA ECE
+    img: Lin-s.jpeg
+    imgalt: Lin-s.jpeg
+  - name: Lei He
+    role: Professor
+    expertise: UCLA ECE
+    img: Lei-s.jpeg
+    imgalt: Lei-s.jpeg
+alumni:
+  - name: Yudai Tanaka
+    role: Specialist
+    expertise: Now PhD @ UChicago
+    img: Yudai-s.JPG
+    imgalt: Yudai-f.JPG
+    url: https://yudai-tanaka.com
+  - name: Lauren Hung
+    role: Specialist
+    expertise: Now MHCI @ CMU
+    img: Lauren-s.JPG
+    imgalt: Lauren-f.JPG
+    url: http://laurenhung.com/
   - name: Shuen Chan
     role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: UX Designer
@@ -71,7 +113,6 @@ team:
     expertise: UX Designer
     img: minion.jpg
     imgalt: purple.jpeg
-alumni:
   - name: Alexander Chen
     role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: <br>
@@ -872,7 +913,7 @@ aboutus:
       - g_bbq.jpg
       - g_postchi.jpg
       - g_collaboration.JPG
-      - g_dinner.jpg
+      - g_ruolin_uist19.jpg
     contact:
       description: UCLA HCI Research is part of the Electrical & Computer Engineering Department in the Henry Samueli School of Engineering at UCLA.
       coinvestigators: 
@@ -885,6 +926,8 @@ aboutus:
         url: https://www.onr.navy.mil/Education-Outreach/Sponsored-Research/YIP/2021-young-investigators
       - img: nsf.png
         url: https://nsf.gov/
+      - img: ucla.jpeg
+        url: https://grad.ucla.edu/funding/financial-aid/summer-mentored-research-fellowship-smrf/
       - img: hellman.png
         url: http://www.hellmanfellows.org/fellows/xiang-chen/
       - img: adobe.png

@@ -89,6 +89,8 @@ UCLAHCI.updatePage = function () {
     $('.content').empty();
     if (page == 'team') {
         $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.team));
+        $('.content').append($('<br/><br/><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current Collaborators</h2>'))
+        $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.collaborators));
         $('.content').append($('<br/><br/><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alumni</h2>'))
         $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.alumni));
 
