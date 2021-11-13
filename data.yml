@@ -908,7 +908,7 @@ projects:
 
 aboutus:
   - mission: "We believe the ultimate goal of inventing the computer is to augment our human selves. To achieve this, our research focuses on the following three topics:<br><ul><li><b>Intelligent User Interfaces</b>: how can we design interfaces of intelligent systems that augment a user to accomplish domain-specific tasks?</li><li><b>Sensing & Interaction Techniques</b>: how can we invent new sensors and devices that afford novel experiences for users to interact with a computer?</li><li><b>Computational Design & Fabrication</b>: how can we build computational platforms that empower users to realize their ideas into digital or physical artifacts?</li></ul>"
-    recruitment: '&#128161; Join us and apply to our <b><a target="_blank" href="https://hci.ucla.edu/reu">NSF REU funded summer internships</a></b> and the <b><a target="_blank" href="https://hci.ucla.edu/lbr">Learning-by-Research</a> program</b>.'
+#     recruitment: '&#128161; Join us and apply to our <b><a target="_blank" href="https://hci.ucla.edu/reu">NSF REU funded summer internships</a></b> and the <b><a target="_blank" href="https://hci.ucla.edu/lbr">Learning-by-Research</a> program</b>.'
     photos: 
       - g_bbq.jpg
       - g_postchi.jpg
