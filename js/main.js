@@ -157,7 +157,6 @@ UCLAHCI.updatePage = function () {
         var tb = $('<table/>');
         // tb.attr('border', 1);
         var tr1 = $('<tr/>');
-        // tr1.addClass('aboutus');
 
         var divMission = $('<div/>');
         divMission.addClass('mission');
@@ -165,12 +164,20 @@ UCLAHCI.updatePage = function () {
         divMission.append('<h2>Mission Statement</h2>');
         divMission.append('<p>' + UCLAHCI.data.aboutus[0].mission + '</p><br/>');
 
-        var divJoin = $('<div/>');
-        divJoin.addClass('announcement');
-        // divJoin.css('width', UCLAHCI.isMobile ? '80%' : '45%');
-        divJoin.append(UCLAHCI.data.aboutus[0].recruitment);
+        var contact = UCLAHCI.data.aboutus[0].contact;
 
-        divMission.append(divJoin)
+        var pInfo = $('<p>' + contact.description + '</p>');
+        divMission.append(pInfo);
+
+        var pEmail = $('<p>' + contact.email + '</p>');
+        divMission.append(pEmail);
+
+        // var divJoin = $('<div/>');
+        // divJoin.addClass('announcement');
+        // divJoin.css('width', UCLAHCI.isMobile ? '80%' : '45%');
+        // divJoin.append(UCLAHCI.data.aboutus[0].recruitment);
+
+        // divMission.append(divJoin)
 
         var divPhotos = $('<div/>');
         divPhotos.css('width', UCLAHCI.isMobile ? '80%' : '40%');
@@ -205,12 +212,6 @@ UCLAHCI.updatePage = function () {
         divInfo.addClass('sponsors');
         divInfo.css('width', UCLAHCI.isMobile ? '80%' : '45%');
 
-        var contact = UCLAHCI.data.aboutus[0].contact;
-
-        var pInfo = $('<p>' + contact.description + '</p>');
-        pInfo.css('margin', '30px');
-        divInfo.append(pInfo);
-
         // var pCoInv = $('<p>');
         // pCoInv.append('Co-Investigators: ')
         // for (ci of contact.coinvestigators) {
@@ -220,13 +221,11 @@ UCLAHCI.updatePage = function () {
         // pCoInv.css('margin', '30px');
         // divInfo.append(pCoInv);
 
-        var pAddr = $('<p>' + contact.address + '</p>');
-        pAddr.css('margin', '30px');
-        divInfo.append(pAddr);
+        // var pAddr = $('<p>' + contact.address + '</p>');
+        // pAddr.css('margin', '30px');
+        // divInfo.append(pAddr);
 
-        var pEmail = $('<p>' + contact.email + '</p>');
-        pEmail.css('margin', '30px');
-        divInfo.append(pEmail);
+        
 
         divInfo.append('<br/>');
 
@@ -259,7 +258,7 @@ UCLAHCI.updatePage = function () {
 
 
         tb.append(tr1);
-        tb.append('<tr><td><br/></td></tr>')
+        // tb.append('<tr><td><br/></td></tr>')
         tb.append(tr2);
         $('.content').append(tb);
     } else {
@@ -429,8 +428,6 @@ UCLAHCI.makeMemberPage = function (name) {
 UCLAHCI.makeProjectPage = function (name) {
     var project;
     for (p of UCLAHCI.data.projects) {
-        // console.log(UCLAHCI.strip(p.name))
-        // console.log(UCLAHCI.strip(name))
         if (UCLAHCI.strip(p.name) == UCLAHCI.strip(name)) {
             project = p;
             break;
@@ -505,7 +502,6 @@ UCLAHCI.makeProjectPage = function (name) {
 UCLAHCI.getVideoEmbedCode = function (type, vid, w, h, iframeId) {
     var srcCode = type == 'youtube' ? 'https://www.youtube.com/embed/' + vid + '?rel=0' :
         'https://player.vimeo.com/video/' + vid
-    // console.info(iframeId)
     return '<iframe id="' + iframeId + '" src="' + srcCode + '" width="' + w + '" height="' + h + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
 }
 
