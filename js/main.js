@@ -211,14 +211,14 @@ UCLAHCI.updatePage = function () {
         pInfo.css('margin', '30px');
         divInfo.append(pInfo);
 
-        var pCoInv = $('<p>');
-        pCoInv.append('Co-Investigators: ')
-        for (ci of contact.coinvestigators) {
-            pCoInv.append(ci)
-            pCoInv.append('&nbsp;&nbsp;&nbsp;&nbsp;')
-        }
-        pCoInv.css('margin', '30px');
-        divInfo.append(pCoInv);
+        // var pCoInv = $('<p>');
+        // pCoInv.append('Co-Investigators: ')
+        // for (ci of contact.coinvestigators) {
+        //     pCoInv.append(ci)
+        //     pCoInv.append('&nbsp;&nbsp;&nbsp;&nbsp;')
+        // }
+        // pCoInv.css('margin', '30px');
+        // divInfo.append(pCoInv);
 
         var pAddr = $('<p>' + contact.address + '</p>');
         pAddr.css('margin', '30px');

@@ -950,9 +950,6 @@ aboutus:
       - g_ruolin_uist19.jpg
     contact:
       description: UCLA HCI Research is part of the Electrical & Computer Engineering Department in the Henry Samueli School of Engineering at UCLA.
-      coinvestigators: 
-      - <a target="_blank" href="https://hilab.dev/">HiLab</a>
-      - <a target="_blank" href="https://uclalemur.com/">LEMUR</a>
       address: <b>UCLA HCI Research</b><br/>1538 Boelter Hall, UCLA<br/>Los Angeles, CA 90095
       email: Email: sigchi @ ucla.edu
     sponsors:
