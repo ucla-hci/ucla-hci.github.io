@@ -255,6 +255,40 @@ alumni:
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
+  - name: 'EmoGlass'
+    title: 'EmoGlass: an End-to-End AI-Enabled Wearable Platform for Enhancing Self-Awareness of Emotional Health'
+    authors: 
+      - "Zihan Yan, UCLA HCI Research and Zhejiang University"
+      - "Yufei Wu, Zhejiang University"
+      - "Yang Zhang, University of California, Los Angeles"
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+    pubs: CHI 2022
+    img: t_emoglass.jpg
+    abstract: "Often, emotional disorders are overlooked due to theirlack of awareness, resulting in potential mental issues. Recent advances in sensing and inference technology provide a viable path to wearable facial-expression-based emotion recognition. However, most prior work has explored only laboratory settings and few platforms are geared towards end-users in everyday lives or provide personalized emotional suggestions to promote self-regulation. We present EmoGlass, an end-to-end wearable platform that consists of emotion detection glasses and an accompanying mobile application. Our single-camera-mounted glasses can detect seven facial expressions based on partial face images. We conducted a three-day out-of-lab study (N=15) to evaluate the performance of EmoGlass. We iterated on the design of the EmoGlass application for efective self-monitoring and awareness of users' daily emotional states. We report quantitative and qualitative fndings, based on which we discuss design recommendations for future work on sensing and enhancing awareness of emotional health."
+    videoSite: vimeo
+    video: 715380296
+    album: '72177720299388332'
+    citation: "Zihan Yan, Yufei Wu, Yang Zhang, Xiang 'Anthony' Chen. EmoGlass: an End-to-End AI-Enabled Wearable Platform for Enhancing Self-Awareness of Emotional Health. In CHI Conference on Human Factors in Computing Systems, pp. 1-19. 2022. https://doi.org/10.1145/3491102.3501925"
+    bibtex: "@inproceedings{10.1145/3491102.3501925,<br>author = {Yan, Zihan and Wu, Yufei and Zhang, Yang and Chen, Xiang 'Anthony'},<br>title = {EmoGlass: An End-to-End AI-Enabled Wearable Platform for Enhancing Self-Awareness of Emotional Health},<br>year = {2022},<br>isbn = {9781450391573},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3491102.3501925},<br>doi = {10.1145/3491102.3501925},<br>booktitle = {CHI Conference on Human Factors in Computing Systems},<br>articleno = {13},<br>numpages = {19},<br>keywords = {Facial expression detection, Wearable, Emotion sensing, Mobile health, Mental health},<br>location = {New Orleans, LA, USA},<br>series = {CHI '22}<br>}"
+    paperUrl: 'https://drive.google.com/open?id=1TWZ4gYR2HZkKwwMxUHnTWRAssvd1VCL6'
+    thumbnail: chi2022_emoglass_thumbnail.jpg
+  - name: 'Roman'
+    title: 'Roman: Making Everyday Objects Robotically Manipulable with 3D-Printable Add-on Mechanisms'
+    authors: 
+      - "Jiahao Li, UCLA HCI Research"
+      - "Alexis A Samoylov, UCLA"
+      - "Jeeeun Kim, HCIED Lab, Texas A&M University"
+      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+    pubs: CHI 2022
+    img: t_roman.jpg
+    abstract: "One important vision of robotics is to provide physical assistance by manipulating different everyday objects, e.g., hand tools, kitchen utensils. However, many objects designed for dexterous hand-control are not easily manipulable by a single robotic arm with a generic parallel gripper. Complementary to existing research on developing grippers and control algorithms, we present Roman, a suite of hardware design and software tool support for robotic engineers to create 3D printable mechanisms attached to everyday handheld objects, making them easier to be manipulated by conventional robotic arms. The Roman hardware comes with a versatile magnetic gripper that can snap on/off handheld objects and drive add-on mechanisms to perform tasks. Roman also provides software support to register and author control programs. To validate our approach, we designed and fabricated Roman mechanisms for 14 everyday objects/tasks presented within a design space and conducted expert interviews with robotic engineers indicating that Roman serves as a practical alternative for enabling robotic manipulation of everyday objects."
+    videoSite: vimeo
+    video: 715062811
+    album: '72177720299386246'
+    citation: "Jiahao Li, Alexis Samoylov, Jeeeun Kim, and Xiang 'Anthony' Chen. Roman: Making Everyday Objects Robotically Manipulable with 3D-Printable Add-on Mechanisms. In CHI Conference on Human Factors in Computing Systems, pp. 1-17. 2022. https://doi.org/10.1145/3491102.3501818"
+    bibtex: "@inproceedings{10.1145/3491102.3501818,<br>author = {Li, Jiahao and Samoylov, Alexis and Kim, Jeeeun and Chen, Xiang 'Anthony'},<br>title = {Roman: Making Everyday Objects Robotically Manipulable with 3D-Printable Add-on Mechanisms},<br>year = {2022},<br>isbn = {9781450391573},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3491102.3501818},<br>doi = {10.1145/3491102.3501818},<br>booktitle = {CHI Conference on Human Factors in Computing Systems},<br>articleno = {272},<br>numpages = {17},<br>keywords = {mechanism design., handheld objects augmentation, Robotic grasping and manipulation},<br>location = {New Orleans, LA, USA},<br>series = {CHI '22}<br>}"
+    paperUrl: 'https://drive.google.com/open?id=1EusRAZtKOas0JdGNxXhYvYVvt1GiTew5'
+    thumbnail: chi2022_roman_thumbnail.jpg
   - name: 'Impetus'
     title: 'Lessons Learned from Designing an AI-Enabled Diagnosis Tool for Pathologists'
     authors: 
@@ -264,11 +298,11 @@ projects:
       - "Xiang 'Anthony' Chen, UCLA HCI Research"
     pubs: CSCW 2021
     img: t_impetus.jpeg
-    abstract: "Despite the promises of data-driven artificial intelligence (AI), little is known about how we can bridge the gulf between traditional physician-driven diagnosis and a plausible future of medicine automated by AI. Specifically, how can we involve AI usefully in physicians’ diagnosis workflow given that most AI is still nascent and error-prone (e.g., in digital pathology)? To explore this question, we first propose a series of collaborative techniques to engage human pathologists with AI given AI’s capabilities and limitations, based on which we prototype Impetus — a tool where an AI takes various degrees of initiatives to provide various forms of assistance to a pathologist in detecting tumors from histological slides. We summarize observations and lessons learned from a study with eight pathologists and discuss recommendations for future work on human-centered medical AI systems."
+    abstract: "Despite the promises of data-driven artificial intelligence (AI), little is known about how we can bridge the gulf between traditional physician-driven diagnosis and a plausible future of medicine automated by AI. Specifically, how can we involve AI usefully in physicians' diagnosis workflow given that most AI is still nascent and error-prone (e.g., in digital pathology)? To explore this question, we first propose a series of collaborative techniques to engage human pathologists with AI given AI's capabilities and limitations, based on which we prototype Impetus — a tool where an AI takes various degrees of initiatives to provide various forms of assistance to a pathologist in detecting tumors from histological slides. We summarize observations and lessons learned from a study with eight pathologists and discuss recommendations for future work on human-centered medical AI systems."
     videoSite: vimeo
     video: 361729363
     album: '72157718192437332'
-    citation: "Hongyan Gu, Jingbin Huang, Lauren Hung, and Xiang ‘Anthony’ Chen. 2021. Lessons Learned from Designing an AI-Enabled Diagnosis Tool for Pathologists. Proc. ACM Hum.-Comput. Interact. 5, CSCW 1, Article 10 (April 2021), 25 pages. https://doi.org/10.1145/3449084"
+    citation: "Hongyan Gu, Jingbin Huang, Lauren Hung, and Xiang 'Anthony' Chen. 2021. Lessons Learned from Designing an AI-Enabled Diagnosis Tool for Pathologists. Proc. ACM Hum.-Comput. Interact. 5, CSCW 1, Article 10 (April 2021), 25 pages. https://doi.org/10.1145/3449084"
     bibtex: "@article{10.1145/3449084,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Lessons Learned from Designing an AI-Enabled Diagnosis Tool for Pathologists},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Gu, Hongyan and Huang, Jingbin and Hung, Lauren and Chen, Xiang Anthony},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={Proceedings of the ACM on Human-computer Interaction},<br>&nbsp; &nbsp; &nbsp; &nbsp;volume={5},<br>&nbsp; &nbsp; &nbsp; &nbsp;number={CSCW},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={1--25},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;issue_date = {April 2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3449084},<br>&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3449084},<br>&nbsp; &nbsp; &nbsp; &nbsp;articleno = {10},<br>&nbsp; &nbsp; &nbsp; &nbsp;numpages = {25}<br>}"
     paperUrl: 'https://drive.google.com/file/d/1-Vni8pVYMZZdG_vX0flu3vrXdL1ufrds/view?usp=sharing'
     thumbnail: cscw2021_impetus_thumbnail.jpg
@@ -306,7 +340,7 @@ projects:
     videoSite: vimeo
     video: 515072781
     album: '72157718382497033'
-    citation: "Ruolin Wang, Zixuan Chen, Mingrui Zhang, Mingrui Ray Zhang, Zhaoheng Li, Zhixiu Liu, Zihan Dang, Chun Yu, and Xiang 'Anthony' Chen. 2021. Revamp: Enhancing Accessible Information Seeking Experience of Online Shopping for Blind or Low Vision Users. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems, 1–14. CHI ’21. New York, NY, USA: ACM, 2021. https://doi.org/10.1145/3411764.3445547."
+    citation: "Ruolin Wang, Zixuan Chen, Mingrui Zhang, Mingrui Ray Zhang, Zhaoheng Li, Zhixiu Liu, Zihan Dang, Chun Yu, and Xiang 'Anthony' Chen. 2021. Revamp: Enhancing Accessible Information Seeking Experience of Online Shopping for Blind or Low Vision Users. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems, 1–14. CHI '21. New York, NY, USA: ACM, 2021. https://doi.org/10.1145/3411764.3445547."
     bibtex: "@inproceedings{Wang:2021:Revamp,<br>&nbsp; &nbsp; &nbsp; &nbsp;author = {Wang, Ruolin and Chen, Zixuan and Zhang, Mingrui and Zhang, Mingrui Ray and Li, Zhaoheng and Liu, Zhixiu and Dang, Zihan and Yu, Chun and Chen, Xiang Anthony.},<br>&nbsp; &nbsp; &nbsp; &nbsp;title = {Revamp: Enhancing Accessible Information Seeking Experience of Online Shopping for Blind or Low Vision Users},<br>&nbsp; &nbsp; &nbsp; &nbsp;year = {2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;isbn = {978-1-4503-8096-6/21/05},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher = {ACM},<br>&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3411764.3445547},<br>&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3411764.3445547},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages = {1–14},<br>&nbsp; &nbsp; &nbsp; &nbsp;numpages = {14},<br>&nbsp; &nbsp; &nbsp; &nbsp;keywords = {Online shopping; Information Retrieval; Accessibility; Blind or Low Vision Users; Reviews; Image Description; Question-answering},<br>&nbsp; &nbsp; &nbsp; &nbsp;location = {Tokohama, Japan},<br>&nbsp; &nbsp; &nbsp; &nbsp;series = {CHI '21}<br>}"
     paperUrl: 'https://drive.google.com/file/d/1R3iDYLmpLr2QiWwEbvBxgMFLu3Vkn9Wj/view?usp=sharing'
     thumbnail: chi2021_revamp_thumbnail.jpg
@@ -321,8 +355,8 @@ projects:
     img: t_xalgo.jpg
     abstract: "Algorithms often appear as 'black boxes' to non-expert users. While prior work focuses on explainable representations and expert-oriented exploration, we propose and study an interactive approach using question answering to explain deterministic algorithms to non-expert users who need to understand the algorithms' internal states (e.g., students learning algorithms, operators monitoring robots, admins troubleshooting network routing). We construct XAlgo---a formal model that first classifies the type of question based on a taxonomy and generates an answer based on a set of rules that extract information from representations of an algorithm's internal states, e.g., the pseudocode. A design probe in an algorithm learning scenario with 18 participants (9 for a Wizard-of-Oz XAlgo and 9 as a control group) reports findings and design implications based on what kinds of questions people ask, how well XAlgo responds, and what remain as challenges to bridge users' gulf of understanding algorithms."
     album: '72157718472175126'
-    citation: "Juan Rebanal, Jordan Combitsis, Yuqi Tang, Xiang ‘Anthony’ Chen. XAlgo: a Design Probe of Explaining Algorithms’ Internal States via Question-Answering. In Proceedings of the 26th International Conference on Intelligent User Interfaces (IUI '21), April 14--17, 2021, College Station, TX, USA. https://doi.org/10.1145/3397481.3450676."
-    bibtex: "@inproceedings{10.1145/2856767.2856812,<br>&nbsp; &nbsp; &nbsp; &nbsp;author = {Rebanal, Juan and Tang, Yuqi and Combitsis, Jordan and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;title = {XAlgo: a Design Probe of Explaining Algorithms’ Internal States via Question-Answering},<br>&nbsp; &nbsp; &nbsp; &nbsp;year = {2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;isbn = {978-1-4503-8017-1/21/04},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3397481.3450676},<br>&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3397481.3450676},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 26st International Conference on Intelligent User Interfaces},<br>&nbsp; &nbsp; &nbsp; &nbsp;series = {IUI '21}<br>}"
+    citation: "Juan Rebanal, Jordan Combitsis, Yuqi Tang, Xiang 'Anthony' Chen. XAlgo: a Design Probe of Explaining Algorithms' Internal States via Question-Answering. In Proceedings of the 26th International Conference on Intelligent User Interfaces (IUI '21), April 14--17, 2021, College Station, TX, USA. https://doi.org/10.1145/3397481.3450676."
+    bibtex: "@inproceedings{10.1145/2856767.2856812,<br>&nbsp; &nbsp; &nbsp; &nbsp;author = {Rebanal, Juan and Tang, Yuqi and Combitsis, Jordan and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;title = {XAlgo: a Design Probe of Explaining Algorithms' Internal States via Question-Answering},<br>&nbsp; &nbsp; &nbsp; &nbsp;year = {2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;isbn = {978-1-4503-8017-1/21/04},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3397481.3450676},<br>&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3397481.3450676},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 26st International Conference on Intelligent User Interfaces},<br>&nbsp; &nbsp; &nbsp; &nbsp;series = {IUI '21}<br>}"
     paperUrl: 'https://drive.google.com/file/d/1RFlYYoi9ycO2g4WalkjM3NBtF_PjDb0x/view?usp=sharing'
     thumbnail: iui2021_xalgo_thumbnail.jpg
   - name: 'OralViewer'
@@ -340,12 +374,12 @@ projects:
       - "Lei He, UCLA"
     pubs: IUI 2021
     img: t_oralviewer.jpg
-    abstract: "Patient’s understanding on forthcoming dental surgeries is required by patient-centered care and helps reduce anxiety. Due to the complexity of dental surgeries and the patient-dentist expertise gap, conventional techniques of patient education are usually not effective for explaining surgical steps. In this paper, we present OralViewer—the first interactive application that enables dentist’s demonstration of dental surgeries in 3D to promote patients’ understanding. OralViewer takes a single 2D panoramic dental X-ray to reconstruct patient-specific 3D teeth structures, which are then assembled with registered gum and jaw bone models for complete oral cavity modeling. During the demonstration, OralViewer enables dentists to show surgery steps with virtual dental instruments that can animate effects on a 3D model in real-time. A technical evaluation shows that our deep learning model achieves a mean Intersection over Union (IoU) of 0.771 for 3D teeth reconstruction. A patient study with 12 participants shows OralViewer can improve patients’ understanding of surgeries. A preliminary expert study with 3 board-certified dentists further verifies the clinical validity of our system."
+    abstract: "Patient's understanding on forthcoming dental surgeries is required by patient-centered care and helps reduce anxiety. Due to the complexity of dental surgeries and the patient-dentist expertise gap, conventional techniques of patient education are usually not effective for explaining surgical steps. In this paper, we present OralViewer—the first interactive application that enables dentist's demonstration of dental surgeries in 3D to promote patients' understanding. OralViewer takes a single 2D panoramic dental X-ray to reconstruct patient-specific 3D teeth structures, which are then assembled with registered gum and jaw bone models for complete oral cavity modeling. During the demonstration, OralViewer enables dentists to show surgery steps with virtual dental instruments that can animate effects on a 3D model in real-time. A technical evaluation shows that our deep learning model achieves a mean Intersection over Union (IoU) of 0.771 for 3D teeth reconstruction. A patient study with 12 participants shows OralViewer can improve patients' understanding of surgeries. A preliminary expert study with 3 board-certified dentists further verifies the clinical validity of our system."
     videoSite: vimeo
     video: 553825921
     album: '72157719248545536'
     citation: "Yuan Liang, Liang Qiu, Tiancheng Lu, Zhujun Fang, Dezhan Tu, Jiawei Yang, Yiting Shao, Kun Wang, Xiang 'Anthony' Chen, and Lei He. 2021. OralViewer: 3D Demonstration of Dental Surgeries for Patient Education with Oral Cavity Reconstruction from a 2D Panoramic X-ray. In 26th International Conference on Intelligent User Interfaces (IUI '21). Association for Computing Machinery, New York, NY, USA, 553–563. DOI:https://doi.org/10.1145/3397481.3450695"
-    bibtex: "@inproceedings{10.1145/3397481.3450695,<br>author = {Liang, Yuan and Qiu, Liang and Lu, Tiancheng and Fang, Zhujun and Tu, Dezhan and Yang, Jiawei and Shao, Yiting and Wang, Kun and Chen, Xiang 'Anthony' and He, Lei},<br>title = {OralViewer: 3D Demonstration of Dental Surgeries for Patient Education with Oral Cavity Reconstruction from a 2D Panoramic X-Ray},<br>year = {2021},<br>isbn = {9781450380171},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3397481.3450695},<br>doi = {10.1145/3397481.3450695},<br>abstract = { Patient’s understanding on forthcoming dental surgeries is required by patient-centered care and helps reduce anxiety. Due to the complexity of dental surgeries and the patient-dentist expertise gap, conventional techniques of patient education are usually not effective for explaining surgical steps. In this paper, we present OralViewer—the first interactive application that enables dentist’s demonstration of dental surgeries in 3D to promote patients’ understanding. OralViewer takes a single 2D panoramic dental X-ray to reconstruct patient-specific 3D teeth structures, which are then assembled with registered gum and jaw bone models for complete oral cavity modeling. During the demonstration, OralViewer enables dentists to show surgery steps with virtual dental instruments that can animate effects on a 3D model in real-time. A technical evaluation shows that our deep learning model achieves a mean Intersection over Union (IoU) of 0.771 for 3D teeth reconstruction. A patient study with 12 participants shows OralViewer can improve patients’ understanding of surgeries. A preliminary expert study with 3 board-certified dentists further verifies the clinical validity of our system.},<br>booktitle = {26th International Conference on Intelligent User Interfaces},<br>pages = {553–563},<br>numpages = {11},<br>keywords = {deep learning, 3D visualization, patient education},<br>location = {College Station, TX, USA},<br>series = {IUI '21}<br>}<br><br>"
+    bibtex: "@inproceedings{10.1145/3397481.3450695,<br>author = {Liang, Yuan and Qiu, Liang and Lu, Tiancheng and Fang, Zhujun and Tu, Dezhan and Yang, Jiawei and Shao, Yiting and Wang, Kun and Chen, Xiang 'Anthony' and He, Lei},<br>title = {OralViewer: 3D Demonstration of Dental Surgeries for Patient Education with Oral Cavity Reconstruction from a 2D Panoramic X-Ray},<br>year = {2021},<br>isbn = {9781450380171},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3397481.3450695},<br>doi = {10.1145/3397481.3450695},<br>abstract = { Patient's understanding on forthcoming dental surgeries is required by patient-centered care and helps reduce anxiety. Due to the complexity of dental surgeries and the patient-dentist expertise gap, conventional techniques of patient education are usually not effective for explaining surgical steps. In this paper, we present OralViewer—the first interactive application that enables dentist's demonstration of dental surgeries in 3D to promote patients' understanding. OralViewer takes a single 2D panoramic dental X-ray to reconstruct patient-specific 3D teeth structures, which are then assembled with registered gum and jaw bone models for complete oral cavity modeling. During the demonstration, OralViewer enables dentists to show surgery steps with virtual dental instruments that can animate effects on a 3D model in real-time. A technical evaluation shows that our deep learning model achieves a mean Intersection over Union (IoU) of 0.771 for 3D teeth reconstruction. A patient study with 12 participants shows OralViewer can improve patients' understanding of surgeries. A preliminary expert study with 3 board-certified dentists further verifies the clinical validity of our system.},<br>booktitle = {26th International Conference on Intelligent User Interfaces},<br>pages = {553–563},<br>numpages = {11},<br>keywords = {deep learning, 3D visualization, patient education},<br>location = {College Station, TX, USA},<br>series = {IUI '21}<br>}<br><br>"
     paperUrl: 'https://drive.google.com/file/d/1-yO3swmeSoz0uxDNkdStD2iIbbHhSGSP/view?usp=sharing'
     thumbnail: iui2021_oralviewer.thumbnail.jpg
   - name: 'DualVib'
@@ -360,8 +394,8 @@ projects:
     videoSite: vimeo
     video: 455326878
     album: '72157715869674293'
-    citation: "Yudai Tanaka, Arata Horie, Xiang 'Anthony' Chen. 2020. DualVib: Simulating Haptic Sensation of Dynamic Mass by Combining Pseudo-Force and Texture Feedback. In 26th ACM Symposium on Virtual Reality Software and Technology, 1–10. VRST ’20. New York, NY, USA: Association for Computing Machinery. https://doi.org/10.1145/3385956.3418964."
-    bibtex: "@inproceedings{10.1145/3385956.3418964,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author = {Tanaka, Yudai and Horie, Arata and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title = {DualVib: Simulating Haptic Sensation of Dynamic Mass by Combining Pseudo-Force and Texture Feedback},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year = {2020},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;isbn = {9781450376198},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3385956.3418964},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3385956.3418964},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {26th ACM Symposium on Virtual Reality Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pages = {1–10},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;numpages = {10},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;keywords = {haptics, virtual reality, mass perception, vibration},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;location = {Virtual Event, Canada},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;series = {VRST ’20}<br>}"
+    citation: "Yudai Tanaka, Arata Horie, Xiang 'Anthony' Chen. 2020. DualVib: Simulating Haptic Sensation of Dynamic Mass by Combining Pseudo-Force and Texture Feedback. In 26th ACM Symposium on Virtual Reality Software and Technology, 1–10. VRST '20. New York, NY, USA: Association for Computing Machinery. https://doi.org/10.1145/3385956.3418964."
+    bibtex: "@inproceedings{10.1145/3385956.3418964,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author = {Tanaka, Yudai and Horie, Arata and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title = {DualVib: Simulating Haptic Sensation of Dynamic Mass by Combining Pseudo-Force and Texture Feedback},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year = {2020},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;isbn = {9781450376198},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3385956.3418964},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3385956.3418964},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {26th ACM Symposium on Virtual Reality Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pages = {1–10},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;numpages = {10},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;keywords = {haptics, virtual reality, mass perception, vibration},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;location = {Virtual Event, Canada},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;series = {VRST '20}<br>}"
     paperUrl: 'https://drive.google.com/file/d/1aEnQ-LSWe7upFDG1-UQ95tJ8juRcbvnf/view?usp=sharing'
     thumbnail: vrst2020_dualvib_thumbnail.jpg
   - name: 'Geno'
@@ -411,13 +445,13 @@ projects:
       - "Xiang 'Anthony' Chen, UCLA HCI Research"
     pubs: CHI 2020
     img: t_chexplain.jpg
-    abstract: "The recent development of data-driven AI promises to automate medical diagnosis; however, most AI functions as ‘black boxes’ to physicians with limited computational knowledge. Using medical imaging as a point of departure, we conducted three research activities to formulate the design of CheXplain---a system that enables physicians to explore and understand AI-enabled chest X-ray analysis: (i) a paired survey between referring physicians and radiologists reveals whether, when, and what kinds of explanations are needed; (ii) a low-fidelity prototype co-designed with three physicians formulates eight key features; and (iii) a high-fidelity prototype evaluated by another six medical professionals provides detailed summative insights on how each feature enables the exploration and understanding of AI. We summarize by discussing recommendations for future work to design and implement explainable medical AI systems that encompass four recurring themes: motivation, constraint, explanation, and justification."
+    abstract: "The recent development of data-driven AI promises to automate medical diagnosis; however, most AI functions as 'black boxes' to physicians with limited computational knowledge. Using medical imaging as a point of departure, we conducted three research activities to formulate the design of CheXplain---a system that enables physicians to explore and understand AI-enabled chest X-ray analysis: (i) a paired survey between referring physicians and radiologists reveals whether, when, and what kinds of explanations are needed; (ii) a low-fidelity prototype co-designed with three physicians formulates eight key features; and (iii) a high-fidelity prototype evaluated by another six medical professionals provides detailed summative insights on how each feature enables the exploration and understanding of AI. We summarize by discussing recommendations for future work to design and implement explainable medical AI systems that encompass four recurring themes: motivation, constraint, explanation, and justification."
     videoSite: vimeo
     video: 416564621
     album: '72157714227177278'
-    citation: "Yao Xie, Melody Chen, David Kao, Ge Gao, and Xiang 'Anthony' Chen. 2020. CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI ’20). Association for Computing Machinery, New York, NY, USA, 1–13. DOI:https://doi.org/10.1145/3313831.3376807"
+    citation: "Yao Xie, Melody Chen, David Kao, Ge Gao, and Xiang 'Anthony' Chen. 2020. CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI '20). Association for Computing Machinery, New York, NY, USA, 1–13. DOI:https://doi.org/10.1145/3313831.3376807"
     paperUrl: 'https://www.dropbox.com/s/b71xmvn3zauvlbb/chi2020_chexplain.pdf'
-    bibtex: "@inproceedings{10.1145/3313831.3376807,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author = {Xie, Yao and Chen, Melody and Kao, David and Gao, Ge and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title = {CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year = {2020},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;isbn = {9781450367080},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3313831.3376807},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3313831.3376807},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pages = {1–13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;numpages = {13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;keywords = {explainable artificial intelligence, physician-centered design, system design},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;location = {Honolulu, HI, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;series = {CHI ’20}<br>}"
+    bibtex: "@inproceedings{10.1145/3313831.3376807,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author = {Xie, Yao and Chen, Melody and Kao, David and Gao, Ge and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title = {CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year = {2020},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;isbn = {9781450367080},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3313831.3376807},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3313831.3376807},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pages = {1–13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;numpages = {13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;keywords = {explainable artificial intelligence, physician-centered design, system design},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;location = {Honolulu, HI, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;series = {CHI '20}<br>}"
     thumbnail: chi2020_chexplain_thumbnail.jpg
   - name: 'OralCam'
     title: 'OralCam: Enabling Self-Examination and Awareness of Oral Health Using a Smartphone Camera'
@@ -432,8 +466,8 @@ projects:
     pubs: CHI 2020 🏅
     img: t_oralcam.jpg
     abstract: Due to a lack of resources or awareness, oral diseases are often left unexamined and untreated, affecting a large population worldwide. With the advent of low-cost, sensor-equipped smartphones, mobile apps offer a promising possibility. However, to the best of our knowledge, no mobile health (mHealth) solutions can directly support users to self-examine their oral health condition. We present OralCam, the first interactive app that enables end-users' self-examination of five common oral conditions (diseases or early disease signals) by taking smartphone photos of one's oral cavity. OralCam allows a user to annotate additional information to augment the input image, and presents the output hierarchically, probabilistically and with visual explanations to help laymen users understand examination results. We describe a deep learning backend trained on a data set that consists of 3,182 oral photos. We report a technical evaluation, a week-long in-the-wild user study and an expert interview to validate OralCam.
-    citation: "Yuan Liang, Hsuan Wei Fan, Zhujun Fang, Leiying Miao, Wen Li, Xuan Zhang, Weibin Sun, Kun Wang, Lei He, and Xiang 'Anthony' Chen. 2020. OralCam: Enabling Self-Examination and Awareness of Oral Health Using a Smartphone Camera. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI ’20). Association for Computing Machinery, New York, NY, USA, 1–13. DOI:https://doi.org/10.1145/3313831.3376238"
-    bibtex: "@inproceedings{10.1145/3313831.3376238,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author = {Liang, Yuan and Fan, Hsuan Wei and Fang, Zhujun and Miao, Leiying and Li, Wen and Zhang, Xuan and Sun, Weibin and Wang, Kun and He, Lei and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title = {OralCam: Enabling Self-Examination and Awareness of Oral Health Using a Smartphone Camera},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year = {2020},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;isbn = {9781450367080},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3313831.3376238},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3313831.3376238},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pages = {1–13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;numpages = {13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;keywords = {mobile health, oral health, artificial intelligence, deep learning},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;location = {Honolulu, HI, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;series = {CHI ’20}<br>}"
+    citation: "Yuan Liang, Hsuan Wei Fan, Zhujun Fang, Leiying Miao, Wen Li, Xuan Zhang, Weibin Sun, Kun Wang, Lei He, and Xiang 'Anthony' Chen. 2020. OralCam: Enabling Self-Examination and Awareness of Oral Health Using a Smartphone Camera. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI '20). Association for Computing Machinery, New York, NY, USA, 1–13. DOI:https://doi.org/10.1145/3313831.3376238"
+    bibtex: "@inproceedings{10.1145/3313831.3376238,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author = {Liang, Yuan and Fan, Hsuan Wei and Fang, Zhujun and Miao, Leiying and Li, Wen and Zhang, Xuan and Sun, Weibin and Wang, Kun and He, Lei and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title = {OralCam: Enabling Self-Examination and Awareness of Oral Health Using a Smartphone Camera},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year = {2020},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;isbn = {9781450367080},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3313831.3376238},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3313831.3376238},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pages = {1–13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;numpages = {13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;keywords = {mobile health, oral health, artificial intelligence, deep learning},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;location = {Honolulu, HI, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;series = {CHI '20}<br>}"
     videoSite: vimeo
     video: 416571045
     album: '72157714227638632'
@@ -540,7 +574,7 @@ projects:
     bibtex: >-
       @article{chen2017improv,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Improv: An
       Input Framework for Improvising Cross-Device Interaction by
-      Demonstration},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang‘Anthony’
+      Demonstration},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang'Anthony'
       and Li, Yang},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={ACM Transactions on
       Computer-Human Interaction (TOCHI)},<br>&nbsp; &nbsp; &nbsp;
       &nbsp;volume={24},<br>&nbsp; &nbsp; &nbsp; &nbsp;number={2},<br>&nbsp;
@@ -613,11 +647,11 @@ projects:
       been previously proposed as a technique that allows the user to quickly
       access a target functionality by simply tapping at a specific location of
       the body with a smartphone. Though compelling, prior work often fell short
-      in enabling users’ unconstrained tapping locations or behaviors. To
+      in enabling users' unconstrained tapping locations or behaviors. To
       address this problem, we developed a novel recognition method that
       combines both offline—before the system sees any user-defined gestures—and
       online learning to reliably recognize arbitrary, user-defined body tapping
-      gestures, only using a smartphone’s built-in sensors. Our experiment
+      gestures, only using a smartphone's built-in sensors. Our experiment
       indicates that our method significantly outperforms baseline approaches in
       several usage conditions. In particular, provided only with a single
       sample per location, our accuracy is 30.8% over an SVM baseline and 24.8%
@@ -664,7 +698,7 @@ projects:
       issues such as support jigs and contact geometry between the attached part
       and the original object. Our validation helps to illustrate the strengths
       and weaknesses of each technique. For example, we characterize how surface
-      curvature and roughness affect print-over’s strength compared to the
+      curvature and roughness affect print-over's strength compared to the
       conventional print-in-one-piece. 
     bibtex: >-
       @inproceedings{chen2015encore,<br>&nbsp; &nbsp;title={Encore: 3D printed
@@ -696,7 +730,7 @@ projects:
       redefining mobile interaction from the solo performance of a smart phone,
       to a symphony of multiple devices. In this paper, we present Duet – an
       interactive system that explores a design space of interactions between a
-      smart phone and a smart watch. Based on the devices’ spatial
+      smart phone and a smart watch. Based on the devices' spatial
       configurations, Duet coordinates their motion and touch input, and extends
       their visual and tactile output to one another. This transforms the watch
       into an active element that enhances a wide range of phone-based
@@ -734,7 +768,7 @@ projects:
     pubs: UIST 2014
     video: '92972949'
     videoSite: vimeo
-    abstract: "We present Air+Touch, a new class of interactions that interweave touch events with in-air gestures, offering a unified input modality with expressiveness greater than each input modality alone. We demonstrate how air and touch are highly complementary: touch is used to designate targets and segment in-air gestures, while in-air gestures add expressivity to touch events. For example, a user can draw a circle in the air and tap to trigger a context menu, do a finger 'high jump' between two touches to select a region of text, or drag and in-air ‘pigtail’ to copy text to the clipboard. Through an observational study, we devised a basic taxonomy of Air+Touch interactions, based on whether the in-air component occurs before, between or after touches. To illustrate the potential of our approach, we built four applications that showcase seven exemplar Air+Touch interactions we created."
+    abstract: "We present Air+Touch, a new class of interactions that interweave touch events with in-air gestures, offering a unified input modality with expressiveness greater than each input modality alone. We demonstrate how air and touch are highly complementary: touch is used to designate targets and segment in-air gestures, while in-air gestures add expressivity to touch events. For example, a user can draw a circle in the air and tap to trigger a context menu, do a finger 'high jump' between two touches to select a region of text, or drag and in-air 'pigtail' to copy text to the clipboard. Through an observational study, we devised a basic taxonomy of Air+Touch interactions, based on whether the in-air component occurs before, between or after touches. To illustrate the potential of our approach, we built four applications that showcase seven exemplar Air+Touch interactions we created."
     bibtex: "@inproceedings{chen2014air+,<br>&nbsp; &nbsp;title={Air+ touch: interweaving touch and in-air gestures},<br>&nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Schwarz, Julia and Harrison, Chris and Mankoff, Jennifer and Hudson, Scott E},<br>&nbsp; &nbsp;booktitle={Proceedings of the 27th annual ACM symposium on User interface software and technology},<br>&nbsp; &nbsp;pages={519--525},<br>&nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp;organization={ACM}<br>}"
     album: '72157670702717043'
     thumbnail: uist2014_airtouch_thumbnail.jpg
@@ -764,7 +798,7 @@ projects:
       interfaces. Characters are entered with two swipes; the first swipe
       specifies the region where the character is located, and the second swipe
       specifies the character within that region. Our study showed that with
-      less than two hours’ training, Tested on a reduced word set, Swipeboard
+      less than two hours' training, Tested on a reduced word set, Swipeboard
       users achieved 19.58 words per minute (WPM), 15% faster than an existing
       baseline technique.
     bibtex: >-
@@ -796,7 +830,7 @@ projects:
     descp: Tracking a commodity smart phone's position around a user's body.
     pubs: MobileHCI 2014
     title: 'Around-Body Interaction: Sensing & Interaction Techniques for Proprioception-Enhanced Input with Mobile Devices'
-    abstract: "The space around the body provides a large interaction vol-ume that can allow for big interactions on small mobile de-vices. However, interaction techniques making use of this opportunity are underexplored, primarily focusing on dis-tributing information in the space around the body. We demonstrate three types of around-body interaction includ-ing canvas, modal and context-aware interactions in six demonstration applications. We also present a sensing solu-tion using standard smartphone hardware: a phone’s front camera, accelerometer and inertia measurement units. Our solution allows a person to interact with a mobile device by holding and positioning it between a normal field of view and its vicinity around the body. By leveraging a user’s proprioceptive sense, around-body Interaction opens a new input channel that enhances conventional interaction on a mobile device without requiring additional hardware."
+    abstract: "The space around the body provides a large interaction vol-ume that can allow for big interactions on small mobile de-vices. However, interaction techniques making use of this opportunity are underexplored, primarily focusing on dis-tributing information in the space around the body. We demonstrate three types of around-body interaction includ-ing canvas, modal and context-aware interactions in six demonstration applications. We also present a sensing solu-tion using standard smartphone hardware: a phone's front camera, accelerometer and inertia measurement units. Our solution allows a person to interact with a mobile device by holding and positioning it between a normal field of view and its vicinity around the body. By leveraging a user's proprioceptive sense, around-body Interaction opens a new input channel that enhances conventional interaction on a mobile device without requiring additional hardware."
     bibtex: "@inproceedings{chen2014around,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Around-body interaction: sensing and interaction techniques for proprioception-enhanced input with mobile devices},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Schwarz, Julia and Harrison, Chris and Mankoff, Jennifer and Hudson, Scott},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 16th international conference on Human-computer interaction with mobile devices and services},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={287--290},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
     video: '142935370'
     videoSite: vimeo
@@ -819,7 +853,7 @@ projects:
       body.
     pubs: MobileHCI 2012
     title: >-
-      Extending a Mobile Device’s Interaction Space through Body-Centric
+      Extending a Mobile Device's Interaction Space through Body-Centric
       Interaction
     abstract: >-
       Modern mobile devices rely on the screen as a primary input modality. Yet
@@ -836,7 +870,7 @@ projects:
       Interactions by applying them to the design of a novel mobile browser
       application. Overall, we contribute a class of mobile input techniques
       where interactions are extended beyond the small screen, and are instead
-      driven by a person’s movement of the device on and around the body.
+      driven by a person's movement of the device on and around the body.
     bibtex: >-
       @inproceedings{chen2012extending,<br>&nbsp; &nbsp; &nbsp;
       &nbsp;title={Extending a mobile device's interaction space through
@@ -853,7 +887,7 @@ projects:
     thumbnail: mhci2012_bci_thumbnail.jpg
     paperUrl: 'https://www.dropbox.com/s/z74oxofbcqlc3lr/mhci2012_bci.pdf'
     citation: >-
-      Chen, X., Marquardt, N., Tang, A., Boring, S., & Greenberg, S. (2012). Extending a mobile device’s interaction space through body-centric interaction. In Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services (pp. 151–160).
+      Chen, X., Marquardt, N., Tang, A., Boring, S., & Greenberg, S. (2012). Extending a mobile device's interaction space through body-centric interaction. In Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services (pp. 151–160).
   
   - img: t_spalendar.jpg
     authors:
@@ -866,7 +900,7 @@ projects:
     descp: Visualizing calendar data by showing people moving between places.
     pubs: AVI 2012
     title: >-
-      Spalendar: Visualizing a Group’s Calendar Events over a Geographic Space
+      Spalendar: Visualizing a Group's Calendar Events over a Geographic Space
       on a Public Display 
     abstract: >-
       Portable paper calendars (i.e., day planners and organizers) have greatly
@@ -876,16 +910,16 @@ projects:
       abbreviated or even hidden - text fields within those time units. The
       problem is that, for a group, this visual sorting of individual events
       into time buckets conveys only limited information about the social
-      network of people. For example, people’s whereabouts cannot be read ‘at a
-      glance’ but require examining the text. Our goal is to explore an
-      alternate visualization that can reflect and illustrate group members’
-      calendar events. Our main idea is to display the group’s calendar events
+      network of people. For example, people's whereabouts cannot be read 'at a
+      glance' but require examining the text. Our goal is to explore an
+      alternate visualization that can reflect and illustrate group members'
+      calendar events. Our main idea is to display the group's calendar events
       as spatiotemporal activities occurring over a geographic space animated
       over time, all presented on a highly interactive public display. In
-      particular, our SPALENDAR (SPAtial CALENDAR) design animates peoples’
+      particular, our SPALENDAR (SPAtial CALENDAR) design animates peoples'
       past, present and forthcoming movements between event locations as well as
-      their static locations. Details of people’s events, their movements and
-      their locations are progressively revealed and controlled by the viewer’s
+      their static locations. Details of people's events, their movements and
+      their locations are progressively revealed and controlled by the viewer's
       proximity to the display, their identity, and their gestural interactions
       with it, all of which are tracked by the public display.
     bibtex: >-
@@ -904,7 +938,7 @@ projects:
     thumbnail: avi2012_spalendar_thumbnail.jpg
     paperUrl: 'https://www.dropbox.com/s/0uvmpuhpq3vpzfy/avi2012_spalendar.pdf'
     citation: >-
-      Chen, X., Boring, S., Carpendale, S., Tang, A., & Greenberg, S. (2012). Spalendar: visualizing a group’s calendar events over a geographic space on a public display. In AVI ’12 Proceedings of the International Working Conference on Advanced Visual Interfaces (pp. 689–696).
+      Chen, X., Boring, S., Carpendale, S., Tang, A., & Greenberg, S. (2012). Spalendar: visualizing a group's calendar events over a geographic space on a public display. In AVI '12 Proceedings of the International Working Conference on Advanced Visual Interfaces (pp. 689–696).
 
 aboutus:
   - mission: "We believe the ultimate goal of inventing the computer is to augment our human selves. To achieve this, our research focuses on the following three topics:<br><ul><li><b>Intelligent User Interfaces</b>: how can we design interfaces of intelligent systems that augment a user to accomplish domain-specific tasks?</li><li><b>Sensing & Interaction Techniques</b>: how can we invent new sensors and devices that afford novel experiences for users to interact with a computer?</li><li><b>Computational Design & Fabrication</b>: how can we build computational platforms that empower users to realize their ideas into digital or physical artifacts?</li></ul>"
