@@ -941,7 +941,7 @@ projects:
       Chen, X., Boring, S., Carpendale, S., Tang, A., & Greenberg, S. (2012). Spalendar: visualizing a group's calendar events over a geographic space on a public display. In AVI '12 Proceedings of the International Working Conference on Advanced Visual Interfaces (pp. 689–696).
 
 aboutus:
-  - mission: "We study, design, and build interactive intelligent systems that empower individuals to <br><ul><li>thrive in an <b>information</b>-rich world; and</li><li>realize <b>ideas</b> into reality.</li></ul><img src='assets/mission.jpeg' width=360></img>"
+  - mission: "We study, design, and build interactive intelligent systems that empower individuals to <br><ul><li>thrive in an <b>information</b>-rich world; and</li><li>transform <b>ideas</b> into reality.</li></ul><img src='assets/mission.jpeg' width=360></img>"
   # - mission: "We believe the ultimate goal of inventing the computer is to augment our human selves. To achieve this, our research focuses on the following three topics:<br><ul><li><b>Intelligent User Interfaces</b>: how can we design interfaces of intelligent systems that augment a user to accomplish domain-specific tasks?</li><li><b>Sensing & Interaction Techniques</b>: how can we invent new sensors and devices that afford novel experiences for users to interact with a computer?</li><li><b>Computational Design & Fabrication</b>: how can we build computational platforms that empower users to realize their ideas into digital or physical artifacts?</li></ul>"
 #     recruitment: '&#128161; Join us and apply to our <b><a target="_blank" href="https://hci.ucla.edu/reu">NSF REU funded summer internships</a></b> and the <b><a target="_blank" href="https://hci.ucla.edu/lbr">Learning-by-Research</a> program</b>.'
     photos: 
