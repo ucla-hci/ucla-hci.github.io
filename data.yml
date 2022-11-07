@@ -2,8 +2,8 @@ team:
   - name: Xiang 'Anthony' Chen
     role: Assistant Professor
     expertise: PI
-    img: Anthony-s.JPG
-    imgalt: Anthony-f.JPG
+    img: Anthony-s.jpg
+    imgalt: Anthony-f.jpg
     url: https://xac.is
   - name: Yang Zhang
     role: Assistant Professor
@@ -14,26 +14,26 @@ team:
   - name: Jiahao Li
     role: MAE PhD
     expertise: AR/Robotics
-    img: Nick-s.JPG
-    imgalt: Nick-f.JPG
+    img: Nick-s.jpg
+    imgalt: Nick-f.jpg
     url: https://ljhnick.github.io/
   - name: Hongyan Gu
     role: ECE PhD
     expertise: Human-Centered Medical AI
-    img: Hongyan_n.JPG
-    imgalt: Hongyan_f.JPG
+    img: Hongyan_n.jpg
+    imgalt: Hongyan_f.jpg
     url: https://www.hygu.net/
   - name: Ruolin Wang
     role: ECE PhD
     expertise: Accessibility
-    img: Ruolin-s.JPG
-    imgalt: Ruolin-f.JPG
+    img: Ruolin-s.jpg
+    imgalt: Ruolin-f.jpg
     url: https://www.violynnewang.com/
   - name: Noyan Evirgen
     role: ECE PhD
     expertise: Generative AI
-    img: Noyan_n.JPG
-    imgalt: Noyan_f.JPG
+    img: Noyan_n.jpg
+    imgalt: Noyan_f.jpg
   - name: Bruce Liu
     role: ECE PhD
     expertise: AI-Augmented Humans
@@ -128,14 +128,14 @@ alumni:
   - name: Yudai Tanaka
     role: Specialist
     expertise: Now PhD @ UChicago
-    img: Yudai-s.JPG
-    imgalt: Yudai-f.JPG
+    img: Yudai-s.jpg
+    imgalt: Yudai-f.jpg
     url: https://yudai-tanaka.com
   - name: Lauren Hung
     role: Specialist
     expertise: Now MHCI @ CMU
-    img: Lauren-s.JPG
-    imgalt: Lauren-f.JPG
+    img: Lauren-s.jpg
+    imgalt: Lauren-f.jpg
     url: http://laurenhung.com/
   - name: Shuen Chan
     role: <a href='lbr' target='_blank'>LbR Student</a>
@@ -191,8 +191,8 @@ alumni:
   - name: Amirali Omidfar
     role: ECE MS
     expertise: <br>
-    img: Amir-s.JPG
-    imgalt: Amir-f.JPG
+    img: Amir-s.jpg
+    imgalt: Amir-f.jpg
   - name: Rita Dang
     role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: User Researcher
@@ -231,28 +231,28 @@ alumni:
   - name: Carlo Rebanal
     role: Now ML Engineer at Oracle
     expertise: <br/>
-    img: Carlo-s.JPG
-    imgalt: Carlo-f.JPG
+    img: Carlo-s.jpg
+    imgalt: Carlo-f.jpg
   - name: Yao Xie
     role: ECE MS
     expertise: <br/>
-    img: Yao-s.JPG
-    imgalt: Yao-f.JPG
+    img: Yao-s.jpg
+    imgalt: Yao-f.jpg
   - name: Ximeng Liu
     role: ECE MS
     expertise: <br/>
-    img: Simon-s.JPG
-    imgalt: Simon-f.JPG
+    img: Simon-s.jpg
+    imgalt: Simon-f.jpg
   - name: Nicolas Cheng
     role: ECE MS
     expertise: <br/>
-    img: Nicky-s.JPG
-    imgalt: Nicky-f.JPG
+    img: Nicky-s.jpg
+    imgalt: Nicky-f.jpg
   - name: Yuki Tang
     role: Now MSc at UTokyo
     expertise: <br/>
-    img: Yuki-s.JPG
-    imgalt: Yuki-f.JPG 
+    img: Yuki-s.jpg
+    imgalt: Yuki-f.jpg 
   - name: Hsuan-Wei Fan
     role: Now MSc at UW
     expertise: <br/>
@@ -261,13 +261,13 @@ alumni:
   - name: Jingbin Huang
     role: <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1850183' target='_blank'>NSF REU</a> Student<br>Now MSc at UCSD
     # expertise: <br/>
-    img: Jingbin-s.JPG
-    imgalt: Jingbin-f.JPG
+    img: Jingbin-s.jpg
+    imgalt: Jingbin-f.jpg
   - name: Melody Chen
     role: <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1850183' target='_blank'>NSF REU</a> Student
     expertise: <br/>
-    img: Melody-s.JPG
-    imgalt: Melody-f.JPG 
+    img: Melody-s.jpg
+    imgalt: Melody-f.jpg 
   - name: Cathy Wang
     role: Now MSc at UCSD
     expertise: <br/>
@@ -281,13 +281,13 @@ alumni:
   - name: Ben Wagstaff
     role: ECE Undergrad
     expertise: <br/>
-    img: Ben-s.JPG
-    imgalt: Ben-f.JPG
+    img: Ben-s.jpg
+    imgalt: Ben-f.jpg
   - name: Joseph Lu
     role: CS Undergrad
     expertise: <br/>
-    img: Joseph-s.JPG
-    imgalt: Joseph-f.JPG
+    img: Joseph-s.jpg
+    imgalt: Joseph-f.jpg
 projects:
   - name: 'EmoGlass'
     title: 'EmoGlass: an End-to-End AI-Enabled Wearable Platform for Enhancing Self-Awareness of Emotional Health'
@@ -981,7 +981,7 @@ aboutus:
     photos: 
       - g_bbq.jpg
       - g_postchi.jpg
-      - g_collaboration.JPG
+      - g_collaboration.jpg
       - g_ruolin_uist19.jpg
     contact:
       description: UCLA HCI Research is part of the Electrical & Computer Engineering Department in the Henry Samueli School of Engineering at UCLA.
