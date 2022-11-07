@@ -13,15 +13,16 @@ team:
     url: https://yangzhang.dev/
   - name: Jiahao Li
     role: MAE PhD
-    expertise: Robotics
+    expertise: AR/Robotics
     img: Nick-s.JPG
     imgalt: Nick-f.JPG
     url: https://ljhnick.github.io/
   - name: Hongyan Gu
     role: ECE PhD
-    expertise: Medical Imaging
-    img: Hongyan-s.JPG
-    imgalt: Hongyan-f.JPG
+    expertise: Human-Centered Medical AI
+    img: Hongyan_n.JPG
+    imgalt: Hongyan_f.JPG
+    url: https://www.hygu.net/
   - name: Ruolin Wang
     role: ECE PhD
     expertise: Accessibility
@@ -31,66 +32,99 @@ team:
   - name: Noyan Evirgen
     role: ECE PhD
     expertise: Generative AI
-    img: Noyan-s.JPG
-    imgalt: Noyan-f.JPG
+    img: Noyan_n.JPG
+    imgalt: Noyan_f.JPG
   - name: Bruce Liu
     role: ECE PhD
-    expertise: Accessibility
+    expertise: AI-Augmented Humans
+    img: Bruce_n.jpg
+    imgalt: Bruce_f.jpg
+    url: https://www.xingyuliu.com/
+  - name: Youngseung Jeon
+    role: ECE PhD
+    expertise: AI-Supported Creativity
+    img: Jay_n.jpg
+    imgalt: Jay_f.jpg
+    url: https://sites.google.com/view/youngseung-jeon
+  - name: Chunxu Yang
+    role: ECE MS
+    expertise: Human-AI Interaction
+    img: Chunxu_n.jpg
+    imgalt: Chunxu_f.jpg
+  - name: Roy Jara
+    role: ECE MS
+    expertise: UX Prototyper
+    img: Roy_n.jpg
+    imgalt: Roy_f.jpg
+    url: https://www.linkedin.com/in/roy-jara/
+  - name: Wayne Zhang
+    role: ECE MS
+    expertise: UX Prototyper
+    img: Wayne_n.jpg
+    imgalt: Wayne_f.jpg
+    url: https://www.linkedin.com/in/waynezhangus/
+  - name: David Xiong
+    role: CS Undergrad
+    expertise: UX Engineer
     img: minion.jpg
     imgalt: purple.jpeg
-    url: https://www.xingyuliu.com/
+  - name: Zihan Yan
+    role: Collaborator
+    expertise: MIT Media Lab
+    img: minion.jpg
+    imgalt: purple.jpeg
+# collaborators:
+#   - name: Zihan Yan
+#     role: MS Student
+#     expertise: MIT Media Lab
+#     img: minion.jpg
+#     imgalt: purple.jpeg
+#   - name: Mohammad Haeri
+#     role: Pathologist
+#     expertise: U of Kansas Medical Center
+#     img: Mohammad-s.jpeg
+#     imgalt: Mohammad-s.jpeg
+#   - name: Kazu Williams
+#     role: Staff Research Associate
+#     expertise: UCLA Pathology
+#     img: Kazu-s.jpeg
+#     imgalt: Kazu-s.jpeg
+#   - name: Amy Pavel
+#     role: PostDoc/Research Scientist
+#     expertise: CMU/Apple
+#     img: Amy-s.png
+#     imgalt: Amy-s.png
+#   - name: Jeeeun Kim
+#     role: Assistant Professor
+#     expertise: Texas A&M University
+#     img: Jeeeun-s.jpeg
+#     imgalt: Jeeeun-s.jpeg
+#   - name: Dingzeyu Li
+#     role: Research Scientist
+#     expertise: Adobe
+#     img: Ding-s.jpeg
+#     imgalt: Ding-s.jpeg
+  # - name: Lin Yang
+  #   role: Assistant Professor
+  #   expertise: UCLA ECE
+  #   img: Lin-s.jpeg
+  #   imgalt: Lin-s.jpeg
+  # - name: Lei He
+  #   role: Professor
+  #   expertise: UCLA ECE
+  #   img: Lei-s.jpeg
+  #   imgalt: Lei-s.jpeg
+alumni:
+  - name: Mina Huh
+    role: Research Intern
+    expertise: Now PhD @ UT Austin
+    img: Mina-s.jpeg
+    imgalt: Mina-f.jpeg
   - name: Yuan Liang
     role: ECE PhD
     expertise: Medical Imaging
     img: minion.jpg
     imgalt: purple.jpeg
-  - name: Zihan Yan
-    role: Research Intern
-    expertise: Sensing Prototyper
-    img: minion.jpg
-    imgalt: purple.jpeg
-  - name: Mina Huh
-    role: Research Intern
-    expertise: Accessibility
-    img: Mina-s.jpeg
-    imgalt: Mina-f.jpeg
-collaborators:
-  - name: Mohammad Haeri
-    role: Pathologist
-    expertise: U of Kansas Medical Center
-    img: Mohammad-s.jpeg
-    imgalt: Mohammad-s.jpeg
-  - name: Kazu Williams
-    role: Staff Research Associate
-    expertise: UCLA Pathology
-    img: Kazu-s.jpeg
-    imgalt: Kazu-s.jpeg
-  - name: Amy Pavel
-    role: PostDoc/Research Scientist
-    expertise: CMU/Apple
-    img: Amy-s.png
-    imgalt: Amy-s.png
-  - name: Jeeeun Kim
-    role: Assistant Professor
-    expertise: Texas A&M University
-    img: Jeeeun-s.jpeg
-    imgalt: Jeeeun-s.jpeg
-  - name: Dingzeyu Li
-    role: Research Scientist
-    expertise: Adobe
-    img: Ding-s.jpeg
-    imgalt: Ding-s.jpeg
-  - name: Lin Yang
-    role: Assistant Professor
-    expertise: UCLA ECE
-    img: Lin-s.jpeg
-    imgalt: Lin-s.jpeg
-  - name: Lei He
-    role: Professor
-    expertise: UCLA ECE
-    img: Lei-s.jpeg
-    imgalt: Lei-s.jpeg
-alumni:
   - name: Yudai Tanaka
     role: Specialist
     expertise: Now PhD @ UChicago
@@ -958,16 +992,18 @@ aboutus:
         url: https://www.onr.navy.mil/Education-Outreach/Sponsored-Research/YIP/2021-young-investigators
       - img: nsf.png
         url: https://nsf.gov/
-      - img: ucla.jpeg
+      - img: ucla.png
         url: https://grad.ucla.edu/funding/financial-aid/summer-mentored-research-fellowship-smrf/
       - img: hellman.png
         url: http://www.hellmanfellows.org/fellows/xiang-chen/
+      - img: salesforce.png
+        url: https://www.salesforceairesearch.com/
       - img: google.png
         url: https://research.google/outreach/research-scholar-program/
       - img: adobe.png
         url: https://www.adobe.com/
       - img: intel.png
-        url: https://www.intel.com/content/www/us/en/research/blogs/rising-star-faculty-award-22.html
+        url: https://www.intel.com/content/www/us/en/research/blogs/intel-rising-stars-awards-2022.html
       - img: meta.png
         url: https://www.metachnology.com/
     map: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1991.4035161501527!2d-118.44520705236775!3d34.06920012829791!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc8632b4bcf3%3A0x8087319fe00f1e04!2sUCLA+HCI+Research!5e0!3m2!1sen!2sus!4v1555280319576!5m2!1sen!2sus" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>

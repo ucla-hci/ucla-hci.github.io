@@ -89,8 +89,8 @@ UCLAHCI.updatePage = function () {
     $('.content').empty();
     if (page == 'team') {
         $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.team));
-        $('.content').append($('<br/><br/><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current Collaborators</h2>'))
-        $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.collaborators));
+        // $('.content').append($('<br/><br/><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current Collaborators</h2>'))
+        // $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.collaborators));
         $('.content').append($('<br/><br/><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alumni</h2>'))
         $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.alumni));
 
@@ -160,7 +160,7 @@ UCLAHCI.updatePage = function () {
 
         var divMission = $('<div/>');
         divMission.addClass('mission');
-        divMission.css('width', UCLAHCI.isMobile ? '80%' : '45%');
+        divMission.css('width', UCLAHCI.isMobile ? '80%' : '40%');
         divMission.append('<h2>Mission Statement</h2>');
         divMission.append('<p>' + UCLAHCI.data.aboutus[0].mission + '</p><br/>');
 
@@ -172,15 +172,8 @@ UCLAHCI.updatePage = function () {
         var pEmail = $('<p>' + contact.email + '</p>');
         divMission.append(pEmail);
 
-        // var divJoin = $('<div/>');
-        // divJoin.addClass('announcement');
-        // divJoin.css('width', UCLAHCI.isMobile ? '80%' : '45%');
-        // divJoin.append(UCLAHCI.data.aboutus[0].recruitment);
-
-        // divMission.append(divJoin)
-
         var divPhotos = $('<div/>');
-        divPhotos.css('width', UCLAHCI.isMobile ? '80%' : '40%');
+        divPhotos.css('width', UCLAHCI.isMobile ? '80%' : '45%');
         divPhotos.css('float', UCLAHCI.isMobile ? 'none' : 'right');
         divPhotos.css('margin-right', UCLAHCI.isMobile ? 'auto' : '40px');
         divPhotos.addClass('photos');
@@ -212,21 +205,6 @@ UCLAHCI.updatePage = function () {
         divInfo.addClass('sponsors');
         divInfo.css('width', UCLAHCI.isMobile ? '80%' : '45%');
 
-        // var pCoInv = $('<p>');
-        // pCoInv.append('Co-Investigators: ')
-        // for (ci of contact.coinvestigators) {
-        //     pCoInv.append(ci)
-        //     pCoInv.append('&nbsp;&nbsp;&nbsp;&nbsp;')
-        // }
-        // pCoInv.css('margin', '30px');
-        // divInfo.append(pCoInv);
-
-        // var pAddr = $('<p>' + contact.address + '</p>');
-        // pAddr.css('margin', '30px');
-        // divInfo.append(pAddr);
-
-        
-
         divInfo.append('<br/>');
 
         var pSponsors = $('<p>We are generously supported by: </p>');
@@ -246,7 +224,7 @@ UCLAHCI.updatePage = function () {
 
         var divMap = $('<div/>');
         divMap.addClass('map');
-        divMap.css('width', UCLAHCI.isMobile ? '80%' : '40%');
+        divMap.css('width', UCLAHCI.isMobile ? '80%' : '45%');
         divMap.css('float', UCLAHCI.isMobile ? 'none' : 'right');
         divMap.css('margin-right', UCLAHCI.isMobile ? 'auto' : '40px');
         var mapCode = UCLAHCI.data.aboutus[0].map;
