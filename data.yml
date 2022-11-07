@@ -2,8 +2,8 @@ team:
   - name: Xiang 'Anthony' Chen
     role: Assistant Professor
     expertise: PI
-    img: Anthony-s.jpg
-    imgalt: Anthony-f.jpg
+    img: Anthony-s.JPG
+    imgalt: Anthony-f.JPG
     url: https://xac.is
   - name: Yang Zhang
     role: Assistant Professor
@@ -14,8 +14,8 @@ team:
   - name: Jiahao Li
     role: MAE PhD
     expertise: AR/Robotics
-    img: Nick-s.jpg
-    imgalt: Nick-f.jpg
+    img: Nick-s.JPG
+    imgalt: Nick-f.JPG
     url: https://ljhnick.github.io/
   - name: Hongyan Gu
     role: ECE PhD
@@ -26,8 +26,8 @@ team:
   - name: Ruolin Wang
     role: ECE PhD
     expertise: Accessibility
-    img: Ruolin-s.jpg
-    imgalt: Ruolin-f.jpg
+    img: Ruolin-s.JPG
+    imgalt: Ruolin-f.JPG
     url: https://www.violynnewang.com/
   - name: Noyan Evirgen
     role: ECE PhD
@@ -128,14 +128,14 @@ alumni:
   - name: Yudai Tanaka
     role: Specialist
     expertise: Now PhD @ UChicago
-    img: Yudai-s.jpg
-    imgalt: Yudai-f.jpg
+    img: Yudai-s.JPG
+    imgalt: Yudai-f.JPG
     url: https://yudai-tanaka.com
   - name: Lauren Hung
     role: Specialist
     expertise: Now MHCI @ CMU
-    img: Lauren-s.jpg
-    imgalt: Lauren-f.jpg
+    img: Lauren-s.JPG
+    imgalt: Lauren-f.JPG
     url: http://laurenhung.com/
   - name: Shuen Chan
     role: <a href='lbr' target='_blank'>LbR Student</a>
@@ -191,8 +191,8 @@ alumni:
   - name: Amirali Omidfar
     role: ECE MS
     expertise: <br>
-    img: Amir-s.jpg
-    imgalt: Amir-f.jpg
+    img: Amir-s.JPG
+    imgalt: Amir-f.JPG
   - name: Rita Dang
     role: <a href='lbr' target='_blank'>LbR Student</a>
     expertise: User Researcher
@@ -231,28 +231,28 @@ alumni:
   - name: Carlo Rebanal
     role: Now ML Engineer at Oracle
     expertise: <br/>
-    img: Carlo-s.jpg
-    imgalt: Carlo-f.jpg
+    img: Carlo-s.JPG
+    imgalt: Carlo-f.JPG
   - name: Yao Xie
     role: ECE MS
     expertise: <br/>
-    img: Yao-s.jpg
-    imgalt: Yao-f.jpg
+    img: Yao-s.JPG
+    imgalt: Yao-f.JPG
   - name: Ximeng Liu
     role: ECE MS
     expertise: <br/>
-    img: Simon-s.jpg
-    imgalt: Simon-f.jpg
+    img: Simon-s.JPG
+    imgalt: Simon-f.JPG
   - name: Nicolas Cheng
     role: ECE MS
     expertise: <br/>
-    img: Nicky-s.jpg
-    imgalt: Nicky-f.jpg
+    img: Nicky-s.JPG
+    imgalt: Nicky-f.JPG
   - name: Yuki Tang
     role: Now MSc at UTokyo
     expertise: <br/>
-    img: Yuki-s.jpg
-    imgalt: Yuki-f.jpg 
+    img: Yuki-s.JPG
+    imgalt: Yuki-f.JPG 
   - name: Hsuan-Wei Fan
     role: Now MSc at UW
     expertise: <br/>
@@ -261,13 +261,13 @@ alumni:
   - name: Jingbin Huang
     role: <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1850183' target='_blank'>NSF REU</a> Student<br>Now MSc at UCSD
     # expertise: <br/>
-    img: Jingbin-s.jpg
-    imgalt: Jingbin-f.jpg
+    img: Jingbin-s.JPG
+    imgalt: Jingbin-f.JPG
   - name: Melody Chen
     role: <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1850183' target='_blank'>NSF REU</a> Student
     expertise: <br/>
-    img: Melody-s.jpg
-    imgalt: Melody-f.jpg 
+    img: Melody-s.JPG
+    imgalt: Melody-f.JPG 
   - name: Cathy Wang
     role: Now MSc at UCSD
     expertise: <br/>
@@ -281,13 +281,13 @@ alumni:
   - name: Ben Wagstaff
     role: ECE Undergrad
     expertise: <br/>
-    img: Ben-s.jpg
-    imgalt: Ben-f.jpg
+    img: Ben-s.JPG
+    imgalt: Ben-f.JPG
   - name: Joseph Lu
     role: CS Undergrad
     expertise: <br/>
-    img: Joseph-s.jpg
-    imgalt: Joseph-f.jpg
+    img: Joseph-s.JPG
+    imgalt: Joseph-f.JPG
 projects:
   - name: 'EmoGlass'
     title: 'EmoGlass: an End-to-End AI-Enabled Wearable Platform for Enhancing Self-Awareness of Emotional Health'
@@ -981,7 +981,7 @@ aboutus:
     photos: 
       - g_bbq.jpg
       - g_postchi.jpg
-      - g_collaboration.jpg
+      - g_collaboration.JPG
       - g_ruolin_uist19.jpg
     contact:
       description: UCLA HCI Research is part of the Electrical & Computer Engineering Department in the Henry Samueli School of Engineering at UCLA.
