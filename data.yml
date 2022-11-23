@@ -51,6 +51,12 @@ team:
     expertise: Human-AI Interaction
     img: Chunxu_n.jpg
     imgalt: Chunxu_f.jpg
+  - name: Naoto Nishida
+    role: Visit Researcher
+    expertise: University of Tokyo
+    img: Naoto_n.jpg
+    imgalt: Naoto_f.jpg
+    url: https://nawta.github.io/
   - name: Roy Jara
     role: ECE MS
     expertise: UX Prototyper
