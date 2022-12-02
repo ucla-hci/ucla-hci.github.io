@@ -39,7 +39,7 @@ team:
     expertise: AI-Augmented Humans
     img: Bruce_n.jpg
     imgalt: Bruce_f.jpg
-    url: https://www.xingyuliu.com/
+    url: https://liubruce.me/
   - name: Youngseung Jeon
     role: ECE PhD
     expertise: AI-Supported Creativity
@@ -77,8 +77,9 @@ team:
   - name: Zihan Yan
     role: Collaborator
     expertise: MIT Media Lab
-    img: minion.jpg
-    imgalt: purple.jpeg
+    img: Zihan_n.jpg
+    imgalt: Zihan_f.jpg
+    url: https://yzihan.github.io/
 # collaborators:
 #   - name: Zihan Yan
 #     role: MS Student
