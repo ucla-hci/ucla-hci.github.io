@@ -295,6 +295,26 @@ alumni:
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
+  - name: 'xPath'
+    title: 'Improving Workflow Integration with xPath: Design and Evaluation of a Human-AI Diagnosis System in Pathology'
+    authors:
+      - Hongyan Gu, Yuan Liang, Yifan Xu, Chunxu Yang, Wenzhong Yan, UCLA 
+      - Christopher Kazu Williams, Shino Magaki, Negar Khanlou, Harry Vinters, Zesheng Chen, UCLA David Geffen School of Medicine
+      - Shuo Ni, UCLA and USC
+      - Xinhai Robert Zhang, University of Texas Health Science Center at Houston
+      - Yang Li, Google Research
+      - Mohammad Haeri, University of Kansas Medical Center
+      - Xiang 'Anthony' Chen, UCLA
+    pubs: TOCHI 2022
+    img: t_xpath.jpeg
+    abstract: "Recent developments in AI have provided assisting tools to support pathologists' diagnoses. However, it remains challenging to incorporate such tools into pathologists' practice; one main concern is AI's insufficient workflow integration with medical decisions. We observed pathologists' examination and discovered that the main hindering factor to integrate AI is its incompatibility with pathologists' workflow. To bridge the gap between pathologists and AI, we developed a human-AI collaborative diagnosis tool — xPath — that shares a similar examination process to that of pathologists, which can improve AI's integration into their routine examination. The viability of xPath is confirmed by a technical evaluation and work sessions with twelve medical professionals in pathology. This work identifies and addresses the challenge of incorporating AI models into pathology, which can offer first-hand knowledge about how HCI researchers can work with medical professionals side-by-side to bring technological advances to medical tasks towards practical applications."
+    videoSite: vimeo
+    video: 789344703
+    album: '72177720305255518'
+    citation: "Hongyan Gu, Yuan Liang, Yifan Xu, Christopher Kazu Williams, Shino Magaki, Negar Khanlou, Harry Vinters, Zesheng Chen, Shuo Ni, Chunxu Yang, Wenzhong Yan, Xinhai Robert Zhang, Yang Li, Mohammad Haeri, and Xiang 'Anthony' Chen. 2022. Improving Workflow Integration with xPath: Design and Evaluation of a Human-AI Diagnosis System in Pathology. ACM Trans. Comput.-Hum. Interact. Just Accepted (December 2022). https://doi.org/10.1145/3577011"
+    bibtex: "@article{10.1145/3577011,<br>author = {Gu, Hongyan and Liang, Yuan and Xu, Yifan and Williams, Christopher Kazu and Magaki, Shino and Khanlou, Negar and Vinters, Harry and Chen, Zesheng and Ni, Shuo and Yang, Chunxu and Yan, Wenzhong and Zhang, Xinhai Robert and Li, Yang and Haeri, Mohammad and Chen, Xiang 'Anthony'},<br>title = {Improving Workflow Integration with XPath: Design and Evaluation of a Human-AI Diagnosis System in Pathology},<br>year = {2022},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>issn = {1073-0516},<br>url = {https://doi.org/10.1145/3577011},<br>doi = {10.1145/3577011},<br>abstract = {Recent developments in AI have provided assisting tools to support pathologists' diagnoses. However, it remains challenging to incorporate such tools into pathologists' practice; one main concern is AI's insufficient workflow integration with medical decisions. We observed pathologists' examination and discovered that the main hindering factor to integrate AI is its incompatibility with pathologists' workflow. To bridge the gap between pathologists and AI, we developed a human-AI collaborative diagnosis tool — xPath— that shares a similar examination process to that of pathologists, which can improve AI's integration into their routine examination. The viability of xPath&nbsp;is confirmed by a technical evaluation and work sessions with twelve medical professionals in pathology. This work identifies and addresses the challenge of incorporating AI models into pathology, which can offer first-hand knowledge about how HCI researchers can work with medical professionals side-by-side to bring technological advances to medical tasks towards practical applications.},<br>note = {Just Accepted},<br>journal = {ACM Trans. Comput.-Hum. Interact.},<br>month = {dec},<br>keywords = {Human-AI collaboration; digital pathology; medical AI; meningioma}<br>}"
+    thumbnail: tochi_xpath_thumbnail.jpg
+    paperUrl: https://arxiv.org/abs/2006.12683
   - name: 'CrossA11y'
     title: 'CrossA11y: Identifying Video Accessibility Issues via Cross-modal Grounding'
     authors:
