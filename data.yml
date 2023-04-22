@@ -51,35 +51,6 @@ team:
     expertise: Human-AI Interaction
     img: Chunxu_n.jpg
     imgalt: Chunxu_f.jpg
-  - name: Naoto Nishida
-    role: Visiting Researcher
-    expertise: University of Tokyo
-    img: Naoto_n.jpg
-    imgalt: Naoto_f.jpg
-    url: https://nawta.github.io/
-  - name: Roy Jara
-    role: ECE MS
-    expertise: UX Prototyper
-    img: Roy_n.jpg
-    imgalt: Roy_f.jpg
-    url: https://www.linkedin.com/in/roy-jara/
-  - name: Wayne Zhang
-    role: ECE MS
-    expertise: UX Prototyper
-    img: Wayne_n.jpg
-    imgalt: Wayne_f.jpg
-    url: https://www.linkedin.com/in/waynezhangus/
-  - name: David Xiong
-    role: CS Undergrad
-    expertise: UX Engineer
-    img: minion.jpg
-    imgalt: purple.jpeg
-  - name: Zihan Yan
-    role: Collaborator
-    expertise: MIT Media Lab
-    img: Zihan_n.jpg
-    imgalt: Zihan_f.jpg
-    url: https://yzihan.github.io/
 # collaborators:
 #   - name: Zihan Yan
 #     role: MS Student
@@ -122,6 +93,35 @@ team:
   #   img: Lei-s.jpeg
   #   imgalt: Lei-s.jpeg
 alumni:
+  - name: Naoto Nishida
+    role: Visiting Researcher
+    expertise: University of Tokyo
+    img: Naoto_n.jpg
+    imgalt: Naoto_f.jpg
+    url: https://nawta.github.io/
+  - name: Roy Jara
+    role: ECE MS
+    expertise: UX Prototyper
+    img: Roy_n.jpg
+    imgalt: Roy_f.jpg
+    url: https://www.linkedin.com/in/roy-jara/
+  - name: Wayne Zhang
+    role: ECE MS
+    expertise: UX Prototyper
+    img: Wayne_n.jpg
+    imgalt: Wayne_f.jpg
+    url: https://www.linkedin.com/in/waynezhangus/
+  - name: David Xiong
+    role: CS Undergrad
+    expertise: UX Engineer
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Zihan Yan
+    role: Collaborator
+    expertise: MIT Media Lab
+    img: Zihan_n.jpg
+    imgalt: Zihan_f.jpg
+    url: https://yzihan.github.io/
   - name: Mina Huh
     role: Research Intern
     expertise: Now PhD @ UT Austin
@@ -295,16 +295,68 @@ alumni:
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
+  - name: 'Visual Captions'
+    title: 'Visual Captions: Augmenting Verbal Communication with On-the-fly Visuals'
+    authors:
+      - Xingyu "Bruce" Liu (UCLA HCI Research)
+      - Vladimir Kirilyuk, Xiuxiu Yuan, Alex Olwal, Peggy Chi (Google)
+      - Xiang 'Anthony' Chen (UCLA HCI Research)
+      - Ruofei Du (Google)
+    pubs: CHI 2023
+    img: t_visualcaptions.png
+    abstract: "Video conferencing solutions like Zoom, Google Meet, and Microsoft Teams are becoming increasingly popular for facilitating conversations, and recent advancements such as live captioning help people better understand each other. We believe that the addition of visuals based on the context of conversations could further improve comprehension of complex or unfamiliar concepts. To explore the potential of such capabilities, we conducted a formative study through remote interviews (N=10) and crowdsourced a dataset of over 1500 sentence-visual pairs across a wide range of contexts. These insights informed Visual Captions, a real-time system that integrates with a videoconferencing platform to enrich verbal communication. Visual Captions leverages a fine-tuned large language model to proactively suggest relevant visuals in open-vocabulary conversations. We present the findings from a lab study (N=26) and an in-the-wild case study (N=10), demonstrating how Visual Captions can help improve communication through visual augmentation in various scenarios."
+    videoSite: vimeo
+    video: 820034807
+    album: '72177720307685527'
+    citation: "Bruce”@ Xingyu, Vladimir Kirilyuk, Xiuxiu Yuan, Alex Olwal, Peggy Chi, Xiang ‘Anthony’ Chen, and Ruofei Du. 2023. Visual Captions: Augmenting Verbal Communication with On-the-fly Visuals. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23). Association for Computing Machinery, New York, NY, USA, Article 108, 1–20. https://doi.org/10.1145/3544548.3581566"
+    bibtex: "@inproceedings{10.1145/3544548.3581566,<br>author = {Xingyu, Bruce”@ and Kirilyuk, Vladimir and Yuan, Xiuxiu and Olwal, Alex and Chi, Peggy and Chen, Xiang ‘Anthony’ and Du, Ruofei},<br>title = {Visual Captions: Augmenting Verbal Communication with On-the-Fly Visuals},<br>year = {2023},<br>isbn = {9781450394215},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3544548.3581566},<br>doi = {10.1145/3544548.3581566},<br>abstract = {Video conferencing solutions like Zoom, Google Meet, and Microsoft Teams are becoming increasingly popular for facilitating conversations, and recent advancements such as live captioning help people better understand each other. We believe that the addition of visuals based on the context of conversations could further improve comprehension of complex or unfamiliar concepts. To explore the potential of such capabilities, we conducted a formative study through remote interviews (N=10) and crowdsourced a dataset of over 1500 sentence-visual pairs across a wide range of contexts. These insights informed Visual Captions, a real-time system that integrates with a video conferencing platform to enrich verbal communication. Visual Captions leverages a fine-tuned large language model to proactively suggest relevant visuals in open-vocabulary conversations. We present findings from a lab study (N=26) and an in-the-wild case study (N=10), demonstrating how Visual Captions can help improve communication through visual augmentation in various scenarios.},<br>booktitle = {Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},<br>articleno = {108},<br>numpages = {20},<br>keywords = {large language models, augmented reality, video-mediated communication, augmented communication, AI agent, text-to-visual, online meeting, dataset, collaborative work},<br>location = {Hamburg, Germany},<br>series = {CHI '23}<br>}"
+    thumbnail: chi2023_visualcaptions_thumbnail.jpg
+    paperUrl: https://drive.google.com/file/d/1d5n9Mlftl2uAa8OmAPkjilWWhk9Tsksi/view?usp=sharing
+  - name: 'NaviPath'
+    title: 'Augmenting Pathologists with NaviPath: Design and Evaluation of a Human-AI Collaborative Navigation System'
+    authors:
+      - Hongyan Gu, Chunxu Yang (UCLA HCI Research)
+      - Mohammad Haeri (University of Kansas Medical Center)
+      - Jing Wang, Beijing Tongren Hospital, Capital Medical University
+      - Shirley Tang, Wenzhong Yan (UCLA HCI Research)
+      - Shujin He, Beijing Tongren Hospital, Capital Medical University
+      - Christopher Kazu Williams, Shino Magaki (UCLA HCI Research) David Geffen School of Medicine
+      - Xiang 'Anthony' Chen (UCLA HCI Research)
+    pubs: CHI 2023 🏅️
+    img: t_navipath.jpg
+    abstract: "Artificial Intelligence (AI) brings advancements to support pathologists in navigating high-resolution tumor images to search for pathology patterns of interest. However, existing AI-assisted tools have not realized this promised potential due to a lack of insight into pathology and HCI considerations for pathologists' navigation workflows in practice. We first conducted a formative study with six medical professionals in pathology to capture their navigation strategies. By incorporating our observations along with the pathologists' domain knowledge, we designed NaviPath — a human-AI collaborative navigation system. An evaluation study with 15 medical professionals in pathology indicated that: (i) compared to the manual navigation, participants saw more than twice the number of pathological patterns in unit time with NaviPath, and (ii) participants achieved higher precision and recall against the AI and the manual navigation on average. Further qualitative analysis revealed that navigation was more consistent with NaviPath, which can improve the overall examination quality."
+    videoSite: vimeo
+    video: 820033630
+    album: '72177720307685222'
+    citation: "Hongyan Gu, Chunxu Yang, Mohammad Haeri, Jing Wang, Shirley Tang, Wenzhong Yan, Shujin He, Christopher Kazu Williams, Shino Magaki, and Xiang 'Anthony' Chen. 2023. Augmenting Pathologists with NaviPath: Design and Evaluation of a Human-AI Collaborative Navigation System. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23). Association for Computing Machinery, New York, NY, USA, Article 349, 1-19. https://doi.org/10.1145/3544548.3580694"
+    bibtex: "@inproceedings{10.1145/3544548.3580694,<br>author = {Gu, Hongyan and Yang, Chunxu and Haeri, Mohammad and Wang, Jing and Tang, Shirley and Yan, Wenzhong and He, Shujin and Williams, Christopher Kazu and Magaki, Shino and Chen, Xiang 'Anthony'},<br>title = {Augmenting Pathologists with NaviPath: Design and Evaluation of a Human-AI Collaborative Navigation System},<br>year = {2023},<br>isbn = {9781450394215},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3544548.3580694},<br>doi = {10.1145/3544548.3580694},<br>abstract = {Artificial Intelligence (AI) brings advancements to support pathologists in navigating high-resolution tumor images to search for pathology patterns of interest. However, existing AI-assisted tools have not realized this promised potential due to a lack of insight into pathology and HCI considerations for pathologists' navigation workflows in practice. We first conducted a formative study with six medical professionals in pathology to capture their navigation strategies. By incorporating our observations along with the pathologists' domain knowledge, we designed NaviPath&nbsp;— a human-AI collaborative navigation system. An evaluation study with 15 medical professionals in pathology indicated that: (i)&nbsp;compared to the manual navigation, participants saw more than twice the number of pathological patterns in unit time with NaviPath, and (ii)&nbsp;participants achieved higher precision and recall against the AI and the manual navigation on average. Further qualitative analysis revealed that navigation was more consistent with NaviPath, which can improve the overall examination quality.},<br>booktitle = {Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},<br>articleno = {349},<br>numpages = {19},<br>keywords = {medical AI, Human-AI collaboration, navigation, digital pathology},<br>location = {Hamburg, Germany},<br>series = {CHI '23}<br>}"
+    thumbnail: chi2023_navipath_thumbnail.jpg
+    paperUrl: https://drive.google.com/file/d/1cpqUMO0jg5E3LAnwy9AUXW712Ipz3yvw/view?usp=sharing
+  - name: 'GANravel'
+    title: 'GANravel: User-Driven Direction Disentanglement in Generative Adversarial Networks'
+    authors:
+      - Noyan Evirgen (UCLA HCI Research)
+      - Xiang 'Anthony' Chen (UCLA HCI Research)
+    pubs: CHI 2023
+    img: t_ganravel.png
+    abstract: "Generative adversarial networks (GANs) have many application areas including image editing, domain translation, missing data imputation, and support for creative work. However, GANs are considered `black boxes'. Specifically, the end-users have little control over how to improve editing directions through disentanglement. Prior work focused on new GAN architectures to disentangle editing directions. Alternatively, we propose GANravel --a user-driven direction disentanglement tool that complements the existing GAN architectures and allows users to improve editing directions iteratively. In two user studies with 16 participants each, GANravel users were able to disentangle directions and outperformed the state-of-the-art direction discovery baselines in disentanglement performance. In the second user study, GANravel was used in a creative task of creating dog memes and was able to create high-quality edited images and GIFs."
+    videoSite: vimeo
+    video: 809403374
+    album: '72177720306814055'
+    citation: "Noyan Evirgen and Xiang 'Anthony Chen. 2023. GANravel: User-Driven Direction Disentanglement in Generative Adversarial Networks. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23). Association for Computing Machinery, New York, NY, USA, Article 19, 1-15. https://doi.org/10.1145/3544548.3581226"
+    bibtex: "@inproceedings{10.1145/3544548.3581226,<br>author = {Evirgen, Noyan and Chen, Xiang 'Anthony},<br>title = {GANravel: User-Driven Direction Disentanglement in Generative Adversarial Networks},<br>year = {2023},<br>isbn = {9781450394215},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3544548.3581226},<br>doi = {10.1145/3544548.3581226},<br>abstract = {Generative adversarial networks (GANs) have many application areas including image editing, domain translation, missing data imputation, and support for creative work. However, GANs are considered ‘black boxes'. Specifically, the end-users have little control over how to improve editing directions through disentanglement. Prior work focused on new GAN architectures to disentangle editing directions. Alternatively, we propose GANravel—a user-driven direction disentanglement tool that complements the existing GAN architectures and allows users to improve editing directions iteratively. In two user studies with 16 participants each, GANravel users were able to disentangle directions and outperformed the state-of-the-art direction discovery baselines in disentanglement performance. In the second user study, GANravel was used in a creative task of creating dog memes and was able to create high-quality edited images and GIFs.},<br>booktitle = {Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},<br>articleno = {19},<br>numpages = {15},<br>keywords = {Disentanglement, Generative Adversarial Networks, Interactive Systems, Explainable-AI},<br>location = {Hamburg, Germany},<br>series = {CHI '23}<br>}"
+    thumbnail: chi2023_ganravel_thumbnail.jpg
+    paperUrl: https://drive.google.com/file/d/1ccVWtz4ZtBCANm4R904E_0LOpuxEY3Iy/view?usp=sharing
   - name: 'xPath'
     title: 'Improving Workflow Integration with xPath: Design and Evaluation of a Human-AI Diagnosis System in Pathology'
     authors:
-      - Hongyan Gu, Yuan Liang, Yifan Xu, Chunxu Yang, Wenzhong Yan, UCLA 
-      - Christopher Kazu Williams, Shino Magaki, Negar Khanlou, Harry Vinters, Zesheng Chen, UCLA David Geffen School of Medicine
-      - Shuo Ni, UCLA and USC
-      - Xinhai Robert Zhang, University of Texas Health Science Center at Houston
-      - Yang Li, Google Research
-      - Mohammad Haeri, University of Kansas Medical Center
-      - Xiang 'Anthony' Chen, UCLA
+      - Hongyan Gu, Yuan Liang, Yifan Xu, Chunxu Yang, Wenzhong Yan (UCLA HCI Research)
+      - Christopher Kazu Williams, Shino Magaki, Negar Khanlou, Harry Vinters, Zesheng Chen (UCLA David Geffen School of Medicine)
+      - Shuo Ni (UCLA and USC)
+      - Xinhai Robert Zhang (University of Texas Health Science Center at Houston)
+      - Yang Li (Google Research)
+      - Mohammad Haeri (University of Kansas Medical Center)
+      - Xiang 'Anthony' Chen (UCLA HCI Research)
     pubs: TOCHI 2022
     img: t_xpath.jpeg
     abstract: "Recent developments in AI have provided assisting tools to support pathologists' diagnoses. However, it remains challenging to incorporate such tools into pathologists' practice; one main concern is AI's insufficient workflow integration with medical decisions. We observed pathologists' examination and discovered that the main hindering factor to integrate AI is its incompatibility with pathologists' workflow. To bridge the gap between pathologists and AI, we developed a human-AI collaborative diagnosis tool — xPath — that shares a similar examination process to that of pathologists, which can improve AI's integration into their routine examination. The viability of xPath is confirmed by a technical evaluation and work sessions with twelve medical professionals in pathology. This work identifies and addresses the challenge of incorporating AI models into pathology, which can offer first-hand knowledge about how HCI researchers can work with medical professionals side-by-side to bring technological advances to medical tasks towards practical applications."
@@ -318,10 +370,10 @@ projects:
   - name: 'CrossA11y'
     title: 'CrossA11y: Identifying Video Accessibility Issues via Cross-modal Grounding'
     authors:
-      - Xingyu "Bruce" Liu, UCLA
-      - Ruolin Wang, UCLA
+      - Xingyu "Bruce" Liu (UCLA HCI Research)
+      - Ruolin Wang (UCLA HCI Research)
       - Dingzeyu Li, Adobe Research
-      - Xiang 'Anthony' Chen, UCLA
+      - Xiang 'Anthony' Chen (UCLA HCI Research)
       - Amy Pavel, UT Austin
     pubs: UIST 2022 🏆
     img: t_crossa11y.jpg
@@ -336,8 +388,8 @@ projects:
   - name: 'GANZilla'
     title: 'GANzilla: User-Driven Direction Discovery in Generative Adversarial Networks'
     authors:
-      - Noyan Evirgen, UCLA HCI Research
-      - Xiang 'Anthony' Chen, UCLA HCI Research
+      - Noyan Evirgen (UCLA HCI Research)
+      - Xiang 'Anthony' Chen (UCLA HCI Research)
     pubs: UIST 2022
     img: t_ganzilla.jpg
     abstract: "Generative Adversarial Network (GAN) is widely adopted in numerous application areas, such as data preprocessing, image editing, and creativity support. However, GAN's 'black box' nature prevents non-expert users from controlling what data a model generates, spawning a plethora of prior work that focused on algorithm-driven approaches to extract editing directions to control GAN. Complementarily, we propose a GANzilla—a user-driven tool that empowers a user with the classic scatter/gather technique to iteratively discover directions to meet their editing goals. In a study with 12 participants, GANzilla users were able to discover directions that (i) edited images to match provided examples (closed-ended tasks) and that (ii) met a high-level goal, e.g., making the face happier, while showing diversity across individuals (open-ended tasks)."
@@ -346,15 +398,15 @@ projects:
     album: '72177720304012340'
     citation: "Noyan Evirgen and Xiang 'Anthony' Chen. 2022. GANzilla: User-Driven Direction Discovery in Generative Adversarial Networks. In Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology (UIST '22). Association for Computing Machinery, New York, NY, USA, Article 75, 1-10. https://doi.org/10.1145/3526113.3545638"
     bibtex: "@inproceedings{10.1145/3526113.3545638,<br>author = {Evirgen, Noyan and Chen, Xiang 'Anthony'},<br>title = {GANzilla: User-Driven Direction Discovery in Generative Adversarial Networks},<br>year = {2022},<br>isbn = {9781450393201},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3526113.3545638},<br>doi = {10.1145/3526113.3545638},<br>abstract = {Generative Adversarial Network (GAN) is widely adopted in numerous application areas, such as data preprocessing, image editing, and creativity support. However, GAN's 'black box' nature prevents non-expert users from controlling what data a model generates, spawning a plethora of prior work that focused on algorithm-driven approaches to extract editing directions to control GAN. Complementarily, we propose a GANzilla—a user-driven tool that empowers a user with the classic scatter/gather technique to iteratively discover directions to meet their editing goals. In a study with 12 participants, GANzilla users were able to discover directions that (i)&nbsp;edited images to match provided examples (closed-ended tasks) and that (ii)&nbsp;met a high-level goal, e.g., making the face happier, while showing diversity across individuals (open-ended tasks).},<br>booktitle = {Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology},<br>articleno = {75},<br>numpages = {10},<br>keywords = {Direction Discovery, Interactive Systems, Explainable-AI, Generative Adversarial Networks},<br>location = {Bend, OR, USA},<br>series = {UIST '22}<br>}"
-    paperurl: https://arxiv.org/pdf/2207.08320.pdf
+    paperUrl: https://arxiv.org/pdf/2207.08320.pdf
     thumbnail: uist2022_ganzilla_thumbnail.jpg
   - name: 'EmoGlass'
     title: 'EmoGlass: an End-to-End AI-Enabled Wearable Platform for Enhancing Self-Awareness of Emotional Health'
     authors: 
-      - "Zihan Yan, UCLA HCI Research and Zhejiang University"
-      - "Yufei Wu, Zhejiang University"
-      - "Yang Zhang, University of California, Los Angeles"
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Zihan Yan (UCLA HCI Research, Zhejiang University)"
+      - "Yufei Wu (Zhejiang University)"
+      - "Yang Zhang (UCLA HCI Research)"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
     pubs: CHI 2022
     img: t_emoglass.jpg
     abstract: "Often, emotional disorders are overlooked due to theirlack of awareness, resulting in potential mental issues. Recent advances in sensing and inference technology provide a viable path to wearable facial-expression-based emotion recognition. However, most prior work has explored only laboratory settings and few platforms are geared towards end-users in everyday lives or provide personalized emotional suggestions to promote self-regulation. We present EmoGlass, an end-to-end wearable platform that consists of emotion detection glasses and an accompanying mobile application. Our single-camera-mounted glasses can detect seven facial expressions based on partial face images. We conducted a three-day out-of-lab study (N=15) to evaluate the performance of EmoGlass. We iterated on the design of the EmoGlass application for efective self-monitoring and awareness of users' daily emotional states. We report quantitative and qualitative fndings, based on which we discuss design recommendations for future work on sensing and enhancing awareness of emotional health."
@@ -368,10 +420,10 @@ projects:
   - name: 'Roman'
     title: 'Roman: Making Everyday Objects Robotically Manipulable with 3D-Printable Add-on Mechanisms'
     authors: 
-      - "Jiahao Li, UCLA HCI Research"
-      - "Alexis A Samoylov, UCLA"
-      - "Jeeeun Kim, HCIED Lab, Texas A&M University"
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Jiahao Li (UCLA HCI Research)"
+      - "Alexis A Samoylov (UCLA HCI Research)"
+      - "Jeeeun Kim (HCIED Lab, Texas A&M University)"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
     pubs: CHI 2022
     img: t_roman.jpg
     abstract: "One important vision of robotics is to provide physical assistance by manipulating different everyday objects, e.g., hand tools, kitchen utensils. However, many objects designed for dexterous hand-control are not easily manipulable by a single robotic arm with a generic parallel gripper. Complementary to existing research on developing grippers and control algorithms, we present Roman, a suite of hardware design and software tool support for robotic engineers to create 3D printable mechanisms attached to everyday handheld objects, making them easier to be manipulated by conventional robotic arms. The Roman hardware comes with a versatile magnetic gripper that can snap on/off handheld objects and drive add-on mechanisms to perform tasks. Roman also provides software support to register and author control programs. To validate our approach, we designed and fabricated Roman mechanisms for 14 everyday objects/tasks presented within a design space and conducted expert interviews with robotic engineers indicating that Roman serves as a practical alternative for enabling robotic manipulation of everyday objects."
@@ -385,10 +437,10 @@ projects:
   - name: 'Impetus'
     title: 'Lessons Learned from Designing an AI-Enabled Diagnosis Tool for Pathologists'
     authors: 
-      - "Hongyan Gu, UCLA HCI Research"
-      - "Jingbin Huang, UCLA HCI Research"
-      - "Lauren Hung, CMU HCII"
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Hongyan Gu (UCLA HCI Research)"
+      - "Jingbin Huang (UCLA HCI Research)"
+      - "Lauren Hung (CMU HCII)"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
     pubs: CSCW 2021
     img: t_impetus.jpeg
     abstract: "Despite the promises of data-driven artificial intelligence (AI), little is known about how we can bridge the gulf between traditional physician-driven diagnosis and a plausible future of medicine automated by AI. Specifically, how can we involve AI usefully in physicians' diagnosis workflow given that most AI is still nascent and error-prone (e.g., in digital pathology)? To explore this question, we first propose a series of collaborative techniques to engage human pathologists with AI given AI's capabilities and limitations, based on which we prototype Impetus — a tool where an AI takes various degrees of initiatives to provide various forms of assistance to a pathologist in detecting tumors from histological slides. We summarize observations and lessons learned from a study with eight pathologists and discuss recommendations for future work on human-centered medical AI systems."
@@ -402,10 +454,10 @@ projects:
   - name: 'Va11y'
     title: 'What Makes Videos Accessible to Blind and Visually Impaired People?'
     authors:
-      - "Xingyu Liu, UCLA HCI Research"
-      - "Patrick Carrington, Carnegie Mellon University"
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
-      - "Amy Pavel, Carnegie Mellon University"
+      - "Xingyu Liu (UCLA HCI Research)"
+      - "Patrick Carrington (Carnegie Mellon University)"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
+      - "Amy Pavel (Carnegie Mellon University)"
     pubs: CHI 2021
     img: t_va11y.jpeg
     abstract: "User-generated videos are an increasingly important source of information online, yet most online videos are inaccessible to blind and visually impaired (BVI) people. To find videos that are accessible, or understandable without additional description of the visual content, BVI people in our formative studies reported that they used a time-consuming trial-and-error approach: clicking on a video, watching a portion, leaving the video, and repeating the process. BVI people also reported video accessibility heuristics that characterize accessible and inaccessible videos. We instantiate 7of the identified heuristics (2 audio-related, 2 video-related, and 3audio-visual) as automated metrics to assess video accessibility. We collected a dataset of accessibility ratings of videos by BVI people and found that our automatic video accessibility metrics correlated with the accessibility ratings (Adjusted R^2= 0.642). We augmented a video search interface with our video accessibility metrics and predictions. BVI people using our augmented video search interface selected an accessible video more efficiently than when using the original search interface. By integrating video accessibility metrics, video hosting platforms could help people surface accessible videos and encourage content creators to author more accessible products, improving video accessibility for all."
@@ -419,14 +471,14 @@ projects:
   - name: 'Revamp'
     title: 'Revamp: Enhancing Accessible Information Seeking Experience of Online Shopping for Blind or Low Vision Users'
     authors:
-      - "Ruolin Wang, UCLA HCI Research"
-      - "Zixuan Chen, UCLA HCI Research"
-      - "Mingrui 'Ray' Zhang, The Information School, University of Washington"
-      - "Zhaoheng Li, Department of Computer Science and Technology, Tsinghua University"
-      - "Zhixiu Liu, Computer Science Department, Stanford University"
-      - "Zihan Dang, UCLA HCI Research"
-      - "Chun Yu, Department of Computer science and Technology, Tsinghua University"
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Ruolin Wang (UCLA HCI Research)"
+      - "Zixuan Chen (UCLA HCI Research)"
+      - "Mingrui 'Ray' Zhang (The Information School, University of Washington)"
+      - "Zhaoheng Li (Department of Computer Science and Technology, Tsinghua University)"
+      - "Zhixiu Liu (Computer Science Department, Stanford University)"
+      - "Zihan Dang (UCLA HCI Research)"
+      - "Chun Yu (Department of Computer science and Technology, Tsinghua University)"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
     pubs: CHI 2021
     img: t_revamp.jpeg
     abstract: "Online shopping has become a valuable modern convenience, but blind or low vision (BLV) users still face significant challenges using it, because of: 1) inadequate image descriptions and 2) the inability to filter large amounts of information using screen readers. To address those challenges, we propose Revamp, a system that leverages customer reviews for interactive information retrieval. Revamp is a browser integration that supports review-based question-answering interactions on a reconstructed product page. From our interview, we identified four main aspects (color, logo, shape, and size) that are vital for BLV users to understand the visual appearance of a product. Based on the findings, we formulated syntactic rules to extract review snippets, which were used to generate image descriptions and responses to users' queries. Evaluations with eight BLV users showed that Revamp 1) provided useful descriptive information for understanding product appearance and 2) helped the participants locate key information efficiently."
@@ -440,10 +492,10 @@ projects:
   - name: 'XAlgo'
     title: "XAlgo: a Design Probe of Explaining Algorithms' Internal States via Question-Answering"
     authors:
-      - "Juan Rebanal, HCI Research"
-      - "Jordan Combitsis, HCI Research"
-      - "Yuqi Tang, HCI Research"
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Juan Rebanal (UCLA HCI Research)"
+      - "Jordan Combitsis (UCLA HCI Research)"
+      - "Yuqi Tang (UCLA HCI Research)"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
     pubs: IUI 2021
     img: t_xalgo.jpg
     abstract: "Algorithms often appear as 'black boxes' to non-expert users. While prior work focuses on explainable representations and expert-oriented exploration, we propose and study an interactive approach using question answering to explain deterministic algorithms to non-expert users who need to understand the algorithms' internal states (e.g., students learning algorithms, operators monitoring robots, admins troubleshooting network routing). We construct XAlgo---a formal model that first classifies the type of question based on a taxonomy and generates an answer based on a set of rules that extract information from representations of an algorithm's internal states, e.g., the pseudocode. A design probe in an algorithm learning scenario with 18 participants (9 for a Wizard-of-Oz XAlgo and 9 as a control group) reports findings and design implications based on what kinds of questions people ask, how well XAlgo responds, and what remain as challenges to bridge users' gulf of understanding algorithms."
@@ -455,16 +507,12 @@ projects:
   - name: 'OralViewer'
     title: "OralViewer: 3D Demonstration of Dental Surgeries for Patient Education with Oral Cavity Reconstruction from a 2D Panoramic X-ray"
     authors:
-      - "Yuan Liang, UCLA"
-      - "Liang Qiu, UCLA"
-      - "Tiancheng Lu, University of Pittsburgh"
-      - "Zhujun Fang, UCLA"
-      - "Dezhan Tu, UCLA"
-      - "Jiawei Yang, UCLA"
-      - "Yiting Shao, UCLA"
-      - "Kun Wang, UCLA"
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
-      - "Lei He, UCLA"
+      - "Yuan Liang (UCLA HCI Research)"
+      - "Liang Qiu (UCLA)"
+      - "Tiancheng Lu (University of Pittsburgh)"
+      - "Zhujun Fang, Dezhan Tu, Jiawei Yang, Yiting Shao, Kun Wang (UCLA)"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
+      - "Lei He (UCLA)"
     pubs: IUI 2021
     img: t_oralviewer.jpg
     abstract: "Patient's understanding on forthcoming dental surgeries is required by patient-centered care and helps reduce anxiety. Due to the complexity of dental surgeries and the patient-dentist expertise gap, conventional techniques of patient education are usually not effective for explaining surgical steps. In this paper, we present OralViewer—the first interactive application that enables dentist's demonstration of dental surgeries in 3D to promote patients' understanding. OralViewer takes a single 2D panoramic dental X-ray to reconstruct patient-specific 3D teeth structures, which are then assembled with registered gum and jaw bone models for complete oral cavity modeling. During the demonstration, OralViewer enables dentists to show surgery steps with virtual dental instruments that can animate effects on a 3D model in real-time. A technical evaluation shows that our deep learning model achieves a mean Intersection over Union (IoU) of 0.771 for 3D teeth reconstruction. A patient study with 12 participants shows OralViewer can improve patients' understanding of surgeries. A preliminary expert study with 3 board-certified dentists further verifies the clinical validity of our system."
@@ -478,9 +526,9 @@ projects:
   - name: 'DualVib'
     title: 'DualVib: Simulating Haptic Sensation of Dynamic Mass by Combining Pseudo-Force and Texture Feedback'
     authors:
-      - "Yudai Tanaka, University of Chicago"
-      - "Arata Horie, The University of Tokyo"
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Yudai Tanaka (University of Chicago)"
+      - "Arata Horie (The University of Tokyo)"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
     pubs: VRST 2020
     img: t_dualvib.jpg
     abstract: "We present DualVib, a compact handheld device that simulates the haptic sensation of manipulating dynamic mass; mass that causes haptic feedback as the user's hand moves (e.g., shaking a jar and feeling coins rattling inside). Unlike other devices that require actual displacement of weight, DualVib dispenses with heavy and bulky mechanical structures and, instead, uses four vibration actuators. DualVib simulates a dynamic mass by simultaneously delivering two types of haptic feedback to the user's hand: (1) pseudo-force feedback created by asymmetric vibrations that render the kinesthetic force arising from the moving mass; and (2) texture feedback through acoustic vibrations that render the object's surface vibrations correlated with mass material properties. By means of our user study, we found out that DualVib allowed users to more effectively distinguish dynamic masses when compared to using either pseudo-force or texture feedback alone. We also report qualitative feedback from users who experienced five virtual reality applications with our device."
@@ -496,12 +544,12 @@ projects:
     pubs: UIST 2020
     img: t_geno.jpg
     authors:
-      - 'Ritam Jyoti Sarmah, UCLA HCI Research'
-      - 'Yunpeng Ding, UCLA HCI Research'
-      - 'Di Wang, UCSD Computer Science'
-      - 'Cheuk Yin Phipson Lee, UCLA HCI Research'
-      - 'Toby Jia-Jun Li, CMU HCII'
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - 'Ritam Jyoti Sarmah (UCLA HCI Research)'
+      - 'Yunpeng Ding (UCLA HCI Research)'
+      - 'Di Wang (UCSD Computer Science)'
+      - 'Cheuk Yin Phipson Lee (UCLA HCI Research)'
+      - 'Toby Jia-Jun Li (CMU HCII)'
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
     abstract: "Supporting voice commands in applications presents significant benefits to users. However, adding such support to existing GUI-based web apps is effort-consuming with a high learning barrier, as shown in our formative study, due to the lack of unified support for creating multimodal interfaces. We present Geno---a developer tool for adding the voice input modality to existing web apps without requiring significant NLP expertise. Geno provides a high-level workflow for developers to specify functionalities to be supported by voice (intents), create language models for detecting intents and the relevant information (parameters) from user utterances, and fulfill the intents by either programmatically invoking the corresponding functions or replaying GUI actions on the web app. Geno further supports multimodal references to GUI context in voice commands (e.g. 'move this [event] to next week' while pointing at an event with the cursor). In a study, developers with little NLP expertise were able to add multimodal voice command support for two existing web apps using Geno."
     videoSite: vimeo
     video: 440213846
@@ -513,10 +561,10 @@ projects:
   - name: 'Romeo'
     title: 'Romeo: A Design Tool for Embedding Transformable Parts in 3D Models to Robotically Augment Default Functionalities'
     authors:
-      - 'Jiahao Li, UCLA HCI Research'
-      - 'Meilin Cui, UCLA HCI Research'
-      - 'Jeeeun Kim, Texas A&M University'
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - 'Jiahao Li (UCLA HCI Research)'
+      - 'Meilin Cui (UCLA HCI Research)'
+      - 'Jeeeun Kim (Texas A&M University)'
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
     pubs: UIST 2020
     img: t_romeo.jpg
     abstract: "Reconfiguring shapes of objects enables transforming existing passive objects with robotic functionalities, e.g., a transformable coffee cup holder can be attached to a chair's armrest, a piggy bank can reach out an arm to 'steal' coins. Despite the advance in end-user 3D design and fabrication, it remains challenging for non-experts to create such 'transformables' using existing tools due to the requirement of specific engineering knowledge such as mechanisms and robotic design.
@@ -531,11 +579,11 @@ projects:
   - name: 'CheXplain'
     title: 'CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis'
     authors:
-      - 'Yao Xie, UCLA HCI Research'
-      - 'Melody Chen, UCLA HCI Research'
-      - 'David Kao, UCLA HCI Research'
-      - 'Ge Gao, U of Maryland'
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - 'Yao Xie (UCLA HCI Research)'
+      - 'Melody Chen (UCLA HCI Research)'
+      - 'David Kao (UCLA HCI Research)'
+      - 'Ge Gao (University of Maryland, College Park)'
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
     pubs: CHI 2020
     img: t_chexplain.jpg
     abstract: "The recent development of data-driven AI promises to automate medical diagnosis; however, most AI functions as 'black boxes' to physicians with limited computational knowledge. Using medical imaging as a point of departure, we conducted three research activities to formulate the design of CheXplain---a system that enables physicians to explore and understand AI-enabled chest X-ray analysis: (i) a paired survey between referring physicians and radiologists reveals whether, when, and what kinds of explanations are needed; (ii) a low-fidelity prototype co-designed with three physicians formulates eight key features; and (iii) a high-fidelity prototype evaluated by another six medical professionals provides detailed summative insights on how each feature enables the exploration and understanding of AI. We summarize by discussing recommendations for future work to design and implement explainable medical AI systems that encompass four recurring themes: motivation, constraint, explanation, and justification."
@@ -549,13 +597,12 @@ projects:
   - name: 'OralCam'
     title: 'OralCam: Enabling Self-Examination and Awareness of Oral Health Using a Smartphone Camera'
     authors:
-      - 'Yuan Liang, UCLA Design Automation Lab'
-      - 'Hsuan Wei Fan,	Tsinghua University'
-      - 'Zhujun Fang, UC Davis'
-      - 'Leiying Miao  Wen Li  Xuan Zhang  Weibin Sun, Nanjing Stomatological Hospital, Meidcal School'
-      - 'Kun Wang, UCLA Design Automation Lab'
-      - 'Lei He, UCLA Design Automation Lab'
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - 'Yuan Liang (UCLA HCI Research & Design Automation Lab)'
+      - 'Hsuan Wei Fan (Tsinghua University)'
+      - 'Zhujun Fang (UC Davis)'
+      - 'Leiying Miao,  Wen Li,  Xuan Zhang,  Weibin Sun (Nanjing Stomatological Hospital, Meidcal School)'
+      - 'Kun Wang, Lei He (UCLA Design Automation Lab)'
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
     pubs: CHI 2020 🏅
     img: t_oralcam.jpg
     abstract: Due to a lack of resources or awareness, oral diseases are often left unexamined and untreated, affecting a large population worldwide. With the advent of low-cost, sensor-equipped smartphones, mobile apps offer a promising possibility. However, to the best of our knowledge, no mobile health (mHealth) solutions can directly support users to self-examine their oral health condition. We present OralCam, the first interactive app that enables end-users' self-examination of five common oral conditions (diseases or early disease signals) by taking smartphone photos of one's oral cavity. OralCam allows a user to annotate additional information to augment the input image, and presents the output hierarchically, probabilistically and with visual explanations to help laymen users understand examination results. We describe a deep learning backend trained on a data set that consists of 3,182 oral photos. We report a technical evaluation, a week-long in-the-wild user study and an expert interview to validate OralCam.
@@ -569,9 +616,9 @@ projects:
   - name: 'Robiot'
     title: 'Robiot: A Design Tool for Actuating Everyday Object with Automatically Generated 3D Printable Mechanism'
     authors:
-      - 'Jiahao Li, UCLA HCI Research'
-      - 'Jeeeun Kim, Texas A&M University'
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - 'Jiahao Li (UCLA HCI Research)'
+      - 'Jeeeun Kim (Texas A&M University)'
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
     pubs: UIST 2019
     img: t_robiot.jpg
     abstract: Users can now easily communicate information with an Internet of Things; in contrast, there remains a lack of support to automate tasks that involve legacy static objects, e.g. adjusting a desk lamp's angle for optimal brightness, turning on/off a manual faucet when washing dishes, sliding a window to maintain a preferred indoor temperature. Automating these simple physical tasks has the potential to improve people's quality of life, which is particularly important for people with a disability or in situational impairment.<br/><br/>We present Robiot -- a design tool for generating mechanisms that can be attached to, motorized, and actuating legacy static objects to perform simple physical tasks. Users only need to take a short video manipulating an object to demonstrate an intended physical behavior. Robiot then extracts requisite parameters and automatically generates 3D models of the enabling actuation mechanisms by performing a scene and motion analysis of the 2D video in alignment with the object's 3D model. In an hour-long design session, six participants used Robiot to actuate seven everyday objects, imbuing them with the robotic capability to automate various physical tasks.
@@ -585,10 +632,10 @@ projects:
   - name: Minuet
     pubs: SUI 2019
     authors:
-      - 'Runchang Kang & Anhong Guo, Carnegie Mellon University'
-      - 'Gierard Laput, Apple'
-      - 'Yang Li, Google'
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - 'Runchang Kang & Anhong Guo (Carnegie Mellon University)'
+      - 'Gierard Laput (Apple)'
+      - 'Yang Li (Google)'
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
     img: t_minuet.jpg
     title: 'Minuet: Multimodal Interaction with an Internet of Things'
     abstract: A large number of Internet-of-Things (IoT) devices will soon populate our physical environments. Yet, IoT devices' reliance on mobile applications and voice-only assistants as the primary interface limits their scalability and expressiveness. Building off of the classic 'Put-That-There' system, we contribute an exploration of the design space of voice + gesture interaction with spatially-distributed IoT devices. Our design space decomposes users' IoT commands into two components---selection and interaction. We articulate how the permutations of voice and freehand gesture for these two components can complementarily afford interaction possibilities that go beyond current approaches. We instantiate this design space as a proof-of-concept sensing platform and demonstrate a series of novel IoT interaction scenarios, such as making 'dumb' objects smart, commanding robotic appliances, and resolving ambiguous pointing at cluttered devices.
@@ -603,13 +650,13 @@ projects:
     pubs: CHI 2018
     img: t_forte.jpg
     authors:
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
-      - "Ye Tao, Zhejiang University"
-      - "Guanyun Wang, Carnegie Mellon University"
-      - "Runchang Kang, Carnegie Mellon University"
-      - "Tovi Grossman, University of Toronto"
-      - "Stelian Coros, ETH Zurich"
-      - "Scott Hudson, Carnegie Mellon University"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
+      - "Ye Tao (Zhejiang University)"
+      - "Guanyun Wang (Carnegie Mellon University)"
+      - "Runchang Kang (Carnegie Mellon University)"
+      - "Tovi Grossman (University of Toronto)"
+      - "Stelian Coros (ETH Zurich)"
+      - "Scott Hudson (Carnegie Mellon University)"
     title: 'Forte: User-Driven Generative Design'
     abstract: Low-cost fabrication machines (e.g., 3D printers) offer the promise of creating custom-designed objects by a range of users. To maximize performance, generative design methods such as topology optimization can automatically optimize properties of a design based on high-level specifications. Though promising, such methods require people to map their design ideas--often unintuitively--to a small number of mathematical input parameters, and the relationship between those parameters and a generated design is often unclear, making it difficult to iterate a design. We present Forte, a sketch-based, real-time interactive tool for people to directly express and iterate on their designs via 2D topology optimization. Users can ask the system to add structures, provide a variation with better performance, or optimize internal material layouts. Users can globally control how much to `deviate' from the initial sketch, or perform local suggestive editing, which interactively prompts the system to update based on the new information. Design sessions with 10 participants demonstrate that Forte empowers designers to create and explore a range of optimized designs with custom forms and styles.
     video: '244079629'
@@ -623,9 +670,9 @@ projects:
     pubs: CHI 2018
     img: t_medley.jpg
     authors:
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
-      - "Stelian Coros, ETH Zurich"
-      - "Scott Hudson, Carnegie Mellon University"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
+      - "Stelian Coros (ETH Zurich)"
+      - "Scott Hudson (Carnegie Mellon University)"
     title: 'Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects'
     abstract: In our everyday life, we interact with and benefit from objects with a wide range of material properties. In contrast, personal fabrication machines (e.g., desktop 3D printers) currently only support a much smaller set of materials. Our goal is to close the gap between current limitations and the future of multi-material printing by enabling people to explore the reuse of material from everyday objects into their custom designs. To achieve this, we develop a library of embeddables--everyday objects that can be cut, worked and embedded into 3D printable designs. We describe a design space that characterizes the geometric and material properties of embeddables. We then develop Medley---a design tool whereby users can import a 3D model, search for embeddables with desired material properties, and interactively edit and integrate their geometry to fit into the original design. Medley also supports the final fabrication and embedding process, including instructions for carving or cutting the objects, and generating optimal paths for inserting embeddables. To validate the expressiveness of our library, we showcase numerous examples augmented by embeddables that go beyond the objects' original printed materials.
     video: '252273058'
@@ -637,8 +684,8 @@ projects:
     thumbnail: chi2018_medley_thumbnail.jpg
   - img: t_improv.jpg
     authors:
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
-      - "Yang Li, Google"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
+      - "Yang Li (Google)"
     name: Improv
     descp: An input framework for users to create cross-device gestures.
     title: >-
@@ -685,11 +732,11 @@ projects:
     name: Reprise
     pubs: UIST 2016
     authors:
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
-      - "Jeeeun Kim, Texas A&M University"
-      - "Tovi Grossman, University of Toronto"
-      - "Stelian Coros, ETH Zurich"
-      - "Scott Hudson, Carnegie Mellon University"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
+      - "Jeeeun Kim (Texas A&M University)"
+      - "Tovi Grossman (University of Toronto)"
+      - "Stelian Coros (ETH Zurich)"
+      - "Scott Hudson (Carnegie Mellon University)"
     title: >-
       Reprise: A Design Tool for Specifying, Generating, and Customizing 3D
       Printable Adaptations on Everyday Objects
@@ -723,8 +770,8 @@ projects:
       Chen, X., Kim, J., Mankoff, J., Grossman, T., Coros, S., & Hudson, S. E. (2016). Reprise: A Design Tool for Specifying, Generating, and Customizing 3D Printable Adaptations on Everyday Objects. In the 29th Annual ACM Symposium on User Interface Software and Technology.
   - img: t_locus.jpg
     authors:
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
-      - "Yang Li, Google"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
+      - "Yang Li (Google)"
     name: Locus
     pubs: UIST 2016
     descp: >-
@@ -764,10 +811,10 @@ projects:
     name: Encore
     pubs: UIST 2015
     authors:
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
-      - "Stelian Coros, ETH Zurich"
-      - "Jennifer Mankoff, University of Washington"
-      - "Scott Hudson, Carnegie Mellon University"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
+      - "Stelian Coros (ETH Zurich)"
+      - "Jennifer Mankoff (University of Washington)"
+      - "Scott Hudson (Carnegie Mellon University)"
     descp: >-
       3D printed augmentation of everyday objects with printed-over, affixed and
       interlocked attachment
@@ -810,10 +857,10 @@ projects:
   
   - img: t_duet.jpg
     authors:
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
-      - "Tovi Grossman, University of Toronto"
-      - "Daniel Wigdor, University of Toronto"
-      - "George Fitzmaurice, Autodesk Research"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
+      - "Tovi Grossman (University of Toronto)"
+      - "Daniel Wigdor (University of Toronto)"
+      - "George Fitzmaurice (Autodesk Research)"
     name: Duet
     pubs: CHI 2014 🏆
     descp: Joint interaction between a smart phone and a smart watch.
@@ -850,11 +897,11 @@ projects:
   
   - img: t_airtouch.jpg
     authors:
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
       - "Julia Schwarz, Microsoft Research"
-      - "Chris Harrison, Carnegie Mellon University"
-      - "Jennifer Mankoff, University of Washington"
-      - "Scott Hudson, Carnegie Mellon University"
+      - "Chris Harrison (Carnegie Mellon University)"
+      - "Jennifer Mankoff (University of Washington)"
+      - "Scott Hudson (Carnegie Mellon University)"
     name: Air+Touch
     descp: Combining In-Air Gesture and Touch Input Above Mobile Devices.
     title: 'Air + touch: interweaving touch and in-air gestures'
@@ -871,9 +918,9 @@ projects:
 
   - img: t_swipeboard.jpg
     authors:
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
-      - "Tovi Grossman, University of Toronto"
-      - "George Fitzmaurice, Autodesk Research"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
+      - "Tovi Grossman (University of Toronto)"
+      - "George Fitzmaurice (Autodesk Research)"
     name: Swipeboard
     descp: An eyes-free text entry technique for ultra-small interfaces
     title: 'Swipeboard: A Text Entry Technique for Ultra-Small Interfaces That Supports Novice to Expert Transitions'
@@ -914,11 +961,11 @@ projects:
 
   - img: t_aroundbody.jpg
     authors:
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
-      - "Julia Schwarz, Microsoft Research"
-      - "Chris Harrison, Carnegie Mellon University"
-      - "Jennifer Mankoff, University of Washington"
-      - "Scott Hudson, Carnegie Mellon University"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
+      - "Julia Schwarz (Microsoft Research)"
+      - "Chris Harrison (Carnegie Mellon University)"
+      - "Jennifer Mankoff (University of Washington)"
+      - "Scott Hudson (Carnegie Mellon University)"
     name: Around-Body Interaction
     descp: Tracking a commodity smart phone's position around a user's body.
     pubs: MobileHCI 2014
@@ -935,11 +982,11 @@ projects:
   
   - img: t_bci.jpg
     authors:
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
-      - "Nicolai Marquardt, University College London"
-      - "Anthony Tang, University of Toronto"
-      - "Sebastian Boring, Aalborg University"
-      - "Saul Greenberg, University of Calgary"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
+      - "Nicolai Marquardt (University College London)"
+      - "Anthony Tang (University of Toronto)"
+      - "Sebastian Boring (Aalborg University)"
+      - "Saul Greenberg (University of Calgary)"
     name: Body-Centric Interaction
     descp: >-
       A series of exploration of interacting in the space on and around our
@@ -984,11 +1031,11 @@ projects:
   
   - img: t_spalendar.jpg
     authors:
-      - "Xiang 'Anthony' Chen, UCLA HCI Research"
-      - "Sebastian Boring, Aalborg University"
-      - "Sheelagh Carpendale, Simon Fraser University"
-      - "Anthony Tang, University of Toronto"
-      - "Saul Greenberg, University of Calgary"
+      - "Xiang 'Anthony' Chen (UCLA HCI Research)"
+      - "Sebastian Boring (Aalborg University)"
+      - "Sheelagh Carpendale (Simon Fraser University)"
+      - "Anthony Tang (University of Toronto)"
+      - "Saul Greenberg (University of Calgary)"
     name: Spalendar
     descp: Visualizing calendar data by showing people moving between places.
     pubs: AVI 2012
@@ -1044,7 +1091,7 @@ aboutus:
       - g_ruolin_uist19.jpg
     contact:
       description: UCLA HCI Research is part of the Electrical & Computer Engineering Department in the Henry Samueli School of Engineering at UCLA.
-      address: <b>UCLA HCI Research</b><br/>1538 Boelter Hall, UCLA<br/>Los Angeles, CA 90095
+      address: <b>UCLA HCI Research</b><br/>1538 Boelter Hall (UCLA HCI Research)<br/>Los Angeles, CA 90095
       email: Email: sigchi @ ucla.edu
     sponsors:
       - img: onr.png
