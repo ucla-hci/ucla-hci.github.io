@@ -51,47 +51,6 @@ team:
     expertise: Human-AI Interaction
     img: Chunxu_n.jpg
     imgalt: Chunxu_f.jpg
-# collaborators:
-#   - name: Zihan Yan
-#     role: MS Student
-#     expertise: MIT Media Lab
-#     img: minion.jpg
-#     imgalt: purple.jpeg
-#   - name: Mohammad Haeri
-#     role: Pathologist
-#     expertise: U of Kansas Medical Center
-#     img: Mohammad-s.jpeg
-#     imgalt: Mohammad-s.jpeg
-#   - name: Kazu Williams
-#     role: Staff Research Associate
-#     expertise: UCLA Pathology
-#     img: Kazu-s.jpeg
-#     imgalt: Kazu-s.jpeg
-#   - name: Amy Pavel
-#     role: PostDoc/Research Scientist
-#     expertise: CMU/Apple
-#     img: Amy-s.png
-#     imgalt: Amy-s.png
-#   - name: Jeeeun Kim
-#     role: Assistant Professor
-#     expertise: Texas A&M University
-#     img: Jeeeun-s.jpeg
-#     imgalt: Jeeeun-s.jpeg
-#   - name: Dingzeyu Li
-#     role: Research Scientist
-#     expertise: Adobe
-#     img: Ding-s.jpeg
-#     imgalt: Ding-s.jpeg
-  # - name: Lin Yang
-  #   role: Assistant Professor
-  #   expertise: UCLA ECE
-  #   img: Lin-s.jpeg
-  #   imgalt: Lin-s.jpeg
-  # - name: Lei He
-  #   role: Professor
-  #   expertise: UCLA ECE
-  #   img: Lei-s.jpeg
-  #   imgalt: Lei-s.jpeg
 alumni:
   - name: Naoto Nishida
     role: Visiting Researcher
@@ -1081,7 +1040,14 @@ projects:
       Chen, X., Boring, S., Carpendale, S., Tang, A., & Greenberg, S. (2012). Spalendar: visualizing a group's calendar events over a geographic space on a public display. In AVI '12 Proceedings of the International Working Conference on Advanced Visual Interfaces (pp. 689-696).
 
 aboutus:
-  - mission: "We study, design, and build human-AI collaborative systems that empower individuals to <br><ul><li>thrive in an <b>information</b>-rich world; and</li><li>transform <b>ideas</b> into reality.</li></ul><img src='assets/mission.jpeg' width=360></img>"
+  - mission: "Our mission is to empower individuals with value-added innovations in human-AI interactive systems.
+    Specifically, we are currently investigating the following research topics:
+    <br/><ul>
+    <li>Human-AI Collaborative Work</li>
+    <li>Human-Centered Generative AI</li>
+    <li>AI-Mediated Human Communication</li>
+    </ul>"
+  # - mission: "We study, design, and build human-AI collaborative systems that empower individuals to <br><ul><li>thrive in an <b>information</b>-rich world; and</li><li>transform <b>ideas</b> into reality.</li></ul><img src='assets/mission.jpeg' width=360></img>"
   # - mission: "We believe the ultimate goal of inventing the computer is to augment our human selves. To achieve this, our research focuses on the following three topics:<br><ul><li><b>Intelligent User Interfaces</b>: how can we design interfaces of intelligent systems that augment a user to accomplish domain-specific tasks?</li><li><b>Sensing & Interaction Techniques</b>: how can we invent new sensors and devices that afford novel experiences for users to interact with a computer?</li><li><b>Computational Design & Fabrication</b>: how can we build computational platforms that empower users to realize their ideas into digital or physical artifacts?</li></ul>"
 #     recruitment: '&#128161; Join us and apply to our <b><a target="_blank" href="https://hci.ucla.edu/reu">NSF REU funded summer internships</a></b> and the <b><a target="_blank" href="https://hci.ucla.edu/lbr">Learning-by-Research</a> program</b>.'
     photos: 
