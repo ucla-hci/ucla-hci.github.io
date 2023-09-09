@@ -1089,6 +1089,8 @@ aboutus:
         url: https://research.google/outreach/research-scholar-program/
       - img: adobe.png
         url: https://www.adobe.com/
+      - img: amazon.png
+        url: https://www.sciencehub.ucla.edu/2023-amazon-fellows/
       - img: intel.png
         url: https://www.intel.com/content/www/us/en/research/blogs/intel-rising-stars-awards-2022.html
       - img: meta.png
