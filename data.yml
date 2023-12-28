@@ -1071,13 +1071,13 @@ aboutus:
       email: Email: sigchi @ ucla.edu
     sponsors:
       - img: onr.png
-        url: https://www.onr.navy.mil/Education-Outreach/Sponsored-Research/YIP/2021-young-investigators
+        url: https://www.nre.navy.mil/education-outreach/sponsored-research/yip/2021-young-investigators
       - img: nsf.png
         url: https://nsf.gov/
       - img: ucla.png
         url: https://grad.ucla.edu/funding/financial-aid/summer-mentored-research-fellowship-smrf/
       - img: hellman.png
-        url: http://www.hellmanfellows.org/fellows/xiang-chen/
+        url: https://www.universityofcalifornia.edu/sites/default/files/hellman-fellows-2020.pdf
       - img: salesforce.png
         url: https://www.salesforceairesearch.com/
       - img: google.png
