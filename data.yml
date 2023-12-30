@@ -618,7 +618,7 @@ projects:
     album: '72157710744632177'
     citation: "Kang, R., Guo, A., Laput, G., Li, Y., & Chen, X. “Anthony.” (2019). Minuet: Multimodal Interaction with an Internet of Things. In Symposium on Spatial User Interaction (pp. 2:1--2:10). New York, NY, USA: ACM. https://doi.org/10.1145/3357251.3357581"
     bibtex: "@inproceedings{Kang:2019:MMI:3357251.3357581,<br>address = {New York, NY, USA},<br>author = {Kang, Runchang and Guo, Anhong and Laput, Gierad and Li, Yang and Chen, Xiang 'Anthony'},<br>booktitle = {Symposium on Spatial User Interaction},<br>doi = {10.1145/3357251.3357581},<br>isbn = {978-1-4503-6975-6},<br>keywords = { gesture, multimodal interaction, voice,Internet-of-Things},<br>pages = {2:1----2:10},<br>publisher = {ACM},<br>series = {SUI '19},<br>title = {{Minuet: Multimodal Interaction with an Internet of Things}},<br>url = {http://doi.acm.org/10.1145/3357251.3357581},<br>year = {2019}<br>}<br>"
-    paperUrl: 'https://www.dropbox.com/s/80y5jz2lw4fjmge/sui2019_minuet.pdf'
+    paperUrl: https://drive.google.com/file/d/1p7JENXWG1UF0z2NSme6ukKncUCC6zTY7/view?usp=sharing
     thumbnail: sui2019_minuet_thumbnail.jpg
   - name: Forte
     pubs: CHI 2018
@@ -638,7 +638,7 @@ projects:
     album: '72157668597613889'
     citation: "Chen, X., Tao, Y., Wang, G., Kang, R., Grossman, T., Coros, S., & Hudson, S. E. (2018). Forte: User-Driven Generative Design. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (p. 496)."
     bibtex: "@inproceedings{chen2018forte,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Forte: User-Driven Generative Design},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Tao, Ye and Wang, Guanyun and Kang, Runchang and Grossman, Tovi and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={496},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2018},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
-    paperUrl: 'https://www.dropbox.com/s/bld0v2nc420x1ld/chi2018_forte.pdf'
+    paperUrl: https://drive.google.com/file/d/1p9HCxYxvSfItqZXtzGbq8TOJ-ZDMFQaA/view?usp=sharing
     thumbnail: chi2018_forte_thumbnail.jpg
   - name: Medley
     pubs: CHI 2018
@@ -654,7 +654,7 @@ projects:
     album: '72157689656591312'
     citation: "Chen, X., Coros, S., & Hudson, S. E. (2018). Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (p. 162)."
     bibtex: "@inproceedings{chen2018medley,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={162},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2018},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
-    paperUrl: 'https://www.dropbox.com/s/97nvsjjqawn14e9/medley_chi2018.pdf'
+    paperUrl: https://drive.google.com/file/d/1pGNyS9_daDtggz8wG0PcU33GCfaHI4-R/view?usp=sharing
     thumbnail: chi2018_medley_thumbnail.jpg
   - img: t_improv.jpg
     authors:
@@ -666,25 +666,7 @@ projects:
       Improv: An Input Framework for Improvising Cross-Device Interaction by
       Demonstration
     abstract: >-
-      As computing devices become increasingly ubiquitous, it is now possible to
-      combine the unique capabilities of different devices or Internet of Things
-      to accomplish a task. However, there is currently a high technical barrier
-      for creating cross-device interaction. This is especially challenging for
-      end users who have limited technical expertise—end users would greatly
-      benefit from custom cross-device interaction that best suits their needs.
-      In this article, we present Improv, a cross-device input framework that
-      allows a user to easily leverage the capability of additional devices to
-      create new input methods for an existing, unmodified application, e.g.,
-      creating custom gestures on a smartphone to control a desktop presentation
-      application. Instead of requiring developers to anticipate and program
-      these cross-device behaviors in advance, Improv enables end users to
-      improvise them on the fly by simple demonstration, for their particular
-      needs and devices at hand. We showcase a range of scenarios where Improv
-      is used to create a diverse set of useful cross-device input. Our study
-      with 14 participants indicated that on average it took a participant 10
-      seconds to create a cross-device input technique. In addition, Improv
-      achieved 93.7% accuracy in interpreting user demonstration of a target UI
-      behavior by looking at the raw input events from a single example.
+      As computing devices become increasingly ubiquitous, it is now possible to combine the unique capabilities of different devices or Internet of Things to accomplish a task. However, there is currently a high technical barrier for creating cross-device interaction. This is especially challenging for end users who have limited technical expertise—end users would greatly benefit from custom cross-device interaction that best suits their needs. In this article, we present Improv, a cross-device input framework that allows a user to easily leverage the capability of additional devices to create new input methods for an existing, unmodified application, e.g., creating custom gestures on a smartphone to control a desktop presentation application. Instead of requiring developers to anticipate and program these cross-device behaviors in advance, Improv enables end users to improvise them on the fly by simple demonstration, for their particular needs and devices at hand. We showcase a range of scenarios where Improv is used to create a diverse set of useful cross-device input. Our study with 14 participants indicated that on average it took a participant 10 seconds to create a cross-device input technique. In addition, Improv achieved 93.7% accuracy in interpreting user demonstration of a target UI behavior by looking at the raw input events from a single example.
     bibtex: >-
       @article{chen2017improv,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Improv: An
       Input Framework for Improvising Cross-Device Interaction by
@@ -698,7 +680,7 @@ projects:
     videoSite: vimeo
     album: '72157664092225828'
     thumbnail: tochi17_improv_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/bwct58u1z70jvt0/tochi2017_improv.pdf'
+    paperUrl: https://drive.google.com/file/d/1pUC9fDuo16anNqycLG63THZLFfJDq0eS/view?usp=sharing
     citation: >-
       Chen, X., & Li, Y. (2017). Improv: An Input Framework for Improvising Cross-Device Interaction by Demonstration. ACM Transactions on Computer-Human Interaction (TOCHI), 24(2), 15.
     pubs: TOCHI '17
@@ -825,7 +807,7 @@ projects:
       &nbsp;organization={ACM}<br>}
     album: '72157670690945024'
     thumbnail: uist2015_encore_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/2fvypkcxhv2wclk/uist2015_encore.pdf'
+    paperUrl: https://drive.google.com/file/d/1q9lt5EsboF7WBUfFrmlNCZd6SgsbaDkJ/view?usp=sharing
     citation: >-
       Chen, X., Coros, S., Mankoff, J., & Hudson, S. E. (2015). Encore: 3D printed augmentation of everyday objects with printed-over, affixed and interlocked attachments. In Proceedings of the 28th Annual ACM Symposium on User Interface Software and Technology (pp. 73-82).
   
@@ -865,7 +847,7 @@ projects:
     videoSite: vimeo
     album: '72157672834628310'
     thumbnail: chi2014_duet_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/r7llh1crqtwg16u/chi2014_duet.pdf'
+    paperUrl: https://drive.google.com/file/d/1qKdbguC9hnpShEfLEecFOo2V24hWkNlU/view?usp=sharing
     citation: >-
       Chen, X., Grossman, T., Wigdor, D. J., & Fitzmaurice, G. (2014). Duet: exploring joint interactions on a smart phone and a smart watch. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 159-168).
   
@@ -886,7 +868,7 @@ projects:
     bibtex: "@inproceedings{chen2014air+,<br>&nbsp; &nbsp;title={Air+ touch: interweaving touch and in-air gestures},<br>&nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Schwarz, Julia and Harrison, Chris and Mankoff, Jennifer and Hudson, Scott E},<br>&nbsp; &nbsp;booktitle={Proceedings of the 27th annual ACM symposium on User interface software and technology},<br>&nbsp; &nbsp;pages={519--525},<br>&nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp;organization={ACM}<br>}"
     album: '72157670702717043'
     thumbnail: uist2014_airtouch_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/yaspxpqsx4vtz99/uist2014_airtouch.pdf'
+    paperUrl: https://drive.google.com/file/d/1tTRUt6ilITNmeIeHUx-SMryzVPlVoV7Q/view?usp=sharing
     citation: >-
       Chen, X., Schwarz, J., Harrison, C., Mankoff, J., & Hudson, S. E. (2014). Air + touch: interweaving touch & in-air gestures. In Proceedings of the 27th annual ACM symposium on User interface software and technology (pp. 519-525).
 
@@ -929,7 +911,7 @@ projects:
     videoSite: vimeo
     album: '72157674290832196'
     thumbnail: uist2014_swipeboard_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/sqd5dxsl22zgpnb/uist2014_swipeboard.pdf'
+    paperUrl: https://drive.google.com/file/d/1ur2XGPAko-P-dv6dtVPinxM5pAVt_0jL/view?usp=sharing
     citation: >-
       Chen, X., Grossman, T., & Fitzmaurice, G. (2014). Swipeboard: a text entry technique for ultra-small interfaces that supports novice to expert transitions. In Proceedings of the 27th annual ACM symposium on User interface software and technology (pp. 615-620).
 
@@ -950,7 +932,7 @@ projects:
     videoSite: vimeo
     album: '72157674813685485'
     thumbnail: mhci2014_aroundbody_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/lyqbpiq854b2qos/mhci2014_aroundbody.pdf'
+    paperUrl: https://drive.google.com/file/d/1v-zVmJfszd-61yad712ZGiJE8xnEG75R/view?usp=sharing
     citation: >-
       Chen, X., Schwarz, J., Harrison, C., Mankoff, J., & Hudson, S. (2014). Around-body interaction: sensing & interaction techniques for proprioception-enhanced input with mobile devices. In Proceedings of the 16th international conference on Human-computer interaction with mobile devices & services (pp. 287-290).
   
@@ -999,7 +981,7 @@ projects:
     videoSite: vimeo
     flickr: '72157674424983716'
     thumbnail: mhci2012_bci_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/z74oxofbcqlc3lr/mhci2012_bci.pdf'
+    paperUrl: https://drive.google.com/file/d/1vRUr7JYKnpujl6K1b0mAL8lFRZH0b16p/view?usp=sharing
     citation: >-
       Chen, X., Marquardt, N., Tang, A., Boring, S., & Greenberg, S. (2012). Extending a mobile device's interaction space through body-centric interaction. In Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services (pp. 151-160).
   
@@ -1050,7 +1032,7 @@ projects:
     video: '31823922'
     videoSite: vimeo
     thumbnail: avi2012_spalendar_thumbnail.jpg
-    paperUrl: 'https://www.dropbox.com/s/0uvmpuhpq3vpzfy/avi2012_spalendar.pdf'
+    paperUrl: https://drive.google.com/file/d/1wUixLiuba4Faue9iAqwkZJa9JPiWxrz2/view?usp=sharing
     citation: >-
       Chen, X., Boring, S., Carpendale, S., Tang, A., & Greenberg, S. (2012). Spalendar: visualizing a group's calendar events over a geographic space on a public display. In AVI '12 Proceedings of the International Working Conference on Advanced Visual Interfaces (pp. 689-696).
 
