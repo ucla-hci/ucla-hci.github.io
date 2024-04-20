@@ -254,6 +254,20 @@ alumni:
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
+  - name: "HCI Papers Cite HCI Papers"
+    title: "HCI Papers Cite HCI Papers, Increasingly So"
+    authors:
+      - Xiang 'Anthony' Chen (UCLA HCI Research)
+    pubs: alt.chi 2024
+    img: t_xindex.jpg
+    abstract: "To measure how HCI papers are cited across disciplinary boundaries, we collected a citation dataset of CHI, UIST, and CSCW papers published between 2010 and 2020. Our analysis indicates that HCI papers have been more and more likely to be cited by HCI papers rather than by non-HCI papers."
+    videoSite: vimeo
+    video: 936893053
+    album: "72177720316332160"
+    citation: Xiang ‘Anthony’ Chen. HCI Papers Cite HCI Papers, Increasingly So. In Extended Abstracts of the 2024 CHI Conference on Human Factors in Computing Systems (CHI EA '24).
+    bibtex: "@misc{chen2024hci,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title={HCI Papers Cite HCI Papers, Increasingly So}, <br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author={Xiang Anthony Chen},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year={2024},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;eprint={2303.07539},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;archivePrefix={arXiv},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;primaryClass={cs.HC}<br>}"
+    thumbnail: altchi2024_thumbnail.jpg
+    paperUrl: https://drive.google.com/file/d/16Ee2XWWAb8XuvO7EC3PH5BFJgIPp2bA8/view?usp=sharing
   - name: 'Marvista'
     title: 'Marvista: Exploring the Design of a Human-AI Collaborative News Reading Tool'
     authors:
