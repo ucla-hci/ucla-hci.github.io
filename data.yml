@@ -1,57 +1,69 @@
 team:
   - name: Xiang 'Anthony' Chen
-    role: Assistant Professor
-    expertise: PI
+    role: Associate Professor
+    expertise: Human Factors in AI
     img: Anthony_n.jpg
     imgalt: Anthony_f.jpg
     url: https://hci.prof
-  - name: Yang Zhang
-    role: Assistant Professor
-    expertise: PI (<a target="_blank" href="https://hilab.dev/">HiLab</a>)
-    img: Yang-s.jpg
-    imgalt: Yang-f.jpg
-    url: https://yangzhang.dev/
-  - name: Jiahao Li
-    role: MAE PhD
-    expertise: AR/Robotics
-    img: Nick-s.JPG
-    imgalt: Nick-f.JPG
-    url: https://ljhnick.github.io/
   - name: Hongyan Gu
     role: ECE PhD
     expertise: Human-Centered Medical AI
     img: Hongyan_n.jpg
     imgalt: Hongyan_f.jpg
     url: https://www.hygu.net/
-  - name: Ruolin Wang
-    role: ECE PhD
-    expertise: Accessibility
-    img: Ruolin-s.JPG
-    imgalt: Ruolin-f.JPG
-    url: https://www.violynnewang.com/
-  - name: Noyan Evirgen
-    role: ECE PhD
-    expertise: Generative AI
-    img: Noyan_n.jpg
-    imgalt: Noyan_f.jpg
   - name: Bruce Liu
     role: ECE PhD
-    expertise: AI-Augmented Humans
+    expertise: HCI x AI
     img: Bruce_n.jpg
     imgalt: Bruce_f.jpg
     url: https://liubruce.me/
   - name: Youngseung Jeon
     role: ECE PhD
-    expertise: AI-Supported Creativity
+    expertise: HCI+AI for Science
     img: Jay_n.jpg
     imgalt: Jay_f.jpg
     url: https://sites.google.com/view/youngseung-jeon
+  - name: Christopher Hwang
+    role: ECE MS
+    expertise: UX Prototyper
+    img: minion.jpg
+    imgalt: purple.jpeg
+    url: https://www.linkedin.com/in/christopher-hwang-8b2894190/
+  - name: Qinyi Zhou
+    role: Visiting Scholar
+    expertise: Human-AI Interaction
+    img: minion.jpg
+    imgalt: purple.jpeg
+    url: https://qinyizhou.notion.site/d1b006a021b048eeaa8ed580ca938f13?v=21de43e9d8da4db8b839583157d93092
+  - name: Yujun Ge
+    role: Highschool Scholar
+    expertise: Human-Centered AI
+    img: minion.jpg
+    imgalt: purple.jpeg
+    url: https://qinyizhou.notion.site/d1b006a021b048eeaa8ed580ca938f13?v=21de43e9d8da4db8b839583157d93092
+alumni:
+  - name: Jiahao Li (PhD)
+    role: Apple
+    expertise: Human-AI Interaction
+    img: Nick-s.JPG
+    imgalt: Nick-f.JPG
+    url: https://ljhnick.github.io/
+  - name: Ruolin Wang (PhD)
+    role: Postdoc @ Georgia Tech
+    expertise: Accessibility
+    img: Ruolin-s.JPG
+    imgalt: Ruolin-f.JPG
+    url: https://www.violynnewang.com/
+  - name: Noyan Evirgen (PhD)
+    role: Data Scientist @ Spotter
+    expertise: Generative AI
+    img: Noyan_n.jpg
+    imgalt: Noyan_f.jpg
   - name: Chunxu Yang
     role: ECE MS
     expertise: Human-AI Interaction
     img: Chunxu_n.jpg
     imgalt: Chunxu_f.jpg
-alumni:
   - name: Naoto Nishida
     role: Visiting Researcher
     expertise: University of Tokyo
@@ -1057,10 +1069,13 @@ aboutus:
     <li>Augmenting human abilities</li>
     </ul>"
     photos: 
-      - g_bbq.jpg
+      # - g_bbq.jpg
       - g_postchi.jpg
-      - g_collaboration.JPG
-      - g_ruolin_uist19.jpg
+      - g-bruce-uist.jpg 
+      # - g_collaboration.JPG
+      # - g_ruolin_uist19.jpg
+      - g-hongyan-ichi.JPG 
+      - g-noyan-defense.jpg
     contact:
       description: UCLA HCI Research is part of the Electrical & Computer Engineering Department in the Henry Samueli School of Engineering at UCLA.
       address: <b>UCLA HCI Research</b><br/>1538 Boelter Hall (UCLA HCI Research)<br/>Los Angeles, CA 90095
