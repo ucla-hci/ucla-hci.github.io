@@ -29,6 +29,12 @@ team:
     img: minion.jpg
     imgalt: purple.jpeg
     url: https://www.linkedin.com/in/christopher-hwang-8b2894190/
+  - name: Ziwen Li
+    role: ECE MS
+    expertise: UX Engineer
+    img: minion.jpg
+    imgalt: purple.jpeg
+    url: https://www.linkedin.com/in/ziwen-li-ab4907234/
   - name: Qinyi Zhou
     role: Visiting Scholar
     expertise: Human-AI Interaction
@@ -41,6 +47,12 @@ team:
     img: Yujun_s.png
     imgalt: Yujun_f.png
     url: https://qinyizhou.notion.site/d1b006a021b048eeaa8ed580ca938f13?v=21de43e9d8da4db8b839583157d93092
+  - name: Philip Huang
+    role: Undergrad Researcher
+    expertise: Generative AI
+    img: minion.jpg
+    imgalt: purple.jpeg
+    url: https://www.linkedin.com/in/philip-huang-15867b21b
 alumni:
   - name: Jiahao Li (PhD)
     role: Apple
