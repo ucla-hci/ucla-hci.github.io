@@ -427,17 +427,20 @@ UCLAHCI.makeProjectPage = function (name) {
     var pAbstract = $('<p>' + project.abstract + '</p><br/>');
     divPage.append(pAbstract);
 
-    var divVideo = $('<div/>');
-    var widthMedia = window.innerWidth * 0.6;
-    var heightMedia = widthMedia * 315 / 560;
-    if (project.video != undefined) {
-        project.videoSite = project.videoSite | 'youtube';
-        var codeVideo = UCLAHCI.getVideoEmbedCode(project.videoSite, project.video, widthMedia, heightMedia);
-        divVideo.html(codeVideo);
+    if (project.videoSite != undefined) {
+        var divVideo = $('<div/>');
+        var widthMedia = window.innerWidth * 0.6;
+        var heightMedia = widthMedia * 315 / 560;
+        if (project.video != undefined) {
+            project.videoSite = project.videoSite | 'youtube';
+            var codeVideo = UCLAHCI.getVideoEmbedCode(project.videoSite, project.video, widthMedia, heightMedia);
+            divVideo.html(codeVideo);
+        }
+        divPage.append(divVideo);
+        divPage.append('<br/>');
     }
-    divPage.append(divVideo);
 
-    divPage.append('<br/>');
+    
 
     if (project.album != undefined) {
         var codeOnLoad = ''
