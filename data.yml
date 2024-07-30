@@ -47,13 +47,13 @@ team:
     img: Yujun_s.png
     imgalt: Yujun_f.png
     url: https://qinyizhou.notion.site/d1b006a021b048eeaa8ed580ca938f13?v=21de43e9d8da4db8b839583157d93092
+alumni:
   - name: Philip Huang
     role: Undergrad Researcher
     expertise: Generative AI
     img: minion.jpg
     imgalt: purple.jpeg
     url: https://www.linkedin.com/in/philip-huang-15867b21b
-alumni:
   - name: Jiahao Li (PhD)
     role: Apple
     expertise: Human-AI Interaction
@@ -278,6 +278,35 @@ alumni:
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
+  - name: "Meningioma Mitosis AI"
+    title: Enhancing Mitosis Count Assessment in Meningiomas with Computational Digital Pathology
+    authors:
+      - Hongyan Gu, UCLA HCI Research
+      - Chunxu Yang, UCLA HCI Research
+      - Issa Al-kharouf, University of Kansas Medical Center
+      - Shino Magaki, UCLA David Geffen School of Medicine
+      - Nelli Lakis, University of Kansas Medical Center
+      - Christopher Kazu Williams, UCLA David Geffen School of Medicine
+      - Sallam Mohammad Alrosan, University of Kansas Medical Center
+      - Ellie K. Onstott, University of Kansas Medical Center
+      - Wenzhong Yan, UCLA ECE
+      - Negar Khanlou, UCLA David Geffen School of Medicine
+      - Imna Cobos, Stanford School of Medicine
+      - Xinhai R. Zhang, University of Texas Health Science Center at Houston
+      - Neda Zarrin-Khameh, Baylor College of Medicine
+      - Harry V. Vinters, UCLA David Geffen School of Medicine
+      - Xiang 'Anthony' Chen, UCLA HCI Research
+      - Mohammad Haeri, University of Kansas Medical Center
+    pubs: Acta Neuropathologica Communications 2024
+    img: t_mitosis_ai.jpg
+    abstract: "Mitosis is a critical criterion for meningioma grading. However, pathologists’ assessment of mitoses is subject to significant inter-observer variation due to challenges in locating mitosis hotspots and accurately detecting mitotic figures. To address this issue, we leverage digital pathology and propose a computational strategy to enhance pathologists’ mitosis assessment. The strategy has two components: (1) A depth-first search algorithm that quantifies the mathematically maximum mitotic count in 10 consecutive high-power fields, which can enhance the preciseness, especially in cases with borderline mitotic count. (2) Implementing a collaborative sphere to group a set of pathologists to detect mitoses under each high-power field, which can mitigate subjective random errors in mitosis detection originating from individual detection errors. By depth-first search algorithm (1) , we analyzed 19 meningioma slides and discovered that the proposed algorithm upgraded two borderline cases verified at consensus conferences. This improvement is attributed to the algorithm’s ability to quantify the mitotic count more comprehensively compared to other conventional methods of counting mitoses. In implementing a collaborative sphere (2) , we evaluated the correctness of mitosis detection from grouped pathologists and/or pathology residents, where each member of the group annotated a set of 48 high-power field images for mitotic figures independently. We report that groups with sizes of three can achieve an average precision of 0.897 and sensitivity of 0.699 in mitosis detection, which is higher than an average pathologist in this study (precision: 0.750, sensitivity: 0.667). The proposed computational strategy can be integrated with artificial intelligence workflow, which envisions the future of achieving a rapid and robust mitosis assessment by interactive assisting algorithms that can ultimately benefit patient management."
+    album: "72177720319214247"
+    videoSite: vimeo
+    video: "991874097"
+    citation: "Gu H, Yang C, Al-Kharouf I, Magaki S, Lakis N, Williams CK, Alrosan SM, Onstott EK, Yan W, Khanlou N, Cobos I, Zhang XR, Zarrin-Khameh N, Vinters HV, Chen XA, Haeri M. Enhancing mitosis quantification and detection in meningiomas with computational digital pathology. Acta Neuropathol Commun. 2024 Jan 11;12(1):7. doi: 10.1186/s40478-023-01707-6. PMID: 38212848; PMCID: PMC10782692."
+    bibtex: "@article{gu2024enhancing,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Enhancing mitosis quantification and detection in meningiomas with computational digital pathology},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Gu, Hongyan and Yang, Chunxu and Al-Kharouf, Issa and Magaki, Shino and Lakis, Nelli and Williams, Christopher Kazu and Alrosan, Sallam Mohammad and Onstott, Ellie Kate and Yan, Wenzhong and Khanlou, Negar and others},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={Acta Neuropathologica Communications},<br>&nbsp; &nbsp; &nbsp; &nbsp;volume={12},<br>&nbsp; &nbsp; &nbsp; &nbsp;number={1},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={7},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2024},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher={Springer}<br>}"
+    thumbnail: pt_mitosis_ai.jpg
+    paperUrl: https://drive.google.com/open?id=1vLroIHjiDya_4oWEiQPks6euQv-48Bx3
   - name: "XAI for Text-to-Image Generation"
     title: "From Text to Pixels: Enhancing User Understanding through Text-to-Image Model Explanations"
     authors:
@@ -300,7 +329,7 @@ projects:
     img: t_xindex.jpg
     abstract: "To measure how HCI papers are cited across disciplinary boundaries, we collected a citation dataset of CHI, UIST, and CSCW papers published between 2010 and 2020. Our analysis indicates that HCI papers have been more and more likely to be cited by HCI papers rather than by non-HCI papers."
     videoSite: vimeo
-    video: 936893053
+    video: "936893053"
     album: "72177720316332160"
     citation: Xiang ‘Anthony’ Chen. HCI Papers Cite HCI Papers, Increasingly So. In Extended Abstracts of the 2024 CHI Conference on Human Factors in Computing Systems (CHI EA '24).
     bibtex: "@misc{chen2024hci,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title={HCI Papers Cite HCI Papers, Increasingly So}, <br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author={Xiang Anthony Chen},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year={2024},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;eprint={2303.07539},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;archivePrefix={arXiv},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;primaryClass={cs.HC}<br>}"
