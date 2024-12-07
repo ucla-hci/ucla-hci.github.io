@@ -41,13 +41,13 @@ team:
     img: Qinyi-s.jpg
     imgalt: Qinyi-f.jpg
     url: https://qinyizhou.notion.site/d1b006a021b048eeaa8ed580ca938f13?v=21de43e9d8da4db8b839583157d93092
+alumni:
   - name: Yujun Ge
     role: Highschool Scholar
     expertise: Human-Centered AI
     img: Yujun_s.png
     imgalt: Yujun_f.png
     url: https://qinyizhou.notion.site/d1b006a021b048eeaa8ed580ca938f13?v=21de43e9d8da4db8b839583157d93092
-alumni:
   - name: Philip Huang
     role: Undergrad Researcher
     expertise: Generative AI
