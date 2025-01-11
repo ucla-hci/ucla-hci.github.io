@@ -19,7 +19,7 @@ team:
     url: https://liubruce.me/
   - name: Youngseung Jeon
     role: ECE PhD
-    expertise: HCI+AI for Science
+    expertise: HCI for Science
     img: Jay_n.jpg
     imgalt: Jay_f.jpg
     url: https://sites.google.com/view/youngseung-jeon
@@ -31,7 +31,7 @@ team:
     url: https://www.linkedin.com/in/christopher-hwang-8b2894190/
   - name: Ziwen Li
     role: ECE MS
-    expertise: UX Engineer
+    expertise: Human-Centered NLP
     img: Aaron_n.png
     imgalt: Aaron_f.png
     url: https://aaronli43.github.io/personalweb/
@@ -47,7 +47,6 @@ alumni:
     expertise: Human-Centered AI
     img: Yujun_s.png
     imgalt: Yujun_f.png
-    url: https://qinyizhou.notion.site/d1b006a021b048eeaa8ed580ca938f13?v=21de43e9d8da4db8b839583157d93092
   - name: Philip Huang
     role: Undergrad Researcher
     expertise: Generative AI
