@@ -436,13 +436,14 @@ UCLAHCI.makeProjectPage = function (name) {
     }
 
     
-
-    if (project.album != undefined) {
+    if(project.albumEmbedCode != undefined){
+        let aPhotos = project.albumEmbedCode.replace('width="1024"', 'width="100%"').replace('height="768"', 'height='+ heightMedia * 1.2)
+        divPage.append(aPhotos)
+    } else if (project.album != undefined) {
         var codeOnLoad = ''
         var divPhotos = $('<iframe id="ifPhotos" onload="' + codeOnLoad +
             '" style="position: relative; top: 0; left: 0; text-align: left; width: 100%; height: ' +
             heightMedia * 1.2 + 'px;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=' + project.album + '&sort=0&by=album&theme=default_notextpanel&scale=fit&limit=100&skin0&skin=alexis&autoplay=false" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>')
-
         divPage.append(divPhotos)
     }
 
