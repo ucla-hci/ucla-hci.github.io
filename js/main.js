@@ -234,9 +234,7 @@ UCLAHCI.updatePage = function () {
         tr2.append(divMap);
         tr2.append(divInfo);
 
-
         tb.append(tr1);
-        // tb.append('<tr><td><br/></td></tr>')
         tb.append(tr2);
         $('.content').append(tb);
     } else {
@@ -316,7 +314,6 @@ UCLAHCI.showTeam = function (team) {
 UCLAHCI.updateUI = function () {
     $('.topnav a').click(function (e) {
         $('.topnav a').removeClass('active');
-        // $(e.target).addClass('active');
         UCLAHCI.page = $(e.target).attr('id');
         UCLAHCI.updatePage();
         UCLAHCI.updateUrl(UCLAHCI.page)
