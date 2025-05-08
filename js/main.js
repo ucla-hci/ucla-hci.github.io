@@ -89,8 +89,6 @@ UCLAHCI.updatePage = function () {
     $('.content').empty();
     if (page == 'team') {
         $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.team));
-        // $('.content').append($('<br/><br/><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current Collaborators</h2>'))
-        // $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.collaborators));
         $('.content').append($('<br/><br/><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alumni</h2>'))
         $('.content').append(UCLAHCI.showTeam(UCLAHCI.data.alumni));
 
@@ -103,7 +101,7 @@ UCLAHCI.updatePage = function () {
 
             var tb = $('<table/>');
             var trImg = $('<tr/>');
-            var url = UCLAHCI.createUrl(project.name); //.replace(/-/g, '-')
+            var url = UCLAHCI.createUrl(project.name);
             var idImg = url
             UCLAHCI.htPages[url] = idImg
             var img = $('<img/>');
