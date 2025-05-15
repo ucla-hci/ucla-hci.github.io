@@ -5,12 +5,6 @@ team:
     img: Anthony_n.jpg
     imgalt: Anthony_f.jpg
     url: https://hci.prof
-  - name: Hongyan Gu
-    role: ECE PhD
-    expertise: Human-Centered Medical AI
-    img: Hongyan_n.jpg
-    imgalt: Hongyan_f.jpg
-    url: https://www.hygu.net/
   - name: Bruce Liu
     role: ECE PhD
     expertise: HCI x AI
@@ -35,13 +29,19 @@ team:
     img: Aaron_n.png
     imgalt: Aaron_f.png
     url: https://aaronli43.github.io/personalweb/
+alumni:
+  - name: Dr. Hongyan Gu
+    role: Senior Scientist at KUMC Pathology
+    expertise: Human-Centered Medical AI
+    img: Hongyan_n.jpg
+    imgalt: Hongyan_f.jpg
+    url: https://www.hygu.net/
   - name: Qinyi Zhou
     role: Visiting Scholar
     expertise: Human-AI Interaction
     img: Qinyi-s.jpg
     imgalt: Qinyi-f.jpg
     url: https://qinyizhou.notion.site/d1b006a021b048eeaa8ed580ca938f13?v=21de43e9d8da4db8b839583157d93092
-alumni:
   - name: Yujun Ge
     role: Highschool Scholar
     expertise: Human-Centered AI
@@ -53,19 +53,19 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
     url: https://www.linkedin.com/in/philip-huang-15867b21b
-  - name: Jiahao Li (PhD)
-    role: Apple
+  - name: Dr. Jiahao Li
+    role: HCI Researcher @ Apple
     expertise: Human-AI Interaction
     img: Nick-s.JPG
     imgalt: Nick-f.JPG
     url: https://ljhnick.github.io/
-  - name: Ruolin Wang (PhD)
+  - name: Dr. Ruolin Wang
     role: Postdoc @ Georgia Tech
     expertise: Accessibility
     img: Ruolin-s.JPG
     imgalt: Ruolin-f.JPG
     url: https://www.violynnewang.com/
-  - name: Noyan Evirgen (PhD)
+  - name: Dr. Noyan Evirgen
     role: Data Scientist @ Spotter
     expertise: Generative AI
     img: Noyan_n.jpg
