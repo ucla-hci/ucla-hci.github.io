@@ -30,13 +30,13 @@ team:
     imgalt: Aaron_f.png
     url: https://aaronli43.github.io/personalweb/
   - name: Serena Chang
-    role: UG Researcher
+    role: Undergrad Researcher
     expertise: UX Research
     img: minion.jpg
     imgalt: purple.jpeg
     url: https://www.linkedin.com/in/serena-chang-878005245/
   - name: Tara Kaviani
-    role: UG Researcher
+    role: Undergrad Researcher
     expertise: Human-Centered AI
     img: minion.jpg
     imgalt: purple.jpeg
@@ -155,17 +155,17 @@ alumni:
     imgalt: Lauren-f.JPG
     url: http://laurenhung.com/
   - name: Shuen Chan
-    role: UG Researcher
+    role: Undergrad Researcher
     expertise: UX Designer
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Julia Yin
-    role: UG Researcher
+    role: Undergrad Researcher
     expertise: UX Designer
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Alexander Chen
-    role: UG Researcher
+    role: Undergrad Researcher
     expertise: <br>
     img: Alex-s.jpg
     imgalt: Alex-f.jpg
@@ -175,7 +175,7 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Ashley Ngo
-    role: UG Researcher
+    role: Undergrad Researcher
     expertise: User Researcher
     img: Ashley-s.jpg
     imgalt: Ashley-f.jpg
@@ -185,12 +185,12 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Zixuan Chen
-    role: UG Researcher
+    role: Undergrad Researcher
     expertise: Web Engineer
     img: Zixuan-s.jpg
     imgalt: Zixuan-f.jpg
   - name: Claire Guo
-    role: UG Researcher
+    role: Undergrad Researcher
     expertise: User Researcher
     img: minion.jpg
     imgalt: purple.jpeg
@@ -200,7 +200,7 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Charisa Shin
-    role: UG Researcher
+    role: Undergrad Researcher
     expertise: UX Designer
     img: Charisa-s.jpg
     imgalt: Charisa-f.jpg
@@ -211,7 +211,7 @@ alumni:
     img: Amir-s.JPG
     imgalt: Amir-f.JPG
   - name: Rita Dang
-    role: UG Researcher
+    role: Undergrad Researcher
     expertise: User Researcher
     img: Rita-s.jpg
     imgalt: Rita-f.jpg
@@ -221,17 +221,17 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Brandon Ngo
-    role: UG Researcher
+    role: Undergrad Researcher
     expertise: UX Designer
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Eric Perez
-    role: UG Researcher   
+    role: Undergrad Researcher   
     expertise: Now MS at Cornell
     img: minion.jpg
     imgalt: purple.jpeg
   - name: James King
-    role: UG Researcher
+    role: Undergrad Researcher
     expertise: <br>
     img: minion.jpg
     imgalt: purple.jpeg
