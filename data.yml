@@ -29,9 +29,37 @@ team:
     img: Aaron_n.png
     imgalt: Aaron_f.png
     url: https://aaronli43.github.io/personalweb/
+  - name: Serena Chang
+    role: UG Researcher
+    expertise: UX Research
+    img: minion.jpg
+    imgalt: purple.jpeg
+    url: https://www.linkedin.com/in/serena-chang-878005245/
+  - name: Tara Kaviani
+    role: UG Researcher
+    expertise: Human-Centered AI
+    img: minion.jpg
+    imgalt: purple.jpeg
+    url: https://www.linkedin.com/in/tara-kaviani-040ba7245/
+  - name: Zihan Zhou
+    role: Visiting Scholar
+    expertise: Visualization
+    img: minion.jpg
+    imgalt: purple.jpeg
+    url: https://scholar.google.com/citations?user=YPmvFYMAAAAJ&hl=zh-CN
+  - name: Tengyou Xu
+    role: ECE MS
+    expertise: Medical AI
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Boyuan Jia
+    role: Visiting Scholar
+    expertise: Human-Centered AI
+    img: minion.jpg
+    imgalt: purple.jpeg
 alumni:
-  - name: Dr. Hongyan Gu
-    role: Senior Scientist at KUMC Pathology
+  - name: 🎓 Dr. Hongyan Gu
+    role: Senior Scientist at KUMC
     expertise: Human-Centered Medical AI
     img: Hongyan_n.jpg
     imgalt: Hongyan_f.jpg
@@ -53,19 +81,19 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
     url: https://www.linkedin.com/in/philip-huang-15867b21b
-  - name: Dr. Jiahao Li
+  - name: 🎓 Dr. Jiahao Li
     role: HCI Researcher @ Apple
     expertise: Human-AI Interaction
     img: Nick-s.JPG
     imgalt: Nick-f.JPG
     url: https://ljhnick.github.io/
-  - name: Dr. Ruolin Wang
+  - name: 🎓 Dr. Ruolin Wang
     role: Postdoc @ Georgia Tech
     expertise: Accessibility
     img: Ruolin-s.JPG
     imgalt: Ruolin-f.JPG
     url: https://www.violynnewang.com/
-  - name: Dr. Noyan Evirgen
+  - name: 🎓 Dr. Noyan Evirgen
     role: Data Scientist @ Spotter
     expertise: Generative AI
     img: Noyan_n.jpg
@@ -127,17 +155,17 @@ alumni:
     imgalt: Lauren-f.JPG
     url: http://laurenhung.com/
   - name: Shuen Chan
-    role: <a href='lbr' target='_blank'>LbR Student</a>
+    role: UG Researcher
     expertise: UX Designer
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Julia Yin
-    role: <a href='lbr' target='_blank'>LbR Student</a>
+    role: UG Researcher
     expertise: UX Designer
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Alexander Chen
-    role: <a href='lbr' target='_blank'>LbR Student</a>
+    role: UG Researcher
     expertise: <br>
     img: Alex-s.jpg
     imgalt: Alex-f.jpg
@@ -147,7 +175,7 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Ashley Ngo
-    role: <a href='lbr' target='_blank'>LbR Student</a>
+    role: UG Researcher
     expertise: User Researcher
     img: Ashley-s.jpg
     imgalt: Ashley-f.jpg
@@ -157,12 +185,12 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Zixuan Chen
-    role: <a href='lbr' target='_blank'>LbR Student</a>
+    role: UG Researcher
     expertise: Web Engineer
     img: Zixuan-s.jpg
     imgalt: Zixuan-f.jpg
   - name: Claire Guo
-    role: <a href='lbr' target='_blank'>LbR Student</a>
+    role: UG Researcher
     expertise: User Researcher
     img: minion.jpg
     imgalt: purple.jpeg
@@ -172,7 +200,7 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Charisa Shin
-    role: <a href='lbr' target='_blank'>LbR Student</a>
+    role: UG Researcher
     expertise: UX Designer
     img: Charisa-s.jpg
     imgalt: Charisa-f.jpg
@@ -183,7 +211,7 @@ alumni:
     img: Amir-s.JPG
     imgalt: Amir-f.JPG
   - name: Rita Dang
-    role: <a href='lbr' target='_blank'>LbR Student</a>
+    role: UG Researcher
     expertise: User Researcher
     img: Rita-s.jpg
     imgalt: Rita-f.jpg
@@ -193,17 +221,17 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Brandon Ngo
-    role: <a href='lbr' target='_blank'>LbR Student</a>
+    role: UG Researcher
     expertise: UX Designer
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Eric Perez
-    role: <a href='lbr' target='_blank'>LbR Student</a>   
+    role: UG Researcher   
     expertise: Now MS at Cornell
     img: minion.jpg
     imgalt: purple.jpeg
   - name: James King
-    role: <a href='lbr' target='_blank'>LbR Student</a>
+    role: UG Researcher
     expertise: <br>
     img: minion.jpg
     imgalt: purple.jpeg
