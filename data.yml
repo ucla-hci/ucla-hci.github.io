@@ -1023,7 +1023,7 @@ projects:
       &nbsp;year={2014},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}
     video: '81358039'
     videoSite: vimeo
-    album: '72157672834628310'
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326403681" title="2014_Duet"><img src="https://live.staticflickr.com/65535/54548039295_964fbddbb1_b.jpg" width="1024" height="768" alt="2014_Duet"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
     thumbnail: chi2014_duet_thumbnail.jpg
     paperUrl: https://drive.google.com/file/d/1qKdbguC9hnpShEfLEecFOo2V24hWkNlU/view?usp=sharing
     citation: >-
@@ -1044,7 +1044,7 @@ projects:
     videoSite: vimeo
     abstract: "We present Air+Touch, a new class of interactions that interweave touch events with in-air gestures, offering a unified input modality with expressiveness greater than each input modality alone. We demonstrate how air and touch are highly complementary: touch is used to designate targets and segment in-air gestures, while in-air gestures add expressivity to touch events. For example, a user can draw a circle in the air and tap to trigger a context menu, do a finger 'high jump' between two touches to select a region of text, or drag and in-air 'pigtail' to copy text to the clipboard. Through an observational study, we devised a basic taxonomy of Air+Touch interactions, based on whether the in-air component occurs before, between or after touches. To illustrate the potential of our approach, we built four applications that showcase seven exemplar Air+Touch interactions we created."
     bibtex: "@inproceedings{chen2014air+,<br>&nbsp; &nbsp;title={Air+ touch: interweaving touch and in-air gestures},<br>&nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Schwarz, Julia and Harrison, Chris and Mankoff, Jennifer and Hudson, Scott E},<br>&nbsp; &nbsp;booktitle={Proceedings of the 27th annual ACM symposium on User interface software and technology},<br>&nbsp; &nbsp;pages={519--525},<br>&nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp;organization={ACM}<br>}"
-    album: '72157670702717043'
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326409367" title="2014_AirTouch"><img src="https://live.staticflickr.com/65535/54547868414_d41e49b177.jpg" width="1024" height="768" alt="2014_AirTouch"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
     thumbnail: uist2014_airtouch_thumbnail.jpg
     paperUrl: https://drive.google.com/file/d/1tTRUt6ilITNmeIeHUx-SMryzVPlVoV7Q/view?usp=sharing
     citation: >-
@@ -1087,7 +1087,7 @@ projects:
     pubs: UIST 2014
     video: '143152207'
     videoSite: vimeo
-    album: '72157674290832196'
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326401235" title="2014_Swipeboard"><img src="https://live.staticflickr.com/65535/54546799197_87deebede8_b.jpg" width="1024" height="768" alt="2014_Swipeboard"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
     thumbnail: uist2014_swipeboard_thumbnail.jpg
     paperUrl: https://drive.google.com/file/d/1ur2XGPAko-P-dv6dtVPinxM5pAVt_0jL/view?usp=sharing
     citation: >-
@@ -1108,7 +1108,7 @@ projects:
     bibtex: "@inproceedings{chen2014around,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Around-body interaction: sensing and interaction techniques for proprioception-enhanced input with mobile devices},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Schwarz, Julia and Harrison, Chris and Mankoff, Jennifer and Hudson, Scott},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 16th international conference on Human-computer interaction with mobile devices and services},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={287--290},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
     video: '142935370'
     videoSite: vimeo
-    album: '72157674813685485'
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326403666" title="2014_AroundBody"><img src="https://live.staticflickr.com/65535/54547882129_dd2791e508_z.jpg" width="1024" height="768" alt="2014_AroundBody"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
     thumbnail: mhci2014_aroundbody_thumbnail.jpg
     paperUrl: https://drive.google.com/file/d/1v-zVmJfszd-61yad712ZGiJE8xnEG75R/view?usp=sharing
     citation: >-
@@ -1157,7 +1157,7 @@ projects:
       &nbsp;year={2012},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}
     video: '31172179'
     videoSite: vimeo
-    flickr: '72157674424983716'
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326403726" title="2012_BodyCentricInteraction"><img src="https://live.staticflickr.com/65535/54548040245_24d71ae498_b.jpg" width="1024" height="768" alt="2012_BodyCentricInteraction"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
     thumbnail: mhci2012_bci_thumbnail.jpg
     paperUrl: https://drive.google.com/file/d/1vRUr7JYKnpujl6K1b0mAL8lFRZH0b16p/view?usp=sharing
     citation: >-
