@@ -813,7 +813,7 @@ projects:
     abstract: Low-cost fabrication machines (e.g., 3D printers) offer the promise of creating custom-designed objects by a range of users. To maximize performance, generative design methods such as topology optimization can automatically optimize properties of a design based on high-level specifications. Though promising, such methods require people to map their design ideas--often unintuitively--to a small number of mathematical input parameters, and the relationship between those parameters and a generated design is often unclear, making it difficult to iterate a design. We present Forte, a sketch-based, real-time interactive tool for people to directly express and iterate on their designs via 2D topology optimization. Users can ask the system to add structures, provide a variation with better performance, or optimize internal material layouts. Users can globally control how much to `deviate' from the initial sketch, or perform local suggestive editing, which interactively prompts the system to update based on the new information. Design sessions with 10 participants demonstrate that Forte empowers designers to create and explore a range of optimized designs with custom forms and styles.
     video: '244079629'
     videoSite: vimeo
-    album: '72157668597613889'
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326423913" title="2018_Forte"><img src="https://live.staticflickr.com/65535/54547827649_1e434631b9_c.jpg" width="1024" height="768" alt="2018_Forte"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
     citation: "Chen, X., Tao, Y., Wang, G., Kang, R., Grossman, T., Coros, S., & Hudson, S. E. (2018). Forte: User-Driven Generative Design. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (p. 496)."
     bibtex: "@inproceedings{chen2018forte,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Forte: User-Driven Generative Design},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Tao, Ye and Wang, Guanyun and Kang, Runchang and Grossman, Tovi and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={496},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2018},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
     paperUrl: https://drive.google.com/file/d/1p9HCxYxvSfItqZXtzGbq8TOJ-ZDMFQaA/view?usp=sharing
@@ -829,7 +829,7 @@ projects:
     abstract: In our everyday life, we interact with and benefit from objects with a wide range of material properties. In contrast, personal fabrication machines (e.g., desktop 3D printers) currently only support a much smaller set of materials. Our goal is to close the gap between current limitations and the future of multi-material printing by enabling people to explore the reuse of material from everyday objects into their custom designs. To achieve this, we develop a library of embeddables--everyday objects that can be cut, worked and embedded into 3D printable designs. We describe a design space that characterizes the geometric and material properties of embeddables. We then develop Medley---a design tool whereby users can import a 3D model, search for embeddables with desired material properties, and interactively edit and integrate their geometry to fit into the original design. Medley also supports the final fabrication and embedding process, including instructions for carving or cutting the objects, and generating optimal paths for inserting embeddables. To validate the expressiveness of our library, we showcase numerous examples augmented by embeddables that go beyond the objects' original printed materials.
     video: '252273058'
     videoSite: vimeo
-    album: '72157689656591312'
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326403341" title="2018_Medley"><img src="https://live.staticflickr.com/65535/54547655536_0526b8ca5f_b.jpg" width="1024" height="768" alt="2018_Medley"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
     citation: "Chen, X., Coros, S., & Hudson, S. E. (2018). Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (p. 162)."
     bibtex: "@inproceedings{chen2018medley,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={162},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2018},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}"
     paperUrl: https://drive.google.com/file/d/1pGNyS9_daDtggz8wG0PcU33GCfaHI4-R/view?usp=sharing
@@ -856,7 +856,7 @@ projects:
       &nbsp;year={2017},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher={ACM}<br>}
     video: '216769849'
     videoSite: vimeo
-    album: '72157664092225828'
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326409062" title="2017_Improv"><img src="https://live.staticflickr.com/65535/54546782762_199659aaca_c.jpg" width="1024" height="768" alt="2017_Improv"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
     thumbnail: tochi17_improv_thumbnail.jpg
     paperUrl: https://drive.google.com/file/d/1pUC9fDuo16anNqycLG63THZLFfJDq0eS/view?usp=sharing
     citation: >-
@@ -897,7 +897,7 @@ projects:
       E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={the 29th Annual ACM Symposium
       on User Interface Software and Technology},<br>&nbsp; &nbsp; &nbsp;
       &nbsp;year={2016},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}
-    album: '72157674285753686'
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326409152" title="2016_Reprise"><img src="https://live.staticflickr.com/65535/54548012595_99baa82a96_b.jpg" width="1024" height="768" alt="2016_Reprise"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
     thumbnail: uist2016_reprise_thumbnail.jpg
     paperUrl: 'https://www.dropbox.com/s/j8kywu7dex12ery/uist2016_reprise.pdf'
     citation: >-
