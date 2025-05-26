@@ -29,6 +29,12 @@ team:
     img: Aaron_n.png
     imgalt: Aaron_f.png
     url: https://aaronli43.github.io/personalweb/
+  - name: WenFan Wang
+    role: Visiting Scholar
+    expertise: AI Creativity Support
+    img: minion.jpg
+    imgalt: purple.jpeg
+    url: https://vannpacks.github.io/ 
   - name: Serena Chang
     role: Undergrad Researcher
     expertise: UX Research
