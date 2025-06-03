@@ -311,6 +311,22 @@ alumni:
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
+  - name: GraPPI
+    title: "GraPPI: A Retrieve-Divide-Solve GraphRAG Framework for Large-scale Protein-protein Interaction Exploration"
+    authors:
+      - Ziwen Li, UCLA HCI Research
+      - Xiang 'Anthony' Chen, UCLA HCI Research
+      - Youngseung Jeon, UCLA HCI Research
+    pubcs: NAACL 2025
+    img: t_grappi.jpeg
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326570430" title="2025_GraPPI"><img src="https://live.staticflickr.com/65535/54563477487_56f963760b_b.jpg" width="1024" height="768" alt="2025_GraPPI"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
+    abstract: "Drug discovery (DD) has tremendously contributed to maintaining and improving public health. Hypothesizing that inhibiting protein misfolding can slow disease progression, researchers focus on target identification (Target ID) to find protein structures for drug binding. While Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) frameworks have accelerated drug discovery, integrating models into cohesive workflows remains challenging. We conducted a user study with drug discovery researchers to identify the applicability of LLMs and RAGs in Target ID. We identified two main findings: 1) an LLM should provide multiple Protein-Protein Interactions (PPIs) based on an initial protein and protein candidates that have a therapeutic impact; 2) the model must provide the PPI and relevant explanations for better understanding. Based on these observations, we identified three limitations in previous approaches for Target ID: 1) semantic ambiguity, 2) lack of explainability, and 3) short retrieval units. To address these issues, we propose GraPPI, a large-scale knowledge graph (KG)-based retrieve-divide-solve agent pipeline RAG framework to support large-scale PPI signaling pathway exploration in understanding therapeutic impacts by decomposing the analysis of entire PPI pathways into sub-tasks focused on the analysis of PPI edges."
+    videoSite: vimeo
+    video: '1089943894'
+    bibtex: "@article{li2025grappi,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={GraPPI: A Retrieve-Divide-Solve GraphRAG Framework for Large-scale Protein-protein Interaction Exploration},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Li, Ziwen and Chen, XiangAnthony and Jeon, Youngseung},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={arXiv preprint arXiv:2501.16382},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2025}<br>"
+    citation: Ziwen Li, Xiang Chen, and Youngseung Jeon. 2025. GraPPI: A Retrieve-Divide-Solve GraphRAG Framework for Large-scale Protein-protein Interaction Exploration. In Findings of the Association for Computational Linguistics: NAACL 2025, pages 3635–3648, Albuquerque, New Mexico. Association for Computational Linguistics.
+    thumbnail: naacl2025_grappi_thumbnail.jpeg
+    paperUrl: https://drive.google.com/file/d/1H1eCn9tKHf5i09CAKWkuM2LR9aWtdjdT/view?usp=sharing
   - name: DANNY
     title: "Empowering Medical Data Labeling for Non-Experts with DANNY: Enhancing Accuracy and Mitigating Over-Reliance on AI"
     authors:
