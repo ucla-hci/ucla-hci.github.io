@@ -434,7 +434,6 @@ UCLAHCI.makeProjectPage = function (name) {
         divPage.append(divVideo);
         divPage.append('<br/>');
     }
-
     
     if(project.albumEmbedCode != undefined){
         let aPhotos = project.albumEmbedCode.replace('width="1024"', 'width="100%"').replace('height="768"', 'height='+ heightMedia * 1.2)
@@ -446,11 +445,11 @@ UCLAHCI.makeProjectPage = function (name) {
             heightMedia * 1.2 + 'px;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=' + project.album + '&sort=0&by=album&theme=default_notextpanel&scale=fit&limit=100&skin0&skin=alexis&autoplay=false" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>')
         divPage.append(divPhotos)
     }
-
+    divPage.append('<br/><br/>');
+    
     //
     // pub & bib tex
     //
-
     if (project.citation != undefined && project.bibtex != undefined) {
         var divPubBib = $('<div class="divpubbib"></div>')
 
