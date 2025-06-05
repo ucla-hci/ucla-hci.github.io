@@ -311,6 +311,25 @@ alumni:
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
+  - name: Inner Thoughts
+    title: "Proactive Conversational Agents with Inner Thoughts"
+    authors:
+      - Xingyu Bruce Liu, UCLA HCI Research
+      - Shitao Fang, The University of Tokyo
+      - Weiyan Shi, Northeastern University
+      - Chien-Sheng Wu, Salesforce AI
+      - Takeo Igarashi, The University of Tokyo
+      - Xiang 'Anthony' Chen, UCLA HCI Research
+    pubs: CHI 2025
+    img: t_innerthoughts.png
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326627880" title="2025_Inner_Thoughts"><img src="https://live.staticflickr.com/65535/54568427369_d1e9557988_b.jpg" width="1024" height="768" alt="2025_Inner_Thoughts"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
+    abstract: "One of the long-standing aspirations in conversational AI is to allow them to autonomously take initiatives in conversations, i.e., being proactive. This is especially challenging for multi-party conversations. Prior NLP research focused mainly on predicting the next speaker from contexts like preceding conversations. In this paper, we demonstrate the limitations of such methods and rethink what it means for AI to be proactive in multi-party, human-AI conversations. We propose that just like humans, rather than merely reacting to turn-taking cues, a proactive AI formulates its own inner thoughts during a conversation, and seeks the right moment to contribute. Through a formative study with 24 participants and inspiration from linguistics and cognitive psychology, we introduce the Inner Thoughts framework. Our framework equips AI with a continuous, covert train of thoughts in parallel to the overt communication process, which enables it to proactively engage by modeling its intrinsic motivation to express these thoughts. We instantiated this framework into two real-time systems: an AI playground web app and a chatbot. Through a technical evaluation and user studies with human participants, our framework significantly surpasses existing baselines on aspects like anthropomorphism, coherence, intelligence, and turn-taking appropriateness."
+    videoSite: vimeo
+    video: '1090711712'
+    bibtex: "@inproceedings{10.1145/3706598.3713760,<br>author = {Liu, Xingyu Bruce and Fang, Shitao and Shi, Weiyan and Wu, Chien-Sheng and Igarashi, Takeo and Chen, Xiang 'Anthony'},<br>title = {Proactive Conversational Agents with Inner Thoughts},<br>year = {2025},<br>isbn = {9798400713941},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3706598.3713760},<br>doi = {10.1145/3706598.3713760},<br>booktitle = {Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems},<br>articleno = {184},<br>numpages = {19},<br>keywords = {Conversational Agent, Multi-Agent, Multi-Party Conversation, Inner Thoughts, Mixed-initiative Interaction, Proactive AI},<br>location = {<br>},<br>series = {CHI '25}<br>}"
+    citation: Xingyu Bruce Liu, Shitao Fang, Weiyan Shi, Chien-Sheng Wu, Takeo Igarashi, and Xiang 'Anthony' Chen. 2025. Proactive Conversational Agents with Inner Thoughts. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 184, 1–19. https://doi.org/10.1145/3706598.3713760
+    thumbnail: p_innerthoughts.jpg
+    paperUrl: https://drive.google.com/file/d/1oXZWIWHZmTGJC3WV0OKtFP_Xy17PgByD/view?usp=sharing
   - name: GraPPI
     title: "GraPPI: A Retrieve-Divide-Solve GraphRAG Framework for Large-scale Protein-protein Interaction Exploration"
     authors:
