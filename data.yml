@@ -311,6 +311,20 @@ alumni:
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
+  - name: GenUI Study
+    title: "The GenUI Study: Exploring the Design of Generative UI Tools to Support UX Practitioners and Beyond"
+    authors:
+      - Xiang 'Anthony' Chen, UCLA HCI Research
+      - Tiffany Knearem, Google
+      - Yang Li, Google DeepMind
+    pubs: DIS 2025
+    img: t_genui_study.png
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720331069367" title="2025-genui-study"><img src="https://live.staticflickr.com/65535/54999440062_a98877abb9_b.jpg" width="1024" height="768" alt="2025-genui-study"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
+    abstract: AI can now generate high-fidelity UI mock-up screens from a high-level textual description, promising to support UX practitioners’ work. However, it remains unclear how UX practitioners would adopt such Generative UI (GenUI) models in a way that is integral and beneficial to their work. To answer this question, we conducted a formative study with 37 UX-related professionals that consisted of four roles: UX designers, UX researchers, software engineers, and product managers. Using a state-of-the-art GenUI tool, each participant went through a week-long, individual mini-project exercise with role-specific tasks, keeping a daily journal of their usage and experiences with GenUI, followed by a semi-structured interview. We report findings on participants’ workflow using the GenUI tool, how GenUI can support all and each specific roles, and existing gaps between GenUI and users’ needs and expectations, which lead to design implications to inform future work on GenUI development.
+    bibtex: "@inproceedings{10.1145/3715336.3735780,<br>author = {Chen, Xiang 'Anthony and Knearem, Tiffany and Li, Yang},<br>title = {The GenUI Study: Exploring the Design of Generative UI Tools to Support UX Practitioners and Beyond},<br>year = {2025},<br>isbn = {9798400714856},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3715336.3735780},<br>doi = {10.1145/3715336.3735780},<br>abstract = {AI can now generate high-fidelity UI mock-up screens from a high-level textual description, promising to support UX practitioners’ work. However, it remains unclear how UX practitioners would adopt such Generative UI (GenUI) models in a way that is integral and beneficial to their work. To answer this question, we conducted a formative study with 37 UX-related professionals that consisted of four roles: UX designers, UX researchers, software engineers, and product managers. Using a state-of-the-art GenUI tool, each participant went through a week-long, individual mini-project exercise with role-specific tasks, keeping a daily journal of their usage and experiences with GenUI, followed by a semi-structured interview. We report findings on participants’ workflow using the GenUI tool, how GenUI can support all and each specific roles, and existing gaps between GenUI and users’ needs and expectations, which lead to design implications to inform future work on GenUI development.},<br>booktitle = {Proceedings of the 2025 ACM Designing Interactive Systems Conference},<br>pages = {1179–1196},<br>numpages = {18},<br>keywords = {GenUI, Generative AI, User Experience Design, Diary Study},<br>location = {<br>},<br>series = {DIS '25}<br>}"
+    citation: "Xiang 'Anthony Chen, Tiffany Knearem, and Yang Li. 2025. The GenUI Study: Exploring the Design of Generative UI Tools to Support UX Practitioners and Beyond. In Proceedings of the 2025 ACM Designing Interactive Systems Conference (DIS '25). Association for Computing Machinery, New York, NY, USA, 1179–1196. https://doi.org/10.1145/3715336.3735780"
+    thumbnail: p_genui_study.jpg
+    paperUrl: https://arxiv.org/pdf/2501.13145
   - name: Inner Thoughts
     title: "Proactive Conversational Agents with Inner Thoughts"
     authors:
