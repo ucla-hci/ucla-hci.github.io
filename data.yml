@@ -305,6 +305,25 @@ alumni:
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
+  - name: RAGPPI
+    title: "RAGPPI: RAG Benchmark for Protein-Protein Interactions in Drug Discovery"
+    authors:
+      - Youngseung Jeon, UCLA HCI Research
+      - Ziwen Li, UCLA HCI Research
+      - Thomas Li, Palo Alto High School 
+      - JiaSyuan Chang, UCLA HCI Research
+      - Morteza Ziyadi, Amazon AGI
+      - Xiang 'Anthony' Chen, UCLA HCI Research
+    pubs: EACL 2026
+    img: t_ragppi.jpg
+    abstract: Retrieving the biological impacts of protein-protein interactions (PPIs) is essential for target identification (Target ID) in drug development. Given the vast number of proteins involved, this process remains time-consuming and challenging. Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) frameworks have supported Target ID; however, no benchmark currently exists for identifying the biological impacts of PPIs. To bridge this gap, we introduce the RAG Benchmark for PPIs (RAGPPI), a factual question-answer benchmark of 4,420 question-answer pairs that focus on the potential biological impacts of PPIs. Through interviews with experts, we identified criteria for a benchmark dataset, such as a type of QA and source. We built a gold-standard dataset (500 QA pairs) through expert-driven data annotation. We developed an ensemble auto-evaluation LLM that incorporates expert labeling characteristics, average fact–abstract similarity (F1), and low-similarity fact counts (F2), enabling the construction of a silver-standard dataset (3,720 QA pairs).
+    video: '1166881192'
+    videoSite: vimeo
+    paperUrl: https://arxiv.org/pdf/2505.23823
+    thumbnail: eacl2026_ragppi_thumbnail.jpg
+    bibtex: "@article{jeon2025ragppi,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={RAGPPI: RAG Benchmark for Protein-Protein Interactions in Drug Discovery},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Jeon, Youngseung and Li, Ziwen and Li, Thomas and Chang, JiaSyuan and Ziyadi, Morteza and Chen, Xiang'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={arXiv preprint arXiv:2505.23823},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2025}<br>}"
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720332125786" title="2026-ragppi"><img src="https://live.staticflickr.com/65535/55107598385_b8f218bbcd_b.jpg" width="1024" height="768" alt="2026-ragppi"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
+    citation: Youngseung Jeon, Ziwen Li, Thomas Li, JiaSyuan Chang, Morteza Ziyadi, and Xiang'Anthony Chen. RAGPPI: RAG Benchmark for Protein-Protein Interactions in Drug Discovery. arXiv preprint arXiv:2505.23823 (2025).
   - name: GenUI Study
     title: "The GenUI Study: Exploring the Design of Generative UI Tools to Support UX Practitioners and Beyond"
     authors:
