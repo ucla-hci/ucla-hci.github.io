@@ -11,34 +11,35 @@ team:
     img: Jay_n.jpg
     imgalt: Jay_f.jpg
     url: https://sites.google.com/view/youngseung-jeon
-  - name: WenFan Wang
-    role: Visiting Scholar
-    expertise: AI Creativity Support
+  - name: Jiarui Cui
+    role: ECE PhD
+    expertise: HCI for Science
     img: minion.jpg
     imgalt: purple.jpeg
-    url: https://vannpacks.github.io/ 
+    url: https://www.linkedin.com/in/jiarui-cui-92b949263
   - name: Serena Chang
     role: Undergrad Researcher
     expertise: UX Engineer
     img: minion.jpg
     imgalt: purple.jpeg
     url: https://www.linkedin.com/in/serena-chang-878005245/
-  - name: Zihan Zhou
-    role: Visiting Scholar
-    expertise: Visualization
+  - name: Kat Limqueco
+    role: Undergrad Researcher
+    expertise: UX Engineer
     img: minion.jpg
     imgalt: purple.jpeg
-    url: https://scholar.google.com/citations?user=YPmvFYMAAAAJ&hl=zh-CN
-  - name: Tengyou Xu
+    url: https://www.linkedin.com/in/katlimq
+  - name: Yihe (Marina) Xu
     role: ECE MS
-    expertise: Human-Centered AI
+    expertise: HCI for Science
     img: minion.jpg
     imgalt: purple.jpeg
-  - name: Boyuan Jia
-    role: Visiting Scholar
-    expertise: Human-Centered AI
-    img: Boyuan-n.JPG
-    imgalt: Boyuan-f.JPG
+  - name: Ashley Hua
+    role: CS MS
+    expertise: HCI for Science
+    img: minion.jpg
+    imgalt: purple.jpeg
+    url: https://www.linkedin.com/in/ashley-hua
 alumni:
   - name: 🎓 Dr. Bruce Liu
     role: Research Scientist @ Adobe
@@ -69,6 +70,28 @@ alumni:
     expertise: Generative AI
     img: Noyan_n.jpg
     imgalt: Noyan_f.jpg
+  - name: WenFan Wang
+    role: Visiting Scholar
+    expertise: AI Creativity Support
+    img: minion.jpg
+    imgalt: purple.jpeg
+    url: https://vannpacks.github.io/
+  - name: Zihan Zhou
+    role: Visiting Scholar
+    expertise: Visualization
+    img: minion.jpg
+    imgalt: purple.jpeg
+    url: https://scholar.google.com/citations?user=YPmvFYMAAAAJ&hl=zh-CN
+  - name: Tengyou Xu
+    role: ECE MS
+    expertise: Human-Centered AI
+    img: minion.jpg
+    imgalt: purple.jpeg
+  - name: Boyuan Jia
+    role: Visiting Scholar
+    expertise: Human-Centered AI
+    img: Boyuan-n.JPG
+    imgalt: Boyuan-f.JPG
   - name: Christopher Hwang
     role: ECE MS
     expertise: UX Prototyper
