@@ -1319,11 +1319,7 @@ projects:
       Chen, X., Boring, S., Carpendale, S., Tang, A., & Greenberg, S. (2012). Spalendar: visualizing a group's calendar events over a geographic space on a public display. In AVI '12 Proceedings of the International Working Conference on Advanced Visual Interfaces (pp. 689-696).
 
 aboutus:
-  - mission: "Our mission is to innovate interactive systems that catalyze advances in AI to achieve three levels of human-centered objectives:<br/><ul>
-    <li>Aligning with human values</li>
-    <li>Assimilating human thoughts</li>
-    <li>Augmenting human abilities</li>
-    </ul>"
+  - mission: "Our mission is to innovate interactive systems that catalyze advances in AI to augment humans' abilities."
     photos: 
       # - g_bbq.jpg
       - g_postchi.jpg
@@ -1334,7 +1330,7 @@ aboutus:
       - g-noyan-defense.jpg
     contact:
       description: UCLA HCI Research is part of Electrical & Computer Engineering Department and Computer Science Department in the Henry Samueli School of Engineering at UCLA.
-      address: <b>UCLA HCI Research</b><br/>1538 Boelter Hall (UCLA HCI Research)<br/>Los Angeles, CA 90095
+      address: <b>UCLA HCI Research</b><br/>Engineering IV, 6th Floor<br/>420 Westwood Plaza<br/>Los Angeles, CA 90095
       email: "Email: sigchi @ ucla.edu"
     sponsors:
       - img: onr.png
