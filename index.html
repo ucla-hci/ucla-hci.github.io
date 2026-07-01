@@ -1,48 +1,985 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap" rel="stylesheet">
+  <title>UCLA HCI Research</title>
+  <meta name="description" content="UCLA HCI Research innovates interactive systems that catalyze advances in AI to align with human values, assimilate human thoughts, and augment human abilities.">
+  <link rel="canonical" href="https://hci.ucla.edu/">
+  <link rel="icon" href="favicon.ico">
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UCLA HCI Research">
+  <meta property="og:title" content="UCLA HCI Research">
+  <meta property="og:description" content="UCLA HCI Research innovates interactive systems that catalyze advances in AI to align with human values, assimilate human thoughts, and augment human abilities.">
+  <meta property="og:url" content="https://hci.ucla.edu/">
+  <meta property="og:image" content="https://hci.ucla.edu/assets/mission.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <title>UCLA HCI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Overpass+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
 <body>
-  <div class='topbar'>
-    <table width="100%" border="0">
-      <tbody>
-        <tr>
-          <td valign="top">
-            <br>
-            <a href="."><img src="assets/ucla-hci-log-dark.png" class="logo"></img></a>
-          </td>
-          <td class="topnav" valign="bottom">
-            <div class="topnav" id="topnav">
-
-              <a id="aboutus">About</a>
-              <a id="projects">Projects</a>
-              <a id="team">Team</a>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+  <script>
+  (function () {
+    var redirects = {"writing": "http://67.158.54.10/", "reflection": "http://67.158.54.10/exp", "lbr": "https://www.notion.so/uclahci/Learning-by-Research-Pragmatic-Educational-Research-Participation-for-Undergrads-148956558a3c4836b003065ea692e9dd", "209as": "https://www.notion.so/uclahci/2020-Fall-ECE-M209AS-Human-Computer-Interaction-4a46bd7275b34bce8e48ba7ad1325d7f", "bib": "https://chrome.google.com/webstore/detail/bib-%E2%80%94-copy-bibtex-in-1-cl/onnmdchfagapkggbhnnjkmllimegclnh", "counterweight": "https://chrome.google.com/webstore/detail/counterweight/oemlabbngpnemncoplnmcpdlnpgcgiih"};
+    var h = location.hash.replace(/^#/, '');
+    if (!h) return;
+    if (redirects[h]) { location.replace(redirects[h]); return; }          // legacy shortlinks
+    if (h === 'team') { location.replace('team.html'); return; }
+    if (h === 'aboutus') { location.replace('about.html'); return; }
+    if (h === 'projects') { history.replaceState(null, '', location.pathname); return; }
+    if (h.indexOf('projects-') === 0) { location.replace('#' + h.slice(9)); }  // #projects-foo -> #foo
+  })();
+  </script>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="assets/ucla-hci-log-dark.png" alt="UCLA HCI Research"></a>
+      <nav class="nav"><a href="about.html">About</a><a href="index.html" class="active">Projects</a><a href="team.html">Team</a></nav>
+    </div>
+  </header>
+  <main class="container">
+    <h1 class="page-title">Projects</h1>
+    <div class="grid projects">
+      <a class="card" href="#overreliance-on-llms">
+        <img class="thumb" src="assets/t_overreliancebehaviors.jpg" alt="Overreliance on LLMs" loading="lazy">
+        <div class="name">Overreliance on LLMs</div>
+        <div class="meta">CHI 2026</div>
+      </a>
+      <a class="card" href="#ragppi">
+        <img class="thumb" src="assets/t_ragppi.jpg" alt="RAGPPI" loading="lazy">
+        <div class="name">RAGPPI</div>
+        <div class="meta">EACL 2026</div>
+      </a>
+      <a class="card" href="#genui-study">
+        <img class="thumb" src="assets/t_genui_study.png" alt="GenUI Study" loading="lazy">
+        <div class="name">GenUI Study</div>
+        <div class="meta">DIS 2025</div>
+      </a>
+      <a class="card" href="#inner-thoughts">
+        <img class="thumb" src="assets/t_innerthoughts.png" alt="Inner Thoughts" loading="lazy">
+        <div class="name">Inner Thoughts</div>
+        <div class="meta">CHI 2025</div>
+      </a>
+      <a class="card" href="#grappi">
+        <img class="thumb" src="assets/t_grappi.jpeg" alt="GraPPI" loading="lazy">
+        <div class="name">GraPPI</div>
+        <div class="meta">NAACL 2025</div>
+      </a>
+      <a class="card" href="#danny">
+        <img class="thumb" src="assets/t_danny.jpeg" alt="DANNY" loading="lazy">
+        <div class="name">DANNY</div>
+        <div class="meta">IUI 2025</div>
+      </a>
+      <a class="card" href="#qapath">
+        <img class="thumb" src="assets/t_qapath.jpg" alt="QAPath" loading="lazy">
+        <div class="name">QAPath</div>
+        <div class="meta">IJHCS 2024</div>
+      </a>
+      <a class="card" href="#human-io">
+        <img class="thumb" src="assets/t_human_io.png" alt="Human I/O" loading="lazy">
+        <div class="name">Human I/O</div>
+        <div class="meta">CHI 2024 🏅️</div>
+      </a>
+      <a class="card" href="#meningioma-mitosis-ai">
+        <img class="thumb" src="assets/t_mitosis_ai.jpg" alt="Meningioma Mitosis AI" loading="lazy">
+        <div class="name">Meningioma Mitosis AI</div>
+        <div class="meta">Acta Neuropathol Commun 2024</div>
+      </a>
+      <a class="card" href="#xai-for-text-to-image-generation">
+        <img class="thumb" src="assets/t_txt2pix.png" alt="XAI for Text-to-Image Generation" loading="lazy">
+        <div class="name">XAI for Text-to-Image Generation</div>
+        <div class="meta">IUI 2024</div>
+      </a>
+      <a class="card" href="#hci-papers-cite-hci-papers">
+        <img class="thumb" src="assets/t_xindex.jpg" alt="HCI Papers Cite HCI Papers" loading="lazy">
+        <div class="name">HCI Papers Cite HCI Papers</div>
+        <div class="meta">alt.chi 2024</div>
+      </a>
+      <a class="card" href="#marvista">
+        <img class="thumb" src="assets/t_marvista.jpeg" alt="Marvista" loading="lazy">
+        <div class="name">Marvista</div>
+        <div class="meta">TOCHI 2023</div>
+      </a>
+      <a class="card" href="#visual-captions">
+        <img class="thumb" src="assets/t_visualcaptions.png" alt="Visual Captions" loading="lazy">
+        <div class="name">Visual Captions</div>
+        <div class="meta">CHI 2023</div>
+      </a>
+      <a class="card" href="#navipath">
+        <img class="thumb" src="assets/t_navipath.jpg" alt="NaviPath" loading="lazy">
+        <div class="name">NaviPath</div>
+        <div class="meta">CHI 2023 🏅️</div>
+      </a>
+      <a class="card" href="#ganravel">
+        <img class="thumb" src="assets/t_ganravel.png" alt="GANravel" loading="lazy">
+        <div class="name">GANravel</div>
+        <div class="meta">CHI 2023</div>
+      </a>
+      <a class="card" href="#xpath">
+        <img class="thumb" src="assets/t_xpath.jpeg" alt="xPath" loading="lazy">
+        <div class="name">xPath</div>
+        <div class="meta">TOCHI 2022</div>
+      </a>
+      <a class="card" href="#crossa11y">
+        <img class="thumb" src="assets/t_crossa11y.jpg" alt="CrossA11y" loading="lazy">
+        <div class="name">CrossA11y</div>
+        <div class="meta">UIST 2022 🏆</div>
+      </a>
+      <a class="card" href="#ganzilla">
+        <img class="thumb" src="assets/t_ganzilla.jpg" alt="GANZilla" loading="lazy">
+        <div class="name">GANZilla</div>
+        <div class="meta">UIST 2022</div>
+      </a>
+      <a class="card" href="#emoglass">
+        <img class="thumb" src="assets/t_emoglass.jpg" alt="EmoGlass" loading="lazy">
+        <div class="name">EmoGlass</div>
+        <div class="meta">CHI 2022</div>
+      </a>
+      <a class="card" href="#roman">
+        <img class="thumb" src="assets/t_roman.jpg" alt="Roman" loading="lazy">
+        <div class="name">Roman</div>
+        <div class="meta">CHI 2022</div>
+      </a>
+      <a class="card" href="#impetus">
+        <img class="thumb" src="assets/t_impetus.jpeg" alt="Impetus" loading="lazy">
+        <div class="name">Impetus</div>
+        <div class="meta">CSCW 2021</div>
+      </a>
+      <a class="card" href="#va11y">
+        <img class="thumb" src="assets/t_va11y.jpeg" alt="Va11y" loading="lazy">
+        <div class="name">Va11y</div>
+        <div class="meta">CHI 2021</div>
+      </a>
+      <a class="card" href="#revamp">
+        <img class="thumb" src="assets/t_revamp.jpeg" alt="Revamp" loading="lazy">
+        <div class="name">Revamp</div>
+        <div class="meta">CHI 2021</div>
+      </a>
+      <a class="card" href="#xalgo">
+        <img class="thumb" src="assets/t_xalgo.jpg" alt="XAlgo" loading="lazy">
+        <div class="name">XAlgo</div>
+        <div class="meta">IUI 2021</div>
+      </a>
+      <a class="card" href="#oralviewer">
+        <img class="thumb" src="assets/t_oralviewer.jpg" alt="OralViewer" loading="lazy">
+        <div class="name">OralViewer</div>
+        <div class="meta">IUI 2021</div>
+      </a>
+      <a class="card" href="#dualvib">
+        <img class="thumb" src="assets/t_dualvib.jpg" alt="DualVib" loading="lazy">
+        <div class="name">DualVib</div>
+        <div class="meta">VRST 2020</div>
+      </a>
+      <a class="card" href="#geno">
+        <img class="thumb" src="assets/t_geno.jpg" alt="Geno" loading="lazy">
+        <div class="name">Geno</div>
+        <div class="meta">UIST 2020</div>
+      </a>
+      <a class="card" href="#romeo">
+        <img class="thumb" src="assets/t_romeo.jpg" alt="Romeo" loading="lazy">
+        <div class="name">Romeo</div>
+        <div class="meta">UIST 2020</div>
+      </a>
+      <a class="card" href="#chexplain">
+        <img class="thumb" src="assets/t_chexplain.jpg" alt="CheXplain" loading="lazy">
+        <div class="name">CheXplain</div>
+        <div class="meta">CHI 2020</div>
+      </a>
+      <a class="card" href="#oralcam">
+        <img class="thumb" src="assets/t_oralcam.jpg" alt="OralCam" loading="lazy">
+        <div class="name">OralCam</div>
+        <div class="meta">CHI 2020 🏅</div>
+      </a>
+      <a class="card" href="#robiot">
+        <img class="thumb" src="assets/t_robiot.jpg" alt="Robiot" loading="lazy">
+        <div class="name">Robiot</div>
+        <div class="meta">UIST 2019</div>
+      </a>
+      <a class="card" href="#minuet">
+        <img class="thumb" src="assets/t_minuet.jpg" alt="Minuet" loading="lazy">
+        <div class="name">Minuet</div>
+        <div class="meta">SUI 2019</div>
+      </a>
+      <a class="card" href="#forte">
+        <img class="thumb" src="assets/t_forte.jpg" alt="Forte" loading="lazy">
+        <div class="name">Forte</div>
+        <div class="meta">CHI 2018</div>
+      </a>
+      <a class="card" href="#medley">
+        <img class="thumb" src="assets/t_medley.jpg" alt="Medley" loading="lazy">
+        <div class="name">Medley</div>
+        <div class="meta">CHI 2018</div>
+      </a>
+      <a class="card" href="#improv">
+        <img class="thumb" src="assets/t_improv.jpg" alt="Improv" loading="lazy">
+        <div class="name">Improv</div>
+        <div class="meta">TOCHI '17</div>
+      </a>
+      <a class="card" href="#reprise">
+        <img class="thumb" src="assets/t_reprise.jpg" alt="Reprise" loading="lazy">
+        <div class="name">Reprise</div>
+        <div class="meta">UIST '16</div>
+      </a>
+      <a class="card" href="#locus">
+        <img class="thumb" src="assets/t_locus.jpg" alt="Locus" loading="lazy">
+        <div class="name">Locus</div>
+        <div class="meta">UIST '16</div>
+      </a>
+      <a class="card" href="#encore">
+        <img class="thumb" src="assets/t_encore.jpg" alt="Encore" loading="lazy">
+        <div class="name">Encore</div>
+        <div class="meta">UIST '15</div>
+      </a>
+      <a class="card" href="#duet">
+        <img class="thumb" src="assets/t_duet.jpg" alt="Duet" loading="lazy">
+        <div class="name">Duet</div>
+        <div class="meta">CHI 2014 🏆</div>
+      </a>
+      <a class="card" href="#airtouch">
+        <img class="thumb" src="assets/t_airtouch.jpg" alt="Air+Touch" loading="lazy">
+        <div class="name">Air+Touch</div>
+        <div class="meta">UIST 2014</div>
+      </a>
+      <a class="card" href="#swipeboard">
+        <img class="thumb" src="assets/t_swipeboard.jpg" alt="Swipeboard" loading="lazy">
+        <div class="name">Swipeboard</div>
+        <div class="meta">UIST 2014</div>
+      </a>
+      <a class="card" href="#around-body-interaction">
+        <img class="thumb" src="assets/t_aroundbody.jpg" alt="Around-Body Interaction" loading="lazy">
+        <div class="name">Around-Body Interaction</div>
+        <div class="meta">MobileHCI 2014</div>
+      </a>
+      <a class="card" href="#body-centric-interaction">
+        <img class="thumb" src="assets/t_bci.jpg" alt="Body-Centric Interaction" loading="lazy">
+        <div class="name">Body-Centric Interaction</div>
+        <div class="meta">MobileHCI 2012</div>
+      </a>
+      <a class="card" href="#spalendar">
+        <img class="thumb" src="assets/t_spalendar.jpg" alt="Spalendar" loading="lazy">
+        <div class="name">Spalendar</div>
+        <div class="meta">AVI 2012</div>
+      </a>
+    </div>
+  </main>
+  <div class="overlay" id="overreliance-on-llms" role="dialog" aria-modal="true" aria-label="Behavioral Indicators of Overreliance During Interaction with Conversational Language Models">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Behavioral Indicators of Overreliance During Interaction with Conversational Language Models</h2>
+      <div class="authors">Chang Liu, Tsinghua University<br>Qinyi Zhou, Hong Kong University of Science and Technology<br>Xinjie Shen, Georgia Institute of Technology<br>Xingyu Bruce Liu, UCLA HCI Research<br>Tongshuang Wu, Carnegie Mellon University HCII<br>Xiang 'Anthony' Chen, UCLA HCI Research</div>
+      <p>LLMs are now embedded in a wide range of everyday scenarios. However, their inherent hallucinations risk hiding misinformation in fluent responses, raising concerns about overreliance on AI. Detecting overreliance is challenging, as it often arises in complex, dynamic contexts and cannot be easily captured by post-hoc task outcomes. In this work, we aim to investigate how users’ behavioral patterns correlate with overreliance. We collected interaction logs from 77 participants working with an LLM injected plausible misinformation across three real-world tasks and we assessed overreliance by whether participants detected and corrected these errors. By semantically encoding and clustering segments of user interactions, we identified five behavioral patterns linked to overreliance: users with low overreliance show careful task comprehension and fine-grained navigation; users with high overreliance show frequent copy-paste, skipping initial comprehension, repeated LLM references, coarse locating, and accepting misinformation despite hesitation. We discuss design implications for mitigation.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/1206017906" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720334464072" title="2026-overreliance"><img src="https://live.staticflickr.com/65535/55367723008_b49014fa1e_c.jpg" width="1024" height="768" alt="2026-overreliance"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1WTmCXq3SCF2q75ArifVRj9Zpux7p1ll4/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/chi2026_overreliancebehaviors_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Chang Liu, Qinyi Zhou, Xinjie Shen, Xingyu Bruce Liu, Tongshuang Wu, and Xiang 'Anthony' Chen. 2026. Behavioral Indicators of Overreliance During Interaction with Conversational Language Models. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26). Association for Computing Machinery, New York, NY, USA. https://doi.org/10.1145/3772318.3790332</div>
+        <div class="bibtex">@inproceedings{liu2026behavioral,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Behavioral indicators of overreliance during interaction with conversational language models},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Liu, Chang and Zhou, Qinyi and Shen, Xinjie and Bruce Liu, Xingyu and Wu, Tongshuang and Chen, Xiang'Anthony},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={1--23},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2026}<br>}</div>
+      </div>
+    </div>
   </div>
-  <br>
-  <div class="content"></div>
+  <div class="overlay" id="ragppi" role="dialog" aria-modal="true" aria-label="RAGPPI: RAG Benchmark for Protein-Protein Interactions in Drug Discovery">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>RAGPPI: RAG Benchmark for Protein-Protein Interactions in Drug Discovery</h2>
+      <div class="authors">Youngseung Jeon, UCLA HCI Research<br>Ziwen Li, UCLA HCI Research<br>Thomas Li, Palo Alto High School<br>JiaSyuan Chang, UCLA HCI Research<br>Morteza Ziyadi, Amazon AGI<br>Xiang 'Anthony' Chen, UCLA HCI Research</div>
+      <p>Retrieving the biological impacts of protein-protein interactions (PPIs) is essential for target identification (Target ID) in drug development. Given the vast number of proteins involved, this process remains time-consuming and challenging. Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) frameworks have supported Target ID; however, no benchmark currently exists for identifying the biological impacts of PPIs. To bridge this gap, we introduce the RAG Benchmark for PPIs (RAGPPI), a factual question-answer benchmark of 4,420 question-answer pairs that focus on the potential biological impacts of PPIs. Through interviews with experts, we identified criteria for a benchmark dataset, such as a type of QA and source. We built a gold-standard dataset (500 QA pairs) through expert-driven data annotation. We developed an ensemble auto-evaluation LLM that incorporates expert labeling characteristics, average fact–abstract similarity (F1), and low-similarity fact counts (F2), enabling the construction of a silver-standard dataset (3,720 QA pairs).</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/1166881192" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720332125786" title="2026-ragppi"><img src="https://live.staticflickr.com/65535/55107598385_b8f218bbcd_b.jpg" width="1024" height="768" alt="2026-ragppi"/></a></div></template>
+      <div class="pub">
+        <a href="https://arxiv.org/pdf/2505.23823" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/eacl2026_ragppi_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Youngseung Jeon, Ziwen Li, Thomas Li, JiaSyuan Chang, Morteza Ziyadi, and Xiang'Anthony Chen. RAGPPI: RAG Benchmark for Protein-Protein Interactions in Drug Discovery. arXiv preprint arXiv:2505.23823 (2025).</div>
+        <div class="bibtex">@article{jeon2025ragppi,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={RAGPPI: RAG Benchmark for Protein-Protein Interactions in Drug Discovery},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Jeon, Youngseung and Li, Ziwen and Li, Thomas and Chang, JiaSyuan and Ziyadi, Morteza and Chen, Xiang'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={arXiv preprint arXiv:2505.23823},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2025}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="genui-study" role="dialog" aria-modal="true" aria-label="The GenUI Study: Exploring the Design of Generative UI Tools to Support UX Practitioners and Beyond">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>The GenUI Study: Exploring the Design of Generative UI Tools to Support UX Practitioners and Beyond</h2>
+      <div class="authors">Xiang 'Anthony' Chen, UCLA HCI Research<br>Tiffany Knearem, Google<br>Yang Li, Google DeepMind</div>
+      <p>AI can now generate high-fidelity UI mock-up screens from a high-level textual description, promising to support UX practitioners’ work. However, it remains unclear how UX practitioners would adopt such Generative UI (GenUI) models in a way that is integral and beneficial to their work. To answer this question, we conducted a formative study with 37 UX-related professionals that consisted of four roles: UX designers, UX researchers, software engineers, and product managers. Using a state-of-the-art GenUI tool, each participant went through a week-long, individual mini-project exercise with role-specific tasks, keeping a daily journal of their usage and experiences with GenUI, followed by a semi-structured interview. We report findings on participants’ workflow using the GenUI tool, how GenUI can support all and each specific roles, and existing gaps between GenUI and users’ needs and expectations, which lead to design implications to inform future work on GenUI development.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720331069367" title="2025-genui-study"><img src="https://live.staticflickr.com/65535/54999440062_a98877abb9_b.jpg" width="1024" height="768" alt="2025-genui-study"/></a></div></template>
+      <div class="pub">
+        <a href="https://arxiv.org/pdf/2501.13145" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/p_genui_study.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Xiang 'Anthony Chen, Tiffany Knearem, and Yang Li. 2025. The GenUI Study: Exploring the Design of Generative UI Tools to Support UX Practitioners and Beyond. In Proceedings of the 2025 ACM Designing Interactive Systems Conference (DIS '25). Association for Computing Machinery, New York, NY, USA, 1179–1196. https://doi.org/10.1145/3715336.3735780</div>
+        <div class="bibtex">@inproceedings{10.1145/3715336.3735780,<br>author = {Chen, Xiang 'Anthony and Knearem, Tiffany and Li, Yang},<br>title = {The GenUI Study: Exploring the Design of Generative UI Tools to Support UX Practitioners and Beyond},<br>year = {2025},<br>isbn = {9798400714856},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3715336.3735780},<br>doi = {10.1145/3715336.3735780},<br>abstract = {AI can now generate high-fidelity UI mock-up screens from a high-level textual description, promising to support UX practitioners’ work. However, it remains unclear how UX practitioners would adopt such Generative UI (GenUI) models in a way that is integral and beneficial to their work. To answer this question, we conducted a formative study with 37 UX-related professionals that consisted of four roles: UX designers, UX researchers, software engineers, and product managers. Using a state-of-the-art GenUI tool, each participant went through a week-long, individual mini-project exercise with role-specific tasks, keeping a daily journal of their usage and experiences with GenUI, followed by a semi-structured interview. We report findings on participants’ workflow using the GenUI tool, how GenUI can support all and each specific roles, and existing gaps between GenUI and users’ needs and expectations, which lead to design implications to inform future work on GenUI development.},<br>booktitle = {Proceedings of the 2025 ACM Designing Interactive Systems Conference},<br>pages = {1179–1196},<br>numpages = {18},<br>keywords = {GenUI, Generative AI, User Experience Design, Diary Study},<br>location = {<br>},<br>series = {DIS '25}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="inner-thoughts" role="dialog" aria-modal="true" aria-label="Proactive Conversational Agents with Inner Thoughts">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Proactive Conversational Agents with Inner Thoughts</h2>
+      <div class="authors">Xingyu Bruce Liu, UCLA HCI Research<br>Shitao Fang, The University of Tokyo<br>Weiyan Shi, Northeastern University<br>Chien-Sheng Wu, Salesforce AI<br>Takeo Igarashi, The University of Tokyo<br>Xiang 'Anthony' Chen, UCLA HCI Research</div>
+      <p>One of the long-standing aspirations in conversational AI is to allow them to autonomously take initiatives in conversations, i.e., being proactive. This is especially challenging for multi-party conversations. Prior NLP research focused mainly on predicting the next speaker from contexts like preceding conversations. In this paper, we demonstrate the limitations of such methods and rethink what it means for AI to be proactive in multi-party, human-AI conversations. We propose that just like humans, rather than merely reacting to turn-taking cues, a proactive AI formulates its own inner thoughts during a conversation, and seeks the right moment to contribute. Through a formative study with 24 participants and inspiration from linguistics and cognitive psychology, we introduce the Inner Thoughts framework. Our framework equips AI with a continuous, covert train of thoughts in parallel to the overt communication process, which enables it to proactively engage by modeling its intrinsic motivation to express these thoughts. We instantiated this framework into two real-time systems: an AI playground web app and a chatbot. Through a technical evaluation and user studies with human participants, our framework significantly surpasses existing baselines on aspects like anthropomorphism, coherence, intelligence, and turn-taking appropriateness.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/1090711712" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326627880" title="2025_Inner_Thoughts"><img src="https://live.staticflickr.com/65535/54568427369_d1e9557988_b.jpg" width="1024" height="768" alt="2025_Inner_Thoughts"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1oXZWIWHZmTGJC3WV0OKtFP_Xy17PgByD/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/p_innerthoughts.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Xingyu Bruce Liu, Shitao Fang, Weiyan Shi, Chien-Sheng Wu, Takeo Igarashi, and Xiang 'Anthony' Chen. 2025. Proactive Conversational Agents with Inner Thoughts. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 184, 1–19. https://doi.org/10.1145/3706598.3713760</div>
+        <div class="bibtex">@inproceedings{10.1145/3706598.3713760,<br>author = {Liu, Xingyu Bruce and Fang, Shitao and Shi, Weiyan and Wu, Chien-Sheng and Igarashi, Takeo and Chen, Xiang 'Anthony'},<br>title = {Proactive Conversational Agents with Inner Thoughts},<br>year = {2025},<br>isbn = {9798400713941},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3706598.3713760},<br>doi = {10.1145/3706598.3713760},<br>booktitle = {Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems},<br>articleno = {184},<br>numpages = {19},<br>keywords = {Conversational Agent, Multi-Agent, Multi-Party Conversation, Inner Thoughts, Mixed-initiative Interaction, Proactive AI},<br>location = {<br>},<br>series = {CHI '25}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="grappi" role="dialog" aria-modal="true" aria-label="GraPPI: A Retrieve-Divide-Solve GraphRAG Framework for Large-scale Protein-protein Interaction Exploration">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>GraPPI: A Retrieve-Divide-Solve GraphRAG Framework for Large-scale Protein-protein Interaction Exploration</h2>
+      <div class="authors">Ziwen Li, UCLA HCI Research<br>Xiang 'Anthony' Chen, UCLA HCI Research<br>Youngseung Jeon, UCLA HCI Research</div>
+      <p>Drug discovery (DD) has tremendously contributed to maintaining and improving public health. Hypothesizing that inhibiting protein misfolding can slow disease progression, researchers focus on target identification (Target ID) to find protein structures for drug binding. While Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) frameworks have accelerated drug discovery, integrating models into cohesive workflows remains challenging. We conducted a user study with drug discovery researchers to identify the applicability of LLMs and RAGs in Target ID. We identified two main findings: 1) an LLM should provide multiple Protein-Protein Interactions (PPIs) based on an initial protein and protein candidates that have a therapeutic impact; 2) the model must provide the PPI and relevant explanations for better understanding. Based on these observations, we identified three limitations in previous approaches for Target ID: 1) semantic ambiguity, 2) lack of explainability, and 3) short retrieval units. To address these issues, we propose GraPPI, a large-scale knowledge graph (KG)-based retrieve-divide-solve agent pipeline RAG framework to support large-scale PPI signaling pathway exploration in understanding therapeutic impacts by decomposing the analysis of entire PPI pathways into sub-tasks focused on the analysis of PPI edges.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/1089943894" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326570430" title="2025_GraPPI"><img src="https://live.staticflickr.com/65535/54563477487_56f963760b_b.jpg" width="1024" height="768" alt="2025_GraPPI"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1H1eCn9tKHf5i09CAKWkuM2LR9aWtdjdT/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/naacl2025_grappi_thumbnail.jpeg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Ziwen Li, Xiang Chen, and Youngseung Jeon. 2025. GraPPI: A Retrieve-Divide-Solve GraphRAG Framework for Large-scale Protein-protein Interaction Exploration. In Findings of the Association for Computational Linguistics: NAACL 2025, pages 3635–3648, Albuquerque, New Mexico. Association for Computational Linguistics.</div>
+        <div class="bibtex">@article{li2025grappi,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={GraPPI: A Retrieve-Divide-Solve GraphRAG Framework for Large-scale Protein-protein Interaction Exploration},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Li, Ziwen and Chen, XiangAnthony and Jeon, Youngseung},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={arXiv preprint arXiv:2501.16382},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2025}<br></div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="danny" role="dialog" aria-modal="true" aria-label="Empowering Medical Data Labeling for Non-Experts with DANNY: Enhancing Accuracy and Mitigating Over-Reliance on AI">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Empowering Medical Data Labeling for Non-Experts with DANNY: Enhancing Accuracy and Mitigating Over-Reliance on AI</h2>
+      <div class="authors">Youngseung Jeon, UCLA HCI Research<br>Christopher Hwang, UCLA HCI Research<br>Xiang ‘Anthony’ Chen, UCLA HCI Research</div>
+      <p>Economic constraints on recruiting experts hinder efforts to build qualified datasets for utilizing AI in professional domains (e.g., medical diagnosis), which could provide societal benefits. To solve this issue, previous studies introduced crowdsourcing and AI to enable non-experts to perform expert-level data labeling. Yet, they encountered three challenges: 1) the limited applicability of crowdsourcing in less specialized domains (e.g., identifying animal species); 2) the chicken-and-egg problem, a paradox where high-performance AI is required to build a dataset to train such AI; and 3) over-reliance on AI, where non-experts, lacking expertise, may incorrectly label data when guided by sub-optimal AI. To address this, we introduce DANNY (Data ANnotation for Non-experts made easY), an AI-based tool designed to help non-experts label an arthritis dataset, aiming to increase labeling accuracy and mitigate over-reliance on AI. By externalizing a cognitive forcing intervention to foster critical thinking, DANNY provides two visualizations: 1) the Criteria phase, where non-experts define criteria across four arthritis features, and 2) the Correction phase, where they refine these criteria by comparing them to AI suggestions. In a study with 28 participants, DANNY users achieved higher accuracy and a more appropriate reliance on AI dependency than control groups. A follow-up study with 12 participants demonstrates how DANNY can be used to improve AI with an ensemble method. Our findings contribute new insights into using AI to support non-experts in labeling domain-specific data when expert resources are limited. </p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/1084493767" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326121657" title="2025_DANNY"><img src="https://live.staticflickr.com/65535/54520746405_392798958d_b.jpg" width="1024" height="768" alt="2025_DANNY"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1r1uquVX376pPk65PTaP9P2Iw3l_j68Zz/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/iui2025_danny_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Youngseung Jeon, Christopher Hwang, and Xiang 'Anthony' Chen. 2025. Empowering Medical Data Labeling for Non-Experts with DANNY: Enhancing Accuracy and Mitigating Over-Reliance on AI. In Proceedings of the 30th International Conference on Intelligent User Interfaces (IUI '25). Association for Computing Machinery, New York, NY, USA, 624–640. https://doi.org/10.1145/3708359.3712161</div>
+        <div class="bibtex">@inproceedings{jeon2025empowering,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Empowering Medical Data Labeling for Non-Experts with DANNY: Enhancing Accuracy and Mitigating Over-Reliance on AI},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Jeon, Youngseung and Hwang, Christopher and Chen, XiangAnthony},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 30th International Conference on Intelligent User Interfaces},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={624--640},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2025}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="qapath" role="dialog" aria-modal="true" aria-label="Majority Voting of Doctors Improves Appropriateness of AI Reliance in Pathology">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Majority Voting of Doctors Improves Appropriateness of AI Reliance in Pathology</h2>
+      <div class="authors">Hongyan Gu, UCLA HCI Research<br>Chunxu Yang, UCLA HCI Research<br>Shino Magaki, UCLA David Geffen School of Medicine<br>Neda Zarrin-Khameh, Baylor College of Medicine<br>Nelli S. Lakis, University of Kansas Medical Center<br>Imna Cobos, Stanford School of Medicine<br>Negar Khanlou, UCLA David Geffen School of Medicine<br>Xinhai R. Zhang, University of Texas Health Science Center at Houston<br>Jasmeet Assi, University of Kansas Medical Center<br>Joshua T. Byers, University of California, San Francisco<br>Ameer Hamza, University of Kansas Medical Center<br>Karam Han, University of Wisconsin-Madison<br>Anders Meyer, University of Kansas Medical Center<br>Hilda Mirbaha, UCLA David Geffen School of Medicine<br>Carrie A. Mohila, Baylor College of Medicine<br>Todd M. Stevens, University of Kansas Medical Center<br>Sara L. Stone, Hospital of the University of Pennsylvania<br>Wenzhong Yan, UCLA ECE<br>Mohammad Haeri, University of Kansas Medical Center<br>Xiang ‘Anthony’ Chen, UCLA HCI Research</div>
+      <p>As Artificial Intelligence (AI) making advancements in medical decision-making, there is a growing need to ensure doctors develop appropriate reliance on AI to avoid adverse outcomes. However, existing methods in enabling appropriate AI reliance might encounter challenges while being applied in the medical domain. With this regard, this work employs and provides the validation of an alternative approach – majority voting – to facilitate appropriate reliance on AI in medical decision-making. This is achieved by a multi-institutional user study involving 32 medical professionals with various backgrounds, focusing on the pathology task of visually detecting a pattern, mitoses, in tumor images. Here, the majority voting process was conducted by synthesizing decisions under AI assistance from a group of pathology doctors (pathologists). Two metrics were used to evaluate the appropriateness of AI reliance: Relative AI Reliance (RAIR) and Relative Self-Reliance (RSR). Results showed that even with groups of three pathologists, majority-voted decisions significantly increased both RAIR and RSR – by approximately 9% and 31%, respectively – compared to decisions made by one pathologist collaborating with AI. This increased appropriateness resulted in better precision and recall in the detection of mitoses. While our study is centered on pathology, we believe these insights can be extended to general high-stakes decision-making processes involving similar visual tasks.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326069466" title="2024_QAPath"><img src="https://live.staticflickr.com/65535/54516007859_ae8b131fc9_b.jpg" width="1024" height="768" alt="2024_QAPath"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1qsGZCHt03QqiKs_I5pDdxfhDa3dzQ-Ao/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/ijhcs_qapath_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Hongyan Gu, Chunxu Yang, Shino Magaki, Neda Zarrin-Khameh, Nelli S. Lakis, Inma Cobos, Negar Khanlou, Xinhai R. Zhang, Jasmeet Assi, Joshua T. Byers, Ameer Hamza, Karam Han, Anders Meyer, Hilda Mirbaha, Carrie A. Mohila, Todd M. Stevens, Sara L. Stone, Wenzhong Yan, Mohammad Haeri, Xiang ‘Anthony’ Chen, Majority voting of doctors improves appropriateness of AI reliance in pathology, International Journal of Human-Computer Studies, Volume 190, 2024, 103315, ISSN 1071-5819, https://doi.org/10.1016/j.ijhcs.2024.103315.</div>
+        <div class="bibtex">@article{GU2024103315,<br>title = {Majority voting of doctors improves appropriateness of AI reliance in pathology},<br>journal = {International Journal of Human-Computer Studies},<br>volume = {190},<br>pages = {103315},<br>year = {2024},<br>issn = {1071-5819},<br>doi = {https://doi.org/10.1016/j.ijhcs.2024.103315},<br>url = {https://www.sciencedirect.com/science/article/pii/S1071581924000995},<br>author = {Hongyan Gu and Chunxu Yang and Shino Magaki and Neda Zarrin-Khameh and Nelli S. Lakis and Inma Cobos and Negar Khanlou and Xinhai R. Zhang and Jasmeet Assi and Joshua T. Byers and Ameer Hamza and Karam Han and Anders Meyer and Hilda Mirbaha and Carrie A. Mohila and Todd M. Stevens and Sara L. Stone and Wenzhong Yan and Mohammad Haeri and Xiang ‘Anthony’ Chen},<br>keywords = {Appropriate reliance, Artificial intelligence, Majority voting, Pathology},<br>abstract = {As Artificial Intelligence (AI) making advancements in medical decision-making, there is a growing need to ensure doctors develop appropriate reliance on AI to avoid adverse outcomes. However, existing methods in enabling appropriate AI reliance might encounter challenges while being applied in the medical domain. With this regard, this work employs and provides the validation of an alternative approach – majority voting – to facilitate appropriate reliance on AI in medical decision-making. This is achieved by a multi-institutional user study involving 32 medical professionals with various backgrounds, focusing on the pathology task of visually detecting a pattern, mitoses, in tumor images. Here, the majority voting process was conducted by synthesizing decisions under AI assistance from a group of pathology doctors (pathologists). Two metrics were used to evaluate the appropriateness of AI reliance: Relative AI Reliance (RAIR) and Relative Self-Reliance (RSR). Results showed that even with groups of three pathologists, majority-voted decisions significantly increased both RAIR and RSR – by approximately 9% and 31%, respectively – compared to decisions made by one pathologist collaborating with AI. This increased appropriateness resulted in better precision and recall in the detection of mitoses. While our study is centered on pathology, we believe these insights can be extended to general high-stakes decision-making processes involving similar visual tasks.}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="human-io" role="dialog" aria-modal="true" aria-label="Human I/O: Towards a Unified Approach to Detecting Situational Impairments">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Human I/O: Towards a Unified Approach to Detecting Situational Impairments</h2>
+      <div class="authors">Xingyu Bruce Liu, UCLA HCI Research<br>Jiaohao Nick Li, UCLA HCI Research<br>David Kim, Google<br>Xiang 'Anthony' Chen, UCLA HCI Research<br>Ruofei Du, Google</div>
+      <p>Situationally Induced Impairments and Disabilities (SIIDs) can significantly hinder user experience in contexts such as poor lighting, noise, and multi-tasking. While prior research has introduced algorithms and systems to address these impairments, they predominantly cater to specific tasks or environments and fail to accommodate the diverse and dynamic nature of SIIDs. We introduce Human I/O, a unified approach to detecting a wide range of SIIDs by gauging the availability of human input/output channels. Leveraging egocentric vision, multimodal sensing and reasoning with large language models, Human I/O achieves a 0.22 mean absolute error and a 82% accuracy in availability prediction across 60 in-the-wild egocentric video recordings in 32 different scenarios. Furthermore, while the core focus of our work is on the detection of SIIDs rather than the creation of adaptive user interfaces, we showcase the efficacy of our prototype via a user study with 10 participants. Findings suggest that Human I/O significantly reduces effort and improves user experience in the presence of SIIDs, paving the way for more adaptive and accessible interactive systems in the future.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/1036940920" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720322425608" title="2023_Human_IO"><img src="https://live.staticflickr.com/65535/54188474215_5468b6854c_b.jpg" width="1024" height="768" alt="2023_Human_IO"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1Q1OizH5rffaz6R3ct8kT4NGeS-71b-rq/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/pt_human_io.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Xingyu Bruce Liu, Jiahao Nick Li, David Kim, Xiang 'Anthony' Chen, and Ruofei Du. 2024. Human I/O: Towards a Unified Approach to Detecting Situational Impairments. In Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems (CHI '24). Association for Computing Machinery, New York, NY, USA, Article 965, 1–18. https://doi.org/10.1145/3613904.3642065</div>
+        <div class="bibtex">@inproceedings{10.1145/3613904.3642065,<br>author = {Liu, Xingyu Bruce and Li, Jiahao Nick and Kim, David and Chen, Xiang 'Anthony' and Du, Ruofei},<br>title = {Human I/O: Towards a Unified Approach to Detecting Situational Impairments},<br>year = {2024},<br>isbn = {9798400703300},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3613904.3642065},<br>doi = {10.1145/3613904.3642065},<br>booktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},<br>articleno = {965},<br>numpages = {18},<br>keywords = {augmented reality, context awareness, large language models, multimodal sensing, situational impairments},<br>location = {Honolulu, HI, USA},<br>series = {CHI '24}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="meningioma-mitosis-ai" role="dialog" aria-modal="true" aria-label="Enhancing Mitosis Count Assessment in Meningiomas with Computational Digital Pathology">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Enhancing Mitosis Count Assessment in Meningiomas with Computational Digital Pathology</h2>
+      <div class="authors">Hongyan Gu, UCLA HCI Research<br>Chunxu Yang, UCLA HCI Research<br>Issa Al-kharouf, University of Kansas Medical Center<br>Shino Magaki, UCLA David Geffen School of Medicine<br>Nelli Lakis, University of Kansas Medical Center<br>Christopher Kazu Williams, UCLA David Geffen School of Medicine<br>Sallam Mohammad Alrosan, University of Kansas Medical Center<br>Ellie K. Onstott, University of Kansas Medical Center<br>Wenzhong Yan, UCLA ECE<br>Negar Khanlou, UCLA David Geffen School of Medicine<br>Imna Cobos, Stanford School of Medicine<br>Xinhai R. Zhang, University of Texas Health Science Center at Houston<br>Neda Zarrin-Khameh, Baylor College of Medicine<br>Harry V. Vinters, UCLA David Geffen School of Medicine<br>Xiang 'Anthony' Chen, UCLA HCI Research<br>Mohammad Haeri, University of Kansas Medical Center</div>
+      <p>Mitosis is a critical criterion for meningioma grading. However, pathologists’ assessment of mitoses is subject to significant inter-observer variation due to challenges in locating mitosis hotspots and accurately detecting mitotic figures. To address this issue, we leverage digital pathology and propose a computational strategy to enhance pathologists’ mitosis assessment. The strategy has two components: (1) A depth-first search algorithm that quantifies the mathematically maximum mitotic count in 10 consecutive high-power fields, which can enhance the preciseness, especially in cases with borderline mitotic count. (2) Implementing a collaborative sphere to group a set of pathologists to detect mitoses under each high-power field, which can mitigate subjective random errors in mitosis detection originating from individual detection errors. By depth-first search algorithm (1) , we analyzed 19 meningioma slides and discovered that the proposed algorithm upgraded two borderline cases verified at consensus conferences. This improvement is attributed to the algorithm’s ability to quantify the mitotic count more comprehensively compared to other conventional methods of counting mitoses. In implementing a collaborative sphere (2) , we evaluated the correctness of mitosis detection from grouped pathologists and/or pathology residents, where each member of the group annotated a set of 48 high-power field images for mitotic figures independently. We report that groups with sizes of three can achieve an average precision of 0.897 and sensitivity of 0.699 in mitosis detection, which is higher than an average pathologist in this study (precision: 0.750, sensitivity: 0.667). The proposed computational strategy can be integrated with artificial intelligence workflow, which envisions the future of achieving a rapid and robust mitosis assessment by interactive assisting algorithms that can ultimately benefit patient management.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/991874097" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720319214247" title="2024_Mitosis_AI"><img src="https://live.staticflickr.com/65535/53890556708_330890a107_c.jpg" width="1024" height="768" alt="2024_Mitosis_AI"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/open?id=1vLroIHjiDya_4oWEiQPks6euQv-48Bx3" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/pt_mitosis_ai.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Gu H, Yang C, Al-Kharouf I, Magaki S, Lakis N, Williams CK, Alrosan SM, Onstott EK, Yan W, Khanlou N, Cobos I, Zhang XR, Zarrin-Khameh N, Vinters HV, Chen XA, Haeri M. Enhancing mitosis quantification and detection in meningiomas with computational digital pathology. Acta Neuropathol Commun. 2024 Jan 11;12(1):7. doi: 10.1186/s40478-023-01707-6. PMID: 38212848; PMCID: PMC10782692.</div>
+        <div class="bibtex">@article{gu2024enhancing,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Enhancing mitosis quantification and detection in meningiomas with computational digital pathology},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Gu, Hongyan and Yang, Chunxu and Al-Kharouf, Issa and Magaki, Shino and Lakis, Nelli and Williams, Christopher Kazu and Alrosan, Sallam Mohammad and Onstott, Ellie Kate and Yan, Wenzhong and Khanlou, Negar and others},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={Acta Neuropathologica Communications},<br>&nbsp; &nbsp; &nbsp; &nbsp;volume={12},<br>&nbsp; &nbsp; &nbsp; &nbsp;number={1},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={7},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2024},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher={Springer}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="xai-for-text-to-image-generation" role="dialog" aria-modal="true" aria-label="From Text to Pixels: Enhancing User Understanding through Text-to-Image Model Explanations">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>From Text to Pixels: Enhancing User Understanding through Text-to-Image Model Explanations</h2>
+      <div class="authors">Noyan Evirgen (UCLA HCI Research)<br>Ruolin Wang (UCLA HCI Research)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>Recent progress in Text-to-Image (T2I) models promises transformative applications in art, design, education, medicine, and entertainment. These models, exemplified by Dall-e, Imagen, and Stable Diffusion, have the potential to revolutionize various industries. However, a primary concern is their operation as a 'black-box' for many users. Without understanding the underlying mechanics, users are unable to harness the full potential of these models. This study focuses on bridging this gap by developing and evaluating explanation techniques for T2I models, targeting inexperienced end users. While prior works have delved into Explainable AI (XAI) methods for classification or regression tasks, T2I generation poses distinct challenges. Through formative studies with experts, we identified unique explanation goals and subsequently designed tailored explanation strategies. We then empirically evaluated these methods with a cohort of 473 participants from Amazon Mechanical Turk (AMT) across three tasks. Our results highlight users' ability to learn new keywords through explanations, a preference for example-based explanations, and challenges in comprehending explanations that significantly shift the image's theme. Moreover, findings suggest users benefit from a limited set of concurrent explanations. Our main contributions include a curated dataset for evaluating T2I explainability techniques, insights from a comprehensive AMT user study, and observations critical for future T2I model explainability research.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720319101720" title="2024_XAI_txt2pix"><img src="https://live.staticflickr.com/65535/53879868409_f57485e068_b.jpg" width="1024" height="768" alt="2024_XAI_txt2pix"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/open?id=1KrRKs_ZF7G4addZo8WMX-VotDhbM97nl" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/pt_txt2pix.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Noyan Evirgen, Ruolin Wang, and Xiang 'Anthony Chen. 2024. From Text to Pixels: Enhancing User Understanding through Text-to-Image Model Explanations. In Proceedings of the 29th International Conference on Intelligent User Interfaces (IUI '24). Association for Computing Machinery, New York, NY, USA, 74–87. https://doi.org/10.1145/3640543.3645173</div>
+        <div class="bibtex">@inproceedings{10.1145/3640543.3645173,<br>author = {Evirgen, Noyan and Wang, Ruolin and Chen, Xiang 'Anthony},<br>title = {From Text to Pixels: Enhancing User Understanding through Text-to-Image Model Explanations},<br>year = {2024},<br>isbn = {9798400705083},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3640543.3645173},<br>doi = {10.1145/3640543.3645173},<br>abstract = {Recent progress in Text-to-Image (T2I) models promises transformative applications in art, design, education, medicine, and entertainment. These models, exemplified by Dall-e, Imagen, and Stable Diffusion, have the potential to revolutionize various industries. However, a primary concern is their operation as a ‘black-box’ for many users. Without understanding the underlying mechanics, users are unable to harness the full potential of these models. This study focuses on bridging this gap by developing and evaluating explanation techniques for T2I models, targeting inexperienced end users. While prior works have delved into Explainable AI (XAI) methods for classification or regression tasks, T2I generation poses distinct challenges. Through formative studies with experts, we identified unique explanation goals and subsequently designed tailored explanation strategies. We then empirically evaluated these methods with a cohort of 473 participants from Amazon Mechanical Turk (AMT) across three tasks. Our results highlight users’ ability to learn new keywords through explanations, a preference for example-based explanations, and challenges in comprehending explanations that significantly shift the image’s theme. Moreover, findings suggest users benefit from a limited set of concurrent explanations. Our main contributions include a curated dataset for evaluating T2I explainability techniques, insights from a comprehensive AMT user study, and observations critical for future T2I model explainability research.},<br>booktitle = {Proceedings of the 29th International Conference on Intelligent User Interfaces},<br>pages = {74–87},<br>numpages = {14},<br>keywords = {Explainability Methods, Text-to-Image, User-Study, XAI},<br>location = {Greenville, SC, USA},<br>series = {IUI '24}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="hci-papers-cite-hci-papers" role="dialog" aria-modal="true" aria-label="HCI Papers Cite HCI Papers, Increasingly So">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>HCI Papers Cite HCI Papers, Increasingly So</h2>
+      <div class="authors">Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>To measure how HCI papers are cited across disciplinary boundaries, we collected a citation dataset of CHI, UIST, and CSCW papers published between 2010 and 2020. Our analysis indicates that HCI papers have been more and more likely to be cited by HCI papers rather than by non-HCI papers.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/936893053" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720316332160" title="2024_Xindex"><img src="https://live.staticflickr.com/65535/53665801593_717b34b91b_b.jpg" width="1024" height="768" alt="2024_Xindex"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/16Ee2XWWAb8XuvO7EC3PH5BFJgIPp2bA8/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/altchi2024_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Xiang ‘Anthony’ Chen. HCI Papers Cite HCI Papers, Increasingly So. In Extended Abstracts of the 2024 CHI Conference on Human Factors in Computing Systems (CHI EA '24).</div>
+        <div class="bibtex">@misc{chen2024hci,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title={HCI Papers Cite HCI Papers, Increasingly So}, <br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author={Xiang Anthony Chen},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year={2024},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;eprint={2303.07539},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;archivePrefix={arXiv},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;primaryClass={cs.HC}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="marvista" role="dialog" aria-modal="true" aria-label="Marvista: Exploring the Design of a Human-AI Collaborative News Reading Tool">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Marvista: Exploring the Design of a Human-AI Collaborative News Reading Tool</h2>
+      <div class="authors">Xiang 'Anthony' Chen (UCLA HCI Research)<br>Chien-Sheng Wu, Lidiya Murakhovs'ka, Philippe Laban, Tong Niu, Wenhao Liu, Caiming Xiong (Salesforce Research)</div>
+      <p>We explore the design of Marvista—a human-AI collaborative tool that employs a suite of natural language processing models to provide end-to-end support for reading online news articles. Before reading an article, Marvista helps a user plan what to read by filtering text based on how much time one can spend and what questions one is interested to find out from the article. During reading, Marvista helps the user reflect on their understanding of each paragraph with AI-generated questions. After reading, Marvista generates an explainable human-AI summary that combines both AI’s processing of the text, the user’s reading behavior, and user-generated data in the reading process. In contrast to prior work that offered (content-independent) interaction techniques or devices for reading, Marvista takes a human-AI collaborative approach that contributes text-specific guidance (content-aware) to support the entire reading process.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/858105039" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720310751724" title="2023_Marvista"><img src="https://live.staticflickr.com/65535/53142308850_1843b016f4_b.jpg" width="1024" height="768" alt="2023_Marvista"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1nL3U-R2HcSkF5we_j-CdcpDssLddZgSR/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/tochi2023_marvista_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Xiang ‘Anthony’ Chen, Chien-Sheng Wu, Lidiya Murakhovs’ka, Philippe Laban, Tong Niu, Wenhao Liu, and Caiming Xiong. 2023. Marvista: Exploring the Design of a Human-AI Collaborative News Reading Tool. ACM Trans. Comput.-Hum. Interact. Just Accepted (July 2023). https://doi.org/10.1145/3609331</div>
+        <div class="bibtex">@article{10.1145/3609331,<br>author = {Chen, Xiang ‘Anthony’ and Wu, Chien-Sheng and Murakhovs’ka, Lidiya and Laban, Philippe and Niu, Tong and Liu, Wenhao and Xiong, Caiming},<br>title = {Marvista: Exploring the Design of a Human-AI Collaborative News Reading Tool},<br>year = {2023},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>issn = {1073-0516},<br>url = {https://doi.org/10.1145/3609331},<br>doi = {10.1145/3609331},<br>abstract = {We explore the design of Marvista—a human-AI collaborative tool that employs a suite of natural language processing models to provide end-to-end support for reading online news articles. Before reading an article, Marvista helps a user plan what to read by filtering text based on how much time one can spend and what questions one is interested to find out from the article. During reading, Marvista helps the user reflect on their understanding of each paragraph with AI-generated questions. After reading, Marvista generates an explainable human-AI summary that combines both AI’s processing of the text, the user’s reading behavior, and user-generated data in the reading process. In contrast to prior work that offered (content-independent) interaction techniques or devices for reading, Marvista takes a human-AI collaborative approach that contributes text-specific guidance (content-aware) to support the entire reading process.},<br>note = {Just Accepted},<br>journal = {ACM Trans. Comput.-Hum. Interact.},<br>month = {jul},<br>keywords = {Tools, Human-AI Collaboration, Reading}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="visual-captions" role="dialog" aria-modal="true" aria-label="Visual Captions: Augmenting Verbal Communication with On-the-fly Visuals">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Visual Captions: Augmenting Verbal Communication with On-the-fly Visuals</h2>
+      <div class="authors">Xingyu "Bruce" Liu (UCLA HCI Research)<br>Vladimir Kirilyuk, Xiuxiu Yuan, Alex Olwal, Peggy Chi (Google)<br>Xiang 'Anthony' Chen (UCLA HCI Research)<br>Ruofei Du (Google)</div>
+      <p>Video conferencing solutions like Zoom, Google Meet, and Microsoft Teams are becoming increasingly popular for facilitating conversations, and recent advancements such as live captioning help people better understand each other. We believe that the addition of visuals based on the context of conversations could further improve comprehension of complex or unfamiliar concepts. To explore the potential of such capabilities, we conducted a formative study through remote interviews (N=10) and crowdsourced a dataset of over 1500 sentence-visual pairs across a wide range of contexts. These insights informed Visual Captions, a real-time system that integrates with a videoconferencing platform to enrich verbal communication. Visual Captions leverages a fine-tuned large language model to proactively suggest relevant visuals in open-vocabulary conversations. We present the findings from a lab study (N=26) and an in-the-wild case study (N=10), demonstrating how Visual Captions can help improve communication through visual augmentation in various scenarios.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/820034807" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720307685527" title="2023_VisualCaptions"><img src="https://live.staticflickr.com/65535/52835443692_b24b9dce47_b.jpg" width="1024" height="768" alt="2023_VisualCaptions"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1d5n9Mlftl2uAa8OmAPkjilWWhk9Tsksi/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/chi2023_visualcaptions_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Xingyu 'Bruce' Liu, Vladimir Kirilyuk, Xiuxiu Yuan, Alex Olwal, Peggy Chi, Xiang 'Anthony' Chen, and Ruofei Du. 2023. Visual Captions: Augmenting Verbal Communication with On-the-fly Visuals. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23). Association for Computing Machinery, New York, NY, USA, Article 108, 1-20. https://doi.org/10.1145/3544548.3581566</div>
+        <div class="bibtex">@inproceedings{10.1145/3544548.3581566,<br>author = {Xingyu, Bruce”@ and Kirilyuk, Vladimir and Yuan, Xiuxiu and Olwal, Alex and Chi, Peggy and Chen, Xiang 'Anthony' and Du, Ruofei},<br>title = {Visual Captions: Augmenting Verbal Communication with On-the-Fly Visuals},<br>year = {2023},<br>isbn = {9781450394215},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3544548.3581566},<br>doi = {10.1145/3544548.3581566},<br>abstract = {Video conferencing solutions like Zoom, Google Meet, and Microsoft Teams are becoming increasingly popular for facilitating conversations, and recent advancements such as live captioning help people better understand each other. We believe that the addition of visuals based on the context of conversations could further improve comprehension of complex or unfamiliar concepts. To explore the potential of such capabilities, we conducted a formative study through remote interviews (N=10) and crowdsourced a dataset of over 1500 sentence-visual pairs across a wide range of contexts. These insights informed Visual Captions, a real-time system that integrates with a video conferencing platform to enrich verbal communication. Visual Captions leverages a fine-tuned large language model to proactively suggest relevant visuals in open-vocabulary conversations. We present findings from a lab study (N=26) and an in-the-wild case study (N=10), demonstrating how Visual Captions can help improve communication through visual augmentation in various scenarios.},<br>booktitle = {Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},<br>articleno = {108},<br>numpages = {20},<br>keywords = {large language models, augmented reality, video-mediated communication, augmented communication, AI agent, text-to-visual, online meeting, dataset, collaborative work},<br>location = {Hamburg, Germany},<br>series = {CHI '23}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="navipath" role="dialog" aria-modal="true" aria-label="Augmenting Pathologists with NaviPath: Design and Evaluation of a Human-AI Collaborative Navigation System">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Augmenting Pathologists with NaviPath: Design and Evaluation of a Human-AI Collaborative Navigation System</h2>
+      <div class="authors">Hongyan Gu, Chunxu Yang (UCLA HCI Research)<br>Mohammad Haeri (University of Kansas Medical Center)<br>Jing Wang, Beijing Tongren Hospital, Capital Medical University<br>Shirley Tang, Wenzhong Yan (UCLA HCI Research)<br>Shujin He, Beijing Tongren Hospital, Capital Medical University<br>Christopher Kazu Williams, Shino Magaki (UCLA David Geffen School of Medicine)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>Artificial Intelligence (AI) brings advancements to support pathologists in navigating high-resolution tumor images to search for pathology patterns of interest. However, existing AI-assisted tools have not realized this promised potential due to a lack of insight into pathology and HCI considerations for pathologists' navigation workflows in practice. We first conducted a formative study with six medical professionals in pathology to capture their navigation strategies. By incorporating our observations along with the pathologists' domain knowledge, we designed NaviPath — a human-AI collaborative navigation system. An evaluation study with 15 medical professionals in pathology indicated that: (i) compared to the manual navigation, participants saw more than twice the number of pathological patterns in unit time with NaviPath, and (ii) participants achieved higher precision and recall against the AI and the manual navigation on average. Further qualitative analysis revealed that navigation was more consistent with NaviPath, which can improve the overall examination quality.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/820033630" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720307685222" title="2023_NaviPath"><img src="https://live.staticflickr.com/65535/52836157174_f01d853d39_b.jpg" width="1024" height="768" alt="2023_NaviPath"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1cpqUMO0jg5E3LAnwy9AUXW712Ipz3yvw/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/chi2023_navipath_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Hongyan Gu, Chunxu Yang, Mohammad Haeri, Jing Wang, Shirley Tang, Wenzhong Yan, Shujin He, Christopher Kazu Williams, Shino Magaki, and Xiang 'Anthony' Chen. 2023. Augmenting Pathologists with NaviPath: Design and Evaluation of a Human-AI Collaborative Navigation System. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23). Association for Computing Machinery, New York, NY, USA, Article 349, 1-19. https://doi.org/10.1145/3544548.3580694</div>
+        <div class="bibtex">@inproceedings{10.1145/3544548.3580694,<br>author = {Gu, Hongyan and Yang, Chunxu and Haeri, Mohammad and Wang, Jing and Tang, Shirley and Yan, Wenzhong and He, Shujin and Williams, Christopher Kazu and Magaki, Shino and Chen, Xiang 'Anthony'},<br>title = {Augmenting Pathologists with NaviPath: Design and Evaluation of a Human-AI Collaborative Navigation System},<br>year = {2023},<br>isbn = {9781450394215},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3544548.3580694},<br>doi = {10.1145/3544548.3580694},<br>abstract = {Artificial Intelligence (AI) brings advancements to support pathologists in navigating high-resolution tumor images to search for pathology patterns of interest. However, existing AI-assisted tools have not realized this promised potential due to a lack of insight into pathology and HCI considerations for pathologists' navigation workflows in practice. We first conducted a formative study with six medical professionals in pathology to capture their navigation strategies. By incorporating our observations along with the pathologists' domain knowledge, we designed NaviPath&nbsp;— a human-AI collaborative navigation system. An evaluation study with 15 medical professionals in pathology indicated that: (i)&nbsp;compared to the manual navigation, participants saw more than twice the number of pathological patterns in unit time with NaviPath, and (ii)&nbsp;participants achieved higher precision and recall against the AI and the manual navigation on average. Further qualitative analysis revealed that navigation was more consistent with NaviPath, which can improve the overall examination quality.},<br>booktitle = {Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},<br>articleno = {349},<br>numpages = {19},<br>keywords = {medical AI, Human-AI collaboration, navigation, digital pathology},<br>location = {Hamburg, Germany},<br>series = {CHI '23}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="ganravel" role="dialog" aria-modal="true" aria-label="GANravel: User-Driven Direction Disentanglement in Generative Adversarial Networks">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>GANravel: User-Driven Direction Disentanglement in Generative Adversarial Networks</h2>
+      <div class="authors">Noyan Evirgen (UCLA HCI Research)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>Generative adversarial networks (GANs) have many application areas including image editing, domain translation, missing data imputation, and support for creative work. However, GANs are considered `black boxes'. Specifically, the end-users have little control over how to improve editing directions through disentanglement. Prior work focused on new GAN architectures to disentangle editing directions. Alternatively, we propose GANravel --a user-driven direction disentanglement tool that complements the existing GAN architectures and allows users to improve editing directions iteratively. In two user studies with 16 participants each, GANravel users were able to disentangle directions and outperformed the state-of-the-art direction discovery baselines in disentanglement performance. In the second user study, GANravel was used in a creative task of creating dog memes and was able to create high-quality edited images and GIFs.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/809403374" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720306814055" title="2023_GANravel"><img src="https://live.staticflickr.com/65535/52756416835_6cdac1cc04_b.jpg" width="1024" height="768" alt="2023_GANravel"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1ccVWtz4ZtBCANm4R904E_0LOpuxEY3Iy/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/chi2023_ganravel_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Noyan Evirgen and Xiang 'Anthony Chen. 2023. GANravel: User-Driven Direction Disentanglement in Generative Adversarial Networks. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23). Association for Computing Machinery, New York, NY, USA, Article 19, 1-15. https://doi.org/10.1145/3544548.3581226</div>
+        <div class="bibtex">@inproceedings{10.1145/3544548.3581226,<br>author = {Evirgen, Noyan and Chen, Xiang 'Anthony},<br>title = {GANravel: User-Driven Direction Disentanglement in Generative Adversarial Networks},<br>year = {2023},<br>isbn = {9781450394215},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3544548.3581226},<br>doi = {10.1145/3544548.3581226},<br>abstract = {Generative adversarial networks (GANs) have many application areas including image editing, domain translation, missing data imputation, and support for creative work. However, GANs are considered 'black boxes'. Specifically, the end-users have little control over how to improve editing directions through disentanglement. Prior work focused on new GAN architectures to disentangle editing directions. Alternatively, we propose GANravel—a user-driven direction disentanglement tool that complements the existing GAN architectures and allows users to improve editing directions iteratively. In two user studies with 16 participants each, GANravel users were able to disentangle directions and outperformed the state-of-the-art direction discovery baselines in disentanglement performance. In the second user study, GANravel was used in a creative task of creating dog memes and was able to create high-quality edited images and GIFs.},<br>booktitle = {Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},<br>articleno = {19},<br>numpages = {15},<br>keywords = {Disentanglement, Generative Adversarial Networks, Interactive Systems, Explainable-AI},<br>location = {Hamburg, Germany},<br>series = {CHI '23}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="xpath" role="dialog" aria-modal="true" aria-label="Improving Workflow Integration with xPath: Design and Evaluation of a Human-AI Diagnosis System in Pathology">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Improving Workflow Integration with xPath: Design and Evaluation of a Human-AI Diagnosis System in Pathology</h2>
+      <div class="authors">Hongyan Gu, Yuan Liang, Yifan Xu, Chunxu Yang, Wenzhong Yan (UCLA HCI Research)<br>Christopher Kazu Williams, Shino Magaki, Negar Khanlou, Harry Vinters, Zesheng Chen (UCLA David Geffen School of Medicine)<br>Shuo Ni (UCLA and USC)<br>Xinhai Robert Zhang (University of Texas Health Science Center at Houston)<br>Yang Li (Google Research)<br>Mohammad Haeri (University of Kansas Medical Center)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>Recent developments in AI have provided assisting tools to support pathologists' diagnoses. However, it remains challenging to incorporate such tools into pathologists' practice; one main concern is AI's insufficient workflow integration with medical decisions. We observed pathologists' examination and discovered that the main hindering factor to integrate AI is its incompatibility with pathologists' workflow. To bridge the gap between pathologists and AI, we developed a human-AI collaborative diagnosis tool — xPath — that shares a similar examination process to that of pathologists, which can improve AI's integration into their routine examination. The viability of xPath is confirmed by a technical evaluation and work sessions with twelve medical professionals in pathology. This work identifies and addresses the challenge of incorporating AI models into pathology, which can offer first-hand knowledge about how HCI researchers can work with medical professionals side-by-side to bring technological advances to medical tasks towards practical applications.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/789344703" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720305255518" title="2022_xPath"><img src="https://live.staticflickr.com/65535/52627677410_8bf94fa615_b.jpg" width="1024" height="768" alt="2022_xPath"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1ncRzqGFjiYcwFQdvmPRn_hxYcdM9VK3V/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/tochi_xpath_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Hongyan Gu, Yuan Liang, Yifan Xu, Christopher Kazu Williams, Shino Magaki, Negar Khanlou, Harry Vinters, Zesheng Chen, Shuo Ni, Chunxu Yang, Wenzhong Yan, Xinhai Robert Zhang, Yang Li, Mohammad Haeri, and Xiang 'Anthony' Chen. 2022. Improving Workflow Integration with xPath: Design and Evaluation of a Human-AI Diagnosis System in Pathology. ACM Trans. Comput.-Hum. Interact. Just Accepted (December 2022). https://doi.org/10.1145/3577011</div>
+        <div class="bibtex">@article{10.1145/3577011,<br>author = {Gu, Hongyan and Liang, Yuan and Xu, Yifan and Williams, Christopher Kazu and Magaki, Shino and Khanlou, Negar and Vinters, Harry and Chen, Zesheng and Ni, Shuo and Yang, Chunxu and Yan, Wenzhong and Zhang, Xinhai Robert and Li, Yang and Haeri, Mohammad and Chen, Xiang 'Anthony'},<br>title = {Improving Workflow Integration with XPath: Design and Evaluation of a Human-AI Diagnosis System in Pathology},<br>year = {2022},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>issn = {1073-0516},<br>url = {https://doi.org/10.1145/3577011},<br>doi = {10.1145/3577011},<br>abstract = {Recent developments in AI have provided assisting tools to support pathologists' diagnoses. However, it remains challenging to incorporate such tools into pathologists' practice; one main concern is AI's insufficient workflow integration with medical decisions. We observed pathologists' examination and discovered that the main hindering factor to integrate AI is its incompatibility with pathologists' workflow. To bridge the gap between pathologists and AI, we developed a human-AI collaborative diagnosis tool — xPath— that shares a similar examination process to that of pathologists, which can improve AI's integration into their routine examination. The viability of xPath&nbsp;is confirmed by a technical evaluation and work sessions with twelve medical professionals in pathology. This work identifies and addresses the challenge of incorporating AI models into pathology, which can offer first-hand knowledge about how HCI researchers can work with medical professionals side-by-side to bring technological advances to medical tasks towards practical applications.},<br>note = {Just Accepted},<br>journal = {ACM Trans. Comput.-Hum. Interact.},<br>month = {dec},<br>keywords = {Human-AI collaboration; digital pathology; medical AI; meningioma}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="crossa11y" role="dialog" aria-modal="true" aria-label="CrossA11y: Identifying Video Accessibility Issues via Cross-modal Grounding">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>CrossA11y: Identifying Video Accessibility Issues via Cross-modal Grounding</h2>
+      <div class="authors">Xingyu "Bruce" Liu (UCLA HCI Research)<br>Ruolin Wang (UCLA HCI Research)<br>Dingzeyu Li, Adobe Research<br>Xiang 'Anthony' Chen (UCLA HCI Research)<br>Amy Pavel, UT Austin</div>
+      <p>Authors make their videos visually accessible by adding audio descriptions (AD), and auditorily accessible by adding closed captions (CC). However, creating AD and CC is challenging and tedious, especially for non-professional describers and captioners, due to the difficulty of identifying accessibility problems in videos. A video author will have to watch the video through and manually check for inaccessible information frame-by-frame, for both visual and auditory modalities. In this paper, we present CrossA11y, a system that helps authors efficiently detect and address visual and auditory accessibility issues in videos. Using cross-modal grounding analysis, CrossA11y automatically measures accessibility of visual and audio segments in a video by checking for modality asymmetries. CrossA11y then displays these segments and surfaces visual and audio accessibility issues in a unified interface, making it intuitive to locate, review, script AD/CC in-place, and preview the described and captioned video immediately. We demonstrate the effectiveness of CrossA11y through a lab study with 11 participants, comparing to existing baseline.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/777518989" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720304162184" title="2022_CrossA11y"><img src="https://live.staticflickr.com/65535/52538161822_681d3813d7_b.jpg" width="1024" height="768" alt="2022_CrossA11y"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1ne510PMxhpM4blDV2g16_3sKtbBRp1yF/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/uist2022_crossa11y_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Xingyu "Bruce" Liu, Ruolin Wang, Dingzeyu Li, Xiang Anthony Chen, and Amy Pavel. 2022. CrossA11y: Identifying Video Accessibility Issues via Cross-modal Grounding. In Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology (UIST '22). Association for Computing Machinery, New York, NY, USA, Article 43, 1-14. https://doi.org/10.1145/3526113.3545703</div>
+        <div class="bibtex">@inproceedings{10.1145/3526113.3545703,<br>author = {Liu, Xingyu "Bruce" and Wang, Ruolin and Li, Dingzeyu and Chen, Xiang Anthony and Pavel, Amy},<br>title = {CrossA11y: Identifying Video Accessibility Issues via Cross-Modal Grounding},<br>year = {2022},<br>isbn = {9781450393201},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3526113.3545703},<br>doi = {10.1145/3526113.3545703},<br>abstract = {Authors make their videos visually accessible by adding audio descriptions (AD), and auditorily accessible by adding closed captions (CC). However, creating AD and CC is challenging and tedious, especially for non-professional describers and captioners, due to the difficulty of identifying accessibility problems in videos. A video author will have to watch the video through and manually check for inaccessible information frame-by-frame, for both visual and auditory modalities. In this paper, we present CrossA11y, a system that helps authors efficiently detect and address visual and auditory accessibility issues in videos. Using cross-modal grounding analysis, CrossA11y automatically measures accessibility of visual and audio segments in a video by checking for modality asymmetries. CrossA11y then displays these segments and surfaces visual and audio accessibility issues in a unified interface, making it intuitive to locate, review, script AD/CC in-place, and preview the described and captioned video immediately. We demonstrate the effectiveness of CrossA11y through a lab study with 11 participants, comparing to existing baseline.},<br>booktitle = {Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology},<br>articleno = {43},<br>numpages = {14},<br>keywords = {video, accessibility, closed caption, audio description},<br>location = {Bend, OR, USA},<br>series = {UIST '22}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="ganzilla" role="dialog" aria-modal="true" aria-label="GANzilla: User-Driven Direction Discovery in Generative Adversarial Networks">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>GANzilla: User-Driven Direction Discovery in Generative Adversarial Networks</h2>
+      <div class="authors">Noyan Evirgen (UCLA HCI Research)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>Generative Adversarial Network (GAN) is widely adopted in numerous application areas, such as data preprocessing, image editing, and creativity support. However, GAN's 'black box' nature prevents non-expert users from controlling what data a model generates, spawning a plethora of prior work that focused on algorithm-driven approaches to extract editing directions to control GAN. Complementarily, we propose a GANzilla—a user-driven tool that empowers a user with the classic scatter/gather technique to iteratively discover directions to meet their editing goals. In a study with 12 participants, GANzilla users were able to discover directions that (i) edited images to match provided examples (closed-ended tasks) and that (ii) met a high-level goal, e.g., making the face happier, while showing diversity across individuals (open-ended tasks).</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/777519565" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720304012340" title="2022_GANZilla"><img src="https://live.staticflickr.com/65535/52527432649_b2365339c5_c.jpg" width="1024" height="768" alt="2022_GANZilla"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1nmvrkm6l1ueSIIKYXQcTC2sWSCyXEY5V/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/uist2022_ganzilla_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Noyan Evirgen and Xiang 'Anthony' Chen. 2022. GANzilla: User-Driven Direction Discovery in Generative Adversarial Networks. In Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology (UIST '22). Association for Computing Machinery, New York, NY, USA, Article 75, 1-10. https://doi.org/10.1145/3526113.3545638</div>
+        <div class="bibtex">@inproceedings{10.1145/3526113.3545638,<br>author = {Evirgen, Noyan and Chen, Xiang 'Anthony'},<br>title = {GANzilla: User-Driven Direction Discovery in Generative Adversarial Networks},<br>year = {2022},<br>isbn = {9781450393201},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3526113.3545638},<br>doi = {10.1145/3526113.3545638},<br>abstract = {Generative Adversarial Network (GAN) is widely adopted in numerous application areas, such as data preprocessing, image editing, and creativity support. However, GAN's 'black box' nature prevents non-expert users from controlling what data a model generates, spawning a plethora of prior work that focused on algorithm-driven approaches to extract editing directions to control GAN. Complementarily, we propose a GANzilla—a user-driven tool that empowers a user with the classic scatter/gather technique to iteratively discover directions to meet their editing goals. In a study with 12 participants, GANzilla users were able to discover directions that (i)&nbsp;edited images to match provided examples (closed-ended tasks) and that (ii)&nbsp;met a high-level goal, e.g., making the face happier, while showing diversity across individuals (open-ended tasks).},<br>booktitle = {Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology},<br>articleno = {75},<br>numpages = {10},<br>keywords = {Direction Discovery, Interactive Systems, Explainable-AI, Generative Adversarial Networks},<br>location = {Bend, OR, USA},<br>series = {UIST '22}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="emoglass" role="dialog" aria-modal="true" aria-label="EmoGlass: an End-to-End AI-Enabled Wearable Platform for Enhancing Self-Awareness of Emotional Health">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>EmoGlass: an End-to-End AI-Enabled Wearable Platform for Enhancing Self-Awareness of Emotional Health</h2>
+      <div class="authors">Zihan Yan (UCLA HCI Research, Zhejiang University)<br>Yufei Wu (Zhejiang University)<br>Yang Zhang (UCLA HCI Research)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>Often, emotional disorders are overlooked due to theirlack of awareness, resulting in potential mental issues. Recent advances in sensing and inference technology provide a viable path to wearable facial-expression-based emotion recognition. However, most prior work has explored only laboratory settings and few platforms are geared towards end-users in everyday lives or provide personalized emotional suggestions to promote self-regulation. We present EmoGlass, an end-to-end wearable platform that consists of emotion detection glasses and an accompanying mobile application. Our single-camera-mounted glasses can detect seven facial expressions based on partial face images. We conducted a three-day out-of-lab study (N=15) to evaluate the performance of EmoGlass. We iterated on the design of the EmoGlass application for efective self-monitoring and awareness of users' daily emotional states. We report quantitative and qualitative fndings, based on which we discuss design recommendations for future work on sensing and enhancing awareness of emotional health.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/715380296" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720299388332" title="2022_EmoGlass"><img src="https://live.staticflickr.com/65535/52111181659_7fafcc02cd_b.jpg" width="1024" height="768" alt="2022_EmoGlass"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1nubb0jtmIw5OzTNlNOpdrdCEcN0YWJdk/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/chi2022_emoglass_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Zihan Yan, Yufei Wu, Yang Zhang, Xiang 'Anthony' Chen. EmoGlass: an End-to-End AI-Enabled Wearable Platform for Enhancing Self-Awareness of Emotional Health. In CHI Conference on Human Factors in Computing Systems, pp. 1-19. 2022. https://doi.org/10.1145/3491102.3501925</div>
+        <div class="bibtex">@inproceedings{10.1145/3491102.3501925,<br>author = {Yan, Zihan and Wu, Yufei and Zhang, Yang and Chen, Xiang 'Anthony'},<br>title = {EmoGlass: An End-to-End AI-Enabled Wearable Platform for Enhancing Self-Awareness of Emotional Health},<br>year = {2022},<br>isbn = {9781450391573},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3491102.3501925},<br>doi = {10.1145/3491102.3501925},<br>booktitle = {CHI Conference on Human Factors in Computing Systems},<br>articleno = {13},<br>numpages = {19},<br>keywords = {Facial expression detection, Wearable, Emotion sensing, Mobile health, Mental health},<br>location = {New Orleans, LA, USA},<br>series = {CHI '22}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="roman" role="dialog" aria-modal="true" aria-label="Roman: Making Everyday Objects Robotically Manipulable with 3D-Printable Add-on Mechanisms">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Roman: Making Everyday Objects Robotically Manipulable with 3D-Printable Add-on Mechanisms</h2>
+      <div class="authors">Jiahao Li (UCLA HCI Research)<br>Alexis A Samoylov (UCLA HCI Research)<br>Jeeeun Kim (HCIED Lab, Texas A&M University)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>One important vision of robotics is to provide physical assistance by manipulating different everyday objects, e.g., hand tools, kitchen utensils. However, many objects designed for dexterous hand-control are not easily manipulable by a single robotic arm with a generic parallel gripper. Complementary to existing research on developing grippers and control algorithms, we present Roman, a suite of hardware design and software tool support for robotic engineers to create 3D printable mechanisms attached to everyday handheld objects, making them easier to be manipulated by conventional robotic arms. The Roman hardware comes with a versatile magnetic gripper that can snap on/off handheld objects and drive add-on mechanisms to perform tasks. Roman also provides software support to register and author control programs. To validate our approach, we designed and fabricated Roman mechanisms for 14 everyday objects/tasks presented within a design space and conducted expert interviews with robotic engineers indicating that Roman serves as a practical alternative for enabling robotic manipulation of everyday objects.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/715062811" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720299386246" title="2022_Roman"><img src="https://live.staticflickr.com/65535/52111138539_48de9939d2_b.jpg" width="1024" height="768" alt="2022_Roman"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1o2XaOEhrGwrF4DPfX-6LEXfvo4789IcJ/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/chi2022_roman_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Jiahao Li, Alexis Samoylov, Jeeeun Kim, and Xiang 'Anthony' Chen. Roman: Making Everyday Objects Robotically Manipulable with 3D-Printable Add-on Mechanisms. In CHI Conference on Human Factors in Computing Systems, pp. 1-17. 2022. https://doi.org/10.1145/3491102.3501818</div>
+        <div class="bibtex">@inproceedings{10.1145/3491102.3501818,<br>author = {Li, Jiahao and Samoylov, Alexis and Kim, Jeeeun and Chen, Xiang 'Anthony'},<br>title = {Roman: Making Everyday Objects Robotically Manipulable with 3D-Printable Add-on Mechanisms},<br>year = {2022},<br>isbn = {9781450391573},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3491102.3501818},<br>doi = {10.1145/3491102.3501818},<br>booktitle = {CHI Conference on Human Factors in Computing Systems},<br>articleno = {272},<br>numpages = {17},<br>keywords = {mechanism design., handheld objects augmentation, Robotic grasping and manipulation},<br>location = {New Orleans, LA, USA},<br>series = {CHI '22}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="impetus" role="dialog" aria-modal="true" aria-label="Lessons Learned from Designing an AI-Enabled Diagnosis Tool for Pathologists">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Lessons Learned from Designing an AI-Enabled Diagnosis Tool for Pathologists</h2>
+      <div class="authors">Hongyan Gu (UCLA HCI Research)<br>Jingbin Huang (UCLA HCI Research)<br>Lauren Hung (CMU HCII)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>Despite the promises of data-driven artificial intelligence (AI), little is known about how we can bridge the gulf between traditional physician-driven diagnosis and a plausible future of medicine automated by AI. Specifically, how can we involve AI usefully in physicians' diagnosis workflow given that most AI is still nascent and error-prone (e.g., in digital pathology)? To explore this question, we first propose a series of collaborative techniques to engage human pathologists with AI given AI's capabilities and limitations, based on which we prototype Impetus — a tool where an AI takes various degrees of initiatives to provide various forms of assistance to a pathologist in detecting tumors from histological slides. We summarize observations and lessons learned from a study with eight pathologists and discuss recommendations for future work on human-centered medical AI systems.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/361729363" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72157718192437332" title="2021_Impetus"><img src="https://live.staticflickr.com/65535/50916469012_0ecf9689ec_b.jpg" width="1024" height="768" alt="2021_Impetus"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1-Vni8pVYMZZdG_vX0flu3vrXdL1ufrds/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/cscw2021_impetus_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Hongyan Gu, Jingbin Huang, Lauren Hung, and Xiang 'Anthony' Chen. 2021. Lessons Learned from Designing an AI-Enabled Diagnosis Tool for Pathologists. Proc. ACM Hum.-Comput. Interact. 5, CSCW 1, Article 10 (April 2021), 25 pages. https://doi.org/10.1145/3449084</div>
+        <div class="bibtex">@article{10.1145/3449084,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Lessons Learned from Designing an AI-Enabled Diagnosis Tool for Pathologists},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Gu, Hongyan and Huang, Jingbin and Hung, Lauren and Chen, Xiang Anthony},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={Proceedings of the ACM on Human-computer Interaction},<br>&nbsp; &nbsp; &nbsp; &nbsp;volume={5},<br>&nbsp; &nbsp; &nbsp; &nbsp;number={CSCW},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={1--25},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;issue_date = {April 2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3449084},<br>&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3449084},<br>&nbsp; &nbsp; &nbsp; &nbsp;articleno = {10},<br>&nbsp; &nbsp; &nbsp; &nbsp;numpages = {25}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="va11y" role="dialog" aria-modal="true" aria-label="What Makes Videos Accessible to Blind and Visually Impaired People?">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>What Makes Videos Accessible to Blind and Visually Impaired People?</h2>
+      <div class="authors">Xingyu Liu (UCLA HCI Research)<br>Patrick Carrington (Carnegie Mellon University)<br>Xiang 'Anthony' Chen (UCLA HCI Research)<br>Amy Pavel (Carnegie Mellon University)</div>
+      <p>User-generated videos are an increasingly important source of information online, yet most online videos are inaccessible to blind and visually impaired (BVI) people. To find videos that are accessible, or understandable without additional description of the visual content, BVI people in our formative studies reported that they used a time-consuming trial-and-error approach: clicking on a video, watching a portion, leaving the video, and repeating the process. BVI people also reported video accessibility heuristics that characterize accessible and inaccessible videos. We instantiate 7of the identified heuristics (2 audio-related, 2 video-related, and 3audio-visual) as automated metrics to assess video accessibility. We collected a dataset of accessibility ratings of videos by BVI people and found that our automatic video accessibility metrics correlated with the accessibility ratings (Adjusted R^2= 0.642). We augmented a video search interface with our video accessibility metrics and predictions. BVI people using our augmented video search interface selected an accessible video more efficiently than when using the original search interface. By integrating video accessibility metrics, video hosting platforms could help people surface accessible videos and encourage content creators to author more accessible products, improving video accessibility for all.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/551259813" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72157719196580808" title="2021_Va11y"><img src="https://live.staticflickr.com/65535/51184008988_1bdae2250c_b.jpg" width="1024" height="768" alt="2021_Va11y"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1o4Blw_T10WPVB56uTbyGAXF7gCXAYIUp/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/chi2021_va11y_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Xingyu Liu, Patrick Carrington, Xiang 'Anthony' Chen, and Amy Pavel. 2021. What Makes Videos Accessible to Blind and Visually Impaired People? In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI '21). Association for Computing Machinery, New York, NY, USA, Article 272, 1-14. DOI:https://doi.org/10.1145/3411764.3445233</div>
+        <div class="bibtex">@inproceedings{10.1145/3411764.3445233,<br>author = {Liu, Xingyu and Carrington, Patrick and Chen, Xiang 'Anthony' and Pavel, Amy},<br>title = {What Makes Videos Accessible to Blind and Visually Impaired People?},<br>year = {2021},<br>isbn = {9781450380966},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3411764.3445233},<br>doi = {10.1145/3411764.3445233},<br>abstract = { User-generated videos are an increasingly important source of information online, yet most online videos are inaccessible to blind and visually impaired (BVI) people. To find videos that are accessible, or understandable without additional description of the visual content, BVI people in our formative studies reported that they used a time-consuming trial-and-error approach: clicking on a video, watching a portion, leaving the video, and repeating the process. BVI people also reported video accessibility heuristics that characterize accessible and inaccessible videos. We instantiate 7 of the identified heuristics (2 audio-related, 2 video-related, and 3 audio-visual) as automated metrics to assess video accessibility. We collected a dataset of accessibility ratings of videos by BVI people and found that our automatic video accessibility metrics correlated with the accessibility ratings (Adjusted R2 = 0.642). We augmented a video search interface with our video accessibility metrics and predictions. BVI people using our augmented video search interface selected an accessible video more efficiently than when using the original search interface. By integrating video accessibility metrics, video hosting platforms could help people surface accessible videos and encourage content creators to author more accessible products, improving video accessibility for all.},<br>booktitle = {Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},<br>articleno = {272},<br>numpages = {14},<br>keywords = {accessibility, visual impairments, online videos, blind},<br>location = {Yokohama, Japan},<br>series = {CHI '21}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="revamp" role="dialog" aria-modal="true" aria-label="Revamp: Enhancing Accessible Information Seeking Experience of Online Shopping for Blind or Low Vision Users">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Revamp: Enhancing Accessible Information Seeking Experience of Online Shopping for Blind or Low Vision Users</h2>
+      <div class="authors">Ruolin Wang (UCLA HCI Research)<br>Zixuan Chen (UCLA HCI Research)<br>Mingrui 'Ray' Zhang (The Information School, University of Washington)<br>Zhaoheng Li (Department of Computer Science and Technology, Tsinghua University)<br>Zhixiu Liu (Computer Science Department, Stanford University)<br>Zihan Dang (UCLA HCI Research)<br>Chun Yu (Department of Computer science and Technology, Tsinghua University)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>Online shopping has become a valuable modern convenience, but blind or low vision (BLV) users still face significant challenges using it, because of: 1) inadequate image descriptions and 2) the inability to filter large amounts of information using screen readers. To address those challenges, we propose Revamp, a system that leverages customer reviews for interactive information retrieval. Revamp is a browser integration that supports review-based question-answering interactions on a reconstructed product page. From our interview, we identified four main aspects (color, logo, shape, and size) that are vital for BLV users to understand the visual appearance of a product. Based on the findings, we formulated syntactic rules to extract review snippets, which were used to generate image descriptions and responses to users' queries. Evaluations with eight BLV users showed that Revamp 1) provided useful descriptive information for understanding product appearance and 2) helped the participants locate key information efficiently.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/515072781" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><iframe src="https://flickrembed.com/cms_embed.php?source=flickr&amp;layout=responsive&amp;input=72157718382497033&amp;sort=0&amp;by=album&amp;theme=default_notextpanel&amp;scale=fit&amp;limit=100&amp;skin=alexis" loading="lazy" style="width:100%;height:60vh;border:0" allowfullscreen></iframe></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1oGtoOrICzzVCBQb0otNfTbUZRlxg7Mh4/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/chi2021_revamp_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Ruolin Wang, Zixuan Chen, Mingrui Zhang, Mingrui Ray Zhang, Zhaoheng Li, Zhixiu Liu, Zihan Dang, Chun Yu, and Xiang 'Anthony' Chen. 2021. Revamp: Enhancing Accessible Information Seeking Experience of Online Shopping for Blind or Low Vision Users. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems, 1-14. CHI '21. New York, NY, USA: ACM, 2021. https://doi.org/10.1145/3411764.3445547.</div>
+        <div class="bibtex">@inproceedings{Wang:2021:Revamp,<br>&nbsp; &nbsp; &nbsp; &nbsp;author = {Wang, Ruolin and Chen, Zixuan and Zhang, Mingrui and Zhang, Mingrui Ray and Li, Zhaoheng and Liu, Zhixiu and Dang, Zihan and Yu, Chun and Chen, Xiang Anthony.},<br>&nbsp; &nbsp; &nbsp; &nbsp;title = {Revamp: Enhancing Accessible Information Seeking Experience of Online Shopping for Blind or Low Vision Users},<br>&nbsp; &nbsp; &nbsp; &nbsp;year = {2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;isbn = {978-1-4503-8096-6/21/05},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher = {ACM},<br>&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3411764.3445547},<br>&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3411764.3445547},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages = {1-14},<br>&nbsp; &nbsp; &nbsp; &nbsp;numpages = {14},<br>&nbsp; &nbsp; &nbsp; &nbsp;keywords = {Online shopping; Information Retrieval; Accessibility; Blind or Low Vision Users; Reviews; Image Description; Question-answering},<br>&nbsp; &nbsp; &nbsp; &nbsp;location = {Tokohama, Japan},<br>&nbsp; &nbsp; &nbsp; &nbsp;series = {CHI '21}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="xalgo" role="dialog" aria-modal="true" aria-label="XAlgo: a Design Probe of Explaining Algorithms&#x27; Internal States via Question-Answering">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>XAlgo: a Design Probe of Explaining Algorithms' Internal States via Question-Answering</h2>
+      <div class="authors">Juan Rebanal (UCLA HCI Research)<br>Jordan Combitsis (UCLA HCI Research)<br>Yuqi Tang (UCLA HCI Research)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>Algorithms often appear as 'black boxes' to non-expert users. While prior work focuses on explainable representations and expert-oriented exploration, we propose and study an interactive approach using question answering to explain deterministic algorithms to non-expert users who need to understand the algorithms' internal states (e.g., students learning algorithms, operators monitoring robots, admins troubleshooting network routing). We construct XAlgo---a formal model that first classifies the type of question based on a taxonomy and generates an answer based on a set of rules that extract information from representations of an algorithm's internal states, e.g., the pseudocode. A design probe in an algorithm learning scenario with 18 participants (9 for a Wizard-of-Oz XAlgo and 9 as a control group) reports findings and design implications based on what kinds of questions people ask, how well XAlgo responds, and what remain as challenges to bridge users' gulf of understanding algorithms.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><iframe src="https://flickrembed.com/cms_embed.php?source=flickr&amp;layout=responsive&amp;input=72157718472175126&amp;sort=0&amp;by=album&amp;theme=default_notextpanel&amp;scale=fit&amp;limit=100&amp;skin=alexis" loading="lazy" style="width:100%;height:60vh;border:0" allowfullscreen></iframe></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1RFlYYoi9ycO2g4WalkjM3NBtF_PjDb0x/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/iui2021_xalgo_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Juan Rebanal, Jordan Combitsis, Yuqi Tang, Xiang 'Anthony' Chen. XAlgo: a Design Probe of Explaining Algorithms' Internal States via Question-Answering. In Proceedings of the 26th International Conference on Intelligent User Interfaces (IUI '21), April 14--17, 2021, College Station, TX, USA. https://doi.org/10.1145/3397481.3450676.</div>
+        <div class="bibtex">@inproceedings{10.1145/2856767.2856812,<br>&nbsp; &nbsp; &nbsp; &nbsp;author = {Rebanal, Juan and Tang, Yuqi and Combitsis, Jordan and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;title = {XAlgo: a Design Probe of Explaining Algorithms' Internal States via Question-Answering},<br>&nbsp; &nbsp; &nbsp; &nbsp;year = {2021},<br>&nbsp; &nbsp; &nbsp; &nbsp;isbn = {978-1-4503-8017-1/21/04},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3397481.3450676},<br>&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3397481.3450676},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 26st International Conference on Intelligent User Interfaces},<br>&nbsp; &nbsp; &nbsp; &nbsp;series = {IUI '21}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="oralviewer" role="dialog" aria-modal="true" aria-label="OralViewer: 3D Demonstration of Dental Surgeries for Patient Education with Oral Cavity Reconstruction from a 2D Panoramic X-ray">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>OralViewer: 3D Demonstration of Dental Surgeries for Patient Education with Oral Cavity Reconstruction from a 2D Panoramic X-ray</h2>
+      <div class="authors">Yuan Liang (UCLA HCI Research)<br>Liang Qiu (UCLA)<br>Tiancheng Lu (University of Pittsburgh)<br>Zhujun Fang, Dezhan Tu, Jiawei Yang, Yiting Shao, Kun Wang (UCLA)<br>Xiang 'Anthony' Chen (UCLA HCI Research)<br>Lei He (UCLA)</div>
+      <p>Patient's understanding on forthcoming dental surgeries is required by patient-centered care and helps reduce anxiety. Due to the complexity of dental surgeries and the patient-dentist expertise gap, conventional techniques of patient education are usually not effective for explaining surgical steps. In this paper, we present OralViewer—the first interactive application that enables dentist's demonstration of dental surgeries in 3D to promote patients' understanding. OralViewer takes a single 2D panoramic dental X-ray to reconstruct patient-specific 3D teeth structures, which are then assembled with registered gum and jaw bone models for complete oral cavity modeling. During the demonstration, OralViewer enables dentists to show surgery steps with virtual dental instruments that can animate effects on a 3D model in real-time. A technical evaluation shows that our deep learning model achieves a mean Intersection over Union (IoU) of 0.771 for 3D teeth reconstruction. A patient study with 12 participants shows OralViewer can improve patients' understanding of surgeries. A preliminary expert study with 3 board-certified dentists further verifies the clinical validity of our system.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/553825921" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media">72157<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72157719248545536" title="2021_OrlaViewer"><img src="https://live.staticflickr.com/65535/51197471885_d232eaca78_b.jpg" width="1024" height="768" alt="2021_OrlaViewer"/></a>719248545536</div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1-yO3swmeSoz0uxDNkdStD2iIbbHhSGSP/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/iui2021_oralviewer.thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Yuan Liang, Liang Qiu, Tiancheng Lu, Zhujun Fang, Dezhan Tu, Jiawei Yang, Yiting Shao, Kun Wang, Xiang 'Anthony' Chen, and Lei He. 2021. OralViewer: 3D Demonstration of Dental Surgeries for Patient Education with Oral Cavity Reconstruction from a 2D Panoramic X-ray. In 26th International Conference on Intelligent User Interfaces (IUI '21). Association for Computing Machinery, New York, NY, USA, 553-563. DOI:https://doi.org/10.1145/3397481.3450695</div>
+        <div class="bibtex">@inproceedings{10.1145/3397481.3450695,<br>author = {Liang, Yuan and Qiu, Liang and Lu, Tiancheng and Fang, Zhujun and Tu, Dezhan and Yang, Jiawei and Shao, Yiting and Wang, Kun and Chen, Xiang 'Anthony' and He, Lei},<br>title = {OralViewer: 3D Demonstration of Dental Surgeries for Patient Education with Oral Cavity Reconstruction from a 2D Panoramic X-Ray},<br>year = {2021},<br>isbn = {9781450380171},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3397481.3450695},<br>doi = {10.1145/3397481.3450695},<br>abstract = { Patient's understanding on forthcoming dental surgeries is required by patient-centered care and helps reduce anxiety. Due to the complexity of dental surgeries and the patient-dentist expertise gap, conventional techniques of patient education are usually not effective for explaining surgical steps. In this paper, we present OralViewer—the first interactive application that enables dentist's demonstration of dental surgeries in 3D to promote patients' understanding. OralViewer takes a single 2D panoramic dental X-ray to reconstruct patient-specific 3D teeth structures, which are then assembled with registered gum and jaw bone models for complete oral cavity modeling. During the demonstration, OralViewer enables dentists to show surgery steps with virtual dental instruments that can animate effects on a 3D model in real-time. A technical evaluation shows that our deep learning model achieves a mean Intersection over Union (IoU) of 0.771 for 3D teeth reconstruction. A patient study with 12 participants shows OralViewer can improve patients' understanding of surgeries. A preliminary expert study with 3 board-certified dentists further verifies the clinical validity of our system.},<br>booktitle = {26th International Conference on Intelligent User Interfaces},<br>pages = {553-563},<br>numpages = {11},<br>keywords = {deep learning, 3D visualization, patient education},<br>location = {College Station, TX, USA},<br>series = {IUI '21}<br>}<br><br></div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="dualvib" role="dialog" aria-modal="true" aria-label="DualVib: Simulating Haptic Sensation of Dynamic Mass by Combining Pseudo-Force and Texture Feedback">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>DualVib: Simulating Haptic Sensation of Dynamic Mass by Combining Pseudo-Force and Texture Feedback</h2>
+      <div class="authors">Yudai Tanaka (University of Chicago)<br>Arata Horie (The University of Tokyo)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>We present DualVib, a compact handheld device that simulates the haptic sensation of manipulating dynamic mass; mass that causes haptic feedback as the user's hand moves (e.g., shaking a jar and feeling coins rattling inside). Unlike other devices that require actual displacement of weight, DualVib dispenses with heavy and bulky mechanical structures and, instead, uses four vibration actuators. DualVib simulates a dynamic mass by simultaneously delivering two types of haptic feedback to the user's hand: (1) pseudo-force feedback created by asymmetric vibrations that render the kinesthetic force arising from the moving mass; and (2) texture feedback through acoustic vibrations that render the object's surface vibrations correlated with mass material properties. By means of our user study, we found out that DualVib allowed users to more effectively distinguish dynamic masses when compared to using either pseudo-force or texture feedback alone. We also report qualitative feedback from users who experienced five virtual reality applications with our device.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/455326878" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72157715869674293" title="2020_DualVib"><img src="https://live.staticflickr.com/65535/50314078682_b3d2e30eb7_b.jpg" width="1024" height="768" alt="2020_DualVib"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1aEnQ-LSWe7upFDG1-UQ95tJ8juRcbvnf/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/vrst2020_dualvib_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Yudai Tanaka, Arata Horie, Xiang 'Anthony' Chen. 2020. DualVib: Simulating Haptic Sensation of Dynamic Mass by Combining Pseudo-Force and Texture Feedback. In 26th ACM Symposium on Virtual Reality Software and Technology, 1-10. VRST '20. New York, NY, USA: Association for Computing Machinery. https://doi.org/10.1145/3385956.3418964.</div>
+        <div class="bibtex">@inproceedings{10.1145/3385956.3418964,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author = {Tanaka, Yudai and Horie, Arata and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title = {DualVib: Simulating Haptic Sensation of Dynamic Mass by Combining Pseudo-Force and Texture Feedback},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year = {2020},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;isbn = {9781450376198},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3385956.3418964},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3385956.3418964},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {26th ACM Symposium on Virtual Reality Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pages = {1-10},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;numpages = {10},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;keywords = {haptics, virtual reality, mass perception, vibration},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;location = {Virtual Event, Canada},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;series = {VRST '20}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="geno" role="dialog" aria-modal="true" aria-label="Geno: A Developer Tool for Authoring Multimodal Interaction on Existing Web Applications">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Geno: A Developer Tool for Authoring Multimodal Interaction on Existing Web Applications</h2>
+      <div class="authors">Ritam Jyoti Sarmah (UCLA HCI Research)<br>Yunpeng Ding (UCLA HCI Research)<br>Di Wang (UCSD Computer Science)<br>Cheuk Yin Phipson Lee (UCLA HCI Research)<br>Toby Jia-Jun Li (CMU HCII)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>Supporting voice commands in applications presents significant benefits to users. However, adding such support to existing GUI-based web apps is effort-consuming with a high learning barrier, as shown in our formative study, due to the lack of unified support for creating multimodal interfaces. We present Geno---a developer tool for adding the voice input modality to existing web apps without requiring significant NLP expertise. Geno provides a high-level workflow for developers to specify functionalities to be supported by voice (intents), create language models for detecting intents and the relevant information (parameters) from user utterances, and fulfill the intents by either programmatically invoking the corresponding functions or replaying GUI actions on the web app. Geno further supports multimodal references to GUI context in voice commands (e.g. 'move this [event] to next week' while pointing at an event with the cursor). In a study, developers with little NLP expertise were able to add multimodal voice command support for two existing web apps using Geno.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/440213846" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72157716157681577" title="2020_Geno"><img src="https://live.staticflickr.com/65535/50391995692_ef836860fe_b.jpg" width="1024" height="768" alt="2020_Geno"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1oZCvo5Q1sgRNK9HLU6ea91ghGqOy8_xD/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/uist2020_geno_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Sarmah, R.J., Ding, Y., Wang, D., Lee, C.Y.P., Li, T.J.J. and Chen, X.A., 2020, October. Geno: A Developer Tool for Authoring Multimodal Interaction on Existing Web Applications. In Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology (pp. 1169-1181).</div>
+        <div class="bibtex">@inproceedings{sarmah2020geno,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Geno: A Developer Tool for Authoring Multimodal Interaction on Existing Web Applications},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Sarmah, Ritam Jyoti and Ding, Yunpeng and Wang, Di and Lee, Cheuk Yin Phipson and Li, Toby Jia-Jun and Chen, XiangAnthony},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={1169--1181},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2020}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="romeo" role="dialog" aria-modal="true" aria-label="Romeo: A Design Tool for Embedding Transformable Parts in 3D Models to Robotically Augment Default Functionalities">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Romeo: A Design Tool for Embedding Transformable Parts in 3D Models to Robotically Augment Default Functionalities</h2>
+      <div class="authors">Jiahao Li (UCLA HCI Research)<br>Meilin Cui (UCLA HCI Research)<br>Jeeeun Kim (Texas A&M University)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>Reconfiguring shapes of objects enables transforming existing passive objects with robotic functionalities, e.g., a transformable coffee cup holder can be attached to a chair's armrest, a piggy bank can reach out an arm to 'steal' coins. Despite the advance in end-user 3D design and fabrication, it remains challenging for non-experts to create such 'transformables' using existing tools due to the requirement of specific engineering knowledge such as mechanisms and robotic design. We present Romeo -- a design tool for creating transformables to robotically augment objects' default functionalities. Romeo allows users to transform an object into a robotic arm by expressing at a high level what type of task is expected. Users can select which part of the object to be transformed, specify motion points in space for the transformed part to follow and the corresponding action to be taken. Romeo then automatically generates a robotic arm embedded in the transformable part ready for fabrication. A design session validated this tool where participants used Romeo to accomplish controlled design tasks and to open-endedly create coin-stealing piggy banks by transforming 3D objects of their own choice.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/459497267" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72157716023426003" title="2020_Romeo"><img src="https://live.staticflickr.com/65535/50356908336_99acc02a6f_b.jpg" width="1024" height="768" alt="2020_Romeo"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1cOdjdHvsdquguuCuPzf0sriFZ2buVpLD/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/uist2020_romeo_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Li, J., Cui, M., Kim, J. and Chen, X.A., 2020, October. Romeo: A Design Tool for Embedding Transformable Parts in 3D Models to Robotically Augment Default Functionalities. In Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology (pp. 897-911).</div>
+        <div class="bibtex">@inproceedings{li2020romeo,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Romeo: A Design Tool for Embedding Transformable Parts in 3D Models to Robotically Augment Default Functionalities},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Li, Jiahao and Cui, Meilin and Kim, Jeeeun and Chen, XiangAnthony},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={897--911},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2020}<br>}<br></div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="chexplain" role="dialog" aria-modal="true" aria-label="CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis</h2>
+      <div class="authors">Yao Xie (UCLA HCI Research)<br>Melody Chen (UCLA HCI Research)<br>David Kao (UCLA HCI Research)<br>Ge Gao (University of Maryland, College Park)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>The recent development of data-driven AI promises to automate medical diagnosis; however, most AI functions as 'black boxes' to physicians with limited computational knowledge. Using medical imaging as a point of departure, we conducted three research activities to formulate the design of CheXplain---a system that enables physicians to explore and understand AI-enabled chest X-ray analysis: (i) a paired survey between referring physicians and radiologists reveals whether, when, and what kinds of explanations are needed; (ii) a low-fidelity prototype co-designed with three physicians formulates eight key features; and (iii) a high-fidelity prototype evaluated by another six medical professionals provides detailed summative insights on how each feature enables the exploration and understanding of AI. We summarize by discussing recommendations for future work to design and implement explainable medical AI systems that encompass four recurring themes: motivation, constraint, explanation, and justification.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/416564621" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72157714227177278" title="2020_CheXplain"><img src="https://live.staticflickr.com/65535/49872248883_7e64f82c14_b.jpg" width="1024" height="768" alt="2020_CheXplain"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1op5naceGh4rZRYL5UHC2eFWCrtD_IZD9/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/chi2020_chexplain_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Yao Xie, Melody Chen, David Kao, Ge Gao, and Xiang 'Anthony' Chen. 2020. CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI '20). Association for Computing Machinery, New York, NY, USA, 1-13. DOI:https://doi.org/10.1145/3313831.3376807</div>
+        <div class="bibtex">@inproceedings{10.1145/3313831.3376807,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author = {Xie, Yao and Chen, Melody and Kao, David and Gao, Ge and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title = {CheXplain: Enabling Physicians to Explore and Understand Data-Driven, AI-Enabled Medical Imaging Analysis},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year = {2020},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;isbn = {9781450367080},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3313831.3376807},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3313831.3376807},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pages = {1-13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;numpages = {13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;keywords = {explainable artificial intelligence, physician-centered design, system design},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;location = {Honolulu, HI, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;series = {CHI '20}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="oralcam" role="dialog" aria-modal="true" aria-label="OralCam: Enabling Self-Examination and Awareness of Oral Health Using a Smartphone Camera">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>OralCam: Enabling Self-Examination and Awareness of Oral Health Using a Smartphone Camera</h2>
+      <div class="authors">Yuan Liang (UCLA HCI Research & Design Automation Lab)<br>Hsuan Wei Fan (Tsinghua University)<br>Zhujun Fang (UC Davis)<br>Leiying Miao,  Wen Li,  Xuan Zhang,  Weibin Sun (Nanjing Stomatological Hospital, Meidcal School)<br>Kun Wang, Lei He (UCLA Design Automation Lab)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>Due to a lack of resources or awareness, oral diseases are often left unexamined and untreated, affecting a large population worldwide. With the advent of low-cost, sensor-equipped smartphones, mobile apps offer a promising possibility. However, to the best of our knowledge, no mobile health (mHealth) solutions can directly support users to self-examine their oral health condition. We present OralCam, the first interactive app that enables end-users' self-examination of five common oral conditions (diseases or early disease signals) by taking smartphone photos of one's oral cavity. OralCam allows a user to annotate additional information to augment the input image, and presents the output hierarchically, probabilistically and with visual explanations to help laymen users understand examination results. We describe a deep learning backend trained on a data set that consists of 3,182 oral photos. We report a technical evaluation, a week-long in-the-wild user study and an expert interview to validate OralCam.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/416571045" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72157714227638632" title="2020_OralCam"><img src="https://live.staticflickr.com/65535/49872175903_901e4b13a4_b.jpg" width="1024" height="768" alt="2020_OralCam"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1osmD5ly8LsYcFGOIlnNAGKnJ3-4dsQI5/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/chi2020_oralcam_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Yuan Liang, Hsuan Wei Fan, Zhujun Fang, Leiying Miao, Wen Li, Xuan Zhang, Weibin Sun, Kun Wang, Lei He, and Xiang 'Anthony' Chen. 2020. OralCam: Enabling Self-Examination and Awareness of Oral Health Using a Smartphone Camera. In Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (CHI '20). Association for Computing Machinery, New York, NY, USA, 1-13. DOI:https://doi.org/10.1145/3313831.3376238</div>
+        <div class="bibtex">@inproceedings{10.1145/3313831.3376238,<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;author = {Liang, Yuan and Fan, Hsuan Wei and Fang, Zhujun and Miao, Leiying and Li, Wen and Zhang, Xuan and Sun, Weibin and Wang, Kun and He, Lei and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;title = {OralCam: Enabling Self-Examination and Awareness of Oral Health Using a Smartphone Camera},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;year = {2020},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;isbn = {9781450367080},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3313831.3376238},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3313831.3376238},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;pages = {1-13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;numpages = {13},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;keywords = {mobile health, oral health, artificial intelligence, deep learning},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;location = {Honolulu, HI, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;series = {CHI '20}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="robiot" role="dialog" aria-modal="true" aria-label="Robiot: A Design Tool for Actuating Everyday Object with Automatically Generated 3D Printable Mechanism">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Robiot: A Design Tool for Actuating Everyday Object with Automatically Generated 3D Printable Mechanism</h2>
+      <div class="authors">Jiahao Li (UCLA HCI Research)<br>Jeeeun Kim (Texas A&M University)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>Users can now easily communicate information with an Internet of Things; in contrast, there remains a lack of support to automate tasks that involve legacy static objects, e.g. adjusting a desk lamp's angle for optimal brightness, turning on/off a manual faucet when washing dishes, sliding a window to maintain a preferred indoor temperature. Automating these simple physical tasks has the potential to improve people's quality of life, which is particularly important for people with a disability or in situational impairment.<br/><br/>We present Robiot -- a design tool for generating mechanisms that can be attached to, motorized, and actuating legacy static objects to perform simple physical tasks. Users only need to take a short video manipulating an object to demonstrate an intended physical behavior. Robiot then extracts requisite parameters and automatically generates 3D models of the enabling actuation mechanisms by performing a scene and motion analysis of the 2D video in alignment with the object's 3D model. In an hour-long design session, six participants used Robiot to actuate seven everyday objects, imbuing them with the robotic capability to automate various physical tasks.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/358553023" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72157710743420892" title="2019_Robiot"><img src="https://live.staticflickr.com/65535/48695256853_47d2c4933b_b.jpg" width="1024" height="768" alt="2019_Robiot"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1oz_P7ZC7phdFP3bxJATJnwWGlnNi6fZP/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/uist2019_robiot_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Li, J., Kim, J., & Chen, X. “Anthony.” (2019). Robiot&#58; A Design Tool for Actuating Everyday Objects with Automatically Generated 3D Printable Mechanisms. In Proceedings of the 32Nd Annual ACM Symposium on User Interface Software and Technology (pp. 673-685). New York, NY, USA: ACM. https://doi.org/10.1145/3332165.3347894</div>
+        <div class="bibtex">@inproceedings{Li:2019:RDT:3332165.3347894,<br> author = {Li, Jiahao and Kim, Jeeeun and Chen, Xiang 'Anthony'},<br> title = {Robiot: A Design Tool for Actuating Everyday Objects with Automatically Generated 3D Printable Mechanisms},<br> booktitle = {Proceedings of the 32Nd Annual ACM Symposium on User Interface Software and Technology},<br> series = {UIST '19},<br> year = {2019},<br> isbn = {978-1-4503-6816-2},<br> location = {New Orleans, LA, USA},<br> pages = {673--685},<br> numpages = {13},<br> url = {http://doi.acm.org/10.1145/3332165.3347894},<br> doi = {10.1145/3332165.3347894},<br> acmid = {3347894},<br> publisher = {ACM},<br> address = {New York, NY, USA},<br> keywords = {actuation, design tool, everyday objects, generative design},<br>} <br></div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="minuet" role="dialog" aria-modal="true" aria-label="Minuet: Multimodal Interaction with an Internet of Things">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Minuet: Multimodal Interaction with an Internet of Things</h2>
+      <div class="authors">Runchang Kang & Anhong Guo (Carnegie Mellon University)<br>Gierard Laput (Apple)<br>Yang Li (Google)<br>Xiang 'Anthony' Chen (UCLA HCI Research)</div>
+      <p>A large number of Internet-of-Things (IoT) devices will soon populate our physical environments. Yet, IoT devices' reliance on mobile applications and voice-only assistants as the primary interface limits their scalability and expressiveness. Building off of the classic 'Put-That-There' system, we contribute an exploration of the design space of voice + gesture interaction with spatially-distributed IoT devices. Our design space decomposes users' IoT commands into two components---selection and interaction. We articulate how the permutations of voice and freehand gesture for these two components can complementarily afford interaction possibilities that go beyond current approaches. We instantiate this design space as a proof-of-concept sensing platform and demonstrate a series of novel IoT interaction scenarios, such as making 'dumb' objects smart, commanding robotic appliances, and resolving ambiguous pointing at cluttered devices.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/358550776" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72157710744632177" title="2019_Minuet"><img src="https://live.staticflickr.com/65535/48695800733_5a27d927f8_b.jpg" width="1024" height="768" alt="2019_Minuet"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1p7JENXWG1UF0z2NSme6ukKncUCC6zTY7/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/sui2019_minuet_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Kang, R., Guo, A., Laput, G., Li, Y., & Chen, X. “Anthony.” (2019). Minuet: Multimodal Interaction with an Internet of Things. In Symposium on Spatial User Interaction (pp. 2:1--2:10). New York, NY, USA: ACM. https://doi.org/10.1145/3357251.3357581</div>
+        <div class="bibtex">@inproceedings{Kang:2019:MMI:3357251.3357581,<br>address = {New York, NY, USA},<br>author = {Kang, Runchang and Guo, Anhong and Laput, Gierad and Li, Yang and Chen, Xiang 'Anthony'},<br>booktitle = {Symposium on Spatial User Interaction},<br>doi = {10.1145/3357251.3357581},<br>isbn = {978-1-4503-6975-6},<br>keywords = { gesture, multimodal interaction, voice,Internet-of-Things},<br>pages = {2:1----2:10},<br>publisher = {ACM},<br>series = {SUI '19},<br>title = {{Minuet: Multimodal Interaction with an Internet of Things}},<br>url = {http://doi.acm.org/10.1145/3357251.3357581},<br>year = {2019}<br>}<br></div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="forte" role="dialog" aria-modal="true" aria-label="Forte: User-Driven Generative Design">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Forte: User-Driven Generative Design</h2>
+      <div class="authors">Xiang 'Anthony' Chen (UCLA HCI Research)<br>Ye Tao (Zhejiang University)<br>Guanyun Wang (Carnegie Mellon University)<br>Runchang Kang (Carnegie Mellon University)<br>Tovi Grossman (University of Toronto)<br>Stelian Coros (ETH Zurich)<br>Scott Hudson (Carnegie Mellon University)</div>
+      <p>Low-cost fabrication machines (e.g., 3D printers) offer the promise of creating custom-designed objects by a range of users. To maximize performance, generative design methods such as topology optimization can automatically optimize properties of a design based on high-level specifications. Though promising, such methods require people to map their design ideas--often unintuitively--to a small number of mathematical input parameters, and the relationship between those parameters and a generated design is often unclear, making it difficult to iterate a design. We present Forte, a sketch-based, real-time interactive tool for people to directly express and iterate on their designs via 2D topology optimization. Users can ask the system to add structures, provide a variation with better performance, or optimize internal material layouts. Users can globally control how much to `deviate' from the initial sketch, or perform local suggestive editing, which interactively prompts the system to update based on the new information. Design sessions with 10 participants demonstrate that Forte empowers designers to create and explore a range of optimized designs with custom forms and styles.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/244079629" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326423913" title="2018_Forte"><img src="https://live.staticflickr.com/65535/54547827649_1e434631b9_c.jpg" width="1024" height="768" alt="2018_Forte"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1p9HCxYxvSfItqZXtzGbq8TOJ-ZDMFQaA/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/chi2018_forte_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Chen, X., Tao, Y., Wang, G., Kang, R., Grossman, T., Coros, S., & Hudson, S. E. (2018). Forte: User-Driven Generative Design. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (p. 496).</div>
+        <div class="bibtex">@inproceedings{chen2018forte,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Forte: User-Driven Generative Design},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Tao, Ye and Wang, Guanyun and Kang, Runchang and Grossman, Tovi and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={496},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2018},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="medley" role="dialog" aria-modal="true" aria-label="Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects</h2>
+      <div class="authors">Xiang 'Anthony' Chen (UCLA HCI Research)<br>Stelian Coros (ETH Zurich)<br>Scott Hudson (Carnegie Mellon University)</div>
+      <p>In our everyday life, we interact with and benefit from objects with a wide range of material properties. In contrast, personal fabrication machines (e.g., desktop 3D printers) currently only support a much smaller set of materials. Our goal is to close the gap between current limitations and the future of multi-material printing by enabling people to explore the reuse of material from everyday objects into their custom designs. To achieve this, we develop a library of embeddables--everyday objects that can be cut, worked and embedded into 3D printable designs. We describe a design space that characterizes the geometric and material properties of embeddables. We then develop Medley---a design tool whereby users can import a 3D model, search for embeddables with desired material properties, and interactively edit and integrate their geometry to fit into the original design. Medley also supports the final fabrication and embedding process, including instructions for carving or cutting the objects, and generating optimal paths for inserting embeddables. To validate the expressiveness of our library, we showcase numerous examples augmented by embeddables that go beyond the objects' original printed materials.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/252273058" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326403341" title="2018_Medley"><img src="https://live.staticflickr.com/65535/54547655536_0526b8ca5f_b.jpg" width="1024" height="768" alt="2018_Medley"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1pGNyS9_daDtggz8wG0PcU33GCfaHI4-R/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/chi2018_medley_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Chen, X., Coros, S., & Hudson, S. E. (2018). Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (p. 162).</div>
+        <div class="bibtex">@inproceedings{chen2018medley,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Medley: A Library of Embeddables to Explore Rich Material Properties for 3D Printed Objects},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={162},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2018},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="improv" role="dialog" aria-modal="true" aria-label="Improv: An Input Framework for Improvising Cross-Device Interaction by Demonstration">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Improv: An Input Framework for Improvising Cross-Device Interaction by Demonstration</h2>
+      <div class="authors">Xiang 'Anthony' Chen (UCLA HCI Research)<br>Yang Li (Google)</div>
+      <p>As computing devices become increasingly ubiquitous, it is now possible to combine the unique capabilities of different devices or Internet of Things to accomplish a task. However, there is currently a high technical barrier for creating cross-device interaction. This is especially challenging for end users who have limited technical expertise—end users would greatly benefit from custom cross-device interaction that best suits their needs. In this article, we present Improv, a cross-device input framework that allows a user to easily leverage the capability of additional devices to create new input methods for an existing, unmodified application, e.g., creating custom gestures on a smartphone to control a desktop presentation application. Instead of requiring developers to anticipate and program these cross-device behaviors in advance, Improv enables end users to improvise them on the fly by simple demonstration, for their particular needs and devices at hand. We showcase a range of scenarios where Improv is used to create a diverse set of useful cross-device input. Our study with 14 participants indicated that on average it took a participant 10 seconds to create a cross-device input technique. In addition, Improv achieved 93.7% accuracy in interpreting user demonstration of a target UI behavior by looking at the raw input events from a single example.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/216769849" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326409062" title="2017_Improv"><img src="https://live.staticflickr.com/65535/54546782762_199659aaca_c.jpg" width="1024" height="768" alt="2017_Improv"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1pUC9fDuo16anNqycLG63THZLFfJDq0eS/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/tochi17_improv_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Chen, X., & Li, Y. (2017). Improv: An Input Framework for Improvising Cross-Device Interaction by Demonstration. ACM Transactions on Computer-Human Interaction (TOCHI), 24(2), 15.</div>
+        <div class="bibtex">@article{chen2017improv,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Improv: An Input Framework for Improvising Cross-Device Interaction by Demonstration},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang'Anthony' and Li, Yang},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={ACM Transactions on Computer-Human Interaction (TOCHI)},<br>&nbsp; &nbsp; &nbsp; &nbsp;volume={24},<br>&nbsp; &nbsp; &nbsp; &nbsp;number={2},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={15},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2017},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher={ACM}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="reprise" role="dialog" aria-modal="true" aria-label="Reprise: A Design Tool for Specifying, Generating, and Customizing 3D Printable Adaptations on Everyday Objects">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Reprise: A Design Tool for Specifying, Generating, and Customizing 3D Printable Adaptations on Everyday Objects</h2>
+      <div class="authors">Xiang 'Anthony' Chen (UCLA HCI Research)<br>Jeeeun Kim (Texas A&M University)<br>Tovi Grossman (University of Toronto)<br>Stelian Coros (ETH Zurich)<br>Scott Hudson (Carnegie Mellon University)</div>
+      <p>In this paper, we describe Reprise--a design tool for specifying, generating, customizing and fitting adaptations onto existing household objects. Reprise allows users to express at a high level what type of action is applied to an object.  Based on this high level specification, Reprise automatically generates adaptations. Users can use simple sliders to customize the adaptations to better suit their particular needs and preferences, such as increasing the tightness for gripping, enhancing torque for rotation, or making a larger base for stability. Finally, Reprise provides a toolkit of fastening methods and support structures for fitting the adaptations onto existing objects.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/182221122" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326409152" title="2016_Reprise"><img src="https://live.staticflickr.com/65535/54548012595_99baa82a96_b.jpg" width="1024" height="768" alt="2016_Reprise"/></a></div></template>
+      <div class="pub">
+        <a href="https://www.dropbox.com/s/j8kywu7dex12ery/uist2016_reprise.pdf" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/uist2016_reprise_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Chen, X., Kim, J., Mankoff, J., Grossman, T., Coros, S., & Hudson, S. E. (2016). Reprise: A Design Tool for Specifying, Generating, and Customizing 3D Printable Adaptations on Everyday Objects. In the 29th Annual ACM Symposium on User Interface Software and Technology.</div>
+        <div class="bibtex">@inproceedings{chen2016reprise,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Reprise: A Design Tool for Specifying, Generating, and Customizing 3D Printable Adaptations on Everyday Objects},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Kim, Jeeeun and Mankoff, Jennifer and Grossman, Tovi and Coros, Stelian and Hudson, Scott E},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={the 29th Annual ACM Symposium on User Interface Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2016},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="locus" role="dialog" aria-modal="true" aria-label="Bootstrapping User-Defined Body Tapping Recognition with Offline-Learned Probabilistic Representation">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Bootstrapping User-Defined Body Tapping Recognition with Offline-Learned Probabilistic Representation</h2>
+      <div class="authors">Xiang 'Anthony' Chen (UCLA HCI Research)<br>Yang Li (Google)</div>
+      <p>To address the increasing functionality (or information) overload of smartphones, prior research has explored a variety of methods to extend the input vocabulary of mobile devices. In particular, body tapping has been previously proposed as a technique that allows the user to quickly access a target functionality by simply tapping at a specific location of the body with a smartphone. Though compelling, prior work often fell short in enabling users' unconstrained tapping locations or behaviors. To address this problem, we developed a novel recognition method that combines both offline—before the system sees any user-defined gestures—and online learning to reliably recognize arbitrary, user-defined body tapping gestures, only using a smartphone's built-in sensors. Our experiment indicates that our method significantly outperforms baseline approaches in several usage conditions. In particular, provided only with a single sample per location, our accuracy is 30.8% over an SVM baseline and 24.8% over a template matching method. Based on these findings, we discuss how our approach can be generalized to other user-defined gesture problems. </p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/184405883" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><iframe src="https://flickrembed.com/cms_embed.php?source=flickr&amp;layout=responsive&amp;input=72157671061225703&amp;sort=0&amp;by=album&amp;theme=default_notextpanel&amp;scale=fit&amp;limit=100&amp;skin=alexis" loading="lazy" style="width:100%;height:60vh;border:0" allowfullscreen></iframe></div></template>
+      <div class="pub">
+        <a href="https://www.dropbox.com/s/iw4eqv7b9rhzykx/uist2016_locus.pdf" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/uist2016_locus_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Chen, X., & Li, Y. (2016). Bootstrapping User-Defined Body Tapping Recognition with Offline-Learned Probabilistic Representation. In Proceedings of the 29th Annual Symposium on User Interface Software and Technology (pp. 359-364).</div>
+        <div class="bibtex">@inproceedings{chen2016bootstrapping,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Bootstrapping User-Defined Body Tapping Recognition with Offline-Learned Probabilistic Representation},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Li, Yang},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 29th Annual Symposium on User Interface Software and Technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={359--364},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2016},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="encore" role="dialog" aria-modal="true" aria-label="Encore: 3D Printed Augmentation of Everyday Objects with Printed-Over, Affixed and Interlocked Attachment">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Encore: 3D Printed Augmentation of Everyday Objects with Printed-Over, Affixed and Interlocked Attachment</h2>
+      <div class="authors">Xiang 'Anthony' Chen (UCLA HCI Research)<br>Stelian Coros (ETH Zurich)<br>Jennifer Mankoff (University of Washington)<br>Scott Hudson (Carnegie Mellon University)</div>
+      <p>One powerful aspect of 3D printing is its ability to extend, repair, or more generally modify everyday objects. However, nearly all existing work implicitly assumes that whole objects are to be printed from scratch. This paper presents a framework for 3D printing to augment existing objects that covers a wide range of attachment options. We illustrate the framework through three exemplar attachment techniques - print-over, print-toaffix and print-through, implemented in Encore, a design tool that supports a set of analysis metrics relating to viability, durability and usability that are visualized for the user to explore design options and tradeoffs. Encore also generates 3D models for production, addressing issues such as support jigs and contact geometry between the attached part and the original object. Our validation helps to illustrate the strengths and weaknesses of each technique. For example, we characterize how surface curvature and roughness affect print-over's strength compared to the conventional print-in-one-piece. </p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/135636261" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><iframe src="https://flickrembed.com/cms_embed.php?source=flickr&amp;layout=responsive&amp;input=72157670690945024&amp;sort=0&amp;by=album&amp;theme=default_notextpanel&amp;scale=fit&amp;limit=100&amp;skin=alexis" loading="lazy" style="width:100%;height:60vh;border:0" allowfullscreen></iframe></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1q9lt5EsboF7WBUfFrmlNCZd6SgsbaDkJ/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/uist2015_encore_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Chen, X., Coros, S., Mankoff, J., & Hudson, S. E. (2015). Encore: 3D printed augmentation of everyday objects with printed-over, affixed and interlocked attachments. In Proceedings of the 28th Annual ACM Symposium on User Interface Software and Technology (pp. 73-82).</div>
+        <div class="bibtex">@inproceedings{chen2015encore,<br>&nbsp; &nbsp;title={Encore: 3D printed augmentation of everyday objects with printed-over, affixed and interlocked attachments},<br>&nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Coros, Stelian and Mankoff, Jennifer and Hudson, Scott E},<br>&nbsp; &nbsp;booktitle={Proceedings of the 28th Annual ACM Symposium on User Interface Software and Technology},<br>&nbsp; &nbsp;pages={73--82},<br>&nbsp; &nbsp;year={2015},<br>&nbsp; &nbsp;organization={ACM}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="duet" role="dialog" aria-modal="true" aria-label="Duet: Joint Interaction Between a Smart Phone and a Smart Watch">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Duet: Joint Interaction Between a Smart Phone and a Smart Watch</h2>
+      <div class="authors">Xiang 'Anthony' Chen (UCLA HCI Research)<br>Tovi Grossman (University of Toronto)<br>Daniel Wigdor (University of Toronto)<br>George Fitzmaurice (Autodesk Research)</div>
+      <p>The emergence of smart devices (e.g., smart watches and smart eyewear) is redefining mobile interaction from the solo performance of a smart phone, to a symphony of multiple devices. In this paper, we present Duet - an interactive system that explores a design space of interactions between a smart phone and a smart watch. Based on the devices' spatial configurations, Duet coordinates their motion and touch input, and extends their visual and tactile output to one another. This transforms the watch into an active element that enhances a wide range of phone-based interactive tasks, and enables a new class of multi-device gestures and sensing techniques. A technical evaluation shows the accuracy of these gestures and sensing techniques, and a subjective study on Duet provides insights, observations, and guidance for future work. </p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/81358039" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326403681" title="2014_Duet"><img src="https://live.staticflickr.com/65535/54548039295_964fbddbb1_b.jpg" width="1024" height="768" alt="2014_Duet"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1qKdbguC9hnpShEfLEecFOo2V24hWkNlU/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/chi2014_duet_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Chen, X., Grossman, T., Wigdor, D. J., & Fitzmaurice, G. (2014). Duet: exploring joint interactions on a smart phone and a smart watch. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 159-168).</div>
+        <div class="bibtex">@inproceedings{chen2014duet,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Duet: exploring joint interactions on a smart phone and a smart watch},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Grossman, Tovi and Wigdor, Daniel J and Fitzmaurice, George},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the SIGCHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={159--168},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="airtouch" role="dialog" aria-modal="true" aria-label="Air + touch: interweaving touch and in-air gestures">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Air + touch: interweaving touch and in-air gestures</h2>
+      <div class="authors">Xiang 'Anthony' Chen (UCLA HCI Research)<br>Julia Schwarz, Microsoft Research<br>Chris Harrison (Carnegie Mellon University)<br>Jennifer Mankoff (University of Washington)<br>Scott Hudson (Carnegie Mellon University)</div>
+      <p>We present Air+Touch, a new class of interactions that interweave touch events with in-air gestures, offering a unified input modality with expressiveness greater than each input modality alone. We demonstrate how air and touch are highly complementary: touch is used to designate targets and segment in-air gestures, while in-air gestures add expressivity to touch events. For example, a user can draw a circle in the air and tap to trigger a context menu, do a finger 'high jump' between two touches to select a region of text, or drag and in-air 'pigtail' to copy text to the clipboard. Through an observational study, we devised a basic taxonomy of Air+Touch interactions, based on whether the in-air component occurs before, between or after touches. To illustrate the potential of our approach, we built four applications that showcase seven exemplar Air+Touch interactions we created.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/92972949" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326409367" title="2014_AirTouch"><img src="https://live.staticflickr.com/65535/54547868414_d41e49b177.jpg" width="1024" height="768" alt="2014_AirTouch"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1tTRUt6ilITNmeIeHUx-SMryzVPlVoV7Q/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/uist2014_airtouch_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Chen, X., Schwarz, J., Harrison, C., Mankoff, J., & Hudson, S. E. (2014). Air + touch: interweaving touch & in-air gestures. In Proceedings of the 27th annual ACM symposium on User interface software and technology (pp. 519-525).</div>
+        <div class="bibtex">@inproceedings{chen2014air+,<br>&nbsp; &nbsp;title={Air+ touch: interweaving touch and in-air gestures},<br>&nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Schwarz, Julia and Harrison, Chris and Mankoff, Jennifer and Hudson, Scott E},<br>&nbsp; &nbsp;booktitle={Proceedings of the 27th annual ACM symposium on User interface software and technology},<br>&nbsp; &nbsp;pages={519--525},<br>&nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp;organization={ACM}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="swipeboard" role="dialog" aria-modal="true" aria-label="Swipeboard: A Text Entry Technique for Ultra-Small Interfaces That Supports Novice to Expert Transitions">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Swipeboard: A Text Entry Technique for Ultra-Small Interfaces That Supports Novice to Expert Transitions</h2>
+      <div class="authors">Xiang 'Anthony' Chen (UCLA HCI Research)<br>Tovi Grossman (University of Toronto)<br>George Fitzmaurice (Autodesk Research)</div>
+      <p>Ultra-small smart devices, such as smart watches, have become increasingly popular in recent years. Most of these devices rely on touch as the primary input modality, which makes tasks such as text entry increasingly difficult as the devices continue to shrink. In the sole pursuit of entry speed, the ultimate solution is a shorthand technique (e.g., Morse code) that sequences tokens of input (e.g., key, tap, swipe) into unique representations of each character. However, learning such techniques is hard, as it often resorts to rote memory. Our technique, Swipeboard, leverages our spatial memory of a QWERTY keyboard to learn, and eventually master a shorthand, eyes-free text entry method designed for ultra-small interfaces. Characters are entered with two swipes; the first swipe specifies the region where the character is located, and the second swipe specifies the character within that region. Our study showed that with less than two hours' training, Tested on a reduced word set, Swipeboard users achieved 19.58 words per minute (WPM), 15% faster than an existing baseline technique.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/143152207" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326401235" title="2014_Swipeboard"><img src="https://live.staticflickr.com/65535/54546799197_87deebede8_b.jpg" width="1024" height="768" alt="2014_Swipeboard"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1ur2XGPAko-P-dv6dtVPinxM5pAVt_0jL/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/uist2014_swipeboard_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Chen, X., Grossman, T., & Fitzmaurice, G. (2014). Swipeboard: a text entry technique for ultra-small interfaces that supports novice to expert transitions. In Proceedings of the 27th annual ACM symposium on User interface software and technology (pp. 615-620).</div>
+        <div class="bibtex">@inproceedings{chen2014swipeboard,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Swipeboard: a text entry technique for ultra-small interfaces that supports novice to expert transitions},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Grossman, Tovi and Fitzmaurice, George},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 27th annual ACM symposium on User interface software and technology},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={615--620},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="around-body-interaction" role="dialog" aria-modal="true" aria-label="Around-Body Interaction: Sensing &amp; Interaction Techniques for Proprioception-Enhanced Input with Mobile Devices">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Around-Body Interaction: Sensing & Interaction Techniques for Proprioception-Enhanced Input with Mobile Devices</h2>
+      <div class="authors">Xiang 'Anthony' Chen (UCLA HCI Research)<br>Julia Schwarz (Microsoft Research)<br>Chris Harrison (Carnegie Mellon University)<br>Jennifer Mankoff (University of Washington)<br>Scott Hudson (Carnegie Mellon University)</div>
+      <p>The space around the body provides a large interaction vol-ume that can allow for big interactions on small mobile de-vices. However, interaction techniques making use of this opportunity are underexplored, primarily focusing on dis-tributing information in the space around the body. We demonstrate three types of around-body interaction includ-ing canvas, modal and context-aware interactions in six demonstration applications. We also present a sensing solu-tion using standard smartphone hardware: a phone's front camera, accelerometer and inertia measurement units. Our solution allows a person to interact with a mobile device by holding and positioning it between a normal field of view and its vicinity around the body. By leveraging a user's proprioceptive sense, around-body Interaction opens a new input channel that enhances conventional interaction on a mobile device without requiring additional hardware.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/142935370" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326403666" title="2014_AroundBody"><img src="https://live.staticflickr.com/65535/54547882129_dd2791e508_z.jpg" width="1024" height="768" alt="2014_AroundBody"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1v-zVmJfszd-61yad712ZGiJE8xnEG75R/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/mhci2014_aroundbody_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Chen, X., Schwarz, J., Harrison, C., Mankoff, J., & Hudson, S. (2014). Around-body interaction: sensing & interaction techniques for proprioception-enhanced input with mobile devices. In Proceedings of the 16th international conference on Human-computer interaction with mobile devices & services (pp. 287-290).</div>
+        <div class="bibtex">@inproceedings{chen2014around,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Around-body interaction: sensing and interaction techniques for proprioception-enhanced input with mobile devices},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Schwarz, Julia and Harrison, Chris and Mankoff, Jennifer and Hudson, Scott},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 16th international conference on Human-computer interaction with mobile devices and services},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={287--290},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2014},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="body-centric-interaction" role="dialog" aria-modal="true" aria-label="Extending a Mobile Device&#x27;s Interaction Space through Body-Centric Interaction">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Extending a Mobile Device's Interaction Space through Body-Centric Interaction</h2>
+      <div class="authors">Xiang 'Anthony' Chen (UCLA HCI Research)<br>Nicolai Marquardt (University College London)<br>Anthony Tang (University of Toronto)<br>Sebastian Boring (Aalborg University)<br>Saul Greenberg (University of Calgary)</div>
+      <p>Modern mobile devices rely on the screen as a primary input modality. Yet the small screen real-estate limits interaction possibilities, motivating researchers to explore alternate input techniques. Within this arena, our goal is to develop Body-Centric Interaction with Mobile Devices: a class of input techniques that allow a person to position and orient her mobile device to navigate and manipulate digital content anchored in the space on and around the body. To achieve this goal, we explore such interaction in a bottomup path of prototypes and implementations. From our experiences, as well as by examining related work, we discuss and present three recurring themes that characterize how these interactions can be realized. We illustrate how these themes can inform the design of Body-Centric Interactions by applying them to the design of a novel mobile browser application. Overall, we contribute a class of mobile input techniques where interactions are extended beyond the small screen, and are instead driven by a person's movement of the device on and around the body.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/31172179" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div><div class="media"><a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720326403726" title="2012_BodyCentricInteraction"><img src="https://live.staticflickr.com/65535/54548040245_24d71ae498_b.jpg" width="1024" height="768" alt="2012_BodyCentricInteraction"/></a></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1vRUr7JYKnpujl6K1b0mAL8lFRZH0b16p/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/mhci2012_bci_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Chen, X., Marquardt, N., Tang, A., Boring, S., & Greenberg, S. (2012). Extending a mobile device's interaction space through body-centric interaction. In Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services (pp. 151-160).</div>
+        <div class="bibtex">@inproceedings{chen2012extending,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Extending a mobile device's interaction space through body-centric interaction},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Marquardt, Nicolai and Tang, Anthony and Boring, Sebastian and Greenberg, Saul},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={151--160},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2012},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}</div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" id="spalendar" role="dialog" aria-modal="true" aria-label="Spalendar: Visualizing a Group&#x27;s Calendar Events over a Geographic Space on a Public Display ">
+    <div class="panel">
+      <a class="close" href="#" aria-label="Close">&times;</a>
+      <h2>Spalendar: Visualizing a Group's Calendar Events over a Geographic Space on a Public Display </h2>
+      <div class="authors">Xiang 'Anthony' Chen (UCLA HCI Research)<br>Sebastian Boring (Aalborg University)<br>Sheelagh Carpendale (Simon Fraser University)<br>Anthony Tang (University of Toronto)<br>Saul Greenberg (University of Calgary)</div>
+      <p>Portable paper calendars (i.e., day planners and organizers) have greatly influenced the design of group electronic calendars. Both use time units (hours/days/weeks/etc.) to organize visuals, with useful information (e.g., event types, locations, attendees) usually presented as - perhaps abbreviated or even hidden - text fields within those time units. The problem is that, for a group, this visual sorting of individual events into time buckets conveys only limited information about the social network of people. For example, people's whereabouts cannot be read 'at a glance' but require examining the text. Our goal is to explore an alternate visualization that can reflect and illustrate group members' calendar events. Our main idea is to display the group's calendar events as spatiotemporal activities occurring over a geographic space animated over time, all presented on a highly interactive public display. In particular, our SPALENDAR (SPAtial CALENDAR) design animates peoples' past, present and forthcoming movements between event locations as well as their static locations. Details of people's events, their movements and their locations are progressively revealed and controlled by the viewer's proximity to the display, their identity, and their gestural interactions with it, all of which are tracked by the public display.</p>
+      <div class="media-slot"></div>
+      <template class="media-tpl"><div class="media"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://player.vimeo.com/video/31823922" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div></template>
+      <div class="pub">
+        <a href="https://drive.google.com/file/d/1wUixLiuba4Faue9iAqwkZJa9JPiWxrz2/view?usp=sharing" target="_blank" rel="noopener"><img class="paper-thumb" src="assets/avi2012_spalendar_thumbnail.jpg" alt="Paper thumbnail" loading="lazy"></a>
+        <div class="citation">Chen, X., Boring, S., Carpendale, S., Tang, A., & Greenberg, S. (2012). Spalendar: visualizing a group's calendar events over a geographic space on a public display. In AVI '12 Proceedings of the International Working Conference on Advanced Visual Interfaces (pp. 689-696).</div>
+        <div class="bibtex">@inproceedings{chen2012spalendar,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Spalendar: visualizing a group's calendar events over a geographic space on a public display},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Chen, Xiang 'Anthony' and Boring, Sebastian and Carpendale, Sheelagh and Tang, Anthony and Greenberg, Saul},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the International Working Conference on Advanced Visual Interfaces},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={689--696},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2012},<br>&nbsp; &nbsp; &nbsp; &nbsp;organization={ACM}<br>}<br></div>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    &copy;2018&ndash;<span id="year"></span> UCLA HCI Research. All rights reserved.
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
 
-  <div class="copyright">&copy;2018-<script>document.write(new Date().getFullYear())</script> UCLA HCI Research. All rights reserved.</div>
-
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-  <script type="text/javascript" src="js/yaml.min.js"></script>
-  <script src="js/jquery.popupoverlay.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script>
+  (function () {
+    var overlays = document.querySelectorAll('.overlay');
+    function sync() {
+      var id = decodeURIComponent(location.hash.slice(1));
+      var anyOpen = false;
+      overlays.forEach(function (o) {
+        var open = o.id === id;
+        if (open) anyOpen = true;
+        var slot = o.querySelector('.media-slot');
+        var tpl = o.querySelector('template.media-tpl');
+        if (open && tpl && slot && !slot.dataset.loaded) {
+          slot.appendChild(tpl.content.cloneNode(true));
+          slot.dataset.loaded = '1';
+          // If this project has a Flickr album embed, (re)run Flickr's embedr
+          // script so the just-injected <a data-flickr-embed> becomes the
+          // interactive album slideshow (a fresh <script> element re-executes it).
+          if (slot.querySelector('[data-flickr-embed]')) {
+            var fs = document.createElement('script');
+            fs.async = true;
+            fs.charset = 'utf-8';
+            fs.src = 'https://embedr.flickr.com/assets/client-code.js';
+            document.body.appendChild(fs);
+          }
+        }
+      });
+      document.body.style.overflow = anyOpen ? 'hidden' : '';
+    }
+    function close() {
+      if (!location.hash) return;
+      var y = window.pageYOffset || document.documentElement.scrollTop;
+      document.body.style.overflow = '';
+      // Clearing the fragment is what actually drops :target and hides the overlay;
+      // history.replaceState alone does NOT update :target.
+      location.hash = '';
+      history.replaceState(null, '', location.pathname + location.search);
+      window.scrollTo(0, y);
+    }
+    overlays.forEach(function (o) {
+      o.addEventListener('click', function (e) {
+        if (e.target === o || e.target.classList.contains('close')) { e.preventDefault(); close(); }
+      });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && location.hash) close();
+    });
+    window.addEventListener('hashchange', sync);
+    sync();
+  })();
+  </script>
 </body>
-
 </html>

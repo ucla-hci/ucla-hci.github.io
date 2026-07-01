@@ -1,0 +1,36 @@
+name: Build site
+
+# Regenerates the static pages from data.yml whenever content changes,
+# so the lab only needs to edit data.yml and push.
+on:
+  push:
+    branches: [master]
+    paths:
+      - "data.yml"
+      - "build.py"
+      - "assets/css/**"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - run: python build.py
+      - name: Commit regenerated pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html team.html about.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Rebuild static pages from data.yml [skip ci]"
+            git push
+          fi
