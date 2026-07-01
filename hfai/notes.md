@@ -1,0 +1,1 @@
+instead of making multiple submissions, each team should just maintain a github repo

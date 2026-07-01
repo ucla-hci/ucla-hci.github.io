@@ -305,6 +305,25 @@ alumni:
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
+  - name: Overreliance on LLMs
+    title: "Behavioral Indicators of Overreliance During Interaction with Conversational Language Models"
+    authors:
+      - Chang Liu, Tsinghua University
+      - Qinyi Zhou, Hong Kong University of Science and Technology
+      - Xinjie Shen, Georgia Institute of Technology
+      - Xingyu Bruce Liu, UCLA HCI Research
+      - Tongshuang Wu, Carnegie Mellon University HCII
+      - Xiang 'Anthony' Chen, UCLA HCI Research
+    pubs: CHI 2026
+    img: t_overreliancebehaviors.jpg
+    abstract: "LLMs are now embedded in a wide range of everyday scenarios. However, their inherent hallucinations risk hiding misinformation in fluent responses, raising concerns about overreliance on AI. Detecting overreliance is challenging, as it often arises in complex, dynamic contexts and cannot be easily captured by post-hoc task outcomes. In this work, we aim to investigate how users’ behavioral patterns correlate with overreliance. We collected interaction logs from 77 participants working with an LLM injected plausible misinformation across three real-world tasks and we assessed overreliance by whether participants detected and corrected these errors. By semantically encoding and clustering segments of user interactions, we identified five behavioral patterns linked to overreliance: users with low overreliance show careful task comprehension and fine-grained navigation; users with high overreliance show frequent copy-paste, skipping initial comprehension, repeated LLM references, coarse locating, and accepting misinformation despite hesitation. We discuss design implications for mitigation."
+    video: '1206017906'
+    videoSite: vimeo
+    paperUrl: https://drive.google.com/file/d/1WTmCXq3SCF2q75ArifVRj9Zpux7p1ll4/view?usp=sharing
+    thumbnail: chi2026_overreliancebehaviors_thumbnail.jpg
+    bibtex: "@inproceedings{liu2026behavioral,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={Behavioral indicators of overreliance during interaction with conversational language models},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Liu, Chang and Zhou, Qinyi and Shen, Xinjie and Bruce Liu, Xingyu and Wu, Tongshuang and Chen, Xiang'Anthony},<br>&nbsp; &nbsp; &nbsp; &nbsp;booktitle={Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems},<br>&nbsp; &nbsp; &nbsp; &nbsp;pages={1--23},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2026}<br>}"
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720334464072" title="2026-overreliance"><img src="https://live.staticflickr.com/65535/55367723008_b49014fa1e_c.jpg" width="1024" height="768" alt="2026-overreliance"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
+    citation: "Chang Liu, Qinyi Zhou, Xinjie Shen, Xingyu Bruce Liu, Tongshuang Wu, and Xiang 'Anthony' Chen. 2026. Behavioral Indicators of Overreliance During Interaction with Conversational Language Models. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26). Association for Computing Machinery, New York, NY, USA. https://doi.org/10.1145/3772318.3790332"
   - name: RAGPPI
     title: "RAGPPI: RAG Benchmark for Protein-Protein Interactions in Drug Discovery"
     authors:
