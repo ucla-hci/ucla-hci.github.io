@@ -328,6 +328,22 @@ alumni:
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
+  - name: OOPrompt
+    title: "OOPrompt: Reifying Intents into Structured Artifacts for Modular and Iterative Prompting"
+    authors:
+      - Tengyou Xu, UCLA HCI Research
+      - Detao Ma, UCLA
+      - Xiang 'Anthony' Chen, UCLA HCI Research
+    pubs: PACMHCI 2026
+    img: t_ooprompt.png
+    abstract: "The rise of large language models (LLMs) has given rise to a class of prompt-based interactive systems where users primarily express their input in natural language. However, composing a prompt as a linear text string becomes unwieldy when capturing users’ multifaceted intents. We present Object-Oriented Prompting (OOPrompt), an emergent interaction paradigm that enables users to create, edit, iterate, and reuse prompts as structured, manipulable artifacts, unifying and generalizing several existing point systems. We first outlined a design space from existing work and built an early prototype, which we deployed as a probe in a formative study with 20 participants. Their feedback informed an expanded OOPrompt design space. We then developed the full OOPrompt prototype and conducted a validation study to further understand OOPrompt’s added values and trade-offs. We expect the OOPrompt design space to provide theoretical and empirical guidance to the design and engineering of prompt-based, LLM-enabled interactive systems."
+    video: '1206352119'
+    videoSite: vimeo
+    paperUrl: https://doi.org/10.1145/3816761
+    thumbnail: pacmhci2026_ooprompt_thumbnail.jpg
+    bibtex: "@article{10.1145/3816761,<br>&nbsp; &nbsp; &nbsp; &nbsp;author = {Xu, Tengyou and Ma, Detao and Chen, Xiang 'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;title = {OOPrompt: Reifying Intents into Structured Artifacts for Modular and Iterative Prompting},<br>&nbsp; &nbsp; &nbsp; &nbsp;year = {2026},<br>&nbsp; &nbsp; &nbsp; &nbsp;issue_date = {June 2026},<br>&nbsp; &nbsp; &nbsp; &nbsp;publisher = {Association for Computing Machinery},<br>&nbsp; &nbsp; &nbsp; &nbsp;address = {New York, NY, USA},<br>&nbsp; &nbsp; &nbsp; &nbsp;volume = {10},<br>&nbsp; &nbsp; &nbsp; &nbsp;number = {4},<br>&nbsp; &nbsp; &nbsp; &nbsp;url = {https://doi.org/10.1145/3816761},<br>&nbsp; &nbsp; &nbsp; &nbsp;doi = {10.1145/3816761},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal = {Proc. ACM Hum.-Comput. Interact.},<br>&nbsp; &nbsp; &nbsp; &nbsp;month = jun,<br>&nbsp; &nbsp; &nbsp; &nbsp;articleno = {EICS009},<br>&nbsp; &nbsp; &nbsp; &nbsp;numpages = {30},<br>&nbsp; &nbsp; &nbsp; &nbsp;keywords = {Large language models; human-AI interaction; structured prompting; design space}<br>&nbsp; &nbsp; &nbsp; &nbsp;}"
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720334479425" title="2026-ooprompt"><img src="https://live.staticflickr.com/65535/55369736784_c99c73a5cd_c.jpg" width="1024" height="768" alt="2026-ooprompt"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
+    citation: "Tengyou Xu, Detao Ma, and Xiang 'Anthony' Chen. 2026. OOPrompt: Reifying Intents into Structured Artifacts for Modular and Iterative Prompting. Proc. ACM Hum.-Comput. Interact. 10, 4, Article EICS009 (June 2026), 30 pages. https://doi.org/10.1145/3816761"
   - name: Overreliance on LLMs
     title: "Behavioral Indicators of Overreliance During Interaction with Conversational Language Models"
     authors:
