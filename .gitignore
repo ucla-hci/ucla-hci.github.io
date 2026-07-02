@@ -2,3 +2,8 @@
 .DS_Store
 _recycle
 zandbox
+
+# Claude Code: sync shared skills, ignore machine-specific files
+.claude/*
+!.claude/skills/
+.claude/settings.local.json
