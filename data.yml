@@ -26,8 +26,8 @@ team:
   - name: Kat Limqueco
     role: Undergrad Researcher
     expertise: UX Engineer
-    img: minion.jpg
-    imgalt: purple.jpeg
+    img: kat-portrait.jpg
+    imgalt: kat-portrait.jpg
     url: https://www.linkedin.com/in/katlimq
   - name: Yihe (Marina) Xu
     role: ECE MS
@@ -37,9 +37,9 @@ team:
   - name: Ashley Hua
     role: CS MS
     expertise: HCI for Science
-    img: minion.jpg
-    imgalt: purple.jpeg
-    url: https://www.linkedin.com/in/ashley-hua
+    img: ashley-normal.jpeg
+    imgalt: ashley-funny.png
+    url: https://ashley-hua.notion.site/Ashley-Hua-Portfolio-417e1b3da1be409ab050f79fd99759dc
 alumni:
   - name: 🎓 Dr. Bruce Liu
     role: Research Scientist @ Adobe
