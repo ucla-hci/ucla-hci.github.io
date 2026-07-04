@@ -24,16 +24,17 @@ team:
     imgalt: purple.jpeg
     url: https://www.linkedin.com/in/serena-chang-878005245/
   - name: Kat Limqueco
-    role: Undergrad Researcher
-    expertise: UX Engineer
+    role: Research Intern
+    expertise: Human-Centered AI
     img: kat-portrait.jpg
     imgalt: kat-portrait.jpg
     url: https://www.linkedin.com/in/katlimq
   - name: Yihe (Marina) Xu
     role: ECE MS
     expertise: HCI for Science
-    img: minion.jpg
-    imgalt: purple.jpeg
+    img: yihe-normal.jpg
+    imgalt: yihe-funny.jpg
+    url: https://github.com/XU1hEEE
   - name: Ashley Hua
     role: CS MS
     expertise: HCI for Science
@@ -334,7 +335,7 @@ projects:
       - Tengyou Xu, UCLA HCI Research
       - Detao Ma, UCLA
       - Xiang 'Anthony' Chen, UCLA HCI Research
-    pubs: PACMHCI 2026
+    pubs: EICS 2026
     img: t_ooprompt.png
     abstract: "The rise of large language models (LLMs) has given rise to a class of prompt-based interactive systems where users primarily express their input in natural language. However, composing a prompt as a linear text string becomes unwieldy when capturing users’ multifaceted intents. We present Object-Oriented Prompting (OOPrompt), an emergent interaction paradigm that enables users to create, edit, iterate, and reuse prompts as structured, manipulable artifacts, unifying and generalizing several existing point systems. We first outlined a design space from existing work and built an early prototype, which we deployed as a probe in a formative study with 20 participants. Their feedback informed an expanded OOPrompt design space. We then developed the full OOPrompt prototype and conducted a validation study to further understand OOPrompt’s added values and trade-offs. We expect the OOPrompt design space to provide theoretical and empirical guidance to the design and engineering of prompt-based, LLM-enabled interactive systems."
     video: '1206352119'
@@ -382,6 +383,27 @@ projects:
     bibtex: "@article{jeon2025ragppi,<br>&nbsp; &nbsp; &nbsp; &nbsp;title={RAGPPI: RAG Benchmark for Protein-Protein Interactions in Drug Discovery},<br>&nbsp; &nbsp; &nbsp; &nbsp;author={Jeon, Youngseung and Li, Ziwen and Li, Thomas and Chang, JiaSyuan and Ziyadi, Morteza and Chen, Xiang'Anthony'},<br>&nbsp; &nbsp; &nbsp; &nbsp;journal={arXiv preprint arXiv:2505.23823},<br>&nbsp; &nbsp; &nbsp; &nbsp;year={2025}<br>}"
     albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720332125786" title="2026-ragppi"><img src="https://live.staticflickr.com/65535/55107598385_b8f218bbcd_b.jpg" width="1024" height="768" alt="2026-ragppi"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
     citation: "Youngseung Jeon, Ziwen Li, Thomas Li, JiaSyuan Chang, Morteza Ziyadi, and Xiang'Anthony Chen. RAGPPI: RAG Benchmark for Protein-Protein Interactions in Drug Discovery. arXiv preprint arXiv:2505.23823 (2025)."
+  - name: CoSight
+    title: 'CoSight: Exploring Viewer Contributions to Online Video Accessibility Through Descriptive Commenting'
+    authors:
+      - Ruolin Wang, UCLA HCI Research
+      - Xingyu Bruce Liu, UCLA HCI Research
+      - Biao Wang, Cornell University
+      - Wayne Zhang, UCLA HCI Research
+      - Ziqian Liao, Harvard University
+      - Ziwen Li, UCLA HCI Research
+      - Amy Pavel, University of Texas, Austin
+      - Xiang 'Anthony' Chen, UCLA HCI Research
+    pubs: UIST 2025
+    img: t_cosight.jpeg
+    abstract: 'The rapid growth of online video content has outpaced efforts to make visual information accessible to blind and low vision (BLV) audiences. While professional Audio Description (AD) remains the gold standard, it is costly and difficult to scale across the vast volume of online media. In this work, we explore a complementary approach to broaden participation in video accessibility: engaging everyday video viewers at their watching and commenting time. We introduce CoSight, a Chrome extension that augments YouTube with lightweight, in-situ nudges to support descriptive commenting. Drawing from Fogg’s Behavior Model, CoSight provides visual indicators of accessibility gaps, pop-up hints for what to describe, reminders to clarify vague comments, and related captions and comments as references. In an exploratory study with 48 sighted users, CoSight helped integrate accessibility contribution into natural viewing and commenting practices, resulting in 89% of comments including grounded visual descriptions. Follow-up interviews with four BLV viewers and four professional AD writers suggest that while such comments do not match the rigor of professional AD, they can offer complementary value by conveying visual context and emotional nuance for understanding the videos.'
+    video: '1206916906'
+    videoSite: vimeo
+    paperUrl: https://doi.org/10.1145/3746059.3747747
+    thumbnail: uist2025_cosight_thumbnail.jpg
+    bibtex: '@inproceedings{10.1145/3746059.3747747,<br>author = {Wang, Ruolin and Liu, Xingyu Bruce and Wang, Biao and Zhang, Wayne and Liao, Ziqian and Li, Ziwen and Pavel, Amy and Chen, Xiang ''Anthony''},<br>title = {CoSight: Exploring Viewer Contributions to Online Video Accessibility Through Descriptive Commenting},<br>year = {2025},<br>isbn = {9798400720376},<br>publisher = {Association for Computing Machinery},<br>address = {New York, NY, USA},<br>url = {https://doi.org/10.1145/3746059.3747747},<br>doi = {10.1145/3746059.3747747},<br>abstract = {The rapid growth of online video content has outpaced efforts to make visual information accessible to blind and low vision (BLV) audiences. While professional Audio Description (AD) remains the gold standard, it is costly and difficult to scale across the vast volume of online media. In this work, we explore a complementary approach to broaden participation in video accessibility: engaging everyday video viewers at their watching and commenting time. We introduce CoSight, a Chrome extension that augments YouTube with lightweight, in-situ nudges to support descriptive commenting. Drawing from Fogg’s Behavior Model, CoSight provides visual indicators of accessibility gaps, pop-up hints for what to describe, reminders to clarify vague comments, and related captions and comments as references. In an exploratory study with 48 sighted users, CoSight helped integrate accessibility contribution into natural viewing and commenting practices, resulting in 89\% of comments including grounded visual descriptions. Follow-up interviews with four BLV viewers and four professional AD writers suggest that while such comments do not match the rigor of professional AD, they can offer complementary value by conveying visual context and emotional nuance for understanding the videos.},<br>booktitle = {Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology},<br>articleno = {45},<br>numpages = {20},<br>keywords = {video accessibility, YouTube, comments},<br>location = {<br>},<br>series = {UIST ''25}<br>}'
+    albumEmbedCode: '<a data-flickr-embed="true" href="https://www.flickr.com/photos/169665896@N06/albums/72177720334527388" title="2025-cosight"><img src="https://live.staticflickr.com/65535/55373491120_6492a12b93_b.jpg" width="1024" height="768" alt="2025-cosight"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>'
+    citation: 'Ruolin Wang, Xingyu Bruce Liu, Biao Wang, Wayne Zhang, Ziqian Liao, Ziwen Li, Amy Pavel, and Xiang ''Anthony'' Chen. 2025. CoSight: Exploring Viewer Contributions to Online Video Accessibility Through Descriptive Commenting. In Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology (UIST ''25). Association for Computing Machinery, New York, NY, USA, Article 45, 1–20. https://doi.org/10.1145/3746059.3747747'
   - name: GenUI Study
     title: "The GenUI Study: Exploring the Design of Generative UI Tools to Support UX Practitioners and Beyond"
     authors:
