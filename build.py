@@ -116,16 +116,18 @@ def footer():
 # --------------------------------------------------------------------------- #
 # team
 # --------------------------------------------------------------------------- #
-def member_card(m):
+def member_card(m, compact=False):
     primary = f'<img class="primary" src="{asset(m["img"])}" alt="{attr(m["name"])}" loading="lazy">'
     alt = (f'<img class="alt" src="{asset(m["imgalt"])}" alt="" aria-hidden="true" loading="lazy">'
            if m.get("imgalt") else "")
     portrait = f'<div class="portrait">{primary}{alt}</div>'
-    expertise = f'<div class="expertise">{m["expertise"]}</div>' if m.get("expertise") else ""
+    expertise = ("" if compact else
+                 f'<div class="expertise">{m["expertise"]}</div>' if m.get("expertise") else "")
+    role = f'<div class="role">{m["role"]}</div>' if m.get("role") else ""
+    now = f'<div class="now">Now: {m["now"]}</div>' if m.get("now") else ""
     inner = f"""{portrait}
       <div class="name">{m['name']}</div>
-      <div class="role">{m.get('role', '')}</div>
-      {expertise}"""
+      {role}{now}{expertise}"""
     if m.get("url"):
         return f'<a class="member" href="{attr(m["url"])}" target="_blank" rel="noopener">{inner}</a>'
     return f'<div class="member">{inner}</div>'
@@ -133,14 +135,14 @@ def member_card(m):
 
 def render_team(data):
     people = "".join(member_card(m) for m in data["team"])
-    alumni = "".join(member_card(m) for m in data["alumni"])
+    alumni = "".join(member_card(m, compact=True) for m in data["alumni"])
     body = f"""    <h1 class="page-title">Team</h1>
     <div class="grid team">
 {people}
     </div>
 
     <h2 class="section-title">Alumni</h2>
-    <div class="grid team">
+    <div class="grid team alumni">
 {alumni}
     </div>
 """
