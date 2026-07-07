@@ -41,6 +41,12 @@ team:
     img: ashley-normal.jpeg
     imgalt: ashley-funny.png
     url: https://ashley-hua.notion.site/Ashley-Hua-Portfolio-417e1b3da1be409ab050f79fd99759dc
+  - name: Liwu Yu
+    role: CS MS
+    expertise: HCI for Science
+    img: liwu-normal.jpg
+    imgalt: liwu-funny.jpg
+    url: https://www.linkedin.com/in/liwuyu0124/
 alumni:
   - name: 🎓 Dr. Bruce Liu
     role: Research Scientist @ Adobe
