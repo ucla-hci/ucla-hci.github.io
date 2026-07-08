@@ -1349,7 +1349,7 @@ projects:
       Chen, X., Boring, S., Carpendale, S., Tang, A., & Greenberg, S. (2012). Spalendar: visualizing a group's calendar events over a geographic space on a public display. In AVI '12 Proceedings of the International Working Conference on Advanced Visual Interfaces (pp. 689-696).
 
 aboutus:
-  - mission: "Our mission is to innovate interactive systems that catalyze advances in AI to augment humans' abilities."
+  - mission: "Our mission is to <b>augment human intelligence through symbiotic computing</b>—embedding AI throughout expert workflows to amplify human abilities, overcome human limitations, and enable human-AI teams to outperform either humans or AI working alone."
     photos: 
       # - g_bbq.jpg
       - g_postchi.jpg
