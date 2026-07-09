@@ -147,6 +147,18 @@ h1, h2, h3 { line-height: 1.25; font-weight: 700; }
 .member .role { font-size: .9rem; }
 .member .expertise { color: var(--muted); font-size: .85rem; }
 
+.member .now { color: var(--muted); font-size: .85rem; font-style: italic; }
+
+/* Alumni — compact cards: small portraits, name + role + current affiliation */
+.grid.team.alumni {
+  grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+  gap: clamp(12px, 1.5vw, 20px);
+}
+.grid.team.alumni .portrait { max-width: 76px; }
+.grid.team.alumni .name { font-size: .85rem; margin: 6px 0 0; }
+.grid.team.alumni .role { font-size: .72rem; color: var(--muted); }
+.grid.team.alumni .now { font-size: .72rem; }
+
 /* ---------- About ----------------------------------------------------------- */
 .about-grid {
   display: grid;
@@ -266,6 +278,7 @@ h1, h2, h3 { line-height: 1.25; font-weight: 700; }
   .brand img { height: 52px; }
   .grid.projects,
   .grid.team { grid-template-columns: 1fr 1fr; }
+  .grid.team.alumni { grid-template-columns: repeat(3, 1fr); }
   .pub { grid-template-columns: 1fr; }
   .pub .paper-thumb { width: 60px; }
 }

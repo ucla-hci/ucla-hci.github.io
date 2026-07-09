@@ -1,7 +1,7 @@
 team:
   - name: Xiang 'Anthony' Chen
     role: Associate Professor
-    expertise: Human Factors in AI
+    expertise: Symbiotic Computing
     img: Anthony_n.jpg
     imgalt: Anthony_f.jpg
     url: https://hci.prof
@@ -41,33 +41,39 @@ team:
     img: ashley-normal.jpeg
     imgalt: ashley-funny.png
     url: https://ashley-hua.notion.site/Ashley-Hua-Portfolio-417e1b3da1be409ab050f79fd99759dc
+  - name: Liwu Yu
+    role: CS MS
+    expertise: HCI for Science
+    img: liwu-normal.jpg
+    imgalt: liwu-funny.jpg
+    url: https://www.linkedin.com/in/liwuyu0124/
 alumni:
   - name: 🎓 Dr. Bruce Liu
-    role: Research Scientist @ Adobe
+    now: Research Scientist @ Adobe
     expertise: HCI x AI
     img: Bruce_n.jpg
     imgalt: Bruce_f.jpg
     url: https://liubruce.me/
   - name: 🎓 Dr. Hongyan Gu
-    role: Research Asst Prof @ KUMC
+    now: Research Asst Prof @ KUMC
     expertise: Human-Centered Medical AI
     img: Hongyan_n.jpg
     imgalt: Hongyan_f.jpg
     url: https://www.hygu.net/
   - name: 🎓 Dr. Jiahao Li
-    role: HCI Researcher @ Startup
+    now: HCI Researcher @ Startup
     expertise: Human-AI Interaction
     img: Nick-s.JPG
     imgalt: Nick-f.JPG
     url: https://ljhnick.github.io/
   - name: 🎓 Dr. Ruolin Wang
-    role: Postdoc @ Georgia Tech
+    now: Postdoc @ Georgia Tech
     expertise: Accessibility
     img: Ruolin-s.JPG
     imgalt: Ruolin-f.JPG
     url: https://www.violynnewang.com/
   - name: 🎓 Dr. Noyan Evirgen
-    role: Applied Scientist @ Amazon
+    now: Applied Scientist @ Amazon
     expertise: Generative AI
     img: Noyan_n.jpg
     imgalt: Noyan_f.jpg
@@ -85,7 +91,7 @@ alumni:
     url: https://scholar.google.com/citations?user=YPmvFYMAAAAJ&hl=zh-CN
   - name: Tengyou Xu
     role: ECE MS
-    expertise: PhD @ Boston College
+    now: PhD @ Boston College
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Boyuan Jia
@@ -101,7 +107,7 @@ alumni:
     url: https://www.linkedin.com/in/christopher-hwang-8b2894190/
   - name: Ziwen Li
     role: ECE MS
-    expertise: "Now: PhD @ Northeastern"
+    now: PhD @ Northeastern
     img: Aaron_n.png
     imgalt: Aaron_f.png
     url: https://aaronli43.github.io/personalweb/
@@ -123,19 +129,19 @@ alumni:
     imgalt: purple.jpeg
     url: https://www.linkedin.com/in/philip-huang-15867b21b
   - name: Chunxu Yang
-    role: "Now: PhD @ Waterloo"
+    now: PhD @ Waterloo
     expertise: Human-AI Interaction
     img: Chunxu_n.jpg
     imgalt: Chunxu_f.jpg
   - name: Naoto Nishida
     role: Visiting Researcher
-    expertise: University of Tokyo
+    now: University of Tokyo
     img: Naoto_n.jpg
     imgalt: Naoto_f.jpg
     url: https://nawta.github.io/
   - name: Roy Jara
     role: ECE MS
-    expertise: "Now: Engineer @ Qualcomm"
+    now: Engineer @ Qualcomm
     img: Roy_n.jpg
     imgalt: Roy_f.jpg
     url: https://www.linkedin.com/in/roy-jara/
@@ -152,13 +158,13 @@ alumni:
     imgalt: purple.jpeg
   - name: Zihan Yan
     role: Collaborator
-    expertise: "Now: PhD @ UIUC"
+    now: PhD @ UIUC
     img: Zihan_n.jpg
     imgalt: Zihan_f.jpg
     url: https://yzihan.github.io/
   - name: Mina Huh
     role: Research Intern
-    expertise: "Now: PhD @ UT Austin"
+    now: PhD @ UT Austin
     img: Mina-s.jpeg
     imgalt: Mina-f.jpeg
   - name: Yuan Liang
@@ -168,13 +174,13 @@ alumni:
     imgalt: purple.jpeg
   - name: Yudai Tanaka
     role: Specialist
-    expertise: "Now: Prof @ UT Austin"
+    now: Prof @ UT Austin
     img: Yudai-s.JPG
     imgalt: Yudai-f.JPG
     url: https://yudai-tanaka.com
   - name: Lauren Hung
     role: Specialist
-    expertise: "Now: UX Designer @ Amazon"
+    now: UX Designer @ Amazon
     img: Lauren-s.JPG
     imgalt: Lauren-f.JPG
     url: http://laurenhung.com/
@@ -190,7 +196,6 @@ alumni:
     imgalt: purple.jpeg
   - name: Alexander Chen
     role: Undergrad Researcher
-    expertise: <br>
     img: Alex-s.jpg
     imgalt: Alex-f.jpg
   - name: Alexiy Samoylov
@@ -231,7 +236,6 @@ alumni:
     url: http://charisa.design/
   - name: Amirali Omidfar
     role: ECE MS
-    expertise: <br>
     img: Amir-s.JPG
     imgalt: Amir-f.JPG
   - name: Rita Dang
@@ -250,18 +254,16 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Eric Perez
-    role: Undergrad Researcher   
-    expertise: "Now: MS at Cornell"
+    role: Undergrad Researcher
+    now: MS @ Cornell
     img: minion.jpg
     imgalt: purple.jpeg
   - name: James King
     role: Undergrad Researcher
-    expertise: <br>
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Grace Zhao
     role: CS Undergrad
-    expertise: <br>
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Sam Arlin
@@ -270,62 +272,52 @@ alumni:
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Carlo Rebanal
-    role: "Now: ML Engineer at Oracle"
-    expertise: <br/>
+    now: ML Engineer @ Oracle
     img: Carlo-s.JPG
     imgalt: Carlo-f.JPG
   - name: Yao Xie
     role: ECE MS
-    expertise: <br/>
     img: Yao-s.JPG
     imgalt: Yao-f.JPG
   - name: Ximeng Liu
     role: ECE MS
-    expertise: <br/>
     img: Simon-s.JPG
     imgalt: Simon-f.JPG
   - name: Nicolas Cheng
     role: ECE MS
-    expertise: <br/>
     img: Nicky-s.JPG
     imgalt: Nicky-f.JPG
   - name: Yuki Tang
-    role: "Now: MSc at UTokyo"
-    expertise: <br/>
+    now: MSc @ UTokyo
     img: Yuki-s.JPG
     imgalt: Yuki-f.JPG 
   - name: Hsuan-Wei Fan
-    role: "Now: MSc at UW"
-    expertise: <br/>
+    now: MSc @ UW
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Jingbin Huang
-    role: "<a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1850183' target='_blank'>NSF REU</a> Student<br>Now: MSc at UCSD"
+    role: <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1850183' target='_blank'>NSF REU</a> Student
+    now: MSc @ UCSD
     img: Jingbin-s.JPG
     imgalt: Jingbin-f.JPG
   - name: Melody Chen
     role: <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1850183' target='_blank'>NSF REU</a> Student
-    expertise: <br/>
     img: Melody-s.JPG
     imgalt: Melody-f.JPG 
   - name: Cathy Wang
-    role: "Now: MSc at UCSD"
-    expertise: <br/>
+    now: MSc @ UCSD
     img: minion.jpg
     imgalt: purple.jpeg
   - name: Rohit Banerjee
-    role: "Now: SoC Engineer at Intel"
-    expertise: <br/>
+    now: SoC Engineer @ Intel
     img: Rohit-s.jpg
     imgalt: Rohit-f.jpg
   - name: Ben Wagstaff
     role: ECE Undergrad
-    expertise: <br/>
     img: Ben-s.JPG
     imgalt: Ben-f.JPG
   - name: Joseph Lu
     role: CS Undergrad
-    expertise: <br/>
     img: Joseph-s.JPG
     imgalt: Joseph-f.JPG
 projects:
@@ -1357,7 +1349,7 @@ projects:
       Chen, X., Boring, S., Carpendale, S., Tang, A., & Greenberg, S. (2012). Spalendar: visualizing a group's calendar events over a geographic space on a public display. In AVI '12 Proceedings of the International Working Conference on Advanced Visual Interfaces (pp. 689-696).
 
 aboutus:
-  - mission: "Our mission is to innovate interactive systems that catalyze advances in AI to augment humans' abilities."
+  - mission: "Our mission is to <b>augment human intelligence through symbiotic computing</b>—embedding AI throughout expert workflows to amplify human abilities, overcome human limitations, and enable human-AI teams to outperform either humans or AI working alone."
     photos: 
       # - g_bbq.jpg
       - g_postchi.jpg
